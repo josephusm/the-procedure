@@ -39,8 +39,8 @@ the-procedure/
 
 ### Phase 3 — Escalation (current)
 - [x] 10 more cases (days 6–15), escalating stakes
-- [ ] Compliance effects visible: options narrowing, new channels appearing
-- [ ] Mid-game state: player notices narrowing without it being explicit
+- [x] Compliance effects visible: options narrowing (filtering now drops humane options first)
+- [x] Mid-game state: EOD tone shifts + option count drops structurally signal narrowing
 
 ### Phase 4 — Endgame
 - [ ] Final case: the player's own case
