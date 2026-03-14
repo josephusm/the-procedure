@@ -24,21 +24,21 @@ the-procedure/
 
 ## Phases
 
-### Phase 1 — Foundation (current)
-- [ ] Write architecture doc
-- [ ] index.html skeleton + terminal UI shell
-- [ ] style.css: terminal aesthetic (green on black, monospace, cursor blink)
-- [ ] renderer.js: print lines to terminal, typewriter effect, clear screen
-- [ ] engine.js: game state (day counter, compliance score, current case)
+### Phase 1 — Foundation
+- [x] Write architecture doc
+- [x] index.html skeleton + terminal UI shell
+- [x] style.css: terminal aesthetic (green on black, monospace, cursor blink)
+- [x] renderer.js: print lines to terminal, typewriter effect, clear screen
+- [x] engine.js: game state (day counter, compliance score, current case)
 
 ### Phase 2 — Core loop
-- [ ] cases.json: first 5 cases with routing options and outcomes
-- [ ] cases.js: load cases, present options, handle selection
-- [ ] compliance.js: update score on routing choice, affect available options
-- [ ] Day progression: end of day summary, advance to next
+- [x] cases.json: first 5 cases with routing options and outcomes
+- [x] cases.js: load cases, present options, handle selection
+- [x] compliance.js: update score on routing choice, affect available options
+- [x] Day progression: end of day summary, advance to next
 
-### Phase 3 — Escalation
-- [ ] 10 more cases (days 6–15), escalating stakes
+### Phase 3 — Escalation (current)
+- [x] 10 more cases (days 6–15), escalating stakes
 - [ ] Compliance effects visible: options narrowing, new channels appearing
 - [ ] Mid-game state: player notices narrowing without it being explicit
 

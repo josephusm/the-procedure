@@ -12,15 +12,30 @@ export function get() {
   return score;
 }
 
-// Returns how many options to show for a given case.
-// At low compliance: all options. At high compliance: fewer.
+// How many options to show for a given case.
+// At low compliance: all options. As it rises, fewer.
+// The system keeps the *most compliant* options and drops the rest.
 export function filterOptions(options) {
   const s = score;
-  if (s < 20) return options;
-  if (s < 40) return options.slice(0, Math.max(2, options.length - 1));
-  if (s < 65) return options.slice(0, Math.max(2, options.length - 1));
-  if (s < 85) return options.slice(0, Math.min(2, options.length));
-  return options.slice(0, 1); // late game: one path
+  let keep;
+  if (s < 20)      keep = options.length;
+  else if (s < 40) keep = Math.max(2, options.length - 1);
+  else if (s < 65) keep = Math.max(2, options.length - 1);
+  else if (s < 85) keep = Math.min(2, options.length);
+  else              keep = 1; // late game: one path
+
+  if (keep >= options.length) return options;
+
+  // Sort by compliance_delta descending, keep the top N.
+  // The humane options disappear first.
+  const ranked = options
+    .map((opt, i) => ({ opt, i, d: opt.compliance_delta }))
+    .sort((a, b) => b.d - a.d || a.i - b.i)
+    .slice(0, keep)
+    .sort((a, b) => a.i - b.i) // restore original display order
+    .map(x => x.opt);
+
+  return ranked;
 }
 
 // Returns the tone suffix for end-of-day messages.

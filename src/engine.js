@@ -4,7 +4,7 @@ import { print, printBlock, clear, clearOptions, showOptions, setDate, delay } f
 import { loadCases, getCaseForDay, getAvailableOptions } from './cases.js';
 import { add as addCompliance, eodTone } from './compliance.js';
 
-const TOTAL_DAYS = 5; // Phase 1: first 5 cases
+const TOTAL_DAYS = 15; // Phase 3: days 1–15
 
 const EOD_MESSAGES = {
   standard: 'All cases for today have been processed. Your work is appreciated.',

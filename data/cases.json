@@ -108,5 +108,230 @@
         "outcome": "Expedited review flag added to file. Priority queue: 4–6 weeks."
       }
     ]
+  },
+  {
+    "id": "case-006",
+    "day": 6,
+    "subject": "Housing Reassignment — Block 14, Unit 3",
+    "ref": "REF-0070-F",
+    "body": "Citizen received written notice that their housing unit has been reassigned effective next month. Citizen states they did not request reassignment. No transfer application exists in their file. The notice references an 'optimization directive' but provides no directive number. Citizen is requesting a copy of the directive and an explanation of the reassignment criteria.",
+    "options": [
+      {
+        "label": "Route to Housing Allocation Review Board",
+        "compliance_delta": 2,
+        "outcome": "Review request submitted. Board convenes quarterly. Next session: pending."
+      },
+      {
+        "label": "Route to Directive Registry — document retrieval",
+        "compliance_delta": 2,
+        "outcome": "Registry search initiated. If directive is on file, copy will be forwarded. Expected: 3–5 weeks."
+      },
+      {
+        "label": "Route to Residential Transition Services — reassignment support",
+        "compliance_delta": 3,
+        "outcome": "Transition package issued. Relocation assistance will be provided as scheduled."
+      }
+    ]
+  },
+  {
+    "id": "case-007",
+    "day": 7,
+    "subject": "Employment Status Anomaly — Individual File",
+    "ref": "REF-0077-G",
+    "body": "Worker reports that their employment status in the central registry shows 'Inactive' as of six weeks ago. Worker states they have continued to report to their assigned post daily without interruption. Pay deposits have not been received for the past two cycles. Facility supervisor confirms the individual has been present and working. No termination or suspension order is on file.",
+    "options": [
+      {
+        "label": "Route to Employment Records — Status Reconciliation",
+        "compliance_delta": 2,
+        "outcome": "Reconciliation ticket opened. Status review requires cross-referencing with payroll and facility logs. Timeline: 4–8 weeks."
+      },
+      {
+        "label": "Route to Payroll Discrepancy Unit",
+        "compliance_delta": 2,
+        "outcome": "Payroll audit flagged. Back-pay assessment pending verification of active status."
+      },
+      {
+        "label": "Route to Workforce Administration — re-registration",
+        "compliance_delta": 3,
+        "outcome": "Re-registration form dispatched. Worker advised to complete within 10 business days to avoid lapse in coverage."
+      }
+    ]
+  },
+  {
+    "id": "case-008",
+    "day": 8,
+    "subject": "Identity Record Discrepancy",
+    "ref": "REF-0082-H",
+    "body": "Central Records flagged an anomaly during routine maintenance. Two identity files exist for the same biometric index. File A lists the individual as born in Sector 2, employed, one dependent. File B lists the same biometric signature as born in Sector 11, no employment record, no dependents, status: 'archived.' The individual is unaware of File B. This case was generated automatically.",
+    "options": [
+      {
+        "label": "Route to Identity Reconciliation Office",
+        "compliance_delta": 2,
+        "outcome": "Reconciliation assigned. The system will determine which record is primary. Individual may be contacted."
+      },
+      {
+        "label": "Route to Records Integrity — merge and archive",
+        "compliance_delta": 3,
+        "outcome": "Merge protocol initiated. File B will be incorporated. No notification required."
+      },
+      {
+        "label": "Route to Citizen Notification Services — inform individual",
+        "compliance_delta": 1,
+        "outcome": "Notification drafted. Individual will receive a summary of the discrepancy within 15 business days."
+      }
+    ]
+  },
+  {
+    "id": "case-009",
+    "day": 9,
+    "subject": "Unregistered Minor — School Sector 6",
+    "ref": "REF-0089-I",
+    "body": "School administrator reports a child who has been attending classes for approximately three months. The child arrives and departs at standard hours. Academic performance is satisfactory. However, no enrollment record exists. No guardian is listed. The address provided on informal paperwork does not correspond to a residential unit. When staff asked the child where they live, the child provided a location code that does not appear in the housing directory.",
+    "options": [
+      {
+        "label": "Route to Minor Welfare and Registration Unit",
+        "compliance_delta": 2,
+        "outcome": "Welfare case opened. Field visit to be scheduled. Registration process to begin upon guardian identification."
+      },
+      {
+        "label": "Route to Housing Directory — address verification",
+        "compliance_delta": 3,
+        "outcome": "Address lookup submitted. If the location code is valid, records will be updated. If not, case will be reclassified."
+      },
+      {
+        "label": "Route to Educational Enrollment — retroactive registration",
+        "compliance_delta": 2,
+        "outcome": "Provisional enrollment created. Child's attendance record will be formalized. Guardian notification pending."
+      }
+    ]
+  },
+  {
+    "id": "case-010",
+    "day": 10,
+    "subject": "Assembly Permit — Denied During Review",
+    "ref": "REF-0094-J",
+    "body": "A residents' association applied for a permit to hold a meeting in a designated public assembly space. Application was submitted eight weeks ago and entered the review queue. During the review period, the space was reclassified from 'Public Assembly' to 'Administrative Use.' The permit was subsequently denied on the basis that the space is no longer available for the requested purpose. The association is asking whether alternative spaces exist and whether the reclassification can be reviewed.",
+    "options": [
+      {
+        "label": "Route to Public Space Allocation Office",
+        "compliance_delta": 2,
+        "outcome": "Alternative space search initiated. Availability subject to current allocation schedule."
+      },
+      {
+        "label": "Route to Zoning and Classification Appeals",
+        "compliance_delta": 1,
+        "outcome": "Reclassification review requested. Appeals are processed in the order received. Current backlog: 14 months."
+      },
+      {
+        "label": "Route to Community Coordination — administrative guidance",
+        "compliance_delta": 3,
+        "outcome": "Association advised on approved assembly formats. Updated guidelines will be mailed."
+      }
+    ]
+  },
+  {
+    "id": "case-011",
+    "day": 11,
+    "subject": "Unlisted Facility — Multiple Reports",
+    "ref": "REF-0101-K",
+    "body": "Four separate individuals have submitted inquiries about a facility at 1140 Industrial Corridor, Sector 9. All four describe a large building with active operations — personnel entering and exiting, transport vehicles, external lighting at night. The facility does not appear in the municipal directory, the commercial registry, or the industrial licensing database. No building permit is on file for that address. One individual states they were told it is 'not subject to public listing.' No official source for this statement has been identified.",
+    "options": [
+      {
+        "label": "Route to Municipal Infrastructure Registry — listing verification",
+        "compliance_delta": 2,
+        "outcome": "Address submitted for verification. If the facility is registered under an alternative classification, records will be updated."
+      },
+      {
+        "label": "Route to Sector 9 Administrative Office — local inquiry",
+        "compliance_delta": 3,
+        "outcome": "Inquiry forwarded to sector administration. Response at their discretion."
+      }
+    ]
+  },
+  {
+    "id": "case-012",
+    "day": 12,
+    "subject": "Personnel Transfers — Sector 9 Facility",
+    "ref": "REF-0108-L",
+    "body": "Employee at a Sector 9 facility reports that six colleagues have been transferred in the past two months. Each transfer was communicated via standard notification. However, none of the notifications include a destination facility. The employee contacted Human Resources, who confirmed the transfers were 'processed and complete.' When asked where the individuals were transferred to, HR stated the information was 'outside the scope of the inquiry.' The employee is requesting destination records for the six individuals.",
+    "options": [
+      {
+        "label": "Route to Personnel Transfer Records — destination lookup",
+        "compliance_delta": 2,
+        "outcome": "Lookup request submitted. Results available only to authorized inquirers. Authorization check in progress."
+      },
+      {
+        "label": "Route to Sector 9 Human Resources — confirm transfer completion",
+        "compliance_delta": 3,
+        "outcome": "HR confirmation request issued. Transfers verified as complete. No further action required."
+      },
+      {
+        "label": "Route to Workforce Mobility Office — welfare check",
+        "compliance_delta": 1,
+        "outcome": "Welfare inquiry initiated for transferred individuals. Contact attempts will be made through standard channels."
+      }
+    ]
+  },
+  {
+    "id": "case-013",
+    "day": 13,
+    "subject": "Data Access Request — Personal Processing Profile",
+    "ref": "REF-0115-M",
+    "body": "Citizen has submitted a formal request to access their own 'processing profile.' The citizen states they were informed during a routine administrative interaction that a profile exists containing their routing history, compliance indicators, and service engagement metrics. The citizen invokes their right to access personal data held by public systems. No department has confirmed or denied the existence of such profiles.",
+    "options": [
+      {
+        "label": "Route to Data Governance Office — access request",
+        "compliance_delta": 2,
+        "outcome": "Request logged. Data Governance will determine whether the requested records fall within disclosure scope. Timeline: standard."
+      },
+      {
+        "label": "Route to General Information Services — clarification of available records",
+        "compliance_delta": 3,
+        "outcome": "Citizen will receive a summary of publicly documented record categories. Undocumented categories are outside the scope of this service."
+      }
+    ]
+  },
+  {
+    "id": "case-014",
+    "day": 14,
+    "subject": "Complaint Resolution — Retroactive Status Change",
+    "ref": "REF-0122-N",
+    "body": "Citizen filed a complaint fourteen months ago regarding water quality in their residential block. The complaint was assigned case number REF-0019-A and entered the Environmental Review Queue. The citizen has now been notified that the case status has been changed to 'Resolved.' No inspection was conducted. No communication was sent between filing and resolution. The resolution summary states: 'Conditions reassessed. Parameters within current standards.' The citizen notes that current standards were revised six months after the complaint was filed. The citizen is requesting clarification on what action, if any, was taken.",
+    "options": [
+      {
+        "label": "Route to Environmental Review — case audit",
+        "compliance_delta": 2,
+        "outcome": "Audit request submitted. Review of resolution procedure will be conducted against the standards in effect at time of filing."
+      },
+      {
+        "label": "Route to Complaint Administration — resolution confirmation",
+        "compliance_delta": 3,
+        "outcome": "Resolution confirmed as procedurally valid. Case closed under current standards. Citizen may file a new complaint if conditions have changed."
+      }
+    ]
+  },
+  {
+    "id": "case-015",
+    "day": 15,
+    "subject": "Internal Report — Personnel File Modification",
+    "ref": "REF-0130-O",
+    "body": "A processing clerk in this department has filed an internal report. The clerk states that upon routine review of their own personnel file, they found modifications they did not authorize. Specifically: their start date has been changed, their department history shows a transfer that did not occur, and a performance note has been added referencing a review meeting the clerk states never took place. The clerk has requested a record of who made the modifications and when. System logs show the changes were made by an administrative batch process. No individual user is associated with the edits.",
+    "options": [
+      {
+        "label": "Route to Internal Affairs — unauthorized modification inquiry",
+        "compliance_delta": 1,
+        "outcome": "Inquiry opened. The clerk will be contacted for a statement. Batch process logs will be reviewed."
+      },
+      {
+        "label": "Route to Personnel Records — data correction request",
+        "compliance_delta": 2,
+        "outcome": "Correction request submitted. The file will be compared against backup records, if available."
+      },
+      {
+        "label": "Route to System Administration — batch process audit",
+        "compliance_delta": 3,
+        "outcome": "Audit request logged. Batch processes are reviewed on a quarterly cycle. Next review: pending."
+      }
+    ]
   }
 ]
