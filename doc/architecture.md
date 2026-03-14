@@ -1,0 +1,72 @@
+# Architecture — The Procedure
+
+## Overview
+
+Single-page web application. No server, no backend, no build step.
+Load `index.html` in a browser and the game runs.
+
+## Game loop
+
+```
+boot → day N begins → case loads → player reads → player routes → outcome logged → day N ends → day N+1
+```
+
+State lives in a plain JS object (`engine.js`). No localStorage — the game is not meant to be saved. It is meant to be completed in one sitting, like a shift.
+
+## State shape
+
+```js
+{
+  day: 1,                    // current day (1-indexed)
+  compliance: 0,             // hidden score, 0–100
+  log: [],                   // array of processed case summaries
+  currentCase: null,         // active case object
+  phase: "boot"|"reading"|"routing"|"eod"|"end"
+}
+```
+
+## Compliance
+
+The compliance score is never displayed. It influences:
+- Which cases appear (high compliance → cases become more systemic, less personal)
+- Which routing options are available (high compliance → fewer, more automatic)
+- EOD (end of day) summary tone — imperceptibly shifts over time
+
+Compliance increases on "correct" routing choices. Every choice is technically correct. Some choices increase compliance faster.
+
+## Cases
+
+Cases are defined in `data/cases.json` as an array of objects:
+
+```json
+{
+  "id": "case-001",
+  "day": 1,
+  "subject": "Noise Complaint — Sector 4",
+  "body": "...",
+  "options": [
+    {
+      "label": "Route to Residential Disturbance Register",
+      "compliance_delta": 2,
+      "outcome": "Your routing has been logged. Processing time: 6–8 weeks."
+    },
+    {
+      "label": "Route to Community Relations Office",
+      "compliance_delta": 1,
+      "outcome": "A liaison will be assigned. Expected contact: 30–45 days."
+    }
+  ]
+}
+```
+
+## Renderer
+
+All output is printed line-by-line to a terminal `<div>`. 
+Typewriter effect: each character appended with a small delay.
+The cursor blinks. Nothing else moves.
+
+`renderer.js` exposes:
+- `print(text, cls)` — append a line with optional CSS class
+- `printBlock(lines)` — print multiple lines sequentially
+- `clear()` — clear the terminal
+- `showOptions(options, callback)` — render routing buttons, call callback on selection

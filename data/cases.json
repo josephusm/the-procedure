@@ -1,0 +1,112 @@
+[
+  {
+    "id": "case-001",
+    "day": 1,
+    "subject": "Noise Disturbance — Residential Block 7",
+    "ref": "REF-0041-A",
+    "body": "Resident reports persistent noise from adjacent unit between 23:00 and 02:00. Duration: approximately three weeks. Resident states sleep has been affected. No prior complaints on file for this address.",
+    "options": [
+      {
+        "label": "Route to Residential Disturbance Register",
+        "compliance_delta": 2,
+        "outcome": "Case logged. Estimated response: 6–8 weeks. Resident will be notified."
+      },
+      {
+        "label": "Route to Community Relations Office",
+        "compliance_delta": 1,
+        "outcome": "Liaison assigned. Expected contact with resident: 30–45 days."
+      },
+      {
+        "label": "Route to Environmental Standards Unit",
+        "compliance_delta": 1,
+        "outcome": "Noise assessment request submitted. Field visit pending scheduling."
+      }
+    ]
+  },
+  {
+    "id": "case-002",
+    "day": 2,
+    "subject": "Missing Person — Informal Report",
+    "ref": "REF-0044-B",
+    "body": "Report submitted by a family member. Individual has not been seen for eleven days. Family states individual was employed at a facility in Sector 9. No formal missing person report exists in the system. Family requests information.",
+    "options": [
+      {
+        "label": "Route to Missing Persons Intake Form (MP-12)",
+        "compliance_delta": 2,
+        "outcome": "MP-12 forwarded to relevant unit. Processing time: standard queue."
+      },
+      {
+        "label": "Route to Sector 9 Employment Records Office",
+        "compliance_delta": 2,
+        "outcome": "Employment status verification request submitted. Response expected: 3–5 weeks."
+      },
+      {
+        "label": "Route to General Enquiries — no further action at this time",
+        "compliance_delta": 3,
+        "outcome": "Case transferred. Family will receive acknowledgment by post."
+      }
+    ]
+  },
+  {
+    "id": "case-003",
+    "day": 3,
+    "subject": "Workplace Safety Concern — Sector 12 Facility",
+    "ref": "REF-0051-C",
+    "body": "Anonymous report. Worker states that protective equipment has not been replaced in four months despite requests. Supervisor has not responded to internal filings. Report asks whether external review is possible.",
+    "options": [
+      {
+        "label": "Route to Occupational Irregularity Register",
+        "compliance_delta": 2,
+        "outcome": "Report logged. Inspector availability subject to current workload."
+      },
+      {
+        "label": "Route to Internal Compliance — Supervisor Review",
+        "compliance_delta": 3,
+        "outcome": "Supervisor flagged for administrative review. Timeline: undetermined."
+      },
+      {
+        "label": "Route to Worker Support Services",
+        "compliance_delta": 1,
+        "outcome": "Support referral issued. Caseworker will make contact within 20 business days."
+      }
+    ]
+  },
+  {
+    "id": "case-004",
+    "day": 4,
+    "subject": "Education Irregularity — Primary Facility Sector 3",
+    "ref": "REF-0058-D",
+    "body": "Parent reports that children in their building have not attended their registered school for six weeks. When parent visited the building at the registered address, the facility appeared different. Staff at the site stated it was a Processing Coordination Centre. Parent is requesting clarification.",
+    "options": [
+      {
+        "label": "Route to Educational Infrastructure Review Queue",
+        "compliance_delta": 3,
+        "outcome": "Infrastructure query submitted. Clarification expected within standard review window."
+      },
+      {
+        "label": "Route to Registration and Enrollment Services",
+        "compliance_delta": 2,
+        "outcome": "Enrollment status check initiated. Results in 2–4 weeks."
+      }
+    ]
+  },
+  {
+    "id": "case-005",
+    "day": 5,
+    "subject": "Access Denial — Medical Records",
+    "ref": "REF-0063-E",
+    "body": "Individual was denied access to their own medical file on three separate occasions. Each time, the attending administrator stated that the records were 'under processing.' Duration of processing: seven months. Individual is requesting the file in connection with a treatment decision.",
+    "options": [
+      {
+        "label": "Route to Patient Data Access Unit",
+        "compliance_delta": 2,
+        "outcome": "Request escalated internally. Access subject to processing completion."
+      },
+      {
+        "label": "Route to Records Administration — Expedited Review",
+        "compliance_delta": 2,
+        "outcome": "Expedited review flag added to file. Priority queue: 4–6 weeks."
+      }
+    ]
+  }
+]
