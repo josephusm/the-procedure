@@ -93,7 +93,7 @@ async function onRouted(c, chosen) {
     [chosen.outcome, 'faint'],
   ]);
 
-  await delay(1000);
+  await delay(2500);
 
   // EOD summary: clear and show on fresh screen
   clear();
