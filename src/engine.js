@@ -4,7 +4,7 @@ import { print, printBlock, clear, clearOptions, showOptions, setDate, delay } f
 import { loadCases, getCaseForDay, getAvailableOptions } from './cases.js';
 import { add as addCompliance, eodTone } from './compliance.js';
 
-const TOTAL_DAYS = 15; // Phase 3: days 1–15
+const TOTAL_DAYS = 16; // Phase 4: endgame on day 16
 
 const EOD_MESSAGES = {
   standard: 'All cases for today have been processed. Your work is appreciated.',
@@ -81,6 +81,11 @@ async function onRouted(c, chosen) {
   clearOptions();
   state.phase = 'eod';
 
+  if (c.final) {
+    await finalScreen(c);
+    return;
+  }
+
   await printBlock([
     ['', ''],
     [`> ${chosen.label}`, 'dim'],
@@ -109,7 +114,37 @@ async function onRouted(c, chosen) {
   }
 }
 
+async function finalScreen(c) {
+  // The end looks exactly like every processed case record.
+  // No drama. No revelation. Just a file closed.
+  await delay(2000);
+
+  clear();
+  setDate(formatDate(state.day));
+
+  await delay(800);
+
+  await printBlock([
+    ['', ''],
+    ['', ''],
+    ['━'.repeat(60), 'sep'],
+    ['PROCESSING COMPLETE', 'system'],
+    ['━'.repeat(60), 'sep'],
+    ['', ''],
+    [`CASE REF:         ${c.ref}`, 'dim'],
+    [`DATE:             ${formatDate(state.day)}`, 'dim'],
+    [`PROCESSING TIME:  ${TOTAL_DAYS} DAYS`, 'dim'],
+    [`STATUS:           COMPLETE`, 'dim'],
+    ['', ''],
+    ['━'.repeat(60), 'sep'],
+    ['', ''],
+  ]);
+
+  state.phase = 'end';
+}
+
 async function endGame() {
+  // Fallback — should not be reached in normal play
   await printBlock([
     ['', ''],
     ['━'.repeat(60), 'sep'],

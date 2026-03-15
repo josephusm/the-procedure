@@ -14,5 +14,11 @@ export function getCaseForDay(day) {
 }
 
 export function getAvailableOptions(c) {
+  // Final case: always exactly one option, no filtering
+  if (c.final) return c.options;
   return filterOptions(c.options);
+}
+
+export function isFinalCase(c) {
+  return !!c.final;
 }
