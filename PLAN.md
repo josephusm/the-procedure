@@ -48,6 +48,14 @@ the-procedure/
 - [x] End screen: case number, date, processing time, status: COMPLETE
 - [x] Compliance thresholds recalibrated to actual score range (max ~43)
 
+### Phase 4b — Audio (optional, after endgame)
+- [ ] Ambient sound: low electrical hum (looped, very subtle)
+- [ ] Keystroke sound: soft mechanical click on typewriter character output
+- [ ] Routing sound: brief confirmation tone on option selection
+- [ ] End screen sound: different tone, slightly lower
+- [ ] All audio: Web Audio API, no external files — generated procedurally or via short base64-encoded samples
+- [ ] Volume: subtle by default, no controls (this is not a game about comfort)
+
 ### Phase 5 — Release
 - [ ] README.md finalized
 - [ ] GitHub repo created and pushed
