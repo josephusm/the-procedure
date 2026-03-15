@@ -19,10 +19,8 @@
   --bg:          #080e08;
   --bezel:       #1c1c1c;
   --font:        'VT323', 'Courier New', Courier, monospace;
-  --font-size:   20px;   /* one size only — CRTs don't scale */
+  --font-size:   20px;
   --line-height: 1.42;
-
-  /* Fixed screen dimensions */
   --screen-w: 800px;
   --screen-h: 600px;
 }
@@ -54,7 +52,7 @@ html, body {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  width: calc(var(--screen-w) + 56px);  /* screen + padding */
+  width: calc(var(--screen-w) + 56px);
 }
 
 /* ── Screen ── */
@@ -68,11 +66,11 @@ html, body {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-
   box-shadow:
     inset 0 0 80px rgba(0,0,0,0.65),
     inset 0 0 16px rgba(0,0,0,0.4),
     0 0 24px rgba(57,255,20,0.06);
+  animation: flicker 11s infinite;
 }
 
 /* ── Scanlines ── */
@@ -105,11 +103,6 @@ html, body {
   z-index: 11;
 }
 
-/* ── Flicker ── */
-#crt-screen {
-  animation: flicker 11s infinite;
-}
-
 @keyframes flicker {
   0%, 91%, 93%, 95.5%, 97%, 100% { opacity: 1; }
   92%   { opacity: 0.94; }
@@ -139,15 +132,15 @@ html, body {
   color: var(--green-faint);
   text-shadow: none;
   flex-shrink: 0;
-  /* same font-size — hierarchy via color and caps only */
 }
 
-/* ── Terminal ── */
+/* ── Terminal (scrollable text zone) ── */
 #terminal {
   flex: 1;
   padding: 8px 0 4px;
   overflow-y: auto;
   scrollbar-width: none;
+  min-height: 0; /* flex child: allow shrinking */
 }
 #terminal::-webkit-scrollbar { display: none; }
 
@@ -167,14 +160,21 @@ html, body {
 .line.sep    { color: var(--green-faint); text-shadow: none; }
 .line.empty  { min-height: calc(var(--font-size) * var(--line-height)); }
 
+/* ── Bottom panel (options + input) — fixed at bottom ── */
+#bottom-panel {
+  flex-shrink: 0;
+  border-top: 1px solid var(--green-faint);
+  padding: 6px 0 0;
+}
+
 /* ── Options ── */
 #options-panel {
-  padding: 5px 0 2px;
   display: flex;
   flex-direction: column;
   gap: 2px;
-  flex-shrink: 0;
 }
+
+#options-panel:empty { display: none; }
 
 .option-btn {
   background: transparent;
@@ -199,13 +199,33 @@ html, body {
 .option-btn:focus  { outline: 1px solid var(--green); outline-offset: 2px; }
 .option-btn:disabled { opacity: 0.28; cursor: default; }
 
-/* ── Cursor ── */
-#cursor-line {
-  padding: 2px 0 4px;
-  flex-shrink: 0;
+/* Highlight selected option */
+.option-btn.selected {
+  border-color: var(--green);
+  color: var(--green);
+  background: rgba(57, 255, 20, 0.06);
+  text-shadow: 0 0 8px var(--green-glow);
 }
 
-.cursor {
+/* ── Input line ── */
+#input-line {
+  display: flex;
+  align-items: center;
+  padding: 4px 0 2px;
+  color: var(--green);
+}
+
+#input-line .prompt {
+  color: var(--green-dim);
+  margin-right: 4px;
+}
+
+#input-line .input-text {
+  color: var(--green);
+  text-shadow: 0 0 8px var(--green-glow);
+}
+
+#input-line .cursor {
   display: inline-block;
   animation: blink 1.1s step-end infinite;
   color: var(--green);

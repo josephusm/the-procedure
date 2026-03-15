@@ -1,12 +1,56 @@
-// renderer.js — terminal output and UI
+// renderer.js — terminal output, options, keyboard input
 
 const terminal = document.getElementById('terminal');
 const optionsPanel = document.getElementById('options-panel');
 const dateDisplay = document.getElementById('date-display');
+const inputLine = document.getElementById('input-line');
+const inputText = inputLine.querySelector('.input-text');
 
-const CHAR_DELAY = 12;   // ms per character for typewriter
-const LINE_DELAY = 60;   // ms between lines in a block
+const CHAR_DELAY = 12;
+const LINE_DELAY = 60;
 
+let activeCallback = null;
+let activeOptions = [];
+
+// ── Keyboard input ──
+document.addEventListener('keydown', (e) => {
+  if (!activeCallback) return;
+
+  if (e.key >= '1' && e.key <= '9') {
+    const idx = parseInt(e.key) - 1;
+    if (idx < activeOptions.length) {
+      inputText.textContent = e.key;
+      // Highlight the matching option
+      document.querySelectorAll('.option-btn').forEach((btn, i) => {
+        btn.classList.toggle('selected', i === idx);
+      });
+    }
+  } else if (e.key === 'Backspace') {
+    inputText.textContent = '';
+    document.querySelectorAll('.option-btn').forEach(btn => {
+      btn.classList.remove('selected');
+    });
+  } else if (e.key === 'Enter') {
+    const val = inputText.textContent.trim();
+    if (val === '') return;
+    const idx = parseInt(val) - 1;
+    if (idx >= 0 && idx < activeOptions.length) {
+      submit(idx);
+    }
+  }
+});
+
+function submit(idx) {
+  const cb = activeCallback;
+  const opt = activeOptions[idx];
+  activeCallback = null;
+  activeOptions = [];
+  inputText.textContent = '';
+  disableOptions();
+  cb(opt, idx);
+}
+
+// ── Output ──
 export function setDate(text) {
   dateDisplay.textContent = text;
 }
@@ -47,21 +91,27 @@ export async function printBlock(lines) {
 export function clear() {
   terminal.innerHTML = '';
   clearOptions();
+  inputText.textContent = '';
 }
 
 export function clearOptions() {
   optionsPanel.innerHTML = '';
+  activeCallback = null;
+  activeOptions = [];
+  inputText.textContent = '';
 }
 
 export function showOptions(options, callback) {
   clearOptions();
+  activeOptions = options;
+  activeCallback = callback;
+
   options.forEach((opt, i) => {
     const btn = document.createElement('button');
     btn.className = 'option-btn';
     btn.textContent = `[${i + 1}]  ${opt.label}`;
     btn.addEventListener('click', () => {
-      disableOptions();
-      callback(opt, i);
+      submit(i);
     });
     optionsPanel.appendChild(btn);
   });
@@ -70,6 +120,7 @@ export function showOptions(options, callback) {
 function disableOptions() {
   document.querySelectorAll('.option-btn').forEach(btn => {
     btn.disabled = true;
+    btn.classList.remove('selected');
   });
 }
 

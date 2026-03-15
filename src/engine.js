@@ -52,10 +52,11 @@ async function runDay() {
     return;
   }
 
+  // Each day: clear and redraw from scratch (CRT page model)
+  clear();
   setDate(formatDate(state.day));
 
   await printBlock([
-    ['━'.repeat(60), 'sep'],
     [`DAY ${state.day}  ·  INCOMING CASE`, 'system'],
     ['━'.repeat(60), 'sep'],
     ['', ''],
@@ -63,8 +64,6 @@ async function runDay() {
     [`SUBJECT:   ${c.subject}`, 'bright'],
     ['', ''],
     [c.body, ''],
-    ['', ''],
-    ['Route this case to:', 'faint'],
     ['', ''],
   ]);
 
@@ -86,25 +85,30 @@ async function onRouted(c, chosen) {
     return;
   }
 
+  // Show routing confirmation on same screen
   await printBlock([
     ['', ''],
     [`> ${chosen.label}`, 'dim'],
     ['', ''],
     [chosen.outcome, 'faint'],
-    ['', ''],
   ]);
 
-  await delay(800);
+  await delay(1000);
+
+  // EOD summary: clear and show on fresh screen
+  clear();
+  setDate(formatDate(state.day));
 
   const tone = eodTone();
   await printBlock([
+    ['END OF DAY', 'system'],
     ['━'.repeat(60), 'sep'],
-    [EOD_MESSAGES[tone], 'system'],
-    ['━'.repeat(60), 'sep'],
+    ['', ''],
+    [EOD_MESSAGES[tone], 'dim'],
     ['', ''],
   ]);
 
-  await delay(1200);
+  await delay(2000);
 
   state.day++;
   if (state.day > TOTAL_DAYS) {
