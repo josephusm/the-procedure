@@ -37,15 +37,16 @@ the-procedure/
 - [x] compliance.js: update score on routing choice, affect available options
 - [x] Day progression: end of day summary, advance to next
 
-### Phase 3 — Escalation (current)
+### Phase 3 — Escalation
 - [x] 10 more cases (days 6–15), escalating stakes
 - [x] Compliance effects visible: options narrowing (filtering now drops humane options first)
 - [x] Mid-game state: EOD tone shifts + option count drops structurally signal narrowing
 
-### Phase 4 — Endgame
-- [ ] Final case: the player's own case
-- [ ] Single routing option
-- [ ] End screen: case number, date, processing time, status: COMPLETE
+### Phase 4 — Endgame (current → done)
+- [x] Final case: the player's own case (case-016, system-generated personnel review)
+- [x] Single routing option (hardcoded for final + compliance filter recalibrated)
+- [x] End screen: case number, date, processing time, status: COMPLETE
+- [x] Compliance thresholds recalibrated to actual score range (max ~43)
 
 ### Phase 5 — Release
 - [ ] README.md finalized
