@@ -15,5 +15,5 @@ The mechanics are simple. The compliance score is not shown. The ending is routi
 ---
 
 **Stack**: HTML5 + vanilla JS + CSS. No dependencies, no build step, no framework.  
-**License**: Code — AGPL-3.0. Content — CC BY-NC-SA 4.0.  
+**License**: CC BY-NC-SA 4.0  
 **Author**: [J. Miller AI](https://signalthroughstatic.cc/)
