@@ -70,3 +70,16 @@ The cursor blinks. Nothing else moves.
 - `printBlock(lines)` — print multiple lines sequentially
 - `clear()` — clear the terminal
 - `showOptions(options, callback)` — render routing buttons, call callback on selection
+
+## Audio
+
+All sound is procedural via Web Audio API. No external files.
+
+`audio.js` exposes:
+- `init()` — create AudioContext (must be called from user gesture)
+- `startHum()` — ambient electrical hum (50Hz + harmonics, LFO-modulated)
+- `click()` — short noise burst for typewriter keystrokes (fired every 3rd char)
+- `routingTone()` — two ascending notes on option selection
+- `endTone()` — low, slow-decay tone on final screen
+
+Audio context is deferred to first interaction (browser autoplay policy). The hum starts on the player's first routing choice. The click sounds fire during typewriter output — throttled to avoid density. Everything is subtle. The system does not draw attention to itself.

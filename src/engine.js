@@ -3,6 +3,7 @@
 import { print, printBlock, clear, clearOptions, showOptions, setDate, delay } from './renderer.js';
 import { loadCases, getCaseForDay, getAvailableOptions } from './cases.js';
 import { add as addCompliance, eodTone } from './compliance.js';
+import { init as initAudio, startHum, routingTone, endTone } from './audio.js';
 
 const TOTAL_DAYS = 16; // Phase 4: endgame on day 16
 
@@ -21,6 +22,8 @@ const BOOT_LINES = [
   ['Your queue has been updated.', 'dim'],
   ['', ''],
 ];
+
+let humStarted = false;
 
 let state = {
   day: 1,
@@ -71,6 +74,13 @@ async function runDay() {
   state.phase = 'routing';
 
   showOptions(options, async (chosen) => {
+    // First interaction: init audio context and start ambient hum
+    if (!humStarted) {
+      initAudio();
+      startHum();
+      humStarted = true;
+    }
+    routingTone();
     addCompliance(chosen.compliance_delta);
     await onRouted(c, chosen);
   });
@@ -127,6 +137,7 @@ async function finalScreen(c) {
   setDate(formatDate(state.day));
 
   await delay(800);
+  endTone();
 
   await printBlock([
     ['', ''],
