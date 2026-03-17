@@ -13,6 +13,35 @@ export function unlock() {
   if (ac.state === 'suspended') ac.resume();
 }
 
+// Power button click — a physical mechanical thunk
+export function powerClick() {
+  const ac = getCtx();
+
+  // Low thud: short burst of noise through low-pass
+  const bufLen = Math.floor(ac.sampleRate * 0.04);
+  const buf = ac.createBuffer(1, bufLen, ac.sampleRate);
+  const d = buf.getChannelData(0);
+  for (let i = 0; i < bufLen; i++) {
+    d[i] = (Math.random() * 2 - 1) * Math.exp(-i / (bufLen * 0.15));
+  }
+
+  const src = ac.createBufferSource();
+  src.buffer = buf;
+
+  const lp = ac.createBiquadFilter();
+  lp.type = 'lowpass';
+  lp.frequency.value = 400;
+  lp.Q.value = 1;
+
+  const gain = ac.createGain();
+  gain.gain.value = 0.25;
+
+  src.connect(lp);
+  lp.connect(gain);
+  gain.connect(ac.destination);
+  src.start();
+}
+
 // POST beep — single tone, like a BIOS self-test
 export function beep(freq = 800, duration = 0.12) {
   const ac = getCtx();
@@ -123,16 +152,41 @@ export function endTone() {
   });
 }
 
-// Ambient hum — very low electrical hum, continuous
+// Ambient hum — electrical mains hum with harmonics, continuous
 export function startHum() {
   const ac = getCtx();
-  const osc = ac.createOscillator();
-  const gain = ac.createGain();
-  osc.type = 'sine';
-  osc.frequency.value = 50; // mains hum
-  gain.gain.value = 0.015;
-  osc.connect(gain);
-  gain.connect(ac.destination);
-  osc.start();
-  return { osc, gain }; // caller can stop later
+  const master = ac.createGain();
+  master.gain.value = 0.06;
+  master.connect(ac.destination);
+
+  // Fundamental 50Hz + 2nd and 3rd harmonics for richer transformer hum
+  const harmonics = [
+    { freq: 50,  gain: 1.0  },
+    { freq: 100, gain: 0.5  },
+    { freq: 150, gain: 0.25 },
+  ];
+
+  const oscs = harmonics.map(h => {
+    const osc = ac.createOscillator();
+    const g = ac.createGain();
+    osc.type = 'sine';
+    osc.frequency.value = h.freq;
+    g.gain.value = h.gain;
+    osc.connect(g);
+    g.connect(master);
+    osc.start();
+    return osc;
+  });
+
+  // Slow LFO modulating master volume — the hum breathes
+  const lfo = ac.createOscillator();
+  const lfoGain = ac.createGain();
+  lfo.type = 'sine';
+  lfo.frequency.value = 0.08;
+  lfoGain.gain.value = 0.015;
+  lfo.connect(lfoGain);
+  lfoGain.connect(master.gain);
+  lfo.start();
+
+  return { oscs, lfo, gain: master };
 }

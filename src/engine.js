@@ -3,7 +3,7 @@
 import { print, printBlock, clear, clearOptions, showOptions, setDate, delay } from './renderer.js';
 import { loadCases, getCaseForDay, getAvailableOptions } from './cases.js';
 import { add as addCompliance, eodTone } from './compliance.js';
-import { unlock, beep, driveNoise, confirmTone, endTone, startHum } from './audio.js';
+import { unlock, beep, driveNoise, confirmTone, endTone, startHum, powerClick } from './audio.js';
 
 const TOTAL_DAYS = 16;
 
@@ -15,11 +15,10 @@ const EOD_MESSAGES = {
 };
 
 let hum = null;
-let audioUnlocked = false;
 
 let state = {
   day: 1,
-  phase: 'boot',
+  phase: 'off',
 };
 
 function formatDate(day) {
@@ -30,30 +29,47 @@ function formatDate(day) {
   return d.toLocaleDateString('en-GB', opts).toUpperCase();
 }
 
-function tryUnlockAudio() {
-  if (audioUnlocked) return;
-  unlock();
-  audioUnlocked = true;
-  // Play boot sounds
-  beep(800, 0.12);
-  setTimeout(() => driveNoise(1.5), 300);
-  setTimeout(() => { hum = startHum(); }, 1800);
+// ── Power on: button click → audio unlock → boot ──
+function initPowerButton() {
+  const btn = document.getElementById('power-btn');
+  const screen = document.getElementById('crt-screen');
+
+  // Start with screen off
+  screen.classList.add('off');
+
+  btn.addEventListener('click', async () => {
+    if (state.phase !== 'off') return;
+    state.phase = 'boot';
+
+    // Audio unlock + power click
+    unlock();
+    powerClick();
+
+    // Button lights up
+    btn.classList.add('on');
+
+    // Screen wakes up
+    screen.classList.remove('off');
+
+    // Boot sounds (staggered)
+    setTimeout(() => beep(800, 0.12), 150);
+    setTimeout(() => driveNoise(1.5), 450);
+    setTimeout(() => { hum = startHum(); }, 1900);
+
+    await crtBoot();
+    await runDay();
+  });
 }
 
-// Unlock audio on first user interaction
-document.addEventListener('click', tryUnlockAudio, { once: false });
-document.addEventListener('keydown', tryUnlockAudio, { once: false });
-
-// ── CRT Boot sequence (visual only — audio plays when user interacts) ──
+// ── CRT Boot sequence ──
 async function crtBoot() {
-  const screen = document.getElementById('crt-screen');
   const app = document.getElementById('app');
 
-  // Phase 0: black screen
+  // Phase 0: black screen, CRT warming up
   app.style.opacity = '0';
-  await delay(800);
+  await delay(600);
 
-  // Phase 1: screen flicker — CRT warming up
+  // Phase 1: screen flicker
   for (let i = 0; i < 3; i++) {
     app.style.opacity = '0.6';
     await delay(50);
@@ -185,8 +201,12 @@ async function finalScreen(c) {
 
   // Stop the hum — the machine is done with you
   if (hum) {
-    hum.gain.gain.exponentialRampToValueAtTime(0.001, hum.gain.context.currentTime + 2);
-    setTimeout(() => hum.osc.stop(), 2100);
+    const ac = hum.gain.context;
+    hum.gain.gain.exponentialRampToValueAtTime(0.001, ac.currentTime + 2);
+    setTimeout(() => {
+      hum.oscs.forEach(o => o.stop());
+      hum.lfo.stop();
+    }, 2100);
   }
 
   state.phase = 'end';
@@ -212,6 +232,5 @@ async function endGame() {
 // Entry point
 (async () => {
   await loadCases();
-  await crtBoot();
-  await runDay();
+  initPowerButton();
 })();
