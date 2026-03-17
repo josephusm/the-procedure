@@ -56,6 +56,9 @@ the-procedure/
 - [x] All audio: Web Audio API, no external files — fully procedural
 - [x] Volume: subtle by default, no controls (this is not a game about comfort)
 - [x] Audio context init deferred to first user interaction (browser autoplay policy)
+- [ ] 3D power button: physical click starts the machine, unlocks audio, triggers CRT boot
+- [ ] CRT boot sequence: POST beep → floppy drive noise → screen flicker → boot text
+- [ ] Raise hum volume (currently too quiet to hear)
 
 ### Phase 5 — Release
 - [ ] README.md finalized
