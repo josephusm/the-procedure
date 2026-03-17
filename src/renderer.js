@@ -1,6 +1,6 @@
 // renderer.js — terminal output, options, keyboard input
 
-import { click as audioClick } from './audio.js';
+import { keystroke } from './audio.js';
 
 const terminal = document.getElementById('terminal');
 const optionsPanel = document.getElementById('options-panel');
@@ -74,7 +74,7 @@ export function print(text, cls = '') {
     const interval = setInterval(() => {
       span.textContent += text[i];
       // Keystroke click on ~every 3rd character (not every one — subtlety)
-      if (i % 3 === 0) audioClick();
+      if (i % 4 === 0) keystroke();
       i++;
       if (i >= text.length) {
         clearInterval(interval);

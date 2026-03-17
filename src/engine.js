@@ -3,9 +3,9 @@
 import { print, printBlock, clear, clearOptions, showOptions, setDate, delay } from './renderer.js';
 import { loadCases, getCaseForDay, getAvailableOptions } from './cases.js';
 import { add as addCompliance, eodTone } from './compliance.js';
-import { init as initAudio, startHum, routingTone, endTone } from './audio.js';
+import { unlock, beep, driveNoise, confirmTone, endTone, startHum } from './audio.js';
 
-const TOTAL_DAYS = 16; // Phase 4: endgame on day 16
+const TOTAL_DAYS = 16;
 
 const EOD_MESSAGES = {
   standard: 'All cases for today have been processed. Your work is appreciated.',
@@ -14,16 +14,8 @@ const EOD_MESSAGES = {
   complete:  'Cycle complete.',
 };
 
-const BOOT_LINES = [
-  ['PROCESSING SYSTEM v4.1.2', 'system'],
-  ['Initializing session...', 'system'],
-  ['', ''],
-  ['Good morning.', 'dim'],
-  ['Your queue has been updated.', 'dim'],
-  ['', ''],
-];
-
-let humStarted = false;
+let hum = null;
+let audioUnlocked = false;
 
 let state = {
   day: 1,
@@ -31,19 +23,66 @@ let state = {
 };
 
 function formatDate(day) {
-  // Fictional date, starting from a Monday
-  const base = new Date(2026, 0, 5); // Mon 5 Jan 2026
+  const base = new Date(2026, 0, 5);
   const d = new Date(base);
   d.setDate(base.getDate() + day - 1);
   const opts = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
   return d.toLocaleDateString('en-GB', opts).toUpperCase();
 }
 
-async function boot() {
+function tryUnlockAudio() {
+  if (audioUnlocked) return;
+  unlock();
+  audioUnlocked = true;
+  // Play boot sounds
+  beep(800, 0.12);
+  setTimeout(() => driveNoise(1.5), 300);
+  setTimeout(() => { hum = startHum(); }, 1800);
+}
+
+// Unlock audio on first user interaction
+document.addEventListener('click', tryUnlockAudio, { once: false });
+document.addEventListener('keydown', tryUnlockAudio, { once: false });
+
+// ── CRT Boot sequence (visual only — audio plays when user interacts) ──
+async function crtBoot() {
+  const screen = document.getElementById('crt-screen');
+  const app = document.getElementById('app');
+
+  // Phase 0: black screen
+  app.style.opacity = '0';
+  await delay(800);
+
+  // Phase 1: screen flicker — CRT warming up
+  for (let i = 0; i < 3; i++) {
+    app.style.opacity = '0.6';
+    await delay(50);
+    app.style.opacity = '0';
+    await delay(120 + Math.random() * 80);
+  }
+
+  // Phase 2: screen on
+  app.style.opacity = '1';
+  await delay(300);
+
+  // Phase 3: boot text
   setDate(formatDate(state.day));
-  await delay(400);
-  await printBlock(BOOT_LINES);
-  await runDay();
+
+  await printBlock([
+    ['PROCESSING SYSTEM v4.1.2', 'system'],
+    ['Initializing session...', 'system'],
+    ['', ''],
+  ]);
+
+  await delay(1000);
+
+  await printBlock([
+    ['Good morning.', 'dim'],
+    ['Your queue has been updated.', 'dim'],
+    ['', ''],
+  ]);
+
+  await delay(800);
 }
 
 async function runDay() {
@@ -55,7 +94,6 @@ async function runDay() {
     return;
   }
 
-  // Each day: clear and redraw from scratch (CRT page model)
   clear();
   setDate(formatDate(state.day));
 
@@ -74,13 +112,7 @@ async function runDay() {
   state.phase = 'routing';
 
   showOptions(options, async (chosen) => {
-    // First interaction: init audio context and start ambient hum
-    if (!humStarted) {
-      initAudio();
-      startHum();
-      humStarted = true;
-    }
-    routingTone();
+    confirmTone();
     addCompliance(chosen.compliance_delta);
     await onRouted(c, chosen);
   });
@@ -95,7 +127,6 @@ async function onRouted(c, chosen) {
     return;
   }
 
-  // Show routing confirmation on same screen
   await printBlock([
     ['', ''],
     [`> ${chosen.label}`, 'dim'],
@@ -105,7 +136,6 @@ async function onRouted(c, chosen) {
 
   await delay(2500);
 
-  // EOD summary: clear and show on fresh screen
   clear();
   setDate(formatDate(state.day));
 
@@ -129,8 +159,6 @@ async function onRouted(c, chosen) {
 }
 
 async function finalScreen(c) {
-  // The end looks exactly like every processed case record.
-  // No drama. No revelation. Just a file closed.
   await delay(2000);
 
   clear();
@@ -155,11 +183,16 @@ async function finalScreen(c) {
     ['', ''],
   ]);
 
+  // Stop the hum — the machine is done with you
+  if (hum) {
+    hum.gain.gain.exponentialRampToValueAtTime(0.001, hum.gain.context.currentTime + 2);
+    setTimeout(() => hum.osc.stop(), 2100);
+  }
+
   state.phase = 'end';
 }
 
 async function endGame() {
-  // Fallback — should not be reached in normal play
   await printBlock([
     ['', ''],
     ['━'.repeat(60), 'sep'],
@@ -179,5 +212,6 @@ async function endGame() {
 // Entry point
 (async () => {
   await loadCases();
-  await boot();
+  await crtBoot();
+  await runDay();
 })();

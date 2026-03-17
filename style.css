@@ -237,6 +237,25 @@ html, body {
   50%       { opacity: 0; }
 }
 
+/* ── Start message (hidden until JS shows it) ── */
+#start-msg {
+  display: none;
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  background: #000;
+  color: var(--green-faint);
+  font-family: var(--font);
+  font-size: var(--font-size);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: blink 1.1s step-end infinite;
+}
+#start-msg.visible {
+  display: flex;
+}
+
 /* ── Bezel label ── */
 #bezel-label {
   text-align: center;

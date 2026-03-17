@@ -1,179 +1,138 @@
-// audio.js — procedural sound design
-// All sounds generated via Web Audio API. No external files.
-// Volume: subtle. No controls. This is not a game about comfort.
+// audio.js — CRT boot and UI sounds via Web Audio API
 
 let ctx = null;
-let masterGain = null;
-let humGain = null;
-let humActive = false;
 
-const MASTER_VOLUME = 0.35;
-const HUM_VOLUME = 0.06;
-const CLICK_VOLUME = 0.08;
-const TONE_VOLUME = 0.12;
+function getCtx() {
+  if (!ctx) ctx = new (window.AudioContext || window.webkitAudioContext)();
+  return ctx;
+}
 
-// ── Init (requires user gesture) ──
+// Ensure AudioContext is resumed (browsers require user gesture)
+export function unlock() {
+  const ac = getCtx();
+  if (ac.state === 'suspended') ac.resume();
+}
 
-function ensureContext() {
-  if (ctx) return true;
-  try {
-    ctx = new (window.AudioContext || window.webkitAudioContext)();
-    masterGain = ctx.createGain();
-    masterGain.gain.value = MASTER_VOLUME;
-    masterGain.connect(ctx.destination);
-    return true;
-  } catch (e) {
-    return false;
+// POST beep — single tone, like a BIOS self-test
+export function beep(freq = 800, duration = 0.12) {
+  const ac = getCtx();
+  const osc = ac.createOscillator();
+  const gain = ac.createGain();
+  osc.type = 'square';
+  osc.frequency.value = freq;
+  gain.gain.setValueAtTime(0.15, ac.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.001, ac.currentTime + duration);
+  osc.connect(gain);
+  gain.connect(ac.destination);
+  osc.start(ac.currentTime);
+  osc.stop(ac.currentTime + duration);
+}
+
+// Floppy drive noise — filtered white noise with a rhythmic flutter
+export function driveNoise(duration = 1.5) {
+  const ac = getCtx();
+  const bufferSize = ac.sampleRate * duration;
+  const buffer = ac.createBuffer(1, bufferSize, ac.sampleRate);
+  const data = buffer.getChannelData(0);
+
+  // White noise with rhythmic amplitude modulation (drive head stepping)
+  const stepFreq = 18; // ~18 steps/sec like a 3.5" floppy
+  for (let i = 0; i < bufferSize; i++) {
+    const t = i / ac.sampleRate;
+    const envelope = 0.5 + 0.5 * Math.sin(2 * Math.PI * stepFreq * t);
+    data[i] = (Math.random() * 2 - 1) * envelope * 0.3;
   }
+
+  const source = ac.createBufferSource();
+  source.buffer = buffer;
+
+  // Bandpass filter — sounds like mechanical noise, not hiss
+  const filter = ac.createBiquadFilter();
+  filter.type = 'bandpass';
+  filter.frequency.value = 600;
+  filter.Q.value = 2;
+
+  const gain = ac.createGain();
+  gain.gain.setValueAtTime(0.12, ac.currentTime);
+  gain.gain.linearRampToValueAtTime(0.08, ac.currentTime + duration * 0.8);
+  gain.gain.exponentialRampToValueAtTime(0.001, ac.currentTime + duration);
+
+  source.connect(filter);
+  filter.connect(gain);
+  gain.connect(ac.destination);
+  source.start(ac.currentTime);
+  source.stop(ac.currentTime + duration);
 }
 
-export function init() {
-  return ensureContext();
-}
-
-// ── Ambient hum ──
-// Electrical mains hum: 50Hz fundamental + harmonics.
-// The kind of sound a fluorescent tube makes in a government office
-// that nobody has renovated since the 1970s.
-
-export function startHum() {
-  if (!ensureContext() || humActive) return;
-  humActive = true;
-
-  humGain = ctx.createGain();
-  humGain.gain.value = HUM_VOLUME;
-  humGain.connect(masterGain);
-
-  // 50Hz fundamental
-  const osc1 = ctx.createOscillator();
-  osc1.type = 'sine';
-  osc1.frequency.value = 50;
-  const g1 = ctx.createGain();
-  g1.gain.value = 1.0;
-  osc1.connect(g1);
-  g1.connect(humGain);
-  osc1.start();
-
-  // 100Hz second harmonic (louder — this is the "buzz")
-  const osc2 = ctx.createOscillator();
-  osc2.type = 'sine';
-  osc2.frequency.value = 100;
-  const g2 = ctx.createGain();
-  g2.gain.value = 0.6;
-  osc2.connect(g2);
-  g2.connect(humGain);
-  osc2.start();
-
-  // 150Hz third harmonic (subtle)
-  const osc3 = ctx.createOscillator();
-  osc3.type = 'sine';
-  osc3.frequency.value = 150;
-  const g3 = ctx.createGain();
-  g3.gain.value = 0.15;
-  osc3.connect(g3);
-  g3.connect(humGain);
-  osc3.start();
-
-  // Slow amplitude modulation — the hum breathes slightly
-  const lfo = ctx.createOscillator();
-  lfo.type = 'sine';
-  lfo.frequency.value = 0.15; // very slow
-  const lfoGain = ctx.createGain();
-  lfoGain.gain.value = HUM_VOLUME * 0.3; // modulation depth
-  lfo.connect(lfoGain);
-  lfoGain.connect(humGain.gain);
-  lfo.start();
-}
-
-export function stopHum() {
-  // Not called in normal play — the hum persists like the system does
-  if (humGain) {
-    humGain.gain.linearRampToValueAtTime(0, ctx.currentTime + 2);
-    humActive = false;
-  }
-}
-
-// ── Keystroke click ──
-// Short noise burst through a bandpass filter.
-// The mechanical intimacy of a terminal that registers each character.
-
-export function click() {
-  if (!ctx) return;
-
-  const now = ctx.currentTime;
-  const dur = 0.015; // very short
-
-  // White noise burst
-  const bufferSize = Math.ceil(ctx.sampleRate * dur);
-  const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+// Keystroke click — very short noise burst
+export function keystroke() {
+  const ac = getCtx();
+  const bufferSize = Math.floor(ac.sampleRate * 0.015);
+  const buffer = ac.createBuffer(1, bufferSize, ac.sampleRate);
   const data = buffer.getChannelData(0);
   for (let i = 0; i < bufferSize; i++) {
-    data[i] = (Math.random() * 2 - 1);
+    data[i] = (Math.random() * 2 - 1) * (1 - i / bufferSize);
   }
+  const source = ac.createBufferSource();
+  source.buffer = buffer;
 
-  const src = ctx.createBufferSource();
-  src.buffer = buffer;
+  const filter = ac.createBiquadFilter();
+  filter.type = 'highpass';
+  filter.frequency.value = 1500;
 
-  // Bandpass to shape the click — mid-high, like a key striking
-  const filter = ctx.createBiquadFilter();
-  filter.type = 'bandpass';
-  filter.frequency.value = 3200;
-  filter.Q.value = 1.5;
+  const gain = ac.createGain();
+  gain.gain.value = 0.06;
 
-  const gain = ctx.createGain();
-  gain.gain.setValueAtTime(CLICK_VOLUME, now);
-  gain.gain.exponentialRampToValueAtTime(0.001, now + dur);
-
-  src.connect(filter);
+  source.connect(filter);
   filter.connect(gain);
-  gain.connect(masterGain);
-  src.start(now);
-  src.stop(now + dur);
+  gain.connect(ac.destination);
+  source.start();
 }
 
-// ── Routing confirmation tone ──
-// A brief, clean tone. The system acknowledging your input.
-// Two ascending notes — optimistic in a way that should feel wrong.
-
-export function routingTone() {
-  if (!ctx) return;
-
-  const now = ctx.currentTime;
-
-  // First note
-  playTone(440, now, 0.08, TONE_VOLUME);
-  // Second note — a minor third up
-  playTone(523.25, now + 0.1, 0.12, TONE_VOLUME * 0.8);
+// Confirmation tone — soft dual-tone on routing selection
+export function confirmTone() {
+  const ac = getCtx();
+  [440, 554].forEach((freq, i) => {
+    const osc = ac.createOscillator();
+    const gain = ac.createGain();
+    osc.type = 'sine';
+    osc.frequency.value = freq;
+    gain.gain.setValueAtTime(0.08, ac.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, ac.currentTime + 0.3);
+    osc.connect(gain);
+    gain.connect(ac.destination);
+    osc.start(ac.currentTime + i * 0.08);
+    osc.stop(ac.currentTime + 0.4);
+  });
 }
 
-// ── End screen tone ──
-// Lower. Longer. A single frequency that decays slowly.
-// Not dramatic — just final. The way a file closes.
-
+// End tone — lower, more final
 export function endTone() {
-  if (!ctx) return;
-
-  const now = ctx.currentTime;
-
-  // Low fundamental
-  playTone(196, now, 1.5, TONE_VOLUME * 0.7); // G3
-  // Faint fifth above, delayed
-  playTone(293.66, now + 0.3, 1.2, TONE_VOLUME * 0.25); // D4
+  const ac = getCtx();
+  [330, 262].forEach((freq, i) => {
+    const osc = ac.createOscillator();
+    const gain = ac.createGain();
+    osc.type = 'sine';
+    osc.frequency.value = freq;
+    gain.gain.setValueAtTime(0.08, ac.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, ac.currentTime + 0.5);
+    osc.connect(gain);
+    gain.connect(ac.destination);
+    osc.start(ac.currentTime + i * 0.15);
+    osc.stop(ac.currentTime + 0.6);
+  });
 }
 
-// ── Helpers ──
-
-function playTone(freq, startTime, duration, volume) {
-  const osc = ctx.createOscillator();
+// Ambient hum — very low electrical hum, continuous
+export function startHum() {
+  const ac = getCtx();
+  const osc = ac.createOscillator();
+  const gain = ac.createGain();
   osc.type = 'sine';
-  osc.frequency.value = freq;
-
-  const gain = ctx.createGain();
-  gain.gain.setValueAtTime(volume, startTime);
-  gain.gain.exponentialRampToValueAtTime(0.001, startTime + duration);
-
+  osc.frequency.value = 50; // mains hum
+  gain.gain.value = 0.015;
   osc.connect(gain);
-  gain.connect(masterGain);
-  osc.start(startTime);
-  osc.stop(startTime + duration + 0.01);
+  gain.connect(ac.destination);
+  osc.start();
+  return { osc, gain }; // caller can stop later
 }
