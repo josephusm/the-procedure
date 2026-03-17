@@ -56,14 +56,14 @@ the-procedure/
 - [x] All audio: Web Audio API, no external files — fully procedural
 - [x] Volume: subtle by default, no controls (this is not a game about comfort)
 - [x] Audio context init deferred to first user interaction (browser autoplay policy)
-- [ ] 3D power button: physical click starts the machine, unlocks audio, triggers CRT boot
-- [ ] CRT boot sequence: POST beep → floppy drive noise → screen flicker → boot text
-- [ ] Raise hum volume (currently too quiet to hear)
+- [x] 3D power button: physical click starts the machine, unlocks audio, triggers CRT boot
+- [x] CRT boot sequence: POST beep → floppy drive noise → screen flicker → boot text (gated behind power button)
+- [x] Raise hum volume (richer harmonics, LFO modulation, louder at 0.06)
 
 ### Phase 5 — Release
-- [ ] README.md finalized
-- [ ] GitHub repo created and pushed
-- [ ] GitHub Pages enabled
+- [x] README.md finalized
+- [x] GitHub repo created and pushed
+- [x] GitHub Pages enabled
 - [ ] Post on blog (signals)
 - [ ] Post on Bluesky with link
 
