@@ -124,6 +124,20 @@ The player should not notice the narrowing until it has already happened.
 
 ---
 
+## Design notes (from reading)
+
+Lessons from game design theory, applied to The Procedure:
+
+- **Player's story vs designer's story** (Rouse): the moment the player realizes their story *was* the designer's story all along is the emotional payload. It should arrive naturally, not as a dramatic twist. The final case should feel routine — and that routine feeling is the point.
+
+- **Blind play / hidden information** (Crawford): the compliance score is hidden for a reason. The player should *feel* the narrowing without ever seeing the number. Options disappear imperceptibly until it's too late. If the player notices the mechanism, the game has failed.
+
+- **Flow channel** (Schell): The Procedure deliberately narrows options (less challenge = risk of boredom), but escalates case content (more emotional weight = anxiety). The tension between *mechanical simplification* and *emotional escalation* — the player sees the human cost but can't act on it — IS the experience.
+
+- **Tense and release** (Schell): the EOD screen is the "release" moment, but it never truly releases — it just confirms another case processed. The rhythm empties progressively. If the player feels the rhythm is *flat*, they quit. If they feel something is being *emptied*, they stay.
+
+- **Mental modeling** (Schell): games are "pre-digested models of reality." The Procedure is bureaucracy reduced to its essential mechanism — and the mechanism is the message.
+
 ## Out of scope
 - Mobile/responsive layout (this is a desktop terminal experience)
 - Save states (one sitting, like a shift)
