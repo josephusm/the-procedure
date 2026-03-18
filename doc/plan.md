@@ -60,12 +60,14 @@ the-procedure/
 - [x] CRT boot sequence: POST beep → floppy drive noise → screen flicker → boot text (gated behind power button)
 - [x] Raise hum volume (richer harmonics, LFO modulation, louder at 0.06)
 
-### Phase 5 — Release (GATE: requires all Phase 4b complete + full end-to-end playtest + VERSION >= 1.0.0)
-- [x] README.md finalized
-- [x] GitHub repo created and pushed
-- [x] GitHub Pages enabled
-- [x] Post on blog (signals)
-- [ ] Post on Bluesky with link (daily cap exhausted, will retry tomorrow)
+### Phase 5 — Release
+GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
+This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
+- [ ] Stefano playtests and gives feedback
+- [ ] Final polish based on feedback
+- [ ] VERSION bump to 1.0.0
+- [ ] README.md finalized
+- [ ] Mobile experience (scale-to-fit or dedicated mode)
 
 ## Notes
 - Cases should feel mundane before they feel sinister
