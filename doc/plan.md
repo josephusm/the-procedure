@@ -60,7 +60,7 @@ the-procedure/
 - [x] CRT boot sequence: POST beep → floppy drive noise → screen flicker → boot text (gated behind power button)
 - [x] Raise hum volume (richer harmonics, LFO modulation, louder at 0.06)
 
-### Phase 5 — Release
+### Phase 5 — Release (GATE: requires all Phase 4b complete + full end-to-end playtest + VERSION >= 1.0.0)
 - [x] README.md finalized
 - [x] GitHub repo created and pushed
 - [x] GitHub Pages enabled
