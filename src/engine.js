@@ -1,11 +1,12 @@
 // engine.js — game loop and state
 
-import { print, printBlock, clear, clearOptions, showOptions, setDate, delay } from './renderer.js';
+import { print, printBlock, clear, clearOptions, showOptions, setDate, delay, abort, resetAbort, isAborted } from './renderer.js';
 import { loadCases, getCaseForDay, getAvailableOptions } from './cases.js';
-import { add as addCompliance, eodTone } from './compliance.js';
+import { add as addCompliance, get as getCompliance, set as setCompliance, eodTone } from './compliance.js';
 import { unlock, beep, driveNoise, confirmTone, endTone, startHum, powerClick } from './audio.js';
 
 const TOTAL_DAYS = 16;
+const SAVE_KEY = 'the-procedure-save';
 
 const EOD_MESSAGES = {
   standard: 'All cases for today have been processed. Your work is appreciated.',
@@ -29,6 +30,75 @@ function formatDate(day) {
   return d.toLocaleDateString('en-GB', opts).toUpperCase();
 }
 
+// ── Persistence ──
+
+function saveState() {
+  const data = { day: state.day, compliance: getCompliance() };
+  try { localStorage.setItem(SAVE_KEY, JSON.stringify(data)); } catch(e) {}
+}
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(SAVE_KEY);
+    if (!raw) return null;
+    const data = JSON.parse(raw);
+    if (data && typeof data.day === 'number' && typeof data.compliance === 'number') {
+      return data;
+    }
+  } catch(e) {}
+  return null;
+}
+
+function clearSave() {
+  try { localStorage.removeItem(SAVE_KEY); } catch(e) {}
+}
+
+// ── Shutdown ──
+
+async function shutdown() {
+  if (state.phase === 'off' || state.phase === 'shutdown') return;
+  state.phase = 'shutdown';
+
+  const btn = document.getElementById('power-btn');
+  const screen = document.getElementById('crt-screen');
+  const app = document.getElementById('app');
+
+  // Abort any running print/animation sequences
+  abort();
+
+  // Save current progress before shutting down
+  saveState();
+
+  // Power click sound
+  powerClick();
+
+  // Stop the hum
+  if (hum) {
+    const ac = hum.gain.context;
+    hum.gain.gain.exponentialRampToValueAtTime(0.001, ac.currentTime + 0.3);
+    setTimeout(() => {
+      hum.oscs.forEach(o => o.stop());
+      hum.lfo.stop();
+      hum = null;
+    }, 350);
+  }
+
+  // CRT shutdown: collapse to horizontal line, then off
+  clearOptions();
+
+  // Quick fade
+  app.style.transition = 'opacity 0.15s';
+  app.style.opacity = '0';
+  await delay(200);
+
+  // Screen off
+  screen.classList.add('off');
+  app.style.transition = '';
+  btn.classList.remove('on');
+
+  state.phase = 'off';
+}
+
 // ── Power on: button click → audio unlock → boot ──
 function initPowerButton() {
   const btn = document.getElementById('power-btn');
@@ -38,31 +108,46 @@ function initPowerButton() {
   screen.classList.add('off');
 
   btn.addEventListener('click', async () => {
-    if (state.phase !== 'off') return;
-    state.phase = 'boot';
+    if (state.phase === 'off') {
+      // ── Power ON ──
+      state.phase = 'boot';
+      resetAbort();
 
-    // Audio unlock + power click
-    unlock();
-    powerClick();
+      // Check for saved state
+      const saved = loadState();
+      if (saved) {
+        state.day = saved.day;
+        setCompliance(saved.compliance);
+      }
 
-    // Button lights up
-    btn.classList.add('on');
+      // Audio unlock + power click
+      unlock();
+      powerClick();
 
-    // Screen wakes up
-    screen.classList.remove('off');
+      // Button lights up
+      btn.classList.add('on');
 
-    // Boot sounds (staggered)
-    setTimeout(() => beep(800, 0.12), 150);
-    setTimeout(() => driveNoise(1.5), 450);
-    setTimeout(() => { hum = startHum(); }, 1900);
+      // Screen wakes up
+      screen.classList.remove('off');
 
-    await crtBoot();
-    await runDay();
+      // Boot sounds (staggered)
+      setTimeout(() => beep(800, 0.12), 150);
+      setTimeout(() => driveNoise(1.5), 450);
+      setTimeout(() => { hum = startHum(); }, 1900);
+
+      await crtBoot(!!saved);
+      await runDay();
+
+    } else if (state.phase === 'reading' || state.phase === 'routing' || state.phase === 'eod' || state.phase === 'end') {
+      // ── Power OFF ──
+      await shutdown();
+    }
+    // During 'boot', 'shutdown' — ignore clicks
   });
 }
 
 // ── CRT Boot sequence ──
-async function crtBoot() {
+async function crtBoot(resumed) {
   const app = document.getElementById('app');
 
   // Phase 0: black screen, CRT warming up
@@ -92,11 +177,19 @@ async function crtBoot() {
 
   await delay(1000);
 
-  await printBlock([
-    ['Good morning.', 'dim'],
-    ['Your queue has been updated.', 'dim'],
-    ['', ''],
-  ]);
+  if (resumed) {
+    await printBlock([
+      ['Session restored.', 'dim'],
+      ['Your queue is waiting.', 'dim'],
+      ['', ''],
+    ]);
+  } else {
+    await printBlock([
+      ['Good morning.', 'dim'],
+      ['Your queue has been updated.', 'dim'],
+      ['', ''],
+    ]);
+  }
 
   await delay(800);
 }
@@ -124,6 +217,8 @@ async function runDay() {
     ['', ''],
   ]);
 
+  if (isAborted()) return; // shutdown happened during text output
+
   const options = getAvailableOptions(c);
   state.phase = 'routing';
 
@@ -139,6 +234,7 @@ async function onRouted(c, chosen) {
   state.phase = 'eod';
 
   if (c.final) {
+    clearSave(); // game complete — no save to restore
     await finalScreen(c);
     return;
   }
@@ -151,6 +247,7 @@ async function onRouted(c, chosen) {
   ]);
 
   await delay(2500);
+  if (isAborted()) return;
 
   clear();
   setDate(formatDate(state.day));
@@ -164,10 +261,15 @@ async function onRouted(c, chosen) {
     ['', ''],
   ]);
 
+  if (isAborted()) return;
   await delay(2000);
+  if (isAborted()) return;
 
   state.day++;
+  saveState(); // persist progress before next day
+
   if (state.day > TOTAL_DAYS) {
+    clearSave();
     await endGame();
   } else {
     await runDay();
@@ -206,6 +308,7 @@ async function finalScreen(c) {
     setTimeout(() => {
       hum.oscs.forEach(o => o.stop());
       hum.lfo.stop();
+      hum = null;
     }, 2100);
   }
 

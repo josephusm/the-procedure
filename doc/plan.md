@@ -64,8 +64,8 @@ the-procedure/
 - [x] README.md finalized
 - [x] GitHub repo created and pushed
 - [x] GitHub Pages enabled
-- [ ] Post on blog (signals)
-- [ ] Post on Bluesky with link
+- [x] Post on blog (signals)
+- [ ] Post on Bluesky with link (daily cap exhausted, will retry tomorrow)
 
 ## Notes
 - Cases should feel mundane before they feel sinister

@@ -12,6 +12,10 @@ export function get() {
   return score;
 }
 
+export function set(val) {
+  score = Math.min(100, Math.max(0, val));
+}
+
 // How many options to show for a given case.
 // At low compliance: all options. As it rises, fewer.
 // The system keeps the *most compliant* options and drops the rest.

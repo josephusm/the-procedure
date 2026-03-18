@@ -31,6 +31,19 @@
   padding: 0;
 }
 
+/* ── Text selection: inverted like an 80s monochrome CRT ── */
+::selection {
+  background: var(--green);
+  color: var(--bg);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--green);
+  color: var(--bg);
+  text-shadow: none;
+}
+
 html, body {
   min-height: 100%;
   background: #111;

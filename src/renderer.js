@@ -13,6 +13,7 @@ const LINE_DELAY = 60;
 
 let activeCallback = null;
 let activeOptions = [];
+let aborted = false;
 
 // ── Keyboard input ──
 document.addEventListener('keydown', (e) => {
@@ -59,6 +60,8 @@ export function setDate(text) {
 
 export function print(text, cls = '') {
   return new Promise(resolve => {
+    if (aborted) { resolve(); return; }
+
     const span = document.createElement('span');
     span.className = 'line' + (cls ? ' ' + cls : '');
     terminal.appendChild(span);
@@ -72,6 +75,7 @@ export function print(text, cls = '') {
 
     let i = 0;
     const interval = setInterval(() => {
+      if (aborted) { clearInterval(interval); resolve(); return; }
       span.textContent += text[i];
       // Keystroke click on ~every 3rd character (not every one — subtlety)
       if (i % 4 === 0) keystroke();
@@ -87,6 +91,7 @@ export function print(text, cls = '') {
 
 export async function printBlock(lines) {
   for (const [text, cls] of lines) {
+    if (aborted) return;
     await print(text, cls);
     await delay(LINE_DELAY);
   }
@@ -132,6 +137,22 @@ function scrollBottom() {
   terminal.scrollTop = terminal.scrollHeight;
 }
 
+export function abort() {
+  aborted = true;
+  clearOptions();
+}
+
+export function resetAbort() {
+  aborted = false;
+}
+
+export function isAborted() {
+  return aborted;
+}
+
 export function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise(resolve => {
+    if (aborted) { resolve(); return; }
+    setTimeout(resolve, ms);
+  });
 }
