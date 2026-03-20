@@ -4,6 +4,7 @@ import { print, printBlock, clear, clearOptions, showOptions, setDate, delay, ab
 import { loadCases, getCaseForDay, getAvailableOptions } from './cases.js';
 import { add as addCompliance, get as getCompliance, set as setCompliance, eodTone } from './compliance.js';
 import { unlock, beep, driveNoise, confirmTone, endTone, startHum, powerClick } from './audio.js';
+import { initScale } from './scale.js';
 
 const TOTAL_DAYS = 16;
 const SAVE_KEY = 'the-procedure-save';
@@ -335,5 +336,6 @@ async function endGame() {
 // Entry point
 (async () => {
   await loadCases();
+  initScale();
   initPowerButton();
 })();
