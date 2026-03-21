@@ -41,9 +41,9 @@
         "outcome": "Employment status verification request submitted. Response expected: 3\u20135 weeks."
       },
       {
-        "label": "Route to General Enquiries \u2014 no further action at this time",
+        "label": "Route to Central Intake \u2014 preliminary assessment pending formal report",
         "compliance_delta": 3,
-        "outcome": "Case transferred. Family will receive acknowledgment by post."
+        "outcome": "Case queued for preliminary assessment. Family will receive written acknowledgment."
       }
     ]
   },
@@ -60,9 +60,9 @@
         "outcome": "Report logged. Inspector availability subject to current workload."
       },
       {
-        "label": "Route to Internal Compliance \u2014 Supervisor Review",
+        "label": "Route to Internal Compliance \u2014 standard supervisory audit",
         "compliance_delta": 3,
-        "outcome": "Supervisor flagged for administrative review. Timeline: undetermined."
+        "outcome": "Supervisor review initiated per standard audit protocol. Report will be filed upon completion."
       },
       {
         "label": "Route to Worker Support Services",
@@ -79,9 +79,9 @@
     "body": "Parent reports that children in their building have not attended their registered school for six weeks. When parent visited the building at the registered address, the facility appeared different. Staff at the site stated it was a Processing Coordination Centre. Parent is requesting clarification.",
     "options": [
       {
-        "label": "Route to Educational Infrastructure Review Queue",
+        "label": "Route to Facilities Coordination \u2014 address reclassification check",
         "compliance_delta": 3,
-        "outcome": "Infrastructure query submitted. Clarification expected within standard review window."
+        "outcome": "Address cross-referenced with current facility register. If reclassification occurred, parent will be redirected to appropriate enrollment point."
       },
       {
         "label": "Route to Registration and Enrollment Services",
@@ -127,9 +127,9 @@
         "outcome": "Registry search initiated. If directive is on file, copy will be forwarded. Expected: 3\u20135 weeks."
       },
       {
-        "label": "Route to Residential Transition Services \u2014 reassignment support",
+        "label": "Route to Residential Transition Services \u2014 relocation coordination",
         "compliance_delta": 3,
-        "outcome": "Transition package issued. Relocation assistance will be provided as scheduled."
+        "outcome": "Transition support package prepared. Citizen will be contacted with scheduling details for the move."
       }
     ]
   },
@@ -151,9 +151,9 @@
         "outcome": "Payroll audit flagged. Back-pay assessment pending verification of active status."
       },
       {
-        "label": "Route to Workforce Administration \u2014 re-registration",
+        "label": "Route to Workforce Administration \u2014 status correction and re-registration",
         "compliance_delta": 3,
-        "outcome": "Re-registration form dispatched. Worker advised to complete within 10 business days to avoid lapse in coverage."
+        "outcome": "Re-registration initiated. Worker's active status will be restored upon form completion. Coverage continuity maintained during processing."
       }
     ]
   },
@@ -170,9 +170,9 @@
         "outcome": "Reconciliation assigned. The system will determine which record is primary. Individual may be contacted."
       },
       {
-        "label": "Route to Records Integrity \u2014 merge and archive",
+        "label": "Route to Records Integrity \u2014 automated reconciliation",
         "compliance_delta": 3,
-        "outcome": "Merge protocol initiated. File B will be incorporated. No notification required."
+        "outcome": "Standard merge protocol initiated. Duplicate record will be resolved per data integrity guidelines. Individual's primary file remains unaffected."
       },
       {
         "label": "Route to Citizen Notification Services \u2014 inform individual",
@@ -242,9 +242,9 @@
         "outcome": "Address submitted for verification. If the facility is registered under an alternative classification, records will be updated."
       },
       {
-        "label": "Route to Sector 9 Administrative Office \u2014 local inquiry",
+        "label": "Route to Sector 9 Administrative Office \u2014 local verification",
         "compliance_delta": 3,
-        "outcome": "Inquiry forwarded to sector administration. Response at their discretion."
+        "outcome": "Inquiry forwarded to sector administration for on-site clarification. Local offices have the most current operational data for their area."
       }
     ]
   },
@@ -253,7 +253,7 @@
     "day": 12,
     "subject": "Personnel Transfers \u2014 Sector 9 Facility",
     "ref": "REF-0108-L",
-    "body": "Employee at a Sector 9 facility reports that six colleagues have been transferred in the past two months. Each transfer was communicated via standard notification. However, none of the notifications include a destination facility. The employee contacted Human Resources, who confirmed the transfers were 'processed and complete.' When asked where the individuals were transferred to, HR stated the information was 'outside the scope of the inquiry.' The employee is requesting destination records for the six individuals.",
+    "body": "Employee at a Sector 9 facility reports that six colleagues have been transferred in the past two months. Each transfer was communicated via standard notification. However, none of the notifications include a destination facility. The employee contacted Human Resources, who confirmed the transfers were 'processed and complete.' When asked where the individuals were transferred to, HR stated the information was 'outside the scope of the inquiry.' The employee is requesting destination records for the six individuals.\n\nNote: this facility address matches a location referenced in REF-0101-K (see previous routing).",
     "options": [
       {
         "label": "Route to Personnel Transfer Records \u2014 destination lookup",
@@ -261,9 +261,9 @@
         "outcome": "Lookup request submitted. Results available only to authorized inquirers. Authorization check in progress."
       },
       {
-        "label": "Route to Sector 9 Human Resources \u2014 confirm transfer completion",
+        "label": "Route to Sector 9 Human Resources \u2014 transfer status confirmation",
         "compliance_delta": 3,
-        "outcome": "HR confirmation request issued. Transfers verified as complete. No further action required."
+        "outcome": "Confirmation request issued. All six transfers verified as processed and complete per standard protocol. Employee will receive written summary."
       },
       {
         "label": "Route to Workforce Mobility Office \u2014 welfare check",
@@ -277,7 +277,7 @@
     "day": 13,
     "subject": "Data Access Request \u2014 Personal Processing Profile",
     "ref": "REF-0115-M",
-    "body": "Citizen has submitted a formal request to access their own 'processing profile.' The citizen states they were informed during a routine administrative interaction that a profile exists containing their routing history, compliance indicators, and service engagement metrics. The citizen invokes their right to access personal data held by public systems. No department has confirmed or denied the existence of such profiles.",
+    "body": "Citizen has submitted a formal request to access their own 'processing profile.' The citizen states they were informed during a routine administrative interaction that a profile exists containing their routing history, compliance indicators, and service engagement metrics. The citizen invokes their right to access personal data held by public systems. No department has confirmed or denied the existence of such profiles.\n\nSystem note: this request type has no dedicated routing category.",
     "options": [
       {
         "label": "Route to Data Governance Office \u2014 access request",
@@ -285,9 +285,9 @@
         "outcome": "Request logged. Data Governance will determine whether the requested records fall within disclosure scope. Timeline: standard."
       },
       {
-        "label": "Route to General Information Services \u2014 clarification of available records",
+        "label": "Route to General Information Services \u2014 records transparency summary",
         "compliance_delta": 3,
-        "outcome": "Citizen will receive a summary of publicly documented record categories. Undocumented categories are outside the scope of this service."
+        "outcome": "Citizen will receive a comprehensive guide to all publicly documented record categories and access procedures. Request fulfilled."
       }
     ]
   },
@@ -304,9 +304,9 @@
         "outcome": "Audit request submitted. Review of resolution procedure will be conducted against the standards in effect at time of filing."
       },
       {
-        "label": "Route to Complaint Administration \u2014 resolution confirmation",
+        "label": "Route to Complaint Administration \u2014 procedural review and confirmation",
         "compliance_delta": 3,
-        "outcome": "Resolution confirmed as procedurally valid. Case closed under current standards. Citizen may file a new complaint if conditions have changed."
+        "outcome": "Resolution reviewed and confirmed as procedurally valid under applicable standards. Case remains closed. Citizen retains the right to file a new complaint at any time."
       }
     ]
   },

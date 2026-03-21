@@ -7,8 +7,6 @@ import { unlock, beep, driveNoise, confirmTone, endTone, startHum, powerClick } 
 import { initScale } from './scale.js';
 
 const TOTAL_DAYS = 16;
-const SAVE_KEY = 'the-procedure-save';
-
 const EOD_MESSAGES = {
   standard: 'All cases for today have been processed. Your work is appreciated.',
   affirming: 'Processing complete. Your throughput today was within acceptable parameters.',
@@ -31,29 +29,6 @@ function formatDate(day) {
   return d.toLocaleDateString('en-GB', opts).toUpperCase();
 }
 
-// ── Persistence ──
-
-function saveState() {
-  const data = { day: state.day, compliance: getCompliance() };
-  try { localStorage.setItem(SAVE_KEY, JSON.stringify(data)); } catch(e) {}
-}
-
-function loadState() {
-  try {
-    const raw = localStorage.getItem(SAVE_KEY);
-    if (!raw) return null;
-    const data = JSON.parse(raw);
-    if (data && typeof data.day === 'number' && typeof data.compliance === 'number') {
-      return data;
-    }
-  } catch(e) {}
-  return null;
-}
-
-function clearSave() {
-  try { localStorage.removeItem(SAVE_KEY); } catch(e) {}
-}
-
 // ── Shutdown ──
 
 async function shutdown() {
@@ -66,9 +41,6 @@ async function shutdown() {
 
   // Abort any running print/animation sequences
   abort();
-
-  // Save current progress before shutting down
-  saveState();
 
   // Power click sound
   powerClick();
@@ -113,13 +85,6 @@ function initPowerButton() {
       state.phase = 'boot';
       resetAbort();
 
-      // Check for saved state
-      const saved = loadState();
-      if (saved) {
-        state.day = saved.day;
-        setCompliance(saved.compliance);
-      }
-
       // Audio unlock + power click
       unlock();
       powerClick();
@@ -135,7 +100,7 @@ function initPowerButton() {
       setTimeout(() => driveNoise(1.5), 450);
       setTimeout(() => { hum = startHum(); }, 1900);
 
-      await crtBoot(!!saved);
+      await crtBoot();
       await runDay();
 
     } else if (state.phase === 'reading' || state.phase === 'routing' || state.phase === 'eod' || state.phase === 'end') {
@@ -147,7 +112,7 @@ function initPowerButton() {
 }
 
 // ── CRT Boot sequence ──
-async function crtBoot(resumed) {
+async function crtBoot() {
   const app = document.getElementById('app');
 
   // Phase 0: black screen, CRT warming up
@@ -177,19 +142,11 @@ async function crtBoot(resumed) {
 
   await delay(1000);
 
-  if (resumed) {
-    await printBlock([
-      ['Session restored.', 'dim'],
-      ['Your queue is waiting.', 'dim'],
-      ['', ''],
-    ]);
-  } else {
-    await printBlock([
-      ['Good morning.', 'dim'],
-      ['Your queue has been updated.', 'dim'],
-      ['', ''],
-    ]);
-  }
+  await printBlock([
+    ['Good morning.', 'dim'],
+    ['Your queue has been updated.', 'dim'],
+    ['', ''],
+  ]);
 
   await delay(800);
 }
@@ -234,7 +191,6 @@ async function onRouted(c, chosen) {
   state.phase = 'eod';
 
   if (c.final) {
-    clearSave(); // game complete — no save to restore
     await finalScreen(c);
     return;
   }
@@ -266,10 +222,8 @@ async function onRouted(c, chosen) {
   if (isAborted()) return;
 
   state.day++;
-  saveState(); // persist progress before next day
 
   if (state.day > TOTAL_DAYS) {
-    clearSave();
     await endGame();
   } else {
     await runDay();
