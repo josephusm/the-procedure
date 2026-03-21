@@ -105,8 +105,7 @@ function initPowerButton() {
   const btn = document.getElementById('power-btn');
   const screen = document.getElementById('crt-screen');
 
-  // Start with screen off
-  screen.classList.add('off');
+  // Screen starts off (class="off" set in HTML to avoid FOUC)
 
   btn.addEventListener('click', async () => {
     if (state.phase === 'off') {
