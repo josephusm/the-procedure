@@ -103,9 +103,9 @@ body.scaled {
   background: repeating-linear-gradient(
     to bottom,
     transparent 0px,
-    transparent 2px,
-    rgba(0,0,0,0.20) 2px,
-    rgba(0,0,0,0.20) 4px
+    transparent 3px,
+    rgba(0,0,0,0.28) 3px,
+    rgba(0,0,0,0.28) 4px
   );
   pointer-events: none;
   z-index: 10;
@@ -119,7 +119,7 @@ body.scaled {
   background: radial-gradient(
     ellipse at center,
     transparent 50%,
-    rgba(0,0,0,0.60) 100%
+    rgba(0,0,0,0.75) 100%
   );
   pointer-events: none;
   z-index: 11;
@@ -172,12 +172,12 @@ body.scaled {
   white-space: pre-wrap;
   word-break: break-word;
   min-height: calc(var(--font-size) * var(--line-height));
-  text-shadow: 0 0 7px var(--green-glow);
+  text-shadow: 0 0 7px var(--green-glow), 0 0 14px rgba(57,255,20,0.25);
 }
 
 .line.dim    { color: var(--green-dim);   text-shadow: 0 0 5px rgba(42,184,14,0.18); }
 .line.faint  { color: var(--green-faint); text-shadow: none; }
-.line.bright { color: #d0ffcc;            text-shadow: 0 0 10px rgba(57,255,20,0.35); }
+.line.bright { color: #d0ffcc;            text-shadow: 0 0 10px rgba(57,255,20,0.35), 0 0 20px rgba(57,255,20,0.15); }
 .line.system { color: var(--green-faint); text-shadow: none; }
 .line.sep    { color: var(--green-faint); text-shadow: none; }
 .line.empty  { min-height: calc(var(--font-size) * var(--line-height)); }
