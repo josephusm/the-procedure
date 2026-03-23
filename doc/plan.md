@@ -60,6 +60,15 @@ the-procedure/
 - [x] CRT boot sequence: POST beep → floppy drive noise → screen flicker → boot text (gated behind power button)
 - [x] Raise hum volume (richer harmonics, LFO modulation, louder at 0.06)
 
+### Phase 4c — Polish (from critical review)
+- [x] All cases have 3 options with distinct deltas (1/2/3) — added d=2 middle options
+- [x] Compliance filtering verified: humane option disappears first, consistently
+- [x] Analytical playtest: min path 20, middle 34, max 45
+- [x] Visual playtest: end-to-end flow, UI, filtering, end screen all confirmed
+- [ ] EOD tone shift sharpness — verify in real play (thresholds 10/20/30 may need tuning)
+- [ ] CRT polish: scanline subtle movement, maybe curvature (low priority)
+- [ ] Early cases: consider subtle unsettling detail (design decision)
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
