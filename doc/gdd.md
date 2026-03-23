@@ -58,10 +58,17 @@ The player should not notice the narrowing until it has already happened.
 
 ## Balance
 
-- **Compliance delta per choice:** 1–3 points. "Correct" choices score higher, "human" choices score lower — but all choices are formally valid.
-- **Option visibility thresholds:** 20 / 40 / 65 / 85 — each threshold removes one option tier
-- **EOD tone thresholds:** 25 / 55 / 80
-- All numbers are tuning parameters, not fixed rules. Adjust during playtesting.
+- **Compliance delta per choice:** always 1, 2, or 3 — distinct per option in every case.
+  - d=1 is the humane choice (welfare check, citizen notification, internal affairs)
+  - d=2 is neutral due process (ombudsman, review board, records coordination)
+  - d=3 is the system's preferred channel (efficient, closed, definitive)
+- **Option visibility thresholds** (three-stage narrowing):
+  - Score < 10: all 3 options shown
+  - Score 10–24: top 2 by delta (d=1 option disappears)
+  - Score ≥ 25: top 1 only (single path)
+- **EOD tone thresholds:** 10 / 20 / 30 — "standard" → "affirming" → "seamless" → "complete"
+- **Score ranges**: min path ≈ 20, middle path ≈ 34, max path ≈ 45
+- All numbers are tuning parameters. The key design constraint: the humane player should still feel the narrowing, and should never end at "standard" tone.
 
 ---
 
@@ -91,11 +98,15 @@ The player should not notice the narrowing until it has already happened.
 - Tone: dry bureaucratic English. No adjectives that signal how to feel.
 - Never use the word "dystopia" in any game text
 - Outcome strings are always neutral procedural confirmations — never dramatic
+- **Every non-final case must have exactly 3 options** with distinct deltas (1, 2, 3)
+- The d=1 option is the humane one — the one the system will cut first
+- The d=2 option is neutral bureaucratic process — plausible but not compassionate
+- The d=3 option is the most "efficient" — the system's preferred channel
 
 ### Cases planned
 - Days 1–5: foundation (noise, missing person, workplace safety, education, medical records)
-- Days 6–15: escalation (10 cases written, covering housing, communication, institutional drift)
-- Day 16: endgame (player's own case)
+- Days 6–15: escalation (10 cases, covering housing, identity, Sector 9, assembly, personnel)
+- Day 16: endgame (player's own case, single option, delta 0)
 
 ---
 

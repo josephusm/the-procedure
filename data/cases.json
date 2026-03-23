@@ -8,7 +8,7 @@
     "options": [
       {
         "label": "Route to Residential Disturbance Register",
-        "compliance_delta": 2,
+        "compliance_delta": 3,
         "outcome": "Case logged. Estimated response: 6\u20138 weeks. Resident will be notified."
       },
       {
@@ -18,7 +18,7 @@
       },
       {
         "label": "Route to Environmental Standards Unit",
-        "compliance_delta": 1,
+        "compliance_delta": 2,
         "outcome": "Noise assessment request submitted. Field visit pending scheduling."
       }
     ]
@@ -32,7 +32,7 @@
     "options": [
       {
         "label": "Route to Missing Persons Intake Form (MP-12)",
-        "compliance_delta": 2,
+        "compliance_delta": 1,
         "outcome": "MP-12 forwarded to relevant unit. Processing time: standard queue."
       },
       {
@@ -84,8 +84,13 @@
         "outcome": "Address cross-referenced with current facility register. If reclassification occurred, parent will be redirected to appropriate enrollment point."
       },
       {
-        "label": "Route to Registration and Enrollment Services",
+        "label": "Route to Education District Office — status inquiry",
         "compliance_delta": 2,
+        "outcome": "Inquiry forwarded to district education authorities. School assignment status will be verified against current records."
+      },
+      {
+        "label": "Route to Registration and Enrollment Services",
+        "compliance_delta": 1,
         "outcome": "Enrollment status check initiated. Results in 2\u20134 weeks."
       }
     ]
@@ -99,12 +104,17 @@
     "options": [
       {
         "label": "Route to Patient Data Access Unit",
-        "compliance_delta": 2,
+        "compliance_delta": 3,
         "outcome": "Request escalated internally. Access subject to processing completion."
       },
       {
-        "label": "Route to Records Administration \u2014 Expedited Review",
+        "label": "Route to Health Services Liaison — patient advocacy",
         "compliance_delta": 2,
+        "outcome": "Advocacy referral created. A liaison officer will contact the individual to discuss access options."
+      },
+      {
+        "label": "Route to Records Administration \u2014 Expedited Review",
+        "compliance_delta": 1,
         "outcome": "Expedited review flag added to file. Priority queue: 4\u20136 weeks."
       }
     ]
@@ -118,7 +128,7 @@
     "options": [
       {
         "label": "Route to Housing Allocation Review Board",
-        "compliance_delta": 2,
+        "compliance_delta": 1,
         "outcome": "Review request submitted. Board convenes quarterly. Next session: pending."
       },
       {
@@ -147,7 +157,7 @@
       },
       {
         "label": "Route to Payroll Discrepancy Unit",
-        "compliance_delta": 2,
+        "compliance_delta": 1,
         "outcome": "Payroll audit flagged. Back-pay assessment pending verification of active status."
       },
       {
@@ -190,7 +200,7 @@
     "options": [
       {
         "label": "Route to Minor Welfare and Registration Unit",
-        "compliance_delta": 2,
+        "compliance_delta": 1,
         "outcome": "Welfare case opened. Field visit to be scheduled. Registration process to begin upon guardian identification."
       },
       {
@@ -238,8 +248,13 @@
     "options": [
       {
         "label": "Route to Municipal Infrastructure Registry \u2014 listing verification",
-        "compliance_delta": 2,
+        "compliance_delta": 1,
         "outcome": "Address submitted for verification. If the facility is registered under an alternative classification, records will be updated."
+      },
+      {
+        "label": "Route to Public Safety Office — multi-report coordination",
+        "compliance_delta": 2,
+        "outcome": "Four reports consolidated into a single inquiry file. Assigned to public safety coordination for assessment."
       },
       {
         "label": "Route to Sector 9 Administrative Office \u2014 local verification",
@@ -281,8 +296,13 @@
     "options": [
       {
         "label": "Route to Data Governance Office \u2014 access request",
-        "compliance_delta": 2,
+        "compliance_delta": 1,
         "outcome": "Request logged. Data Governance will determine whether the requested records fall within disclosure scope. Timeline: standard."
+      },
+      {
+        "label": "Route to Administrative Ombudsman — informal mediation",
+        "compliance_delta": 2,
+        "outcome": "Ombudsman notified. Informal inquiry will be conducted regarding profile existence and access scope."
       },
       {
         "label": "Route to General Information Services \u2014 records transparency summary",
@@ -300,8 +320,13 @@
     "options": [
       {
         "label": "Route to Environmental Review \u2014 case audit",
-        "compliance_delta": 2,
+        "compliance_delta": 1,
         "outcome": "Audit request submitted. Review of resolution procedure will be conducted against the standards in effect at time of filing."
+      },
+      {
+        "label": "Route to Standards Review Board — timeline discrepancy flag",
+        "compliance_delta": 2,
+        "outcome": "Discrepancy between filing date and resolution standards noted. Board will assess whether the timeline gap affects the finding."
       },
       {
         "label": "Route to Complaint Administration \u2014 procedural review and confirmation",

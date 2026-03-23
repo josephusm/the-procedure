@@ -17,18 +17,22 @@ export function set(val) {
 }
 
 // How many options to show for a given case.
-// At low compliance: all options. As it rises, fewer.
+// Three stages: full choice → at most 2 → single option.
 // The system keeps the *most compliant* options and drops the rest.
-// Thresholds calibrated so that even "resistant" players (always picking
-// lowest-compliance option) see the corridor close by day 14–15.
-// Max-compliance players hit single-option around day 9.
+//
+// Every non-final case has 3 options with distinct deltas (1, 2, 3).
+// Score ranges:
+//   Min-compliance path: 20 by day 16 (2-option from day 11, never single-option)
+//   Max-compliance path: 45 by day 16 (single-option from day 10)
+//   Middle path: ~34 by day 16 (single-option from day 13)
+//
+// Design: the humane option (d=1) disappears first, always.
 export function filterOptions(options) {
   const s = score;
   let keep;
-  if (s < 8)       keep = options.length;         // early: full choice
-  else if (s < 15) keep = Math.max(2, options.length - 1); // mid: one drops
-  else if (s < 22) keep = Math.min(2, options.length);     // late-mid: at most 2
-  else              keep = 1;                      // late: one path
+  if (s < 10)      keep = options.length;              // early: full choice
+  else if (s < 25) keep = Math.min(2, options.length); // mid: at most 2
+  else             keep = 1;                           // late: one path
 
   if (keep >= options.length) return options;
 
