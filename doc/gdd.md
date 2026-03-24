@@ -66,9 +66,10 @@ The player should not notice the narrowing until it has already happened.
   - Score < 10: all 3 options shown
   - Score 10–24: top 2 by delta (d=1 option disappears)
   - Score ≥ 25: top 1 only (single path)
-- **EOD tone thresholds:** 10 / 20 / 30 — "standard" → "affirming" → "seamless" → "complete"
-- **Score ranges**: min path ≈ 20, middle path ≈ 34, max path ≈ 45
-- All numbers are tuning parameters. The key design constraint: the humane player should still feel the narrowing, and should never end at "standard" tone.
+- **EOD tone thresholds:** 7 / 15 / 25 — "standard" → "affirming" → "seamless" → "complete"
+- **EOD message pools:** each tier has 3 messages, selected by day (mod 3). Within each tier the wording degrades: the system becomes more concise, more certain, less interested in the operator. The player notices the language changing before noticing that options are disappearing.
+- **Score ranges**: min path ≈ 20 (seamless), middle path ≈ 32 (complete from day 13), max path ≈ 45 (complete from day 9)
+- All numbers are tuning parameters. The key design constraint: the humane player should experience three distinct tones and never end at "standard"; the compliant player should spend the majority of the game at "complete" — a system that has stopped speaking to them.
 
 ---
 

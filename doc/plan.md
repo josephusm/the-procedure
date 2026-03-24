@@ -65,9 +65,9 @@ the-procedure/
 - [x] Compliance filtering verified: humane option disappears first, consistently
 - [x] Analytical playtest: min path 20, middle 34, max 45
 - [x] Visual playtest: end-to-end flow, UI, filtering, end screen all confirmed
-- [ ] EOD tone shift sharpness — verify in real play (thresholds 10/20/30 may need tuning)
+- [x] EOD tone shift: thresholds recalibrated to 7/15/25, message pools (3 per tier) with internal degradation
 - [ ] CRT polish: scanline subtle movement, maybe curvature (low priority)
-- [ ] Early cases: consider subtle unsettling detail (design decision)
+- [x] Early cases reviewed: mundanity IS the design. Foreshadowing would betray the principle. No changes needed.
 
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.

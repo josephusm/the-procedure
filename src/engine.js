@@ -7,11 +7,31 @@ import { unlock, beep, driveNoise, confirmTone, endTone, startHum, powerClick } 
 import { initScale } from './scale.js';
 
 const TOTAL_DAYS = 16;
-const EOD_MESSAGES = {
-  standard: 'All cases for today have been processed. Your work is appreciated.',
-  affirming: 'Processing complete. Your throughput today was within acceptable parameters.',
-  seamless:  'Daily routing cycle complete. No irregularities recorded.',
-  complete:  'Cycle complete.',
+// Each tier has a pool of messages. The day number selects one
+// deterministically (mod pool length). Within each tier the wording
+// degrades subtly — the system becomes more concise, more certain,
+// less interested in the operator as a person.
+const EOD_POOLS = {
+  standard: [
+    'All cases for today have been processed. Your work is appreciated.',
+    'Today\'s queue is clear. Processing was within normal range.',
+    'Queue complete. Your shift has ended. Please log out at the designated time.',
+  ],
+  affirming: [
+    'Processing complete. Your throughput today was within acceptable parameters.',
+    'Your routing accuracy continues to meet expectations. End of day.',
+    'Daily output verified. No corrections needed. Good.',
+  ],
+  seamless: [
+    'Daily routing cycle complete. No irregularities recorded.',
+    'All items routed. System confirms: no deviations.',
+    'Cycle closed. Metrics nominal.',
+  ],
+  complete: [
+    'Cycle complete.',
+    'Complete.',
+    'Done.',
+  ],
 };
 
 let hum = null;
@@ -209,11 +229,13 @@ async function onRouted(c, chosen) {
   setDate(formatDate(state.day));
 
   const tone = eodTone();
+  const pool = EOD_POOLS[tone];
+  const eodMsg = pool[(state.day - 1) % pool.length];
   await printBlock([
     ['END OF DAY', 'system'],
     ['━'.repeat(60), 'sep'],
     ['', ''],
-    [EOD_MESSAGES[tone], 'dim'],
+    [eodMsg, 'dim'],
     ['', ''],
   ]);
 
