@@ -95,11 +95,15 @@ body.scaled {
   animation: flicker 11s infinite;
 }
 
-/* ── Scanlines ── */
+/* ── Scanlines (with slow vertical drift) ── */
 #crt-screen::before {
   content: '';
   position: absolute;
-  inset: 0;
+  /* Extend beyond the screen so drift doesn't reveal blank edges */
+  top: -8px;
+  left: 0;
+  right: 0;
+  bottom: -8px;
   background: repeating-linear-gradient(
     to bottom,
     transparent 0px,
@@ -109,6 +113,43 @@ body.scaled {
   );
   pointer-events: none;
   z-index: 10;
+  animation: scanline-drift 8s linear infinite;
+}
+
+@keyframes scanline-drift {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(4px); }
+}
+
+/* ── Rolling brightness bar (CRT refresh artifact) ── */
+#crt-roll {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9;
+  overflow: hidden;
+}
+
+#crt-roll::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(57, 255, 20, 0.018) 30%,
+    rgba(57, 255, 20, 0.03) 50%,
+    rgba(57, 255, 20, 0.018) 70%,
+    transparent 100%
+  );
+  animation: roll-bar 6s linear infinite;
+}
+
+@keyframes roll-bar {
+  0%   { top: -120px; }
+  100% { top: 100%; }
 }
 
 /* ── Vignette ── */
@@ -358,6 +399,10 @@ body.scaled {
 #crt-screen.off::before,
 #crt-screen.off::after {
   opacity: 0;
+}
+
+#crt-screen.off #crt-roll {
+  display: none;
 }
 
 #crt-screen.off #app {

@@ -66,7 +66,7 @@ the-procedure/
 - [x] Analytical playtest: min path 20, middle 34, max 45
 - [x] Visual playtest: end-to-end flow, UI, filtering, end screen all confirmed
 - [x] EOD tone shift: thresholds recalibrated to 7/15/25, message pools (3 per tier) with internal degradation
-- [ ] CRT polish: scanline subtle movement, maybe curvature (low priority)
+- [x] CRT polish: scanline vertical drift (4px/8s) + rolling brightness bar (120px, 6s cycle)
 - [x] Early cases reviewed: mundanity IS the design. Foreshadowing would betray the principle. No changes needed.
 
 ### Phase 5 — Release
