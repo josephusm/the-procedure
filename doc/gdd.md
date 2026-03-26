@@ -151,7 +151,9 @@ Lessons from game design theory, applied to The Procedure:
 - **Mental modeling** (Schell): games are "pre-digested models of reality." The Procedure is bureaucracy reduced to its essential mechanism — and the mechanism is the message.
 
 ## Out of scope
-- Mobile/responsive layout (this is a desktop terminal experience)
 - Save states (one sitting, like a shift)
 - Achievements or scoring
 - Multiple endings (there is one ending)
+
+## Notes on mobile
+The terminal is a fixed 800×600 element, not a responsive layout. On mobile devices, CSS `transform: scale()` fits the entire CRT into the viewport — the same way a physical terminal would look if you photographed it from further away. The text is small, but everything is visible and interactive. This is a deliberate compromise: the game is a desktop terminal experience that *tolerates* mobile, not one that adapts to it.
