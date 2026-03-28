@@ -155,5 +155,5 @@ Lessons from game design theory, applied to The Procedure:
 - Achievements or scoring
 - Multiple endings (there is one ending)
 
-## Notes on mobile
-The terminal is a fixed 800×600 element, not a responsive layout. On mobile devices, CSS `transform: scale()` fits the entire CRT into the viewport — the same way a physical terminal would look if you photographed it from further away. The text is small, but everything is visible and interactive. This is a deliberate compromise: the game is a desktop terminal experience that *tolerates* mobile, not one that adapts to it.
+## Notes on scaling
+The terminal is a fixed 800×600 element, not a responsive layout. CSS `transform: scale()` fits the entire CRT into the viewport proportionally — scaling up on large desktop screens, down on mobile. The CRT grows or shrinks as a physical object; it never reflows. On a 1920×1080 monitor the terminal fills most of the screen with large, readable text. On a phone it shrinks to fit — the same machine seen from further away. The font, scanlines, bezel, and all effects scale together.

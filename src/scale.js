@@ -1,9 +1,15 @@
-// scale.js — scale-to-fit for small viewports
-// Preserves the exact 800×600 CRT layout by applying CSS transform
+// scale.js — viewport-adaptive CRT scaling
+// Preserves the exact 800×600 layout by applying CSS transform.
+// Scales DOWN on small viewports (mobile/tablet), UP on large ones (desktop).
+// The terminal never reflows — it just gets physically bigger or smaller.
+//
+// Layout approach: the bezel is centered in the viewport using translate(-50%,-50%)
+// combined with left/top 50%, then scale() is applied on top. This sidesteps
+// the problem where flex centering ignores transformed dimensions.
 
-const BEZEL_W = 856;   // 800 + 56 (padding)
-const BEZEL_H = 700;   // approximate total height including bottom bar
-const PADDING = 16;     // minimum breathing room on mobile (px)
+const BEZEL_W = 856;   // 800 + 56px bezel padding
+const BEZEL_H = 700;   // screen + bottom bar approximate height
+const MARGIN = 24;      // breathing room around the CRT (px per side)
 
 let bezel = null;
 
@@ -13,25 +19,11 @@ function applyScale() {
   const vw = window.innerWidth;
   const vh = window.innerHeight;
 
-  if (vw >= BEZEL_W + 64) {
-    // Desktop: no scaling needed
-    bezel.style.transform = '';
-    bezel.style.marginTop = '';
-    document.body.classList.remove('scaled');
-    return;
-  }
+  const scaleW = (vw - MARGIN * 2) / BEZEL_W;
+  const scaleH = (vh - MARGIN * 2) / BEZEL_H;
+  const scale = Math.min(scaleW, scaleH);
 
-  // Mobile/tablet: scale to fit width (with padding)
-  const scaleW = (vw - PADDING) / BEZEL_W;
-  const scaleH = (vh - PADDING) / BEZEL_H;
-  const scale = Math.min(scaleW, scaleH, 1);
-
-  bezel.style.transform = `scale(${scale})`;
-  // Offset negative margin to remove gap left by scaling
-  const actualH = BEZEL_H * scale;
-  const originalH = bezel.offsetHeight;
-  bezel.style.marginBottom = `${actualH - originalH}px`;
-  document.body.classList.add('scaled');
+  bezel.style.transform = `translate(-50%, -50%) scale(${scale})`;
 }
 
 export function initScale() {
@@ -41,7 +33,6 @@ export function initScale() {
   applyScale();
   window.addEventListener('resize', applyScale);
   window.addEventListener('orientationchange', () => {
-    // Delay slightly — some browsers report old dimensions immediately
     setTimeout(applyScale, 100);
   });
 }
