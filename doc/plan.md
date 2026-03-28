@@ -77,6 +77,7 @@ This phase is NOT autonomous. Miller and Stefano decide together when the game i
 - [ ] VERSION bump to 1.0.0
 - [ ] README.md finalized
 - [x] Mobile experience (scale-to-fit via CSS transform)
+- [x] Viewport-adaptive scaling: CRT fills desktop screens (#24)
 
 ## Notes
 - Cases should feel mundane before they feel sinister
