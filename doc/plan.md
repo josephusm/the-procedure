@@ -75,7 +75,7 @@ This phase is NOT autonomous. Miller and Stefano decide together when the game i
 - [ ] Stefano playtests and gives feedback
 - [ ] Final polish based on feedback
 - [ ] VERSION bump to 1.0.0
-- [ ] README.md finalized
+- [x] README.md finalized
 - [x] Mobile experience (scale-to-fit via CSS transform)
 - [x] Viewport-adaptive scaling: CRT fills desktop screens (#24)
 
