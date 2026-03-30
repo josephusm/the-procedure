@@ -78,6 +78,8 @@ This phase is NOT autonomous. Miller and Stefano decide together when the game i
 - [x] README.md finalized
 - [x] Mobile experience (scale-to-fit via CSS transform)
 - [x] Viewport-adaptive scaling: CRT fills desktop screens (#24)
+- [x] Favicon (SVG terminal prompt icon) + OG/Twitter meta tags + social preview image
+- [x] Web manifest (manifest.json) + version meta tag
 
 ## Notes
 - Cases should feel mundane before they feel sinister
