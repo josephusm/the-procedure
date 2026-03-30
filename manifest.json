@@ -1,0 +1,17 @@
+{
+  "name": "The Procedure",
+  "short_name": "Procedure",
+  "description": "You are a functionary. Cases arrive every day. You read them. You route them. You cannot refuse anything.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "version": "0.3.0"
+}
