@@ -63,7 +63,7 @@ the-procedure/
 ### Phase 4c — Polish (from critical review)
 - [x] All cases have 3 options with distinct deltas (1/2/3) — added d=2 middle options
 - [x] Compliance filtering verified: humane option disappears first, consistently
-- [x] Analytical playtest: min path 20, middle 34, max 45
+- [x] Analytical playtest: min path 20, middle 32, max 45
 - [x] Visual playtest: end-to-end flow, UI, filtering, end screen all confirmed
 - [x] EOD tone shift: thresholds recalibrated to 7/15/25, message pools (3 per tier) with internal degradation
 - [x] CRT polish: scanline vertical drift (4px/8s) + rolling brightness bar (120px, 6s cycle)
