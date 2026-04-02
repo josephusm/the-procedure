@@ -69,6 +69,12 @@ the-procedure/
 - [x] CRT polish: scanline vertical drift (4px/8s) + rolling brightness bar (120px, 6s cycle)
 - [x] Early cases reviewed: mundanity IS the design. Foreshadowing would betray the principle. No changes needed.
 
+### Phase 4d — Content pass
+- [x] Outcome voice differentiation: d=1 opens (human contact), d=2 processes (neutral), d=3 closes (case finalized)
+- [x] Cross-case threading via system notes: case 4→9 (education/Sector 3), case 14 (31 retroactive resolutions), case 15→16 (clerk's terminal adjacent)
+- [x] GDD updated with outcome voice rules and threading documentation
+- [x] Visual playtest: boot, case presentation, outcome rendering, system notes all verified
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
