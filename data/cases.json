@@ -9,17 +9,17 @@
       {
         "label": "Route to Residential Disturbance Register",
         "compliance_delta": 3,
-        "outcome": "Case logged. Estimated response: 6\u20138 weeks. Resident will be notified."
+        "outcome": "Case logged in the register. No further action required from this terminal."
       },
       {
         "label": "Route to Community Relations Office",
         "compliance_delta": 1,
-        "outcome": "Liaison assigned. Expected contact with resident: 30\u201345 days."
+        "outcome": "A liaison officer will visit the resident to discuss the situation and mediate if needed."
       },
       {
         "label": "Route to Environmental Standards Unit",
         "compliance_delta": 2,
-        "outcome": "Noise assessment request submitted. Field visit pending scheduling."
+        "outcome": "Noise assessment request submitted. A field technician will schedule a measurement visit."
       }
     ]
   },
@@ -33,17 +33,17 @@
       {
         "label": "Route to Missing Persons Intake Form (MP-12)",
         "compliance_delta": 1,
-        "outcome": "MP-12 forwarded to relevant unit. Processing time: standard queue."
+        "outcome": "Case opened. An assigned officer will attempt contact through last known addresses."
       },
       {
         "label": "Route to Sector 9 Employment Records Office",
         "compliance_delta": 2,
-        "outcome": "Employment status verification request submitted. Response expected: 3\u20135 weeks."
+        "outcome": "Employment status verification request submitted. Employment history is subject to facility-level classification."
       },
       {
         "label": "Route to Central Intake \u2014 preliminary assessment pending formal report",
         "compliance_delta": 3,
-        "outcome": "Case queued for preliminary assessment. Family will receive written acknowledgment."
+        "outcome": "Case queued. The family's inquiry has been recorded and will be available for reference if a formal report is filed."
       }
     ]
   },
@@ -62,12 +62,12 @@
       {
         "label": "Route to Internal Compliance \u2014 standard supervisory audit",
         "compliance_delta": 3,
-        "outcome": "Supervisor review initiated per standard audit protocol. Report will be filed upon completion."
+        "outcome": "Standard audit initiated. The supervisor's record will be updated to reflect the inquiry. No further action required from this terminal."
       },
       {
         "label": "Route to Worker Support Services",
         "compliance_delta": 1,
-        "outcome": "Support referral issued. Caseworker will make contact within 20 business days."
+        "outcome": "Support referral issued. A caseworker will contact the individual directly."
       }
     ]
   },
@@ -76,12 +76,12 @@
     "day": 4,
     "subject": "Education Irregularity \u2014 Primary Facility Sector 3",
     "ref": "REF-0058-D",
-    "body": "Parent reports that children in their building have not attended their registered school for six weeks. When parent visited the building at the registered address, the facility appeared different. Staff at the site stated it was a Processing Coordination Centre. Parent is requesting clarification.",
+    "body": "Parent reports that children in their building have not attended their registered school for six weeks. When parent visited the building at the registered address, the facility appeared different. Staff at the site stated it was a Processing Coordination Centre. Parent is requesting clarification.\n\nSystem note: 3 similar address-status discrepancies have been logged in Sectors 3, 6, and 11 this quarter. No pattern review has been initiated.",
     "options": [
       {
         "label": "Route to Facilities Coordination \u2014 address reclassification check",
         "compliance_delta": 3,
-        "outcome": "Address cross-referenced with current facility register. If reclassification occurred, parent will be redirected to appropriate enrollment point."
+        "outcome": "Address cross-referenced with current facility register. Reclassification confirmed. Parent redirected to appropriate enrollment point. Case closed."
       },
       {
         "label": "Route to Education District Office — status inquiry",
@@ -91,7 +91,7 @@
       {
         "label": "Route to Registration and Enrollment Services",
         "compliance_delta": 1,
-        "outcome": "Enrollment status check initiated. Results in 2\u20134 weeks."
+        "outcome": "Enrollment status check initiated. A registration officer will visit the family's address to assist with re-enrollment."
       }
     ]
   },
@@ -105,17 +105,17 @@
       {
         "label": "Route to Patient Data Access Unit",
         "compliance_delta": 3,
-        "outcome": "Request escalated internally. Access subject to processing completion."
+        "outcome": "Request logged. Access remains subject to processing completion. The individual has been reminded that file requests do not alter processing timelines."
       },
       {
         "label": "Route to Health Services Liaison — patient advocacy",
         "compliance_delta": 2,
-        "outcome": "Advocacy referral created. A liaison officer will contact the individual to discuss access options."
+        "outcome": "Advocacy referral created. A liaison officer will review the access history and contact the individual."
       },
       {
         "label": "Route to Records Administration \u2014 Expedited Review",
         "compliance_delta": 1,
-        "outcome": "Expedited review flag added to file. Priority queue: 4\u20136 weeks."
+        "outcome": "Expedited review flag added. A records officer will attempt to locate the file and contact the patient before the next treatment date."
       }
     ]
   },
@@ -129,17 +129,17 @@
       {
         "label": "Route to Housing Allocation Review Board",
         "compliance_delta": 1,
-        "outcome": "Review request submitted. Board convenes quarterly. Next session: pending."
+        "outcome": "Review request submitted. The citizen's current assignment will be held pending board review. Board convenes quarterly."
       },
       {
         "label": "Route to Directive Registry \u2014 document retrieval",
         "compliance_delta": 2,
-        "outcome": "Registry search initiated. If directive is on file, copy will be forwarded. Expected: 3\u20135 weeks."
+        "outcome": "Registry search initiated. If the directive is on file, a copy will be forwarded. If not, the case will be noted as unresolved."
       },
       {
         "label": "Route to Residential Transition Services \u2014 relocation coordination",
         "compliance_delta": 3,
-        "outcome": "Transition support package prepared. Citizen will be contacted with scheduling details for the move."
+        "outcome": "Transition package prepared. The reassignment is confirmed. Citizen will be contacted with scheduling details for the move."
       }
     ]
   },
@@ -153,17 +153,17 @@
       {
         "label": "Route to Employment Records \u2014 Status Reconciliation",
         "compliance_delta": 2,
-        "outcome": "Reconciliation ticket opened. Status review requires cross-referencing with payroll and facility logs. Timeline: 4\u20138 weeks."
+        "outcome": "Reconciliation ticket opened. Status review requires cross-referencing with payroll and facility logs. The worker's current post assignment is unaffected during review."
       },
       {
         "label": "Route to Payroll Discrepancy Unit",
         "compliance_delta": 1,
-        "outcome": "Payroll audit flagged. Back-pay assessment pending verification of active status."
+        "outcome": "Payroll audit flagged. An investigator will contact the worker and facility supervisor to verify active status and initiate back-pay."
       },
       {
         "label": "Route to Workforce Administration \u2014 status correction and re-registration",
         "compliance_delta": 3,
-        "outcome": "Re-registration initiated. Worker's active status will be restored upon form completion. Coverage continuity maintained during processing."
+        "outcome": "Re-registration form issued. Worker's status will be restored upon completion. The six weeks of unrecorded service will be noted as a processing gap."
       }
     ]
   },
@@ -177,17 +177,17 @@
       {
         "label": "Route to Identity Reconciliation Office",
         "compliance_delta": 2,
-        "outcome": "Reconciliation assigned. The system will determine which record is primary. Individual may be contacted."
+        "outcome": "Reconciliation assigned. An officer will review both files and contact the individual to verify personal details before merge."
       },
       {
         "label": "Route to Records Integrity \u2014 automated reconciliation",
         "compliance_delta": 3,
-        "outcome": "Standard merge protocol initiated. Duplicate record will be resolved per data integrity guidelines. Individual's primary file remains unaffected."
+        "outcome": "Standard merge protocol initiated. The system will resolve the duplicate automatically. The individual will not be contacted unless a discrepancy persists after merge."
       },
       {
         "label": "Route to Citizen Notification Services \u2014 inform individual",
         "compliance_delta": 1,
-        "outcome": "Notification drafted. Individual will receive a summary of the discrepancy within 15 business days."
+        "outcome": "Notification drafted. The individual will receive a full summary of both files and can request corrections before any merge occurs."
       }
     ]
   },
@@ -196,22 +196,22 @@
     "day": 9,
     "subject": "Unregistered Minor \u2014 School Sector 6",
     "ref": "REF-0089-I",
-    "body": "School administrator reports a child who has been attending classes for approximately three months. The child arrives and departs at standard hours. Academic performance is satisfactory. However, no enrollment record exists. No guardian is listed. The address provided on informal paperwork does not correspond to a residential unit. When staff asked the child where they live, the child provided a location code that does not appear in the housing directory.",
+    "body": "School administrator reports a child who has been attending classes for approximately three months. The child arrives and departs at standard hours. Academic performance is satisfactory. However, no enrollment record exists. No guardian is listed. The address provided on informal paperwork does not correspond to a residential unit. When staff asked the child where they live, the child provided a location code that does not appear in the housing directory.\n\nSystem note: the school is located in Sector 3. This sector had an education facility reclassified as a Processing Coordination Centre earlier this quarter (see REF-0058-D).",
     "options": [
       {
         "label": "Route to Minor Welfare and Registration Unit",
         "compliance_delta": 1,
-        "outcome": "Welfare case opened. Field visit to be scheduled. Registration process to begin upon guardian identification."
+        "outcome": "Welfare case opened. A caseworker will visit the school to speak with the child and attempt to locate a guardian."
       },
       {
         "label": "Route to Housing Directory \u2014 address verification",
         "compliance_delta": 3,
-        "outcome": "Address lookup submitted. If the location code is valid, records will be updated. If not, case will be reclassified."
+        "outcome": "Address lookup submitted. If the location code is invalid, the child's informal paperwork will be flagged and the case reclassified as an address discrepancy."
       },
       {
         "label": "Route to Educational Enrollment \u2014 retroactive registration",
         "compliance_delta": 2,
-        "outcome": "Provisional enrollment created. Child's attendance record will be formalized. Guardian notification pending."
+        "outcome": "Provisional enrollment created. Child's attendance will be formalized. Guardian notification pending through standard channels."
       }
     ]
   },
@@ -225,17 +225,17 @@
       {
         "label": "Route to Public Space Allocation Office",
         "compliance_delta": 2,
-        "outcome": "Alternative space search initiated. Availability subject to current allocation schedule."
+        "outcome": "Alternative space search initiated. The association will be provided with a list of currently designated assembly spaces, if any."
       },
       {
         "label": "Route to Zoning and Classification Appeals",
         "compliance_delta": 1,
-        "outcome": "Reclassification review requested. Appeals are processed in the order received. Current backlog: 14 months."
+        "outcome": "Reclassification review requested. The original permit application will be preserved as supporting documentation. Appeals backlog: 14 months."
       },
       {
         "label": "Route to Community Coordination \u2014 administrative guidance",
         "compliance_delta": 3,
-        "outcome": "Association advised on approved assembly formats. Updated guidelines will be mailed."
+        "outcome": "Association advised on approved assembly formats and requirements. The reclassification itself is not subject to review through this channel."
       }
     ]
   },
@@ -249,17 +249,17 @@
       {
         "label": "Route to Municipal Infrastructure Registry \u2014 listing verification",
         "compliance_delta": 1,
-        "outcome": "Address submitted for verification. If the facility is registered under an alternative classification, records will be updated."
+        "outcome": "Address submitted for cross-referencing against all registry categories. Reporting individuals will be notified of findings."
       },
       {
         "label": "Route to Public Safety Office — multi-report coordination",
         "compliance_delta": 2,
-        "outcome": "Four reports consolidated into a single inquiry file. Assigned to public safety coordination for assessment."
+        "outcome": "Four reports consolidated into a single inquiry file. A public safety officer will assess the site and update the file."
       },
       {
         "label": "Route to Sector 9 Administrative Office \u2014 local verification",
         "compliance_delta": 3,
-        "outcome": "Inquiry forwarded to sector administration for on-site clarification. Local offices have the most current operational data for their area."
+        "outcome": "Inquiry forwarded to the sector that administers the address in question. Reporting individuals will receive confirmation that the inquiry has been routed."
       }
     ]
   },
@@ -273,17 +273,17 @@
       {
         "label": "Route to Personnel Transfer Records \u2014 destination lookup",
         "compliance_delta": 2,
-        "outcome": "Lookup request submitted. Results available only to authorized inquirers. Authorization check in progress."
+        "outcome": "Lookup request submitted. Results are subject to authorization level of the requesting employee. Authorization check in progress."
       },
       {
         "label": "Route to Sector 9 Human Resources \u2014 transfer status confirmation",
         "compliance_delta": 3,
-        "outcome": "Confirmation request issued. All six transfers verified as processed and complete per standard protocol. Employee will receive written summary."
+        "outcome": "All six transfers verified as processed and complete per standard protocol. No destination information is required for case closure. Employee will receive written confirmation."
       },
       {
         "label": "Route to Workforce Mobility Office \u2014 welfare check",
         "compliance_delta": 1,
-        "outcome": "Welfare inquiry initiated for transferred individuals. Contact attempts will be made through standard channels."
+        "outcome": "Welfare inquiry opened for all six individuals. A mobility officer will attempt to contact each person at their last known assignment."
       }
     ]
   },
@@ -297,17 +297,17 @@
       {
         "label": "Route to Data Governance Office \u2014 access request",
         "compliance_delta": 1,
-        "outcome": "Request logged. Data Governance will determine whether the requested records fall within disclosure scope. Timeline: standard."
+        "outcome": "Request logged. Data Governance will review whether the requested records exist and fall within disclosure scope. The citizen will be contacted with findings."
       },
       {
         "label": "Route to Administrative Ombudsman — informal mediation",
         "compliance_delta": 2,
-        "outcome": "Ombudsman notified. Informal inquiry will be conducted regarding profile existence and access scope."
+        "outcome": "Ombudsman notified. An informal inquiry will be conducted regarding the existence and scope of processing profiles."
       },
       {
         "label": "Route to General Information Services \u2014 records transparency summary",
         "compliance_delta": 3,
-        "outcome": "Citizen will receive a comprehensive guide to all publicly documented record categories and access procedures. Request fulfilled."
+        "outcome": "Citizen will receive a guide to all publicly documented record categories and access procedures. The existence of undocumented categories is outside the scope of this response."
       }
     ]
   },
@@ -316,22 +316,22 @@
     "day": 14,
     "subject": "Complaint Resolution \u2014 Retroactive Status Change",
     "ref": "REF-0122-N",
-    "body": "Citizen filed a complaint fourteen months ago regarding water quality in their residential block. The complaint was assigned case number REF-0019-A and entered the Environmental Review Queue. The citizen has now been notified that the case status has been changed to 'Resolved.' No inspection was conducted. No communication was sent between filing and resolution. The resolution summary states: 'Conditions reassessed. Parameters within current standards.' The citizen notes that current standards were revised six months after the complaint was filed. The citizen is requesting clarification on what action, if any, was taken.",
+    "body": "Citizen filed a complaint fourteen months ago regarding water quality in their residential block. The complaint was assigned case number REF-0019-A and entered the Environmental Review Queue. The citizen has now been notified that the case status has been changed to 'Resolved.' No inspection was conducted. No communication was sent between filing and resolution. The resolution summary states: 'Conditions reassessed. Parameters within current standards.' The citizen notes that current standards were revised six months after the complaint was filed. The citizen is requesting clarification on what action, if any, was taken.\n\nSystem note: retroactive resolution via updated standards has been applied to 31 cases in the Environmental Review Queue this quarter.",
     "options": [
       {
         "label": "Route to Environmental Review \u2014 case audit",
         "compliance_delta": 1,
-        "outcome": "Audit request submitted. Review of resolution procedure will be conducted against the standards in effect at time of filing."
+        "outcome": "Audit request submitted. Review will compare the resolution against the standards in effect at the time of filing, not the current revision."
       },
       {
         "label": "Route to Standards Review Board — timeline discrepancy flag",
         "compliance_delta": 2,
-        "outcome": "Discrepancy between filing date and resolution standards noted. Board will assess whether the timeline gap affects the finding."
+        "outcome": "Discrepancy between filing date and applicable standards noted. The Board will assess whether the revision affects the validity of the finding."
       },
       {
         "label": "Route to Complaint Administration \u2014 procedural review and confirmation",
         "compliance_delta": 3,
-        "outcome": "Resolution reviewed and confirmed as procedurally valid under applicable standards. Case remains closed. Citizen retains the right to file a new complaint at any time."
+        "outcome": "Resolution confirmed as procedurally valid under current applicable standards. Case remains closed. The citizen may file a new complaint if conditions warrant."
       }
     ]
   },
@@ -340,22 +340,22 @@
     "day": 15,
     "subject": "Internal Report \u2014 Personnel File Modification",
     "ref": "REF-0130-O",
-    "body": "A processing clerk in this department has filed an internal report. The clerk states that upon routine review of their own personnel file, they found modifications they did not authorize. Specifically: their start date has been changed, their department history shows a transfer that did not occur, and a performance note has been added referencing a review meeting the clerk states never took place. The clerk has requested a record of who made the modifications and when. System logs show the changes were made by an administrative batch process. No individual user is associated with the edits.",
+    "body": "A processing clerk in this department has filed an internal report. The clerk states that upon routine review of their own personnel file, they found modifications they did not authorize. Specifically: their start date has been changed, their department history shows a transfer that did not occur, and a performance note has been added referencing a review meeting the clerk states never took place. The clerk has requested a record of who made the modifications and when. System logs show the changes were made by an administrative batch process. No individual user is associated with the edits.\n\nSystem note: the clerk's terminal is adjacent to this one.",
     "options": [
       {
         "label": "Route to Internal Affairs \u2014 unauthorized modification inquiry",
         "compliance_delta": 1,
-        "outcome": "Inquiry opened. The clerk will be contacted for a statement. Batch process logs will be reviewed."
+        "outcome": "Inquiry opened. An investigator will meet with the clerk to take a statement. Batch process logs and backup records will be reviewed."
       },
       {
         "label": "Route to Personnel Records \u2014 data correction request",
         "compliance_delta": 2,
-        "outcome": "Correction request submitted. The file will be compared against backup records, if available."
+        "outcome": "Correction request submitted. The file will be compared against backup records, if available. The clerk will be notified of any discrepancies found."
       },
       {
         "label": "Route to System Administration \u2014 batch process audit",
         "compliance_delta": 3,
-        "outcome": "Audit request logged. Batch processes are reviewed on a quarterly cycle. Next review: pending."
+        "outcome": "Audit request logged. Batch processes operate under system-level authorization and are reviewed on a quarterly cycle. No individual accountability is expected."
       }
     ]
   },
