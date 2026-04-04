@@ -174,6 +174,14 @@ Lessons from game design theory, applied to The Procedure:
 
 - **Mental modeling** (Schell): games are "pre-digested models of reality." The Procedure is bureaucracy reduced to its essential mechanism — and the mechanism is the message.
 
+## Terminal state
+
+After case-016 is processed and the player powers off the machine, the power button goes permanently inert. The icon dims. The screen stays dark. No amount of clicking will bring it back.
+
+The only way to restart is to refresh the page — an act that breaks the fiction. You are no longer operating within the system. You are starting a new shift from scratch, as if nothing happened.
+
+This is the final move in the compliance arc: the system took your options one by one (3 → 2 → 1), then took the last thing you controlled — the power switch. The machine is done with you. It was always going to be done with you.
+
 ## Out of scope
 - Save states (one sitting, like a shift)
 - Achievements or scoring
