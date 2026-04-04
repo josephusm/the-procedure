@@ -52,7 +52,9 @@ function formatDate(day) {
 // ── Shutdown ──
 
 async function shutdown() {
-  if (state.phase === 'off' || state.phase === 'shutdown') return;
+  if (state.phase === 'off' || state.phase === 'shutdown' || state.phase === 'done') return;
+
+  const wasEnd = state.phase === 'end';
   state.phase = 'shutdown';
 
   const btn = document.getElementById('power-btn');
@@ -89,7 +91,14 @@ async function shutdown() {
   app.style.transition = '';
   btn.classList.remove('on');
 
-  state.phase = 'off';
+  // If the game reached the final screen (case-016), the machine is done with you.
+  // The power button goes inert. The screen stays dark. Refresh to restart.
+  if (wasEnd) {
+    state.phase = 'done';
+    btn.classList.add('dead');
+  } else {
+    state.phase = 'off';
+  }
 }
 
 // ── Power on: button click → audio unlock → boot ──
@@ -127,7 +136,7 @@ function initPowerButton() {
       // ── Power OFF ──
       await shutdown();
     }
-    // During 'boot', 'shutdown' — ignore clicks
+    // During 'boot', 'shutdown', 'done' — ignore clicks
   });
 }
 
