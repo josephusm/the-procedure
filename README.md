@@ -30,7 +30,7 @@ All audio is procedural (Web Audio API) — the ambient hum, the keystrokes, the
 
 ## Design
 
-The full design document lives in [`doc/gdd.md`](doc/gdd.md). The short version:
+The full design document lives in [`doc/gdd.md`](doc/gdd.md). For release-facing feedback, there is also a focused [`doc/playtest.md`](doc/playtest.md) packet for Stefano's playtest. The short version:
 
 - The compliance score is never shown. The player should *feel* the narrowing without seeing the number.
 - End-of-day messages degrade across four tiers. The system becomes more concise, more certain, less interested in you as a person.
