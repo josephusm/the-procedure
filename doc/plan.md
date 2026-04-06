@@ -75,6 +75,12 @@ the-procedure/
 - [x] GDD updated with outcome voice rules and threading documentation
 - [x] Visual playtest: boot, case presentation, outcome rendering, system notes all verified
 
+### Phase 4e — Cold-start affordance (from review)
+The playtest packet assumes the game can be opened cold. The off-state must invite the first gesture without explanatory copy outside the machine.
+- [x] Off-state affordance: player can tell, on desktop and mobile, that the machine can be powered on
+- [x] Keyboard power-on (Enter / Space) mirrors the power button on desktop
+- [x] Visual playtest: cold open verified on desktop and mobile
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

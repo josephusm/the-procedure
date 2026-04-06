@@ -96,8 +96,10 @@ async function shutdown() {
   if (wasEnd) {
     state.phase = 'done';
     btn.classList.add('dead');
+    screen.classList.add('done');
   } else {
     state.phase = 'off';
+    screen.classList.remove('done');
   }
 }
 
@@ -113,6 +115,7 @@ function initPowerButton() {
       // ── Power ON ──
       state.phase = 'boot';
       resetAbort();
+      screen.classList.remove('done');
 
       // Audio unlock + power click
       unlock();
@@ -137,6 +140,16 @@ function initPowerButton() {
       await shutdown();
     }
     // During 'boot', 'shutdown', 'done' — ignore clicks
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.repeat) return;
+    if (state.phase !== 'off') return;
+    if (btn.classList.contains('dead')) return;
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+
+    e.preventDefault();
+    btn.click();
   });
 }
 

@@ -20,7 +20,7 @@ Kafka's *The Trial* — a system that processes without resolving. *Papers, Plea
 
 ## How to play
 
-Click the power button. The machine boots. Read the case. Choose a routing option by clicking it, or press the number key and Enter. One sitting, about 15 minutes. No saves — like a shift.
+Click the power button — or press Enter / Space on desktop. The machine boots. Read the case. Choose a routing option by clicking it, or press the number key and Enter. One sitting, about 15 minutes. No saves — like a shift.
 
 ## Technical
 

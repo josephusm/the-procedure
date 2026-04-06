@@ -176,6 +176,8 @@ Lessons from game design theory, applied to The Procedure:
 
 ## Terminal state
 
+Before boot, the machine should be legible as a machine, not just a dead rectangle. The cold-open affordance must stay diegetic: a faint standby prompt and a breathing power icon are enough. The game can ask for the first gesture, but it should not need explanatory copy outside the object.
+
 After case-016 is processed and the player powers off the machine, the power button goes permanently inert. The icon dims. The screen stays dark. No amount of clicking will bring it back.
 
 The only way to restart is to refresh the page — an act that breaks the fiction. You are no longer operating within the system. You are starting a new shift from scratch, as if nothing happened.
