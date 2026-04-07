@@ -324,6 +324,69 @@ html, body {
   50% { opacity: 0.9; }
 }
 
+/* ── Standby overlay: low-current terminal, not a dead rectangle ── */
+#standby-overlay {
+  display: none;
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  padding: 10px 18px 8px;
+  color: rgba(57, 255, 20, 0.18);
+  font-family: var(--font);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  pointer-events: none;
+  user-select: none;
+  flex-direction: column;
+}
+
+#crt-screen.off:not(.done) #standby-overlay {
+  display: flex;
+}
+
+#standby-status {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 5px;
+  border-bottom: 1px solid rgba(57, 255, 20, 0.08);
+  color: rgba(57, 255, 20, 0.14);
+  text-shadow: none;
+  letter-spacing: 0.03em;
+}
+
+#standby-body {
+  flex: 1;
+  padding: 12px 0 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.standby-line {
+  color: rgba(57, 255, 20, 0.19);
+  text-shadow: 0 0 6px rgba(57, 255, 20, 0.05);
+}
+
+#standby-input {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  border-top: 1px solid rgba(57, 255, 20, 0.08);
+  padding: 4px 0 2px;
+  color: rgba(57, 255, 20, 0.2);
+}
+
+#standby-input .prompt {
+  color: rgba(57, 255, 20, 0.14);
+  margin-right: 4px;
+}
+
+.standby-cursor {
+  display: inline-block;
+  animation: blink 1.1s step-end infinite;
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.08);
+}
+
 /* ── Bezel bottom row ── */
 #bezel-bottom {
   display: flex;
@@ -422,9 +485,12 @@ html, body {
 /* ── CRT off state ── */
 #crt-screen.off {
   animation: none;
+  background:
+    radial-gradient(ellipse at center, rgba(10, 32, 10, 0.55) 0%, rgba(8, 14, 8, 0.92) 62%, rgba(4, 6, 4, 1) 100%);
   box-shadow:
     inset 0 0 80px rgba(0,0,0,0.9),
-    inset 0 0 16px rgba(0,0,0,0.6);
+    inset 0 0 16px rgba(0,0,0,0.6),
+    0 0 20px rgba(57,255,20,0.025);
 }
 
 #crt-screen.off::before,

@@ -81,6 +81,12 @@ The playtest packet assumes the game can be opened cold. The off-state must invi
 - [x] Keyboard power-on (Enter / Space) mirrors the power button on desktop
 - [x] Visual playtest: cold open verified on desktop and mobile
 
+### Phase 4f — Standby ritual / first gesture
+The affordance problem is not only legibility. The first contact must already feel like contact with the system, not with a dead rectangle waiting for a UI event.
+- [x] Off-state becomes a low-current standby field with diegetic terminal language, not just a bottom prompt
+- [x] First gesture reads as entering an already-live machine, not merely turning on a webpage
+- [x] Visual playtest: standby state + first case transition verified on desktop and mobile
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

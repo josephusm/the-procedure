@@ -176,7 +176,7 @@ Lessons from game design theory, applied to The Procedure:
 
 ## Terminal state
 
-Before boot, the machine should be legible as a machine, not just a dead rectangle. The cold-open affordance must stay diegetic: a faint standby prompt and a breathing power icon are enough. The game can ask for the first gesture, but it should not need explanatory copy outside the object.
+Before boot, the machine should be legible as a machine, not just a dead rectangle. The cold-open affordance must stay diegetic, but legibility alone is not enough: the player should feel that the terminal is already there in low current, waiting. A standby field, a live cursor, and machine-language hints are better than explanatory copy. The first gesture should read as entering an already-live procedure, not as waking a blank webpage.
 
 After case-016 is processed and the player powers off the machine, the power button goes permanently inert. The icon dims. The screen stays dark. No amount of clicking will bring it back.
 
