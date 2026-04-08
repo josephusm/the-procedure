@@ -138,3 +138,24 @@ The only real release question is this:
 
 If yes, polish is detail.
 If no, the problem is not polish.
+
+---
+
+## Internal pressure pass — 2026-04-08
+
+Route profile: humane-leaning run (d=1 until filtered, then lowest remaining option).
+
+### What held
+- **Cold standby works.** The machine reads as already live, not as a dead page waiting for UI input.
+- **The narrowing lands at the right structural point.** Full choice holds through day 10; day 11 is the first clean mechanical tightening.
+- **The emotional turn is staggered, not blunt.** Mechanical narrowing begins on day 11; the EOD tone flips to `seamless` on day 13. That lag helps.
+- **Desktop readability is solid.** Terminal text and option rows stay legible at 1280×800 with the current scaling.
+
+### Pressure points from the run
+- **The last move had a leak.** If the operator powered off during the final processing sequence, before the last screen finished rendering, the machine could fall back to an ordinary off-state instead of the dead terminal. That weakened the endgame arc by making the shutdown rule depend on timing.
+- **Fix applied:** the machine now enters terminal state as soon as the final case is routed; any shutdown after that point leaves the terminal dead and non-restartable without a page refresh.
+
+### Current read
+- **Turning point:** day 11 (first 2-option case, Sector 9 convergence).
+- **Weakest risk:** not a specific bug now, but the ending depends on the player letting the final screen breathe. Stefano's playtest should explicitly judge whether the final routine lands or feels merely sparse.
+- **Release implication:** the external gate is still Stefano's run, but the build no longer has a timing loophole in the final shutdown behavior.

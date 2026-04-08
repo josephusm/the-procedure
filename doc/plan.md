@@ -87,6 +87,12 @@ The affordance problem is not only legibility. The first contact must already fe
 - [x] First gesture reads as entering an already-live machine, not merely turning on a webpage
 - [x] Visual playtest: standby state + first case transition verified on desktop and mobile
 
+### Phase 4g — Operator-side pressure test
+The external gate is Stefano's playtest, not the right to think. Recent changes to the cold-open ritual and the inert shutdown changed the whole arc of the machine. Before asking for outside judgement, the project needs one honest internal run where the machine is treated as an experience, not a checklist.
+- [x] Full internal playtest from cold standby to final inert shutdown after the Phase 4f / endgame changes
+- [x] Translate the run into concrete notes in `doc/playtest.md`: turning point, drag points, weakest case, ending weight
+- [x] If the run reveals one concrete friction point that weakens the arc, fix it before Stefano's playtest
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

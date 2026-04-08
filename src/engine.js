@@ -39,6 +39,7 @@ let hum = null;
 let state = {
   day: 1,
   phase: 'off',
+  machineDone: false,
 };
 
 function formatDate(day) {
@@ -54,7 +55,7 @@ function formatDate(day) {
 async function shutdown() {
   if (state.phase === 'off' || state.phase === 'shutdown' || state.phase === 'done') return;
 
-  const wasEnd = state.phase === 'end';
+  const wasEnd = state.phase === 'end' || state.machineDone;
   state.phase = 'shutdown';
 
   const btn = document.getElementById('power-btn');
@@ -233,6 +234,7 @@ async function onRouted(c, chosen) {
   state.phase = 'eod';
 
   if (c.final) {
+    state.machineDone = true;
     await finalScreen(c);
     return;
   }
