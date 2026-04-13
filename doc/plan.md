@@ -98,6 +98,7 @@ GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)
+- [x] VERSION bump to 0.4.0 (reflects Phases 4d–4g: content pass, terminal shutdown, cold-start, standby ritual, pressure test)
 - [ ] Stefano playtests and gives feedback
 - [ ] Final polish based on feedback
 - [ ] VERSION bump to 1.0.0
