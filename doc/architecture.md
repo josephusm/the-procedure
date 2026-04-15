@@ -8,7 +8,7 @@ Load `index.html` in a browser and the game runs.
 ## Game loop
 
 ```
-boot → day N begins → case loads → player reads → player routes → outcome logged → day N ends → day N+1
+boot → day N begins → case loads → player reads → player routes → outcome logged → optional afterimage lands → day N ends → day N+1
 ```
 
 State lives in a plain JS object (`engine.js`). No localStorage — the game is not meant to be saved. It is meant to be completed in one sitting, like a shift.
@@ -48,7 +48,8 @@ Cases are defined in `data/cases.json` as an array of objects:
     {
       "label": "Route to Residential Disturbance Register",
       "compliance_delta": 2,
-      "outcome": "Your routing has been logged. Processing time: 6–8 weeks."
+      "outcome": "Your routing has been logged. Processing time: 6–8 weeks.",
+      "afterimage": "The file remains in the register until inspection capacity is available."
     },
     {
       "label": "Route to Community Relations Office",
@@ -58,6 +59,8 @@ Cases are defined in `data/cases.json` as an array of objects:
   ]
 }
 ```
+
+`afterimage` is optional. When present, it prints after the selected outcome with a short delay, before the end-of-day screen. It is not commentary. It is the routed channel completing its thought one beat too late for the operator to stay innocent.
 
 ## Renderer
 

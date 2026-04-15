@@ -2,7 +2,7 @@
 
 This is not a generic QA checklist. The game already runs. The question now is whether it lands.
 
-**Current version:** 0.3.0  
+**Current version:** 0.4.0  
 **Status:** content-complete pre-release build  
 **Target session length:** one sitting, roughly 10–15 minutes  
 **Recommended first playthrough:** desktop/laptop, audio on, no prior explanation
@@ -159,3 +159,22 @@ Route profile: humane-leaning run (d=1 until filtered, then lowest remaining opt
 - **Turning point:** day 11 (first 2-option case, Sector 9 convergence).
 - **Weakest risk:** not a specific bug now, but the ending depends on the player letting the final screen breathe. Stefano's playtest should explicitly judge whether the final routine lands or feels merely sparse.
 - **Release implication:** the external gate is still Stefano's run, but the build no longer has a timing loophole in the final shutdown behavior.
+
+## Post-routing afterimage pass — 2026-04-15
+
+Target: verify that the new post-routing beat lands after the click, sharpens complicity, and stays short enough not to read like commentary.
+
+### Targeted run
+- Desktop preview at 1280×800.
+- Auto-advanced internal run with accelerated timers, then screenshot burst across the late-case transition.
+- Verified on the day 9 case (`REF-0089-I`) through route outcome → afterimage → end-of-day.
+
+### What held
+- **The beat is visible.** The player gets the formal routing confirmation first, then a second line lands one beat later before the day closes.
+- **It sharpens rather than explains.** The afterimage line in the school / housing case reframes the route as administrative disappearance without spelling out a thesis.
+- **Readability holds.** Outcome + afterimage still fit within the terminal frame at desktop size; no overlap or broken layout appeared in the captured sequence.
+- **Timing feels right.** The pause is long enough to register as a turn, short enough not to stall the machine.
+
+### Current read
+- The new beat fixes a real hollowness in the late cases. Correct routing no longer exits cleanly.
+- Next external question is not whether the mechanic exists, but whether Stefano feels it accumulating across a full first run.

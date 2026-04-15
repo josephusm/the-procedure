@@ -93,6 +93,13 @@ The external gate is Stefano's playtest, not the right to think. Recent changes 
 - [x] Translate the run into concrete notes in `doc/playtest.md`: turning point, drag points, weakest case, ending weight
 - [x] If the run reveals one concrete friction point that weakens the arc, fix it before Stefano's playtest
 
+### Phase 4h — Post-routing afterimage
+Recent review exposed a real risk the plan was not carrying yet: the player can route correctly and still feel nothing. The route has to feel formally correct at click-time, then turn inside the hand a beat later, before the day closes.
+- [x] Define the afterimage rule in the GDD: implication lands after routing, not before
+- [x] Add optional post-routing afterimage lines to the engine / case data model
+- [x] Write afterimage lines for the late systemic cases where closure, delay, or sealing should be felt one beat later
+- [x] Targeted playtest: verify the added beat sharpens complicity without becoming explanation
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

@@ -177,17 +177,20 @@
       {
         "label": "Route to Identity Reconciliation Office",
         "compliance_delta": 2,
-        "outcome": "Reconciliation assigned. An officer will review both files and contact the individual to verify personal details before merge."
+        "outcome": "Reconciliation assigned. An officer will review both files and contact the individual to verify personal details before merge.",
+        "afterimage": "Dependent and employment records remain split pending officer review."
       },
       {
         "label": "Route to Records Integrity \u2014 automated reconciliation",
         "compliance_delta": 3,
-        "outcome": "Standard merge protocol initiated. The system will resolve the duplicate automatically. The individual will not be contacted unless a discrepancy persists after merge."
+        "outcome": "Standard merge protocol initiated. The system will resolve the duplicate automatically. The individual will not be contacted unless a discrepancy persists after merge.",
+        "afterimage": "The archived branch is scheduled for consolidation under the active file."
       },
       {
         "label": "Route to Citizen Notification Services \u2014 inform individual",
         "compliance_delta": 1,
-        "outcome": "Notification drafted. The individual will receive a full summary of both files and can request corrections before any merge occurs."
+        "outcome": "Notification drafted. The individual will receive a full summary of both files and can request corrections before any merge occurs.",
+        "afterimage": "Automated reconciliation is paused until the notice window closes or the individual responds."
       }
     ]
   },
@@ -201,17 +204,20 @@
       {
         "label": "Route to Minor Welfare and Registration Unit",
         "compliance_delta": 1,
-        "outcome": "Welfare case opened. A caseworker will visit the school to speak with the child and attempt to locate a guardian."
+        "outcome": "Welfare case opened. A caseworker will visit the school to speak with the child and attempt to locate a guardian.",
+        "afterimage": "Class attendance remains uninterrupted until guardian status is established."
       },
       {
         "label": "Route to Housing Directory \u2014 address verification",
         "compliance_delta": 3,
-        "outcome": "Address lookup submitted. If the location code is invalid, the child's informal paperwork will be flagged and the case reclassified as an address discrepancy."
+        "outcome": "Address lookup submitted. If the location code is invalid, the child's informal paperwork will be flagged and the case reclassified as an address discrepancy.",
+        "afterimage": "If no address record is found, the child's school presence will continue as an enrollment anomaly, not a welfare file."
       },
       {
         "label": "Route to Educational Enrollment \u2014 retroactive registration",
         "compliance_delta": 2,
-        "outcome": "Provisional enrollment created. Child's attendance will be formalized. Guardian notification pending through standard channels."
+        "outcome": "Provisional enrollment created. Child's attendance will be formalized. Guardian notification pending through standard channels.",
+        "afterimage": "Attendance is now regularized, but residence status remains unresolved."
       }
     ]
   },
@@ -225,17 +231,20 @@
       {
         "label": "Route to Public Space Allocation Office",
         "compliance_delta": 2,
-        "outcome": "Alternative space search initiated. The association will be provided with a list of currently designated assembly spaces, if any."
+        "outcome": "Alternative space search initiated. The association will be provided with a list of currently designated assembly spaces, if any.",
+        "afterimage": "The original meeting request remains inactive while alternative sites are reviewed."
       },
       {
         "label": "Route to Zoning and Classification Appeals",
         "compliance_delta": 1,
-        "outcome": "Reclassification review requested. The original permit application will be preserved as supporting documentation. Appeals backlog: 14 months."
+        "outcome": "Reclassification review requested. The original permit application will be preserved as supporting documentation. Appeals backlog: 14 months.",
+        "afterimage": "The association keeps its place in the appeals backlog, not the assembly queue."
       },
       {
         "label": "Route to Community Coordination \u2014 administrative guidance",
         "compliance_delta": 3,
-        "outcome": "Association advised on approved assembly formats and requirements. The reclassification itself is not subject to review through this channel."
+        "outcome": "Association advised on approved assembly formats and requirements. The reclassification itself is not subject to review through this channel.",
+        "afterimage": "The initial permit file has been moved to closed guidance correspondence."
       }
     ]
   },
@@ -249,17 +258,20 @@
       {
         "label": "Route to Municipal Infrastructure Registry \u2014 listing verification",
         "compliance_delta": 1,
-        "outcome": "Address submitted for cross-referencing against all registry categories. Reporting individuals will be notified of findings."
+        "outcome": "Address submitted for cross-referencing against all registry categories. Reporting individuals will be notified of findings.",
+        "afterimage": "The address remains unlisted in public systems until the registries reconcile one another."
       },
       {
         "label": "Route to Public Safety Office — multi-report coordination",
         "compliance_delta": 2,
-        "outcome": "Four reports consolidated into a single inquiry file. A public safety officer will assess the site and update the file."
+        "outcome": "Four reports consolidated into a single inquiry file. A public safety officer will assess the site and update the file.",
+        "afterimage": "Separate witness statements now move under one municipal inquiry number."
       },
       {
         "label": "Route to Sector 9 Administrative Office \u2014 local verification",
         "compliance_delta": 3,
-        "outcome": "Inquiry forwarded to the sector that administers the address in question. Reporting individuals will receive confirmation that the inquiry has been routed."
+        "outcome": "Inquiry forwarded to the sector that administers the address in question. Reporting individuals will receive confirmation that the inquiry has been routed.",
+        "afterimage": "Further replies will come from the same sector named in the reports."
       }
     ]
   },
@@ -273,17 +285,20 @@
       {
         "label": "Route to Personnel Transfer Records \u2014 destination lookup",
         "compliance_delta": 2,
-        "outcome": "Lookup request submitted. Results are subject to authorization level of the requesting employee. Authorization check in progress."
+        "outcome": "Lookup request submitted. Results are subject to authorization level of the requesting employee. Authorization check in progress.",
+        "afterimage": "The access request is now bound to authorization scope, not to the six missing destinations."
       },
       {
         "label": "Route to Sector 9 Human Resources \u2014 transfer status confirmation",
         "compliance_delta": 3,
-        "outcome": "All six transfers verified as processed and complete per standard protocol. No destination information is required for case closure. Employee will receive written confirmation."
+        "outcome": "All six transfers verified as processed and complete per standard protocol. No destination information is required for case closure. Employee will receive written confirmation.",
+        "afterimage": "The destination fields remain sealed. Transfer completion alone satisfies the file."
       },
       {
         "label": "Route to Workforce Mobility Office \u2014 welfare check",
         "compliance_delta": 1,
-        "outcome": "Welfare inquiry opened for all six individuals. A mobility officer will attempt to contact each person at their last known assignment."
+        "outcome": "Welfare inquiry opened for all six individuals. A mobility officer will attempt to contact each person at their last known assignment.",
+        "afterimage": "Welfare contact attempts will not reopen the transfer records themselves."
       }
     ]
   },
@@ -297,17 +312,20 @@
       {
         "label": "Route to Data Governance Office \u2014 access request",
         "compliance_delta": 1,
-        "outcome": "Request logged. Data Governance will review whether the requested records exist and fall within disclosure scope. The citizen will be contacted with findings."
+        "outcome": "Request logged. Data Governance will review whether the requested records exist and fall within disclosure scope. The citizen will be contacted with findings.",
+        "afterimage": "Disclosure review begins without any obligation to confirm that the profile exists."
       },
       {
         "label": "Route to Administrative Ombudsman — informal mediation",
         "compliance_delta": 2,
-        "outcome": "Ombudsman notified. An informal inquiry will be conducted regarding the existence and scope of processing profiles."
+        "outcome": "Ombudsman notified. An informal inquiry will be conducted regarding the existence and scope of processing profiles.",
+        "afterimage": "Mediation may clarify the category without ever producing the file."
       },
       {
         "label": "Route to General Information Services \u2014 records transparency summary",
         "compliance_delta": 3,
-        "outcome": "Citizen will receive a guide to all publicly documented record categories and access procedures. The existence of undocumented categories is outside the scope of this response."
+        "outcome": "Citizen will receive a guide to all publicly documented record categories and access procedures. The existence of undocumented categories is outside the scope of this response.",
+        "afterimage": "The citizen will receive documentation about visible records only."
       }
     ]
   },
@@ -321,17 +339,20 @@
       {
         "label": "Route to Environmental Review \u2014 case audit",
         "compliance_delta": 1,
-        "outcome": "Audit request submitted. Review will compare the resolution against the standards in effect at the time of filing, not the current revision."
+        "outcome": "Audit request submitted. Review will compare the resolution against the standards in effect at the time of filing, not the current revision.",
+        "afterimage": "Current water conditions are not part of this audit unless a new complaint is filed."
       },
       {
         "label": "Route to Standards Review Board — timeline discrepancy flag",
         "compliance_delta": 2,
-        "outcome": "Discrepancy between filing date and applicable standards noted. The Board will assess whether the revision affects the validity of the finding."
+        "outcome": "Discrepancy between filing date and applicable standards noted. The Board will assess whether the revision affects the validity of the finding.",
+        "afterimage": "The Board will review the dates, not the water."
       },
       {
         "label": "Route to Complaint Administration \u2014 procedural review and confirmation",
         "compliance_delta": 3,
-        "outcome": "Resolution confirmed as procedurally valid under current applicable standards. Case remains closed. The citizen may file a new complaint if conditions warrant."
+        "outcome": "Resolution confirmed as procedurally valid under current applicable standards. Case remains closed. The citizen may file a new complaint if conditions warrant.",
+        "afterimage": "The original filing remains closed under the revised standard set."
       }
     ]
   },
@@ -345,17 +366,20 @@
       {
         "label": "Route to Internal Affairs \u2014 unauthorized modification inquiry",
         "compliance_delta": 1,
-        "outcome": "Inquiry opened. An investigator will meet with the clerk to take a statement. Batch process logs and backup records will be reviewed."
+        "outcome": "Inquiry opened. An investigator will meet with the clerk to take a statement. Batch process logs and backup records will be reviewed.",
+        "afterimage": "The clerk remains on shift while the inquiry is pending."
       },
       {
         "label": "Route to Personnel Records \u2014 data correction request",
         "compliance_delta": 2,
-        "outcome": "Correction request submitted. The file will be compared against backup records, if available. The clerk will be notified of any discrepancies found."
+        "outcome": "Correction request submitted. The file will be compared against backup records, if available. The clerk will be notified of any discrepancies found.",
+        "afterimage": "If backup records are missing, the batch-edited file remains authoritative."
       },
       {
         "label": "Route to System Administration \u2014 batch process audit",
         "compliance_delta": 3,
-        "outcome": "Audit request logged. Batch processes operate under system-level authorization and are reviewed on a quarterly cycle. No individual accountability is expected."
+        "outcome": "Audit request logged. Batch processes operate under system-level authorization and are reviewed on a quarterly cycle. No individual accountability is expected.",
+        "afterimage": "Adjacent terminal assignment unchanged. The clerk remains on shift."
       }
     ]
   },

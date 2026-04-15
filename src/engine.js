@@ -246,7 +246,17 @@ async function onRouted(c, chosen) {
     [chosen.outcome, 'faint'],
   ]);
 
-  await delay(2500);
+  if (chosen.afterimage) {
+    await delay(800);
+    if (isAborted()) return;
+
+    await printBlock([
+      ['', ''],
+      [chosen.afterimage, 'dim'],
+    ]);
+  }
+
+  await delay(2200);
   if (isAborted()) return;
 
   clear();
