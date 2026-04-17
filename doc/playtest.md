@@ -178,3 +178,21 @@ Target: verify that the new post-routing beat lands after the click, sharpens co
 ### Current read
 - The new beat fixes a real hollowness in the late cases. Correct routing no longer exits cleanly.
 - Next external question is not whether the mechanic exists, but whether Stefano feels it accumulating across a full first run.
+
+## Procedural timbre drift pass — 2026-04-17
+
+Target: verify that the machine's routing beat changes form before the player can name the theme, and that the change reads as compression rather than random speed-up.
+
+### Targeted check
+- Desktop preview at 1280×800.
+- Compared the same day-1 routing beat at low hidden compliance and forced high hidden compliance.
+- Early route beat prints an explicit acknowledgement (`Routing entry accepted.`); late route beat collapses to `Processed.` using the same case shell.
+
+### What held
+- **The compression is visible.** The machine now needs fewer words to ratify the same action once the hidden tone has hardened.
+- **The cadence tightens without breaking layout.** The route beat still reads cleanly in the terminal frame; it does not look like a timing bug.
+- **The change lives in form, not only in content.** Even before later cases or afterimage lines, the routing gesture itself now feels drier under higher compliance.
+
+### Current read
+- This pass closes a real gap between the afterimage rule and the actual handling feel of the terminal.
+- The remaining external question is whether, in a natural full run, the drift stays subtle enough to be felt first and explained only later.

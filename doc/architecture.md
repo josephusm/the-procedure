@@ -71,8 +71,11 @@ The cursor blinks. Nothing else moves.
 `renderer.js` exposes:
 - `print(text, cls)` — append a line with optional CSS class
 - `printBlock(lines)` — print multiple lines sequentially
+- `setTimingProfile(profile)` — adjust character / line pacing for the current procedural tone
 - `clear()` — clear the terminal
 - `showOptions(options, callback)` — render routing buttons, call callback on selection
+
+The renderer timing is not globally fixed. The engine can tighten or relax the terminal cadence based on the current procedural tone, so the machine gradually becomes terser as compliance rises.
 
 ## Audio
 

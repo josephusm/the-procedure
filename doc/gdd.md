@@ -128,6 +128,17 @@ Rules:
 
 This is where the timing problem lives: the player should feel the route turn wrong a beat after it still felt correct.
 
+### Procedural timbre drift
+The machine should not speak with the same amount of breath forever. If day 12 feels different from day 1 only because the cases became darker, the form is lagging behind the content.
+
+Rules:
+- The routing interface has its own hidden drift. As compliance rises, the machine needs fewer words to acknowledge what the operator just did.
+- Early acknowledgements still sound like a system addressing a worker. Midgame acknowledgements become channel language. Late acknowledgements collapse into terse procedural stamps.
+- Cadence tightens with the same drift: slightly faster output, slightly shorter settling pauses. Enough to be felt, not enough to read as a glitch or an accessibility failure.
+- The player should first register that the machine is smoother, drier, less interested in them. Only later should they have language for complicity.
+
+This is a formal version of the same rule as the afterimage: the form recruits first, then the content catches up.
+
 ### Cross-case threading
 Cases are not isolated incidents. The system notes that appear in some case bodies create connections the player cannot act on — only notice.
 

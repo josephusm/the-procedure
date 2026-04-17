@@ -100,6 +100,13 @@ Recent review exposed a real risk the plan was not carrying yet: the player can 
 - [x] Write afterimage lines for the late systemic cases where closure, delay, or sealing should be felt one beat later
 - [x] Targeted playtest: verify the added beat sharpens complicity without becoming explanation
 
+### Phase 4i — Procedural timbre drift
+The last useful criticism is not "add polish". It is that day 12 should *feel* different from day 1 before the player has language for why. The form has to recruit first, then meaning catches up.
+- [x] Define the timbre-drift rule in the GDD: routing acknowledgements and cadence compress as compliance rises
+- [x] Implement tier-based routing stamps between selection and outcome, tied to the same hidden drift as the EOD tone
+- [x] Tighten post-selection cadence by tier without hurting readability
+- [x] Visual playtest: compare an early route beat and a late route beat, verify the machine feels terser rather than simply faster
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

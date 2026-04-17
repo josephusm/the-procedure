@@ -1,8 +1,8 @@
 // engine.js — game loop and state
 
-import { print, printBlock, clear, clearOptions, showOptions, setDate, delay, abort, resetAbort, isAborted } from './renderer.js';
+import { printBlock, clear, clearOptions, showOptions, setDate, delay, abort, resetAbort, isAborted, setTimingProfile } from './renderer.js';
 import { loadCases, getCaseForDay, getAvailableOptions } from './cases.js';
-import { add as addCompliance, get as getCompliance, set as setCompliance, eodTone } from './compliance.js';
+import { add as addCompliance, eodTone } from './compliance.js';
 import { unlock, beep, driveNoise, confirmTone, endTone, startHum, powerClick } from './audio.js';
 import { initScale } from './scale.js';
 
@@ -34,6 +34,36 @@ const EOD_POOLS = {
   ],
 };
 
+const ROUTE_POOLS = {
+  standard: [
+    'Routing entry accepted.',
+    'Selected channel recorded.',
+    'Route acknowledged.',
+  ],
+  affirming: [
+    'Routing verified.',
+    'Channel accepted.',
+    'Procedure confirmed.',
+  ],
+  seamless: [
+    'Channel confirmed.',
+    'Routing complete.',
+    'Standard channel.',
+  ],
+  complete: [
+    'Processed.',
+    'Complete.',
+    'Done.',
+  ],
+};
+
+const TIMING_PROFILES = {
+  standard: { charDelay: 12, lineDelay: 60, afterimageDelay: 800, settleDelay: 2200 },
+  affirming: { charDelay: 11, lineDelay: 55, afterimageDelay: 720, settleDelay: 2000 },
+  seamless: { charDelay: 10, lineDelay: 50, afterimageDelay: 640, settleDelay: 1800 },
+  complete: { charDelay: 9, lineDelay: 45, afterimageDelay: 560, settleDelay: 1600 },
+};
+
 let hum = null;
 
 let state = {
@@ -48,6 +78,19 @@ function formatDate(day) {
   d.setDate(base.getDate() + day - 1);
   const opts = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
   return d.toLocaleDateString('en-GB', opts).toUpperCase();
+}
+
+function routeStamp(tone, day) {
+  const pool = ROUTE_POOLS[tone] ?? ROUTE_POOLS.standard;
+  return pool[(day - 1) % pool.length];
+}
+
+function applyTimbre(tone) {
+  setTimingProfile(TIMING_PROFILES[tone] ?? TIMING_PROFILES.standard);
+}
+
+function timbreProfile(tone) {
+  return TIMING_PROFILES[tone] ?? TIMING_PROFILES.standard;
 }
 
 // ── Shutdown ──
@@ -196,6 +239,7 @@ async function crtBoot() {
 
 async function runDay() {
   state.phase = 'reading';
+  applyTimbre(eodTone());
   const c = getCaseForDay(state.day);
 
   if (!c) {
@@ -239,15 +283,21 @@ async function onRouted(c, chosen) {
     return;
   }
 
+  const tone = eodTone();
+  const routeStatus = routeStamp(tone, state.day);
+  const timing = timbreProfile(tone);
+  applyTimbre(tone);
+
   await printBlock([
     ['', ''],
     [`> ${chosen.label}`, 'dim'],
+    [routeStatus, 'system'],
     ['', ''],
     [chosen.outcome, 'faint'],
   ]);
 
   if (chosen.afterimage) {
-    await delay(800);
+    await delay(timing.afterimageDelay);
     if (isAborted()) return;
 
     await printBlock([
@@ -256,13 +306,12 @@ async function onRouted(c, chosen) {
     ]);
   }
 
-  await delay(2200);
+  await delay(timing.settleDelay);
   if (isAborted()) return;
 
   clear();
   setDate(formatDate(state.day));
 
-  const tone = eodTone();
   const pool = EOD_POOLS[tone];
   const eodMsg = pool[(state.day - 1) % pool.length];
   await printBlock([

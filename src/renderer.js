@@ -8,8 +8,12 @@ const dateDisplay = document.getElementById('date-display');
 const inputLine = document.getElementById('input-line');
 const inputText = inputLine.querySelector('.input-text');
 
-const CHAR_DELAY = 12;
-const LINE_DELAY = 60;
+const DEFAULT_TIMING = {
+  charDelay: 12,
+  lineDelay: 60,
+};
+
+let timing = { ...DEFAULT_TIMING };
 
 let activeCallback = null;
 let activeOptions = [];
@@ -85,7 +89,7 @@ export function print(text, cls = '') {
         scrollBottom();
         resolve();
       }
-    }, CHAR_DELAY);
+    }, timing.charDelay);
   });
 }
 
@@ -93,8 +97,15 @@ export async function printBlock(lines) {
   for (const [text, cls] of lines) {
     if (aborted) return;
     await print(text, cls);
-    await delay(LINE_DELAY);
+    await delay(timing.lineDelay);
   }
+}
+
+export function setTimingProfile(profile = {}) {
+  timing = {
+    charDelay: profile.charDelay ?? DEFAULT_TIMING.charDelay,
+    lineDelay: profile.lineDelay ?? DEFAULT_TIMING.lineDelay,
+  };
 }
 
 export function clear() {
