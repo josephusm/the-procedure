@@ -196,3 +196,28 @@ Target: verify that the machine's routing beat changes form before the player ca
 ### Current read
 - This pass closes a real gap between the afterimage rule and the actual handling feel of the terminal.
 - The remaining external question is whether, in a natural full run, the drift stays subtle enough to be felt first and explained only later.
+
+## Full-run integration pass — 2026-04-19
+
+Target: verify that cold standby, option narrowing, afterimage, timbre drift, and inert shutdown now read as one arc rather than a pile of isolated improvements.
+
+### Run profile
+- Desktop preview at 1280×800.
+- Accelerated local run from cold standby to dead terminal on the current 0.4.0 build.
+- Humane-leaning route profile: `d=1` until filtered, then the lowest remaining option.
+- Screenshot checkpoints captured at cold start, day 11 two-option state, day 16 single-option state, final screen, and dead terminal.
+
+### What held
+- **The arc now reads as one machine.** Cold standby, day 11 narrowing, day 16 single-option state, and the inert shutdown sit on the same line rather than feeling like separate tricks from separate sessions.
+- **Day 11 is still the first clean mechanical turn.** The first two-option state is visually clear and lands as tightening, not as layout damage.
+- **Day 12 is the first route that really curdles after the click.** Day 11 changes the structure; day 12 is where the player's procedural gesture starts turning inside the hand. The transfer lookup collapses into authorization scope, which lets the afterimage rule land as process rather than commentary.
+- **The late drift accumulates.** By day 16 the single option feels earned by the prior narrowing, not dropped in as a separate finale mechanic.
+- **The ending still closes cleanly.** The final routine screen and dead power button hold the terminal-state commit without reopening any loophole.
+
+### Drag point / risk
+- **Days 12–14 are the densest conceptual cluster in the run.** Right now they read as pressure, not flattening. But this is the stretch where an external blind playtest will most clearly expose any slide from accumulation into repetition.
+
+### Current read
+- The recent form passes integrate correctly across a whole shift.
+- No new structural weak point surfaced that justified a pre-gate fix before Stefano's run.
+- The external gate remains the same: Stefano's first blind playthrough now has the right object to judge.

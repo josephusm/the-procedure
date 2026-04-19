@@ -107,6 +107,12 @@ The last useful criticism is not "add polish". It is that day 12 should *feel* d
 - [x] Tighten post-selection cadence by tier without hurting readability
 - [x] Visual playtest: compare an early route beat and a late route beat, verify the machine feels terser rather than simply faster
 
+### Phase 4j — Full-run integration pass
+After the afterimage and timbre-drift passes, the machine changed its handling feel, not just its text. Before Stefano's external run, the build needs one holistic pass from cold standby to inert shutdown to check whether those beats accumulate across a whole shift or dissolve into isolated tricks.
+- [x] Full internal playtest from cold standby to final inert shutdown on the current 0.4.0 build
+- [x] Update `doc/playtest.md` with a holistic read: first turn, first route that curdles in the hand, drag point if any, whether the late drift accumulates or flattens
+- [x] Full run reviewed for a pre-gate structural weak point; no new fix was required before Stefano's playtest
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
