@@ -113,6 +113,13 @@ After the afterimage and timbre-drift passes, the machine changed its handling f
 - [x] Update `doc/playtest.md` with a holistic read: first turn, first route that curdles in the hand, drag point if any, whether the late drift accumulates or flattens
 - [x] Full run reviewed for a pre-gate structural weak point; no new fix was required before Stefano's playtest
 
+### Phase 4k — Administrative time / retention-window audit
+Pre-gate review exposed a missing dimension: the procedure does not only route cases through categories; it holds them long enough for the live question to decay. Time is one of the channels.
+- [x] Define the retention-window rule in the GDD: delay, backlog, and review periods can be the procedure acting, not neutral waiting
+- [x] Add restrained post-routing afterimages to the mid-run cases where timing itself is the injury (medical file, housing reassignment, employment status)
+- [x] Update the playtest packet so Stefano can judge whether administrative time reads as pressure or just background lore
+- [ ] Full natural playtest pass: verify that early/mid retention beats sharpen the arc without making the mechanism too explicit
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

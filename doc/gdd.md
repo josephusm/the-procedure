@@ -128,6 +128,17 @@ Rules:
 
 This is where the timing problem lives: the player should feel the route turn wrong a beat after it still felt correct.
 
+### Administrative time / retention windows
+A channel does not only decide *where* a case goes. It decides how long the case remains held in a form that still counts as attention before it decays into closure, backlog, or a new category. Delay is not neutral waiting. It is often the procedure doing its work.
+
+Rules:
+- Use hold-window afterimages when the injury is temporal: a medical file held past a treatment date, a reassignment held only until the next scheduled move, a worker present in the world but absent from the payable record.
+- The line must name the administrative time-shift, not explain its politics.
+- Humane routes may keep a window open, but they do not magically resolve the case. They preserve contact, date, or review surface.
+- Middle routes turn the problem into a registry/search/reconciliation interval.
+- Closing routes let the scheduled process outrun the unresolved question.
+- This should remain sparse. If every case announces delay, delay becomes wallpaper. Use it where time itself is the channel.
+
 ### Procedural timbre drift
 The machine should not speak with the same amount of breath forever. If day 12 feels different from day 1 only because the cases became darker, the form is lagging behind the content.
 

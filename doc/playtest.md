@@ -62,7 +62,16 @@ Questions:
 - Did they create unease, or just read as lore?
 - Are there too few connections, too many, or the right amount?
 
-### 5. Pacing and terminal feel
+### 5. Administrative time
+Some cases should make delay feel like the procedure acting, not like the game idling. A file can be held, a date can pass, a record can wait until the live problem has already decayed.
+
+Questions:
+- Did review periods, queues, and processing windows feel like pressure, or just background bureaucracy?
+- Did any afterimage line make you feel that the case had been moved out of reach by time itself?
+- Are the timing beats too explicit, too invisible, or about right?
+- Do the mid-run cases (medical file, housing reassignment, employment status) sharpen the arc before the late systemic cases arrive?
+
+### 6. Pacing and terminal feel
 The typewriter pacing, pauses, and end-of-day rhythm are part of the experience.
 
 Questions:
@@ -71,7 +80,7 @@ Questions:
 - Does the end-of-day screen reset the rhythm in a good way?
 - Did you ever want to skip ahead out of impatience?
 
-### 6. Final case and terminal shutdown
+### 7. Final case and terminal shutdown
 The final case is deliberately routine. The machine going inert is the last move.
 
 Questions:
@@ -79,7 +88,7 @@ Questions:
 - Did the shutdown of the power button matter, or feel like a gimmick?
 - Did the ending feel earned by the whole run?
 
-### 7. Readability / interface
+### 8. Readability / interface
 This is still a real object on a real screen.
 
 Questions:
@@ -88,7 +97,7 @@ Questions:
 - Does the CRT treatment add atmosphere without getting in the way?
 - Is audio subtle in the right way, or too faint / too present?
 
-### 8. Mobile
+### 9. Mobile
 Mobile support exists, but the game is fundamentally a fixed machine scaled to fit.
 
 Questions:

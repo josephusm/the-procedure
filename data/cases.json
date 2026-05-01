@@ -105,17 +105,20 @@
       {
         "label": "Route to Patient Data Access Unit",
         "compliance_delta": 3,
-        "outcome": "Request logged. Access remains subject to processing completion. The individual has been reminded that file requests do not alter processing timelines."
+        "outcome": "Request logged. Access remains subject to processing completion. The individual has been reminded that file requests do not alter processing timelines.",
+        "afterimage": "The treatment date is now outside the access request window."
       },
       {
         "label": "Route to Health Services Liaison — patient advocacy",
         "compliance_delta": 2,
-        "outcome": "Advocacy referral created. A liaison officer will review the access history and contact the individual."
+        "outcome": "Advocacy referral created. A liaison officer will review the access history and contact the individual.",
+        "afterimage": "The file remains under processing while the access history is reviewed."
       },
       {
         "label": "Route to Records Administration \u2014 Expedited Review",
         "compliance_delta": 1,
-        "outcome": "Expedited review flag added. A records officer will attempt to locate the file and contact the patient before the next treatment date."
+        "outcome": "Expedited review flag added. A records officer will attempt to locate the file and contact the patient before the next treatment date.",
+        "afterimage": "The next treatment date is preserved in the review note until the file is located."
       }
     ]
   },
@@ -129,17 +132,20 @@
       {
         "label": "Route to Housing Allocation Review Board",
         "compliance_delta": 1,
-        "outcome": "Review request submitted. The citizen's current assignment will be held pending board review. Board convenes quarterly."
+        "outcome": "Review request submitted. The citizen's current assignment will be held pending board review. Board convenes quarterly.",
+        "afterimage": "The reassignment date is suspended, not cancelled."
       },
       {
         "label": "Route to Directive Registry \u2014 document retrieval",
         "compliance_delta": 2,
-        "outcome": "Registry search initiated. If the directive is on file, a copy will be forwarded. If not, the case will be noted as unresolved."
+        "outcome": "Registry search initiated. If the directive is on file, a copy will be forwarded. If not, the case will be noted as unresolved.",
+        "afterimage": "The missing directive number becomes a registry query, not a housing delay."
       },
       {
         "label": "Route to Residential Transition Services \u2014 relocation coordination",
         "compliance_delta": 3,
-        "outcome": "Transition package prepared. The reassignment is confirmed. Citizen will be contacted with scheduling details for the move."
+        "outcome": "Transition package prepared. The reassignment is confirmed. Citizen will be contacted with scheduling details for the move.",
+        "afterimage": "The transition schedule now outruns the unanswered directive request."
       }
     ]
   },
@@ -153,17 +159,20 @@
       {
         "label": "Route to Employment Records \u2014 Status Reconciliation",
         "compliance_delta": 2,
-        "outcome": "Reconciliation ticket opened. Status review requires cross-referencing with payroll and facility logs. The worker's current post assignment is unaffected during review."
+        "outcome": "Reconciliation ticket opened. Status review requires cross-referencing with payroll and facility logs. The worker's current post assignment is unaffected during review.",
+        "afterimage": "The worker remains present while the records decide whether the presence counts."
       },
       {
         "label": "Route to Payroll Discrepancy Unit",
         "compliance_delta": 1,
-        "outcome": "Payroll audit flagged. An investigator will contact the worker and facility supervisor to verify active status and initiate back-pay."
+        "outcome": "Payroll audit flagged. An investigator will contact the worker and facility supervisor to verify active status and initiate back-pay.",
+        "afterimage": "The six-week gap is held open until a person signs the audit."
       },
       {
         "label": "Route to Workforce Administration \u2014 status correction and re-registration",
         "compliance_delta": 3,
-        "outcome": "Re-registration form issued. Worker's status will be restored upon completion. The six weeks of unrecorded service will be noted as a processing gap."
+        "outcome": "Re-registration form issued. Worker's status will be restored upon completion. The six weeks of unrecorded service will be noted as a processing gap.",
+        "afterimage": "The completed form restores future status; it does not reopen the unrecorded weeks."
       }
     ]
   },
