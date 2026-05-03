@@ -230,3 +230,35 @@ Target: verify that cold standby, option narrowing, afterimage, timbre drift, an
 - The recent form passes integrate correctly across a whole shift.
 - No new structural weak point surfaced that justified a pre-gate fix before Stefano's run.
 - The external gate remains the same: Stefano's first blind playthrough now has the right object to judge.
+
+## Natural retention-window pass — 2026-05-03
+
+Target: answer the last pre-gate question in Phase 4k. Administrative time should feel like pressure — a held file, a suspended move, a payroll gap kept alive by a signature — without the game stepping outside its own procedure to explain the thesis.
+
+### Pre-run review
+The plan did not need a new feature. It needed the uncomfortable thing it was already carrying: stop treating the retention-window pass as a box after the afterimage work and actually play the middle of the shift as a player trying to preserve contact. The external gate is still Stefano's blind playtest; the internal task was to make sure there was no obvious structural leak before handing it over.
+
+Autoprompt: play one humane-leaning run without optimizing the hidden score. Choose the channel that feels most likely to preserve a person, a date, or a review surface. When the system removes that option, choose the least sealing visible channel. Watch days 5–7 specifically: if the lines feel like lesson text, cut them; if they feel like pressure under a correct click, keep them.
+
+### Run profile
+- Desktop preview at 1280×800.
+- Natural full run from cold standby to inert terminal on the current 0.4.0 build.
+- Route profile: humane-leaning until filtered; then least-sealing visible channel.
+- Key route sequence: patient expedited review, housing allocation review, payroll discrepancy audit; day 11 narrowed to two options; day 16 final single option.
+
+### What held
+- **Administrative time now enters before the late systemic cluster.** Days 5–7 stop being only a thematic ramp. They teach a smaller and meaner fact: even the humane route often preserves a window rather than solving the case.
+- **Day 5 is a stay, not a rescue.** `The next treatment date is preserved in the review note until the file is located.` It gives the player the best available channel, then leaves the body waiting on the file. That is the right temperature: not cruel, not comforting.
+- **Day 6 is the cleanest retention beat.** `The reassignment date is suspended, not cancelled.` It lands with the right bureaucratic knife-edge. The route feels helpful and still trapped.
+- **Day 7 turns the payroll case into lived absence.** `The six-week gap is held open until a person signs the audit.` This is the strongest of the three because it names the missing action without editorializing.
+- **The narrowing still arrives cleanly after the mid-run pressure.** Day 11 removes the humane channel; after days 5–7, that loss reads as a system tightening the format, not just reducing buttons.
+- **Final screen and dead terminal still hold.** The routine final case and inert power state remain visually clean and do not require a pre-gate fix.
+
+### Pressure points
+- **The humane path is almost too merciful in day 5 if read in isolation.** The line works only because `until the file is located` keeps the body inside administrative time. Do not soften it further.
+- **The middle run is now dense enough.** Adding more retention language before Stefano's playtest would turn the device into a lecture. The current sparse distribution is better than another clever line. There, I said it. Restraint, the annoying adult in the room.
+
+### Current read
+- Phase 4k is complete. No code or content fix is justified before Stefano's blind run.
+- The playtest packet's administrative-time section is now grounded in an actual run, not just a design intention.
+- Release remains gated on Stefano's feedback, not on more autonomous polish.

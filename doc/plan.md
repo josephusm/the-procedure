@@ -118,7 +118,7 @@ Pre-gate review exposed a missing dimension: the procedure does not only route c
 - [x] Define the retention-window rule in the GDD: delay, backlog, and review periods can be the procedure acting, not neutral waiting
 - [x] Add restrained post-routing afterimages to the mid-run cases where timing itself is the injury (medical file, housing reassignment, employment status)
 - [x] Update the playtest packet so Stefano can judge whether administrative time reads as pressure or just background lore
-- [ ] Full natural playtest pass: verify that early/mid retention beats sharpen the arc without making the mechanism too explicit
+- [x] Full natural playtest pass: verify that early/mid retention beats sharpen the arc without making the mechanism too explicit
 
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
