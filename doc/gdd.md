@@ -139,6 +139,16 @@ Rules:
 - Closing routes let the scheduled process outrun the unresolved question.
 - This should remain sparse. If every case announces delay, delay becomes wallpaper. Use it where time itself is the channel.
 
+### Residue and responsibility surfaces
+Routing does not make a case disappear. It changes who has to carry what remains: the waiting body, the contested record, the unpaid time, the sealed destination, the appeal that now belongs to another queue. A clean terminal screen can still leave wet cardboard on somebody else's floor.
+
+Rules:
+- The game should not add an explicit "residue ledger". That would become a theme label wearing a badge, and badges are how systems pretend to have solved things.
+- The remainder belongs in the route outcome or afterimage: a date preserved only inside a file, a record kept authoritative until someone disputes it, a complaint closed under standards that changed after the harm.
+- Closing routes should never sound magically annihilating. They may close the visible case, but the cost must either remain named, move to another channel, or become somebody else's required action.
+- Humane routes can keep a responsibility surface open. They do not rescue the person. If they did, the game would be fantasy with a form attached.
+- Use this sparingly. If every route waves a remainder at the player, the machine starts explaining itself. The better cut is colder: one procedural sentence that leaves the residue where the player can smell it.
+
 ### Procedural timbre drift
 The machine should not speak with the same amount of breath forever. If day 12 feels different from day 1 only because the cases became darker, the form is lagging behind the content.
 

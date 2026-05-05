@@ -71,7 +71,16 @@ Questions:
 - Are the timing beats too explicit, too invisible, or about right?
 - Do the mid-run cases (medical file, housing reassignment, employment status) sharpen the arc before the late systemic cases arrive?
 
-### 6. Pacing and terminal feel
+### 6. Residue / responsibility surfaces
+A processed case should not always feel clean. Sometimes the visible file closes while the cost, delay, contestation, or unanswered responsibility moves somewhere else.
+
+Questions:
+- After routing, did any case leave a remainder in the room — a body waiting, a file still sealed, a cost moved to another queue?
+- Did closing routes feel too clean anywhere?
+- Did humane routes feel like they kept a surface open without pretending to solve the case?
+- Were residue beats cold enough to be felt, or did they become explanation?
+
+### 7. Pacing and terminal feel
 The typewriter pacing, pauses, and end-of-day rhythm are part of the experience.
 
 Questions:
@@ -80,7 +89,7 @@ Questions:
 - Does the end-of-day screen reset the rhythm in a good way?
 - Did you ever want to skip ahead out of impatience?
 
-### 7. Final case and terminal shutdown
+### 8. Final case and terminal shutdown
 The final case is deliberately routine. The machine going inert is the last move.
 
 Questions:
@@ -88,7 +97,7 @@ Questions:
 - Did the shutdown of the power button matter, or feel like a gimmick?
 - Did the ending feel earned by the whole run?
 
-### 8. Readability / interface
+### 9. Readability / interface
 This is still a real object on a real screen.
 
 Questions:
@@ -97,7 +106,7 @@ Questions:
 - Does the CRT treatment add atmosphere without getting in the way?
 - Is audio subtle in the right way, or too faint / too present?
 
-### 9. Mobile
+### 10. Mobile
 Mobile support exists, but the game is fundamentally a fixed machine scaled to fit.
 
 Questions:
@@ -262,3 +271,23 @@ Autoprompt: play one humane-leaning run without optimizing the hidden score. Cho
 - Phase 4k is complete. No code or content fix is justified before Stefano's blind run.
 - The playtest packet's administrative-time section is now grounded in an actual run, not just a design intention.
 - Release remains gated on Stefano's feedback, not on more autonomous polish.
+
+## Residue / responsibility-surface audit — 2026-05-05
+
+Target: absorb the recent packaging/residue critique without vandalizing the game with cleverness. The new question is not whether routing delays people — Phase 4k already answered that — but whether a processed file leaves its remainder somewhere imputable.
+
+### Pre-run review
+The plan was structurally complete but carrying an unasked question. Recent corridor work shifted the focus from "where did the touch disappear?" to "where did the residue go?" The Procedure already had afterimages, but the playtest packet did not ask Stefano to judge that dimension explicitly. That was a real omission: not a new mechanic, not polish, but a missing pressure surface.
+
+### Autoprompt
+Treat the current case set as a returns desk. For each routed case, ask what remains after the terminal looks clean: a person waiting, a date passed, a record sealed, a complaint reclassified, an appeal moved into a queue. If the answer is invisible in the late systemic cases, fix the case. If the answer is already present, document the rule and do not add another explanatory line just to feel industrious. Bureaucracy has enough paperwork without me cosplaying as the stationery drawer.
+
+### Audit result
+- **Option structure holds.** All non-final cases still have three options with distinct compliance deltas `1 / 2 / 3`.
+- **Early cases without afterimages are intentional.** Cases 1–4 remain clean on the surface because the opening must feel ordinary. Adding residue beats there would foreshadow too loudly and betray the mundane ramp.
+- **Mid-run residue is already carried by administrative time.** Medical records, housing reassignment, employment status, and assembly permit all leave a date, assignment, pay gap, or meeting request trapped in another interval.
+- **Late systemic residue is strong enough.** Sector 9 keeps destinations sealed; the processing profile request produces documentation about visible records only; the water complaint reviews dates, not water; the batch-edited personnel file remains authoritative if backups are missing.
+- **No content fix justified before Stefano's run.** The missing work was conceptual and evaluative: define the residue rule in the GDD and add it to the playtest packet so the blind test can pressure it directly.
+
+### Current read
+Phase 4l is complete. The build stays unchanged. That is not laziness; it is the useful kind of refusal. Another line in the game would make the machine explain its own stink.

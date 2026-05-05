@@ -120,6 +120,13 @@ Pre-gate review exposed a missing dimension: the procedure does not only route c
 - [x] Update the playtest packet so Stefano can judge whether administrative time reads as pressure or just background lore
 - [x] Full natural playtest pass: verify that early/mid retention beats sharpen the arc without making the mechanism too explicit
 
+### Phase 4l — Residue / responsibility-surface audit
+Recent corridor work sharpened a missing pressure question: a procedure does not merely hide the touch. It also decides where the remainder goes after the case looks clean. Before the external playtest, audit whether the game leaves enough residue in the room without turning into a lecture.
+- [x] Define the residue rule in the GDD: a routed case may move cost, delay, contestation, or unanswered responsibility outside the visible file.
+- [x] Audit the current case set for residue surfaces, especially the closing routes and late systemic cluster.
+- [x] Update Stefano's playtest packet so he can judge whether processed cases feel clean or leave a remainder.
+- [x] If the audit exposes a weak case where closure becomes too clean, fix that case before the gate. No content fix justified; early clean cases are deliberate and late residues already bite.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
