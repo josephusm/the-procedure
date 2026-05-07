@@ -279,7 +279,7 @@ async function onRouted(c, chosen) {
 
   if (c.final) {
     state.machineDone = true;
-    await finalScreen(c);
+    await finalRouteHandoff(c, chosen);
     return;
   }
 
@@ -335,9 +335,37 @@ async function onRouted(c, chosen) {
   }
 }
 
-async function finalScreen(c) {
-  await delay(2000);
+async function finalRouteHandoff(c, chosen) {
+  const tone = 'complete';
+  const routeStatus = routeStamp(tone, state.day);
+  const timing = timbreProfile(tone);
+  applyTimbre(tone);
 
+  await printBlock([
+    ['', ''],
+    [`> ${chosen.label}`, 'dim'],
+    [routeStatus, 'system'],
+    ['', ''],
+    [chosen.outcome, 'faint'],
+  ]);
+
+  if (chosen.afterimage) {
+    await delay(timing.afterimageDelay);
+    if (isAborted()) return;
+
+    await printBlock([
+      ['', ''],
+      [chosen.afterimage, 'dim'],
+    ]);
+  }
+
+  await delay(timing.settleDelay);
+  if (isAborted()) return;
+
+  await finalScreen(c);
+}
+
+async function finalScreen(c) {
   clear();
   setDate(formatDate(state.day));
 

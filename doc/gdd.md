@@ -149,6 +149,15 @@ Rules:
 - Humane routes can keep a responsibility surface open. They do not rescue the person. If they did, the game would be fantasy with a form attached.
 - Use this sparingly. If every route waves a remainder at the player, the machine starts explaining itself. The better cut is colder: one procedural sentence that leaves the residue where the player can smell it.
 
+### Final handoff / trained residue
+The final route is not only disposal. It is continuity. The operator is no longer needed as a person at the terminal, but the record of adaptation remains useful to the system: throughput, routing accuracy, absence of deviation, terminal reassignment. The procedure does not merely erase; it keeps what can be reused.
+
+Rules:
+- The final selected route should be rendered before the completion screen, like a normal routing action. The machine still performs the administrative step.
+- The beat must stay cold and short: stamp, outcome, one afterimage. No confession, no accusation, no epilogue.
+- The afterimage may name retention, continuity, reassignment, or record preservation. It must not say what the player should feel.
+- The final completion screen remains routine. The added handoff is the last piece of paperwork, not a dramatic reveal.
+
 ### Procedural timbre drift
 The machine should not speak with the same amount of breath forever. If day 12 feels different from day 1 only because the cases became darker, the form is lagging behind the content.
 

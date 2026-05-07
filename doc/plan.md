@@ -127,6 +127,13 @@ Recent corridor work sharpened a missing pressure question: a procedure does not
 - [x] Update Stefano's playtest packet so he can judge whether processed cases feel clean or leave a remainder.
 - [x] If the audit exposes a weak case where closure becomes too clean, fix that case before the gate. No content fix justified; early clean cases are deliberate and late residues already bite.
 
+### Phase 4m — Final routing handoff / trained residue
+Current review exposed one remaining leak before the Stefano gate: the final route jumps straight from click to terminal completion. That skips the last procedural handoff, precisely where the operator becomes a completed record rather than a resisting person. The ending should not explain this. It only needs one cold administrative beat.
+- [x] Define the final handoff rule in the GDD: the terminal may be done with the operator, but the operator record is retained as continuity material.
+- [x] Render the final selected route, terse stamp, outcome, and one restrained afterimage before the existing final completion screen.
+- [x] Update Stefano's playtest packet so the final route beat can be judged separately from the inert shutdown.
+- [x] Targeted playtest: verify the added beat feels like procedure completing its own handoff, not a dramatic epilogue.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

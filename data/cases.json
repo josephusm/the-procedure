@@ -403,7 +403,8 @@
       {
         "label": "Route to Personnel Processing \u2014 final status update",
         "compliance_delta": 0,
-        "outcome": "File processed. Status updated. Terminal will be reassigned."
+        "outcome": "File processed. Status updated. Terminal will be reassigned.",
+        "afterimage": "Operator continuity record retained for reassignment."
       }
     ]
   }

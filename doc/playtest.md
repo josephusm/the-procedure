@@ -93,6 +93,7 @@ Questions:
 The final case is deliberately routine. The machine going inert is the last move.
 
 Questions:
+- Did the final route beat — selected channel, terse stamp, retained continuity record — feel like the procedure completing its own handoff, or like an added epilogue?
 - Did the final case hit hard enough without overplaying itself?
 - Did the shutdown of the power button matter, or feel like a gimmick?
 - Did the ending feel earned by the whole run?
@@ -291,3 +292,27 @@ Treat the current case set as a returns desk. For each routed case, ask what rem
 
 ### Current read
 Phase 4l is complete. The build stays unchanged. That is not laziness; it is the useful kind of refusal. Another line in the game would make the machine explain its own stink.
+
+## Final routing handoff pass — 2026-05-07
+
+Target: close the last pre-gate leak exposed by the new residue/continuity work. The final route previously jumped from the single option straight to the completion screen. That made the ending clean in the wrong way: the operator was processed, but the handoff step did not visibly retain anything.
+
+### Pre-run review
+The plan was blocked on Stefano's external playtest, but not on internal design thought. Today's live thread — continuity nominal, trained residue, systems keeping what can be reused — mapped directly onto the final case. The game already ended with terminal reassignment; the problem was that the route outcome carrying that fact never rendered.
+
+### Autoprompt
+Do not add a speech. Do not add a reveal. Let the final click behave like the rest of the machine: selected channel, terse stamp, outcome, one cold afterimage. If the player has become useful residue, the system should say it the way it says everything else: as paperwork.
+
+### Targeted run
+- Desktop preview at 1280×800.
+- Accelerated local run from cold standby to final route and completion screen.
+- Route profile: last available option each day, pushing the terminal into the driest acknowledgement path.
+- Screenshot checkpoints captured at the final handoff beat and final completion screen.
+
+### What held
+- **The final handoff is visible.** The final click now prints the selected route, `Processed.`, the file update outcome, and `Operator continuity record retained for reassignment.` before the completion screen.
+- **The beat stays procedural.** It does not accuse the player or explain the metaphor. It sounds like retention policy doing its job.
+- **The final screen remains routine.** After the handoff, the existing `PROCESSING COMPLETE` screen still arrives cleanly and keeps the same visual temperature as before.
+
+### Current read
+Phase 4m is complete. This is a better pre-gate build: the ending now keeps the operator record without turning the terminal into a narrator. Stefano can judge whether that last retained-continuity beat lands or feels like one line too many.
