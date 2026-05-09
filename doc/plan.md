@@ -134,6 +134,13 @@ Current review exposed one remaining leak before the Stefano gate: the final rou
 - [x] Update Stefano's playtest packet so the final route beat can be judged separately from the inert shutdown.
 - [x] Targeted playtest: verify the added beat feels like procedure completing its own handoff, not a dramatic epilogue.
 
+### Phase 4n — Administrative packaging / premise audit
+The current corridor work exposed one more pre-gate pressure surface: the machine does not only move residue elsewhere. It also packages large claims as ordinary premises inside a clean case front. If that packaging works, the player accepts absurd institutional assumptions because the file makes them look procedurally normal.
+- [x] Define the administrative-packaging rule in the GDD: headers, system notes, assessments, and routing stamps can smuggle large claims as secondary facts.
+- [x] Audit the current case set for packaging pressure, especially processing profiles, retroactive standards, Sector 9, and the final operator assessment.
+- [x] Update Stefano's playtest packet so he can judge whether the file surface makes large premises feel routine or too visibly authored.
+- [x] If the audit exposes a weak case where the packaging fails, fix that case before the gate. No content fix justified; the strongest cases already carry the claim as paperwork rather than speech.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

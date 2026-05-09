@@ -149,6 +149,24 @@ Rules:
 - Humane routes can keep a responsibility surface open. They do not rescue the person. If they did, the game would be fantasy with a form attached.
 - Use this sparingly. If every route waves a remainder at the player, the machine starts explaining itself. The better cut is colder: one procedural sentence that leaves the residue where the player can smell it.
 
+### Administrative packaging / premise smuggling
+A file does not only contain facts. It makes some facts look like background infrastructure and others look like the live question. That is one of the procedure's quiet powers: a large institutional claim can pass through the player's hand as a secondary premise because the case front is coherent, numbered, referenced, and already waiting for a route.
+
+The game should let this happen without underlining it. A `System note`, an `Assessment`, a reference number, or a routing stamp can make the extraordinary administratively ordinary: a facility that cannot be listed, a profile nobody confirms, a complaint resolved by a standard written later, an operator function declared fulfilled. The player should notice the package only after they have already handled it.
+
+Rules:
+- Do not add a separate explanation layer for packaging. The package is the case format itself.
+- Use headers, reference numbers, system notes, assessments, and terse stamps to make large premises travel as minor file facts.
+- The live question must remain smaller than the premise that contains it. The player routes an access request, a discrepancy, or a review; the file quietly assumes the existence of the machinery that made the request necessary.
+- Packaging fails if the text sounds like a narrator showing off the metaphor. It succeeds when the player accepts the form first and becomes uneasy about the premise a beat later.
+- This is adjacent to residue, but not identical. Residue asks where the remainder goes after closure. Packaging asks how the file made the closure-world believable before the player could object.
+
+Current pressure points:
+- `case-011` and `case-012`: Sector 9 turns an unlisted facility and destinationless transfers into verification and authorization-scope questions.
+- `case-013`: the processing profile is never confirmed, but the request already forces the player to route around its possible existence.
+- `case-014`: retroactive standards make a large legal change arrive as a date discrepancy.
+- `case-016`: the operator's fulfilled function is presented as an assessment, not a revelation.
+
 ### Final handoff / trained residue
 The final route is not only disposal. It is continuity. The operator is no longer needed as a person at the terminal, but the record of adaptation remains useful to the system: throughput, routing accuracy, absence of deviation, terminal reassignment. The procedure does not merely erase; it keeps what can be reused.
 

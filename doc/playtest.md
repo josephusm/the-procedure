@@ -80,7 +80,16 @@ Questions:
 - Did humane routes feel like they kept a surface open without pretending to solve the case?
 - Were residue beats cold enough to be felt, or did they become explanation?
 
-### 7. Pacing and terminal feel
+### 7. Administrative packaging / premise smuggling
+Some files should make a large institutional premise feel like a small administrative fact. A profile may exist without being confirmed. A facility may operate outside public listing. A complaint may be resolved by standards written after the complaint. The file front is the package.
+
+Questions:
+- Did any large premise become ordinary because the case presented it as a numbered, routable file?
+- Did you notice yourself accepting the system note, assessment, or routing category before questioning what it assumed?
+- Did the processing profile, retroactive standards, Sector 9, or final operator assessment feel packaged into procedure rather than announced as theme?
+- Were any of those premises too obvious, too invisible, or about right?
+
+### 8. Pacing and terminal feel
 The typewriter pacing, pauses, and end-of-day rhythm are part of the experience.
 
 Questions:
@@ -89,7 +98,7 @@ Questions:
 - Does the end-of-day screen reset the rhythm in a good way?
 - Did you ever want to skip ahead out of impatience?
 
-### 8. Final case and terminal shutdown
+### 9. Final case and terminal shutdown
 The final case is deliberately routine. The machine going inert is the last move.
 
 Questions:
@@ -98,7 +107,7 @@ Questions:
 - Did the shutdown of the power button matter, or feel like a gimmick?
 - Did the ending feel earned by the whole run?
 
-### 9. Readability / interface
+### 10. Readability / interface
 This is still a real object on a real screen.
 
 Questions:
@@ -107,7 +116,7 @@ Questions:
 - Does the CRT treatment add atmosphere without getting in the way?
 - Is audio subtle in the right way, or too faint / too present?
 
-### 10. Mobile
+### 11. Mobile
 Mobile support exists, but the game is fundamentally a fixed machine scaled to fit.
 
 Questions:
@@ -316,3 +325,23 @@ Do not add a speech. Do not add a reveal. Let the final click behave like the re
 
 ### Current read
 Phase 4m is complete. This is a better pre-gate build: the ending now keeps the operator record without turning the terminal into a narrator. Stefano can judge whether that last retained-continuity beat lands or feels like one line too many.
+
+## Administrative packaging / premise audit — 2026-05-09
+
+Target: translate the new packaging-epistemic thread into a concrete pre-gate pressure test. The question is not whether the game has enough residue anymore. It is whether the file surface can make large institutional claims pass as routable premises before the player has time to object.
+
+### Pre-run review
+The plan was formally complete and blocked on Stefano's playtest, which is exactly when lazy machinery starts saying "nothing to do." Cute trick. The recent corridor work says otherwise: a coherent package can carry an oversized claim as a small premise. The Procedure already has that shape in Sector 9, processing profiles, retroactive standards, and the final assessment, but the playtest packet was not asking Stefano to judge it directly.
+
+### Autoprompt
+Treat the case file itself as the packaging layer. Do not ask whether a line is creepy. Ask whether the file makes the impossible premise administratively usable: unlisted facility, undocumented profile, standard revised after harm, operator function fulfilled. If the premise only works because the game waves at the theme, fix it. If it works because the terminal makes it look like paperwork, document the rule and leave the content alone.
+
+### Audit result
+- **The strongest packaging lives in cases 11–14.** The player is not asked to decide whether Sector 9, destinationless transfer, processing profile, or retroactive standards should exist. The file has already made them operative; the route only chooses which corridor will digest the complaint.
+- **Case 13 is the cleanest example.** The processing profile is never confirmed or denied, but the player still routes a request around its possible existence. That is the right pressure: the package makes the category usable before the category is accountable.
+- **Case 14 carries the largest premise as a date problem.** Revised standards resolving older complaints could become speechifying very easily. It does not, because the live question is framed as a timeline discrepancy and the afterimage stays on dates, not water metaphysics. Mercifully, no sermon leaked out.
+- **The final case already packages disposal as assessment.** `The operator's function has been fulfilled` is a huge claim, but it arrives as a personnel status line. Adding another line would make it worse.
+- **No content fix justified before Stefano's run.** The missing work was again not another clever sentence in the game. It was naming the design rule in the GDD and adding the right blind-playtest questions.
+
+### Current read
+Phase 4n is complete. The build stays unchanged. The external gate remains Stefano's run, now with a sharper question: did the machine make the impossible look like paperwork before he noticed the trick?
