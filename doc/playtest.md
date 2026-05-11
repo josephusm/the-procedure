@@ -89,7 +89,16 @@ Questions:
 - Did the processing profile, retroactive standards, Sector 9, or final operator assessment feel packaged into procedure rather than announced as theme?
 - Were any of those premises too obvious, too invisible, or about right?
 
-### 8. Pacing and terminal feel
+### 8. Surface temperature / mute labels
+The terminal surface should work like a cold public label, not like a dashboard guide. Refs, subjects, dates, system notes, route stamps, and completion lines should make hot premises administratively usable without adding an explanatory narrator.
+
+Questions:
+- Did the terminal feel like a machine presenting files, or like an author guiding your interpretation?
+- Did refs, stamps, system notes, and completion labels make large premises feel routine before you questioned them?
+- Was the interface too cold to read emotionally, too warm and explanatory, or about right?
+- Did you ever want a score, progress indicator, or helper layer — and would adding one damage the experience?
+
+### 9. Pacing and terminal feel
 The typewriter pacing, pauses, and end-of-day rhythm are part of the experience.
 
 Questions:
@@ -98,7 +107,7 @@ Questions:
 - Does the end-of-day screen reset the rhythm in a good way?
 - Did you ever want to skip ahead out of impatience?
 
-### 9. Final case and terminal shutdown
+### 10. Final case and terminal shutdown
 The final case is deliberately routine. The machine going inert is the last move.
 
 Questions:
@@ -107,7 +116,7 @@ Questions:
 - Did the shutdown of the power button matter, or feel like a gimmick?
 - Did the ending feel earned by the whole run?
 
-### 10. Readability / interface
+### 11. Readability / interface
 This is still a real object on a real screen.
 
 Questions:
@@ -116,7 +125,7 @@ Questions:
 - Does the CRT treatment add atmosphere without getting in the way?
 - Is audio subtle in the right way, or too faint / too present?
 
-### 11. Mobile
+### 12. Mobile
 Mobile support exists, but the game is fundamentally a fixed machine scaled to fit.
 
 Questions:
@@ -345,3 +354,23 @@ Treat the case file itself as the packaging layer. Do not ask whether a line is 
 
 ### Current read
 Phase 4n is complete. The build stays unchanged. The external gate remains Stefano's run, now with a sharper question: did the machine make the impossible look like paperwork before he noticed the trick?
+
+## Surface temperature / mute-label audit — 2026-05-11
+
+Target: absorb the recent label/frontage thread before the Stefano gate. The question is not whether the cases package premises — Phase 4n already handled that — but whether the terminal surface itself behaves like a mute label or like a dashboard narrator trying to hold the player's hand.
+
+### Pre-run review
+The plan was still externally gated, but the current corridor work changed the pressure surface. `NOW.md`, #1506, #1521, #1525, #1528, and the Caronia shelf note all point to the same cut: a truth can be formally present and politically cold; a label can warm the signal without installing a synthetic actor; a dashboard can reintroduce the guide who pre-interprets the world. The Procedure already avoids score readouts and helper language, but the playtest packet did not ask Stefano to judge the terminal as frontage.
+
+### Autoprompt
+Treat the CRT as the first case file. Ask whether `PRESS POWER`, `STANDBY FIELD`, `CASE REF`, `SUBJECT`, system notes, route stamps, and `PROCESSING COMPLETE` set the right temperature before any body text is read. If the surface talks like a guide, cut it. If it works as a cold public label — comparable, close to the decision, almost mute — document the rule and do not add a narrator just because the idea is clever today.
+
+### Audit result
+- **The interface stays on the label side.** Status bar, refs, dates, route stamps, and completion screen present administrative facts; they do not explain the metaphor.
+- **No dashboard leak found.** There is still no score, progress indicator, morality meter, helper copy, or interpretive overlay. Good. A helpful bureaucracy is still bureaucracy with better manners.
+- **The standby field is warm enough to invite contact, not warm enough to narrate.** `SESSION CLOSED`, `LOCAL POWER AVAILABLE`, and `AWAITING OPERATOR` keep the first gesture diegetic without becoming onboarding copy.
+- **The late compression supports the mute-label rule.** `Processed.`, `Complete.`, and `Done.` are not commentary; they are smaller labels attached closer to the decision as compliance hardens.
+- **No code or case-text fix justified before Stefano's run.** The missing work was to name the surface-temperature rule in the GDD and add the right blind-playtest questions.
+
+### Current read
+Phase 4o is complete. The build stays unchanged. The external gate remains Stefano's run, now with one more clean question: did the machine's surface set the temperature of the world without turning into a tour guide?

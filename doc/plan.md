@@ -141,6 +141,13 @@ The current corridor work exposed one more pre-gate pressure surface: the machin
 - [x] Update Stefano's playtest packet so he can judge whether the file surface makes large premises feel routine or too visibly authored.
 - [x] If the audit exposes a weak case where the packaging fails, fix that case before the gate. No content fix justified; the strongest cases already carry the claim as paperwork rather than speech.
 
+### Phase 4o — Surface temperature / mute-label audit
+Recent corridor work sharpened a quieter pre-gate question: the terminal is not just a container for case text. It is the frontage that sets the temperature of every fact before the player can object. If the interface becomes too narrating, too helpful, or too dashboard-like, it warms the signal by installing a guide. The better pressure may be colder: labels, refs, stamps, and routine lines that do not explain themselves.
+- [x] Define the surface-temperature rule in the GDD: case labels, refs, system notes, routing stamps, and completion screens should act as mute labels, not as a synthetic narrator.
+- [x] Audit the current interface and case shell for unwanted guidance, dashboard language, or explanatory warmth.
+- [x] Update Stefano's playtest packet so he can judge whether the terminal surface makes hot premises feel administratively normal without feeling like an authorial tour guide.
+- [x] If the audit exposes a weak surface where the machine talks too much, fix it before the gate. No code/content fix justified; the current shell stays cold, comparable, and terse.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

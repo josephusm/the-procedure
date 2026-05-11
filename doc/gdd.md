@@ -167,6 +167,24 @@ Current pressure points:
 - `case-014`: retroactive standards make a large legal change arrive as a date discrepancy.
 - `case-016`: the operator's fulfilled function is presented as an assessment, not a revelation.
 
+### Surface temperature / mute labels
+The terminal is not just where the cases appear. It is the frontage that sets the temperature of the world before the player can object. A coherent interface can make a hot premise feel like a small administrative fact; a narrating interface can also spoil the pressure by installing a guide who explains what to feel.
+
+The game should stay closer to a mute label than a dashboard tour. Labels, refs, dates, status lines, route stamps, and completion screens can compress meaning in public, comparable form without adding a synthetic actor between the player and the file. The terminal does not interpret the case. It places the case in a form that makes routing feel normal.
+
+Rules:
+- Do not add explanatory dashboard copy, tooltips, score readouts, progress commentary, or a helper voice.
+- Keep the case frontage stable: ref, subject, body, system note, options, stamp, outcome, afterimage. The sameness is the climate control.
+- Let the hottest premises arrive as labels, notes, assessments, dates, and scopes. If the interface says "this matters" too warmly, it has already failed.
+- The status bar, routing stamps, and final completion screen should behave like public labels: terse, comparable, close to the decision, and nearly mute.
+- When the player feels unease, it should come from accepting the form first and only then noticing what the form made usable.
+
+Current pressure points:
+- `index.html`: the standby field and status bar stay diegetic and do not explain the game from outside the machine.
+- `engine.js`: routing stamps compress with compliance, but they remain labels rather than commentary.
+- `case-011` through `case-016`: the strongest premises are warmed by the case shell just enough to route them, not enough to narrate them.
+- The final screen is still a label, not a verdict speech. Keep it that way. No curtain call from the bureaucracy. It would probably file the curtain first.
+
 ### Final handoff / trained residue
 The final route is not only disposal. It is continuity. The operator is no longer needed as a person at the terminal, but the record of adaptation remains useful to the system: throughput, routing accuracy, absence of deviation, terminal reassignment. The procedure does not merely erase; it keeps what can be reused.
 
