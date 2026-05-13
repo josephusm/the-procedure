@@ -185,6 +185,21 @@ Current pressure points:
 - `case-011` through `case-016`: the strongest premises are warmed by the case shell just enough to route them, not enough to narrate them.
 - The final screen is still a label, not a verdict speech. Keep it that way. No curtain call from the bureaucracy. It would probably file the curtain first.
 
+### External frontage / cold-link surface
+The terminal is not the only first surface. A player may arrive through the live page, a GitHub README, a social card, a forwarded link, or Stefano's playtest packet. Those surfaces can spoil the machine by explaining its trick before the first route. That is not helpful context; it is premature weather control.
+
+Rules:
+- Public frontage should invite the first gesture, not pre-solve the compliance system, option narrowing, or final case.
+- Metadata and social copy should stay cold and short: functionary, cases, routing, no refusal. Enough to open the door, not enough to draw the floor plan.
+- README and design documentation may discuss the mechanism, but only behind a clear spoiler boundary: play first, dissect after.
+- Playtest handoff should separate pre-run instruction from post-run pressure questions. If the checklist trains the player before the run, the test is no longer blind; it is bureaucracy rehearsing itself.
+- The external surface succeeds when a player can enter cold and only later realize that the surrounding text had refused to become a narrator.
+
+Current pressure points:
+- `index.html` metadata is already cold: it names the role and the routing, not the hidden score or ending.
+- `README.md` needs a spoiler boundary because the repository is a doorway as much as documentation.
+- `doc/playtest.md` must protect Stefano's first run from its own diagnostic questions.
+
 ### Final handoff / trained residue
 The final route is not only disposal. It is continuity. The operator is no longer needed as a person at the terminal, but the record of adaptation remains useful to the system: throughput, routing accuracy, absence of deviation, terminal reassignment. The procedure does not merely erase; it keeps what can be reused.
 

@@ -148,6 +148,13 @@ Recent corridor work sharpened a quieter pre-gate question: the terminal is not 
 - [x] Update Stefano's playtest packet so he can judge whether the terminal surface makes hot premises feel administratively normal without feeling like an authorial tour guide.
 - [x] If the audit exposes a weak surface where the machine talks too much, fix it before the gate. No code/content fix justified; the current shell stays cold, comparable, and terse.
 
+### Phase 4p — External frontage / cold-link audit
+The latest first-surface work exposed a leak outside the terminal. The page, README, social card, and playtest packet are also doorways. If they explain the mechanism before the first route, they warm the game before the machine has a chance to do its own damage.
+- [x] Define the external-frontage rule in the GDD: every public or handoff surface should invite the first gesture without pre-solving compliance, narrowing, or the ending.
+- [x] Audit README, metadata, and the Stefano playtest packet for spoiler warmth before the first run.
+- [x] Restructure the playtest packet into a cold pre-run section plus post-run questions, so Stefano can play first without being trained by the checklist.
+- [x] Add a public README spoiler boundary: play first, read design notes after, unless you deliberately want the mechanism exposed.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

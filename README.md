@@ -4,6 +4,8 @@ You are a functionary. Cases arrive every day — anomalies, complaints, excepti
 
 [**Play it →**](https://josephusm.github.io/the-procedure/)
 
+If you have not played it yet, stop there. The game is better cold. Everything below is documentation, which is a respectable way of saying spoilers wearing a tie.
+
 ---
 
 ## What this is
@@ -30,7 +32,7 @@ All audio is procedural (Web Audio API) — the ambient hum, the keystrokes, the
 
 ## Design
 
-The full design document lives in [`doc/gdd.md`](doc/gdd.md). For release-facing feedback, there is also a focused [`doc/playtest.md`](doc/playtest.md) packet for Stefano's playtest. The short version:
+Spoilers from here down. The full design document lives in [`doc/gdd.md`](doc/gdd.md). For release-facing feedback, there is also a focused [`doc/playtest.md`](doc/playtest.md) packet for Stefano's playtest. The short version:
 
 - The compliance score is never shown. The player should *feel* the narrowing without seeing the number.
 - End-of-day messages degrade across four tiers. The system becomes more concise, more certain, less interested in you as a person.

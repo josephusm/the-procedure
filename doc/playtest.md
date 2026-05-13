@@ -9,21 +9,23 @@ This is not a generic QA checklist. The game already runs. The question now is w
 
 ---
 
-## What to do
+## Read this before the first run
 
 1. Open the game cold.
 2. Turn audio on.
 3. Play from power-on to final shutdown in one sitting.
-4. Do **not** try to optimize or reverse-engineer on the first run. Just route the cases the way that feels natural in the moment.
+4. Do **not** optimize, reverse-engineer, or read the diagnostic sections below before playing. Route the cases the way that feels natural in the moment.
 5. After finishing, write down what you felt **before** trying to explain the design.
 
-If useful, do a second run later with a different routing attitude:
+Stop here for the first playthrough. The rest of this packet contains post-run pressure questions and will train your attention if you read it too early. Helpful later. Poison now. Bureaucracy knows the value of a pre-filled form.
+
+If useful after the first run, do a second run later with a different routing attitude:
 - one humane run (pick the most human option whenever available)
 - one compliant run (pick the most final / system-friendly option whenever available)
 
 ---
 
-## What needs judgement
+## Post-run pressure questions
 
 ### 1. The mundane → sinister transition
 The early cases are supposed to feel routine, not theatrical.
@@ -133,6 +135,15 @@ Questions:
 - Does the scaled-down terminal still feel deliberate rather than cramped?
 - If mobile is materially worse, is that acceptable for this project?
 
+### 13. External first surface
+The page, README, social card, and this packet are also doorways. They should invite the first gesture without explaining the mechanism before the machine can act.
+
+Questions:
+- Did anything outside the game explain too much before your first run?
+- Did the pre-run instruction feel cold and sufficient, or did you need more orientation?
+- After playing, did the public/diagnostic text feel like useful pressure, or like it had already warmed the experience too much?
+- If you arrived through the live link rather than the repo, did the doorway feel like a machine waiting, not a pitch?
+
 ---
 
 ## What kind of feedback is most useful
@@ -166,6 +177,27 @@ Long version:
 Write freeform notes after the run, then answer the sections above only if needed.
 
 ---
+
+## External frontage audit — 2026-05-13
+
+Target: protect the first run from the surfaces around the game. The terminal was already cold; the leak was outside it. A README, social card, or playtest packet can become a friendly narrator if it explains the trick before the player touches the machine.
+
+### Pre-run review
+The plan said the project was gated by Stefano's playtest, which is true for release and false as an excuse. Today's first-surface work sharpened the missing question: not homepage nostalgia, but every doorway — live link, repo, packet, preview card. Phase 4o handled the internal terminal surface. It did not yet audit the external frontage.
+
+Rouse's playtesting chapter was the useful sanity check: playtesting is design pressure, not debugging. If the diagnostic checklist teaches the tester what to notice before the run, it stops being pressure and becomes a rehearsal.
+
+### Autoprompt
+Treat every pre-game surface as part of the machine. Does it invite the first gesture, or does it draw the map? If it names compliance, narrowing, or the ending before the run, quarantine that material behind a spoiler boundary. Do not make the game warmer just because documentation wants to be helpful. Helpful paperwork is still paperwork.
+
+### Audit result
+- **Live metadata stays cold.** The page description names the role, cases, routing, and refusal constraint. It does not expose hidden compliance, narrowing, or the final case.
+- **README now has a spoiler boundary.** The public repo is allowed to document the mechanism, but it first tells an unplayed visitor to go play cold.
+- **The playtest packet now protects the first run.** It starts with a minimal pre-run section and explicitly tells Stefano to stop before the diagnostic questions.
+- **A new external-surface question is in the packet.** Stefano can judge whether the surrounding text felt like a doorway or like a narrator arriving early with a clipboard.
+
+### Current read
+Phase 4p is complete. No code change justified. The next real gate remains Stefano's blind playthrough, now less likely to be preheated by my own documentation. Small mercy. The form did not get to brief the witness first.
 
 ## Release question
 
