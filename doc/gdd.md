@@ -200,6 +200,24 @@ Current pressure points:
 - `README.md` needs a spoiler boundary because the repository is a doorway as much as documentation.
 - `doc/playtest.md` must protect Stefano's first run from its own diagnostic questions.
 
+### Operator presence / participation license
+The operator is not asked to agree with the system. Agreement would be too warm, too theatrical, and too easy to refuse. The colder mechanism is attendance: a staffed terminal, a routed case, a completed shift. Presence becomes operational permission.
+
+The game should make this pressure legible without naming it as consent. The player does not endorse the procedure; they give it a live hand. Every route attaches a human procedural surface to a file that was already waiting for one. By the final case, the system can treat the operator's own history of compliant handling as a record worth retaining.
+
+Rules:
+- Do not accuse the player. Accusation gives them a moral drama to stand inside. The machine is not interested in their soul; it is interested in their availability.
+- Keep the license material, not psychological: attendance, routing accuracy, terminal assignment, continuity records, fulfilled function.
+- The player should feel that being there mattered even when every available action was formally correct.
+- The final case may retain the operator as a usable record, but it must not explain this as guilt, consent, or revelation. It is paperwork keeping what paperwork can reuse.
+- The strongest test is retrospective: after shutdown, the player should be able to look back at the whole shift and suspect that the system needed their presence less as judgment than as a procedural surface.
+
+Current pressure points:
+- The cold standby field asks for an operator, not a hero.
+- Every case routes through a visible human gesture even when the system has already framed the possible channels.
+- `case-007` names the split between physical presence and counted presence; that line now echoes forward into the operator's own record.
+- `case-016` turns throughput, routing accuracy, and absence of deviation into a personnel assessment. The final afterimage retains continuity instead of delivering a speech. Keep it that cold.
+
 ### Final handoff / trained residue
 The final route is not only disposal. It is continuity. The operator is no longer needed as a person at the terminal, but the record of adaptation remains useful to the system: throughput, routing accuracy, absence of deviation, terminal reassignment. The procedure does not merely erase; it keeps what can be reused.
 

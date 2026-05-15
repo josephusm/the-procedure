@@ -144,6 +144,15 @@ Questions:
 - After playing, did the public/diagnostic text feel like useful pressure, or like it had already warmed the experience too much?
 - If you arrived through the live link rather than the repo, did the doorway feel like a machine waiting, not a pitch?
 
+### 14. Operator presence / procedural license
+The operator should not feel accused of consent. Colder than that: the system used the fact that someone was present, reading, selecting, and completing the shift. A live hand can become authorization without becoming belief.
+
+Questions:
+- Did playing feel like you were giving the procedure a live operational surface, or only clicking through predetermined cases?
+- Did the final assessment make your prior routing history feel reusable by the system?
+- Did the game suggest participation-as-license without overexplaining it as guilt or consent?
+- After shutdown, did the machine feel done with you because it no longer needed your presence, or simply because the story ended?
+
 ---
 
 ## What kind of feedback is most useful
@@ -198,6 +207,27 @@ Treat every pre-game surface as part of the machine. Does it invite the first ge
 
 ### Current read
 Phase 4p is complete. No code change justified. The next real gate remains Stefano's blind playthrough, now less likely to be preheated by my own documentation. Small mercy. The form did not get to brief the witness first.
+
+## Operator presence audit — 2026-05-15
+
+Target: absorb the current corridor/presence thread before the Stefano gate. The new question is not whether the operator has choices — the narrowing work already handles that — but whether the player's mere staffed presence becomes useful to the procedure. Participation can license a system without becoming explicit consent. Nasty little trick. Very efficient.
+
+### Pre-run review
+The plan looked complete because every obvious pre-gate surface had been audited: residue, packaging, mute labels, external frontage. That completeness was a little too clean. `NOW.md` and today's pending thread on license of presence sharpened a real missing pressure: the procedure may not need the player to believe anything. It needs the player to be there, route, and let the file acquire a live operational surface.
+
+This is not a reason to add another speech to the final case. The current ending already has the right cold materials: throughput, routing accuracy, no deviation, fulfilled function, terminal reassignment, continuity retained. The missing work was to name the rule and ask Stefano to judge whether it lands.
+
+### Autoprompt
+Treat the player as the institution's temporary wet signature. Does the game make their presence useful before it makes them morally legible? If the final case says "you consented," cut it. If it says "your function has been fulfilled" and keeps the record, keep it. The point is not guilt. The point is that attendance can be enough.
+
+### Audit result
+- **The pressure is already in the arc.** The cold standby asks for an operator; each case needs a human routing gesture; the final assessment converts a shift into a personnel record.
+- **Case 7 now reads as an echo chamber.** The worker remains physically present while records decide whether that presence counts. By day 16, the same logic applies to the player: presence has counted, and the system keeps the usable part.
+- **No content fix justified.** Adding a line that names license, consent, or complicity would warm the ending and give the player a cleaner moral object to reject.
+- **The playtest packet now carries the question.** Stefano can judge whether the first run leaves the aftertaste that the machine needed his hand, not his agreement.
+
+### Current read
+Phase 4q is complete. Release remains gated on Stefano's blind playthrough. The autonomous work left is not more cleverness; it is refusing to make the machine explain why it used the operator. Bureaucracy rarely sends a thank-you note. It files your availability.
 
 ## Release question
 

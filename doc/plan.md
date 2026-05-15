@@ -155,6 +155,13 @@ The latest first-surface work exposed a leak outside the terminal. The page, REA
 - [x] Restructure the playtest packet into a cold pre-run section plus post-run questions, so Stefano can play first without being trained by the checklist.
 - [x] Add a public README spoiler boundary: play first, read design notes after, unless you deliberately want the mechanism exposed.
 
+### Phase 4q — Operator presence / license audit
+The latest corridor work exposed a finer pre-gate pressure: participation can become authorization without ever being called consent. In this game the player does not merely route files; their staffed presence lets the machine attach a human operational surface to what it was already going to do.
+- [x] Define the operator-presence rule in the GDD: the operator's attendance and routing gestures can license procedure without requiring belief, endorsement, or dramatic consent.
+- [x] Audit the current case arc and final handoff for presence-as-authorization pressure: does the game make the player feel used as a live procedural surface, not just trapped by narrowing options?
+- [x] Update Stefano's playtest packet so he can judge whether participation feels like procedural authorization or only like button-clicking.
+- [x] If the audit exposes a weak point where the final case or surrounding copy over-explains the license, cut warmth rather than add speech. No code/content fix justified; the current final assessment and retained continuity line already carry the pressure coldly.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
