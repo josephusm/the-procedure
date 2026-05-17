@@ -162,6 +162,13 @@ The latest corridor work exposed a finer pre-gate pressure: participation can be
 - [x] Update Stefano's playtest packet so he can judge whether participation feels like procedural authorization or only like button-clicking.
 - [x] If the audit exposes a weak point where the final case or surrounding copy over-explains the license, cut warmth rather than add speech. No code/content fix justified; the current final assessment and retained continuity line already carry the pressure coldly.
 
+### Phase 4r — Cold trace / contestability audit
+Recent corridor work sharpened the countercase, not another confirmation: sometimes a poor procedural trace — author, date, defect, forum — is still the only edge that lets a grievance stay imputable. The game must not become a flat theology of hopeless routing. It needs to show that a trace can matter while the procedure decides whether that trace remains usable.
+- [x] Define the cold-trace rule in the GDD: refs, dates, missing signatures, absent directive numbers, logs, and appeal queues are weak handles, not salvation.
+- [x] Audit the case set for contestability surfaces: places where a route preserves an imputable defect, and places where the same surface is turned into reusable administrative material.
+- [x] Update Stefano's playtest packet so he can judge whether traces feel like real handles or only decorative paperwork.
+- [x] If the audit exposes a weak case where every trace is pre-neutralized, fix the case before the gate. No content fix justified; the current set already carries the tension through directive numbers, filing dates, logs, appeal queues, standards dates, and batch-process authorship.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

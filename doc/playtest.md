@@ -82,7 +82,16 @@ Questions:
 - Did humane routes feel like they kept a surface open without pretending to solve the case?
 - Were residue beats cold enough to be felt, or did they become explanation?
 
-### 7. Administrative packaging / premise smuggling
+### 7. Cold trace / contestability surfaces
+A procedure can neutralize a grievance, but sometimes the only remaining counterforce is a poor trace: a filing date, missing directive number, absent author, backup log, appeal forum, or unresolved defect. The game should not treat those handles as heroic. It should also not pretend they are meaningless.
+
+Questions:
+- Did any trace feel like a real handle for contestation, however weak, rather than decorative paperwork?
+- Could you feel the difference between a route that preserved an imputable defect and one that converted it into a dead label?
+- Did audits, appeals, logs, and review windows feel like weak live surfaces, or like fake consolation prizes?
+- Were any cases too hopeless — every trace neutralized before it could matter — or too hopeful for this machine?
+
+### 8. Administrative packaging / premise smuggling
 Some files should make a large institutional premise feel like a small administrative fact. A profile may exist without being confirmed. A facility may operate outside public listing. A complaint may be resolved by standards written after the complaint. The file front is the package.
 
 Questions:
@@ -91,7 +100,7 @@ Questions:
 - Did the processing profile, retroactive standards, Sector 9, or final operator assessment feel packaged into procedure rather than announced as theme?
 - Were any of those premises too obvious, too invisible, or about right?
 
-### 8. Surface temperature / mute labels
+### 9. Surface temperature / mute labels
 The terminal surface should work like a cold public label, not like a dashboard guide. Refs, subjects, dates, system notes, route stamps, and completion lines should make hot premises administratively usable without adding an explanatory narrator.
 
 Questions:
@@ -100,7 +109,7 @@ Questions:
 - Was the interface too cold to read emotionally, too warm and explanatory, or about right?
 - Did you ever want a score, progress indicator, or helper layer — and would adding one damage the experience?
 
-### 9. Pacing and terminal feel
+### 10. Pacing and terminal feel
 The typewriter pacing, pauses, and end-of-day rhythm are part of the experience.
 
 Questions:
@@ -109,7 +118,7 @@ Questions:
 - Does the end-of-day screen reset the rhythm in a good way?
 - Did you ever want to skip ahead out of impatience?
 
-### 10. Final case and terminal shutdown
+### 11. Final case and terminal shutdown
 The final case is deliberately routine. The machine going inert is the last move.
 
 Questions:
@@ -118,7 +127,7 @@ Questions:
 - Did the shutdown of the power button matter, or feel like a gimmick?
 - Did the ending feel earned by the whole run?
 
-### 11. Readability / interface
+### 12. Readability / interface
 This is still a real object on a real screen.
 
 Questions:
@@ -127,7 +136,7 @@ Questions:
 - Does the CRT treatment add atmosphere without getting in the way?
 - Is audio subtle in the right way, or too faint / too present?
 
-### 12. Mobile
+### 13. Mobile
 Mobile support exists, but the game is fundamentally a fixed machine scaled to fit.
 
 Questions:
@@ -135,7 +144,7 @@ Questions:
 - Does the scaled-down terminal still feel deliberate rather than cramped?
 - If mobile is materially worse, is that acceptable for this project?
 
-### 13. External first surface
+### 14. External first surface
 The page, README, social card, and this packet are also doorways. They should invite the first gesture without explaining the mechanism before the machine can act.
 
 Questions:
@@ -144,7 +153,7 @@ Questions:
 - After playing, did the public/diagnostic text feel like useful pressure, or like it had already warmed the experience too much?
 - If you arrived through the live link rather than the repo, did the doorway feel like a machine waiting, not a pitch?
 
-### 14. Operator presence / procedural license
+### 15. Operator presence / procedural license
 The operator should not feel accused of consent. Colder than that: the system used the fact that someone was present, reading, selecting, and completing the shift. A live hand can become authorization without becoming belief.
 
 Questions:
@@ -228,6 +237,28 @@ Treat the player as the institution's temporary wet signature. Does the game mak
 
 ### Current read
 Phase 4q is complete. Release remains gated on Stefano's blind playthrough. The autonomous work left is not more cleverness; it is refusing to make the machine explain why it used the operator. Bureaucracy rarely sends a thank-you note. It files your availability.
+
+## Cold trace / contestability audit — 2026-05-17
+
+Target: absorb the current countercase thread before the Stefano gate. The latest corridor work is not asking for one more proof that procedure eats everything. It asks where the exception still has a poor but real edge: author, date, defect, forum. If the game collapses all traces into decorative paperwork, it becomes too total. Total systems are suspicious. They usually work in PowerPoint.
+
+### Pre-run review
+The plan looked complete because the last audits had handled residue, packaging, surface temperature, external frontage, and operator presence. That completeness was useful, then dangerous. `NOW.md` sharpened the missing pressure: the system preserves what it can reuse, but a cold trace can also preserve contestability if it remains tied to a defect, a date, and a forum that can impose cost.
+
+The case set already contains these thin handles: missing directive numbers, complaint dates, absent authorship, logs, appeal backlogs, backup records, authorization scopes. The open question was whether the playtest packet lets Stefano judge that difference, and whether the design rules protect it from becoming either fake hope or flat hopelessness.
+
+### Autoprompt
+Treat the file as a handle, not only a coffin. Where does a route keep a defect imputable? Where does it merely keep the trace because the machine can reuse it? Do not add a heroic appeal route. Do not make the machine kinder. Name the rule, audit the current cases, and only change content if every trace has already been killed before the player touches it.
+
+### Audit result
+- **Case 6 is the cleanest contestability fork.** The missing directive number can suspend reassignment, become a registry query, or be outrun by transition scheduling. Same trace, different political temperature.
+- **Case 10 keeps the forum poor but real.** The original assembly request can survive as supporting documentation inside a fourteen-month appeals backlog. Miserable, but not nothing. That distinction matters.
+- **Case 14 carries contestability through dates.** The live handle is not water itself; it is the mismatch between filing date and standards date. Some routes preserve that mismatch, others close the original filing under the revised standard set.
+- **Case 15 tests authorship.** Batch-process logs are a trace without a person attached. Backup records may reopen the defect; missing backups let the edited file become authoritative.
+- **No content fix justified before Stefano's run.** The cases already carry both possibilities: live handle and dead label. The missing work was to document the cold-trace rule and add the playtest pressure question.
+
+### Current read
+Phase 4r is complete. The build stays unchanged. This is not another clever layer; it is a brake against making the game flatter than the systems it is about. The machine can eat traces. Sometimes it also needs them alive long enough to make the next route look legitimate.
 
 ## Release question
 

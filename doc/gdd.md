@@ -149,6 +149,26 @@ Rules:
 - Humane routes can keep a responsibility surface open. They do not rescue the person. If they did, the game would be fantasy with a form attached.
 - Use this sparingly. If every route waves a remainder at the player, the machine starts explaining itself. The better cut is colder: one procedural sentence that leaves the residue where the player can smell it.
 
+### Cold trace / contestability surfaces
+Not every trace is fake. That would be too easy, and too flattering to despair. Sometimes the thin procedural residue — an author, a date, a missing directive number, an unresolved defect, an appeal forum — is the only edge left for a grievance to stay imputable.
+
+The game should keep that edge cold. A trace is not rescue. It is a handle the procedure may preserve, delay, translate, or reuse. The live question is whether a record remains a contestable surface or becomes another clean input for the machine.
+
+Rules:
+- Do not make appeals, audits, logs, or contact windows heroic. They are weak handles, not exits.
+- Keep trace materials concrete: filing date, directive number, missing author, backup record, review queue, appeal backlog, authorization scope.
+- Humane routes may preserve an imputable defect or a live forum. They should not solve it automatically.
+- Middle routes often translate the defect into a review category. The trace survives, but under a colder name.
+- Closing routes may keep the trace as reusable administrative material: logged, archived, confirmed, retained, available for reference.
+- The player should feel the difference between a live handle and a dead label without being told which one they chose.
+
+Current pressure points:
+- `case-006`: the missing directive number can suspend reassignment, become a registry query, or be outrun by relocation scheduling.
+- `case-010`: the original assembly request can enter an appeal backlog or become closed guidance correspondence.
+- `case-014`: the filing date and standards date remain the only contestable edge; some routes preserve the date problem, others close the water problem.
+- `case-015`: batch-process authorship is a trace with no individual user attached. The question is whether backup records reopen it or the edited file becomes authoritative.
+- `case-016`: the operator continuity record is not explanation. It is the final trace kept because the system can reuse it.
+
 ### Administrative packaging / premise smuggling
 A file does not only contain facts. It makes some facts look like background infrastructure and others look like the live question. That is one of the procedure's quiet powers: a large institutional claim can pass through the player's hand as a secondary premise because the case front is coherent, numbered, referenced, and already waiting for a route.
 
