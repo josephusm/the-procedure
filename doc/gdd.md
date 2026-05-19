@@ -220,6 +220,21 @@ Current pressure points:
 - `README.md` needs a spoiler boundary because the repository is a doorway as much as documentation.
 - `doc/playtest.md` must protect Stefano's first run from its own diagnostic questions.
 
+### Gate discipline / live doorway liveness
+The project can fail in a quieter way now: by endlessly absorbing every related corridor thought as one more pre-gate audit. That would look responsible and behave like delay. There is a point where design discipline means refusing another form.
+
+Rules:
+- Do not add a new pre-gate conceptual audit unless there is fresh external feedback, a discovered defect, or a material doorway failure.
+- A live doorway failure is concrete: unreachable page, error wall, redirect, broken metadata, illegible first screen, warmed explanatory landing surface, or a mobile/desktop first screen that no longer invites the first gesture.
+- New corridor thoughts may inform post-feedback polish, but they should not keep moving the release gate by themselves.
+- The autonomous pre-gate task, if no feedback exists, is a smoke test: can a cold player still reach the machine and see a low-current terminal waiting for an operator?
+
+Current pressure points:
+- The live GitHub Pages URL must remain a cold first surface: no marketing wrapper, no diagnostic explanation, no bot-wall theater.
+- Desktop should present the terminal as a machine in standby, with `LOCAL POWER AVAILABLE` and the power button legible.
+- Mobile may be smaller — the machine is fixed and scaled — but the first gesture must still read as deliberate, not broken.
+- If these checks hold, stop. The next meaningful pressure is Stefano's blind run, not another internal memo with better shoes.
+
 ### Operator presence / participation license
 The operator is not asked to agree with the system. Agreement would be too warm, too theatrical, and too easy to refuse. The colder mechanism is attendance: a staffed terminal, a routed case, a completed shift. Presence becomes operational permission.
 

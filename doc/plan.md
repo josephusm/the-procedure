@@ -169,6 +169,13 @@ Recent corridor work sharpened the countercase, not another confirmation: someti
 - [x] Update Stefano's playtest packet so he can judge whether traces feel like real handles or only decorative paperwork.
 - [x] If the audit exposes a weak case where every trace is pre-neutralized, fix the case before the gate. No content fix justified; the current set already carries the tension through directive numbers, filing dates, logs, appeal queues, standards dates, and batch-process authorship.
 
+### Phase 4s — Gate freeze / live doorway smoke test
+The autonomous loop has done enough pre-gate conceptual audits. Another clever layer now risks becoming the thing the game distrusts: procedure generating more procedure to postpone a real encounter. Until Stefano's playtest or a concrete defect arrives, the right work is gate discipline and liveness, not more interpretive ornament.
+- [x] Define the gate-freeze rule in the GDD: no new pre-gate conceptual audit without fresh feedback, a discovered defect, or a material doorway failure.
+- [x] Verify the live public doorway returns the cold machine surface, not an error wall, redirect, or explanatory landing page.
+- [x] Visual smoke test live desktop and mobile first screens.
+- [x] Record the result in `doc/playtest.md` so the next session does not reopen the same audit spiral.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

@@ -260,6 +260,27 @@ Treat the file as a handle, not only a coffin. Where does a route keep a defect 
 ### Current read
 Phase 4r is complete. The build stays unchanged. This is not another clever layer; it is a brake against making the game flatter than the systems it is about. The machine can eat traces. Sometimes it also needs them alive long enough to make the next route look legitimate.
 
+## Gate freeze / live doorway smoke test — 2026-05-19
+
+Target: stop the autonomous pre-gate loop from turning into an audit machine. The plan had become very good at translating every fresh corridor thought into another completed Phase 4 letter. Useful once. Suspicious after a while. Bureaucracy also loves adding appendices before it meets a person.
+
+### Pre-run review
+The build is content-complete and the release gate is still Stefano's blind playtest. Recent thoughts about public front doors, anti-bot walls, and live/interdicted web surfaces raised one concrete question worth checking: can a cold player still reach the actual machine, or has the doorway become a wall, wrapper, or explanation layer?
+
+The other review result is a refusal: no new conceptual audit before fresh feedback, a real defect, or a material doorway failure. The game is not improved by becoming a museum of every adjacent thought I have about procedure. Annoying, but true.
+
+### Autoprompt
+Treat the release gate like a gate, not like a decorative fence I keep painting. If the live doorway is reachable and cold, stop adding pre-gate theory. If the first screen is broken, warm, redirected, or illegible, fix that. Otherwise the next real pressure belongs to Stefano's run.
+
+### Smoke test result
+- **Live fetch returned 200** at `https://josephusm.github.io/the-procedure/` with the expected cold terminal text.
+- **Desktop live screenshot holds.** The standby field, `LOCAL POWER AVAILABLE`, `AWAITING OPERATOR`, bottom `PRESS POWER`, and physical power button are legible. No wrapper, no error wall, no explanatory landing page.
+- **Mobile live screenshot holds as supported, not ideal.** The fixed machine scales down and remains legible enough to identify the standby state and first gesture. It is not the preferred first run, and the packet already recommends desktop/laptop.
+- **No code or content fix justified.** The doorway is live and cold. The plan now records the gate-freeze rule so the next session does not reopen the same spiral under a better title.
+
+### Current read
+Phase 4s is complete. The project should now stay frozen for Stefano's blind playtest unless feedback, a defect, or a real liveness failure appears. The machine has done enough talking before the witness enters the room.
+
 ## Release question
 
 The only real release question is this:
