@@ -176,6 +176,13 @@ The autonomous loop has done enough pre-gate conceptual audits. Another clever l
 - [x] Visual smoke test live desktop and mobile first screens.
 - [x] Record the result in `doc/playtest.md` so the next session does not reopen the same audit spiral.
 
+### Phase 4t — Minimum public trace / machine-readable doorway
+Gate freeze still holds. This is not another conceptual audit. Current review exposed a concrete public-doorway risk: a cold page can be reachable to humans and still leave only a weak machine-readable trace for archives, link unfurls, crawlers, and future readers. The fix must stay colder than a pitch: canonical URL, structured metadata, robots/sitemap. No explanatory wrapper.
+- [x] Define the minimum-trace rule in the GDD: public metadata should preserve an imputable doorway without pre-solving the game.
+- [x] Add canonical + structured game metadata to `index.html` without warming the first surface.
+- [x] Add `robots.txt` and `sitemap.xml` as simple public handles.
+- [x] Smoke test local first screen and metadata files.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

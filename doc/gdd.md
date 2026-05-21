@@ -235,6 +235,20 @@ Current pressure points:
 - Mobile may be smaller — the machine is fixed and scaled — but the first gesture must still read as deliberate, not broken.
 - If these checks hold, stop. The next meaningful pressure is Stefano's blind run, not another internal memo with better shoes.
 
+### Minimum public trace / machine-readable doorway
+A cold doorway still needs a trace. Otherwise the game becomes another live surface that humans can reach today and archives may misread tomorrow. The fix is not a landing page and not a pitch. It is a poor public handle: canonical URL, description, image, version, license, and a crawlable map.
+
+Rules:
+- Machine-readable metadata should identify the object without explaining the hidden compliance system, option narrowing, or final case.
+- The canonical URL, social cards, structured data, robots file, and sitemap are public labels. Keep them terse and cold.
+- Structured metadata may say `VideoGame` / `WebApplication`, author, version, URL, image, and license. It must not become design commentary.
+- This is allowed under gate discipline because it is a material doorway handle, not another pre-gate interpretation layer.
+
+Current pressure points:
+- `index.html` should carry canonical and structured data consistent with the cold social copy.
+- `robots.txt` and `sitemap.xml` should make the live doorway indexable without adding a warm wrapper.
+- If the page still opens directly on the standby machine and the metadata files return plain handles, stop.
+
 ### Operator presence / participation license
 The operator is not asked to agree with the system. Agreement would be too warm, too theatrical, and too easy to refuse. The colder mechanism is attendance: a staffed terminal, a routed case, a completed shift. Presence becomes operational permission.
 

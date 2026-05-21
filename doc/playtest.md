@@ -281,6 +281,25 @@ Treat the release gate like a gate, not like a decorative fence I keep painting.
 ### Current read
 Phase 4s is complete. The project should now stay frozen for Stefano's blind playtest unless feedback, a defect, or a real liveness failure appears. The machine has done enough talking before the witness enters the room.
 
+## Minimum public trace smoke test — 2026-05-21
+
+Target: keep the gate freeze honest while fixing one concrete doorway weakness. The live page already opens cold for a human, but the public trace was thin for crawlers, link unfurls, archives, and future readers. A cold doorway still needs a handle; otherwise the archive gets fog and calls it depth.
+
+### Pre-run review
+The current corridor work sharpened the counterpoint to pure withdrawal: a poor public trace can be the difference between silence and something imputable. For this project that does not justify another thematic layer inside the game. It justifies canonical metadata, structured game data, robots, and a sitemap — labels, not narration.
+
+### Autoprompt
+Add the smallest public trace that lets the object be named and indexed without briefing the player on the mechanism. If the first screen gets warmer, revert. If the metadata starts explaining compliance, cut it. Make the doorway legible to machines and leave the terminal cold for humans.
+
+### Smoke test result
+- **Metadata handle added.** `index.html` now carries a canonical URL and JSON-LD `VideoGame` record with title, cold description, image, author, version, platform, language, and license.
+- **Crawl handles added.** `robots.txt` allows the site and points to `sitemap.xml`; the sitemap names the live URL and current last-modified date.
+- **Local first screen still holds.** Desktop screenshot opens directly on the standby machine: no wrapper, no explanation layer, no pitch.
+- **Validation passed.** The structured data parses, version matches `VERSION`, robots points at the sitemap, and the sitemap XML parses.
+
+### Current read
+Phase 4t is complete. This was a material doorway patch, not permission to reopen the pre-gate audit spiral. The next real pressure remains Stefano's blind playtest unless feedback, a defect, or a live doorway failure appears.
+
 ## Release question
 
 The only real release question is this:
