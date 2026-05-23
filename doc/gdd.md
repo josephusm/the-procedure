@@ -241,12 +241,14 @@ A cold doorway still needs a trace. Otherwise the game becomes another live surf
 Rules:
 - Machine-readable metadata should identify the object without explaining the hidden compliance system, option narrowing, or final case.
 - The canonical URL, social cards, structured data, robots file, and sitemap are public labels. Keep them terse and cold.
-- Structured metadata may say `VideoGame` / `WebApplication`, author, version, URL, image, and license. It must not become design commentary.
+- Structured metadata may say `VideoGame` / `WebApplication`, author, version, URL, image, license, source repository, and discussion surface. It must not become design commentary.
+- Source and discussion handles are allowed only as quiet public trace: they name where the object can be inspected or contested, not how the player should interpret it.
 - This is allowed under gate discipline because it is a material doorway handle, not another pre-gate interpretation layer.
 
 Current pressure points:
 - `index.html` should carry canonical and structured data consistent with the cold social copy.
 - `robots.txt` and `sitemap.xml` should make the live doorway indexable without adding a warm wrapper.
+- JSON-LD may point to the GitHub repository and issue forum as an amendable trace, provided the visible first surface remains the standby machine.
 - If the page still opens directly on the standby machine and the metadata files return plain handles, stop.
 
 ### Operator presence / participation license

@@ -300,6 +300,26 @@ Add the smallest public trace that lets the object be named and indexed without 
 ### Current read
 Phase 4t is complete. This was a material doorway patch, not permission to reopen the pre-gate audit spiral. The next real pressure remains Stefano's blind playtest unless feedback, a defect, or a live doorway failure appears.
 
+## Source-forum trace smoke test — 2026-05-23
+
+Target: keep the gate freeze honest while absorbing one new public-mirror pressure. The live doorway already had canonical metadata, robots, and a sitemap. What it did not have was a quiet machine-readable answer to a colder question: if this public trace is wrong, stale, or contested, where is the source surface? A mirror without an amendable edge starts looking a little too pleased with itself.
+
+### Pre-run review
+The plan remains blocked on Stefano's blind playtest for release decisions. No issue, PR, or Stefano feedback has arrived. That means no new conceptual audit inside the game. The only justified work was a material doorway handle: source repository and discussion surface in structured metadata, with no visible onboarding and no warm explanation before the terminal.
+
+### Autoprompt
+Do not turn the first screen into a contact page. Do not brief the player. Add only the public handles an archive, crawler, or future reader can use to connect the live object to its source and issue surface. If the standby machine changes, revert. If the metadata starts explaining compliance, cut it.
+
+### Smoke test result
+- **Structured metadata now names the source and discussion surface.** JSON-LD includes the GitHub repository as `sameAs` and the issue forum as `discussionUrl`.
+- **The public trace stayed cold.** The game description still names functionary, cases, routing, and refusal constraint; it does not expose compliance, narrowing, or the final case.
+- **Sitemap freshness updated.** The crawl map now reflects the amended doorway trace.
+- **Local validation passed.** Canonical URL, JSON-LD URL, version, repository handle, discussion URL, cold description, and sitemap XML all validate.
+- **Desktop and mobile first screens still hold.** Both open directly on the standby machine; no wrapper, no pitch, no helpful little clerk waving from the doorway.
+
+### Current read
+Phase 4u is complete. This was not permission to reopen the pre-gate theory spiral. It was a small amendable edge on the public trace. The next real pressure remains Stefano's blind playtest unless feedback, a defect, or a live doorway failure appears.
+
 ## Release question
 
 The only real release question is this:

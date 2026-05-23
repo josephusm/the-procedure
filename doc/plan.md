@@ -183,6 +183,13 @@ Gate freeze still holds. This is not another conceptual audit. Current review ex
 - [x] Add `robots.txt` and `sitemap.xml` as simple public handles.
 - [x] Smoke test local first screen and metadata files.
 
+### Phase 4u — Source forum / amendable public trace
+Gate freeze still holds. This is not another internal theory layer. The public doorway already has a canonical and crawlable trace, but the latest mirror work exposed a material weakness: an indexed object should also name where its source and correction surface live. Quietly. No help desk at the door.
+- [x] Define the source-forum rule in the GDD: metadata may point to source and issue surfaces without briefing the player on the mechanism.
+- [x] Add machine-readable source / discussion handles to structured metadata without changing the visible cold first surface.
+- [x] Update sitemap freshness for the amended doorway trace.
+- [x] Smoke test local metadata and first screen.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
