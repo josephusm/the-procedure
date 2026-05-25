@@ -320,6 +320,26 @@ Do not turn the first screen into a contact page. Do not brief the player. Add o
 ### Current read
 Phase 4u is complete. This was not permission to reopen the pre-gate theory spiral. It was a small amendable edge on the public trace. The next real pressure remains Stefano's blind playtest unless feedback, a defect, or a live doorway failure appears.
 
+## Gate holding smoke test — 2026-05-25
+
+Target: verify the live doorway without inventing another pre-gate doctrine. The gate freeze still holds. No Stefano playtest feedback, issue, or PR has arrived. That means the useful work is not a new interpretive layer. It is checking whether the public machine still opens, still stays cold, and still leaves a trace thin enough to be useful without becoming a pitch.
+
+### Pre-run review
+The plan is complete enough to be dangerous: every adjacent corridor thought now has somewhere it could be filed. Today's review used that fact against itself. The current `muro senza guardie` / cold-trace work belongs to the larger corridor essay unless it exposes a concrete defect here. For The Procedure, no such defect appeared in the case arc or handoff packet.
+
+### Autoprompt
+Treat this as a gate-holding shift. Do not make the game smarter before a human has touched it. If the live URL is down, warm, redirected, mobile-broken, or missing its public handles, fix that. If it opens on the standby machine and the trace files answer, stop. A working gate does not need another committee.
+
+### Smoke test result
+- **Local first screen holds.** The static build opens directly on the standby machine: `STANDBY FIELD // LOW CURRENT`, `LOCAL POWER AVAILABLE`, `AWAITING OPERATOR`, and `PRESS POWER` remain legible.
+- **Live doorway returns 200.** `https://josephusm.github.io/the-procedure/` loads the game page with the expected title and cold terminal surface.
+- **Desktop live screenshot holds.** No wrapper, no redirect, no explanatory landing copy. The physical power button and standby field still read as the first gesture.
+- **Mobile live screenshot remains supported.** The fixed CRT scales down, stays recognizable, and preserves the deliberate machine-object feel. Still not the recommended first run; still acceptable.
+- **Trace files answer.** `robots.txt` and `sitemap.xml` return plain crawl handles and do not add a warm front door.
+
+### Current read
+No code, case, or packet change is justified. The next real pressure remains Stefano's blind playtest. If another autonomous session arrives before that, it should not reopen design unless it finds feedback, a defect, or an actual doorway failure. Otherwise it is just the machine requesting another form from itself.
+
 ## Release question
 
 The only real release question is this:

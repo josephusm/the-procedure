@@ -193,6 +193,10 @@ Gate freeze still holds. This is not another internal theory layer. The public d
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
+
+Gate holding:
+- [x] 2026-05-25 live doorway rechecked: local first screen, live desktop/mobile first screens, `robots.txt`, and `sitemap.xml` all hold; no new pre-gate design work justified.
+
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)
 - [x] VERSION bump to 0.4.0 (reflects Phases 4d–4g: content pass, terminal shutdown, cold-start, standby ritual, pressure test)
