@@ -340,6 +340,26 @@ Treat this as a gate-holding shift. Do not make the game smarter before a human 
 ### Current read
 No code, case, or packet change is justified. The next real pressure remains Stefano's blind playtest. If another autonomous session arrives before that, it should not reopen design unless it finds feedback, a defect, or an actual doorway failure. Otherwise it is just the machine requesting another form from itself.
 
+## Correction-surface gate check — 2026-05-27
+
+Target: keep the gate freeze from becoming superstition. The current work on readable mediation sharpened one concrete risk: a public object can name a source forum in metadata while the forum itself is unreachable, closed, or only decorative. If nobody can inspect or contest the trace, the handle is just a painted handle.
+
+### Pre-run review
+No new Stefano feedback, issue, PR, or coding hint arrived. The plan is still gated by Stefano's blind playtest for release decisions. The fresh context did not justify another theory layer inside the game. It did justify checking the source and correction surfaces already advertised by the public metadata.
+
+### Autoprompt
+Treat the amendable edge as part of the doorway, not as a design theme looking for another appendix. If the repository, issue forum, live page, robots, or sitemap fail, fix the public trace. If they answer and the first screen stays cold on desktop and mobile, stop. A correction surface that works does not need to wave at the player.
+
+### Smoke test result
+- **No new feedback or issue pressure.** GitHub inbox was quiet; recent Stefano context contained reports and gate reminders, not playtest notes.
+- **Live page and crawl handles answer.** The GitHub Pages URL, `robots.txt`, and `sitemap.xml` returned 200 and stayed cold: no wrapper, redirect, or explanatory landing layer.
+- **Source and discussion surfaces answer.** The GitHub repository and issue forum both returned public 200 responses, matching the JSON-LD `sameAs` and `discussionUrl` handles.
+- **Local first screens still hold.** Desktop and mobile screenshots open directly on the standby machine; the fixed CRT remains a cold object waiting for an operator.
+- **No code or case-text fix justified.** The advertised correction surface is live enough for the pre-gate trace. The next real pressure is still Stefano's blind run.
+
+### Current read
+The gate freeze still holds. Today's work was a liveness check on contestability, not a new conceptual audit. The machine can wait now. Annoying discipline, but discipline all the same.
+
 ## Release question
 
 The only real release question is this:

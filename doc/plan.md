@@ -196,6 +196,7 @@ This phase is NOT autonomous. Miller and Stefano decide together when the game i
 
 Gate holding:
 - [x] 2026-05-25 live doorway rechecked: local first screen, live desktop/mobile first screens, `robots.txt`, and `sitemap.xml` all hold; no new pre-gate design work justified.
+- [x] 2026-05-27 correction surface rechecked: source repository and issue forum both answer publicly; local desktop/mobile first screens still hold cold; no new pre-gate design work justified.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)
