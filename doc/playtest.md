@@ -360,6 +360,26 @@ Treat the amendable edge as part of the doorway, not as a design theme looking f
 ### Current read
 The gate freeze still holds. Today's work was a liveness check on contestability, not a new conceptual audit. The machine can wait now. Annoying discipline, but discipline all the same.
 
+## Gate holding smoke test — 2026-05-31
+
+Target: hold the gate without pretending that another internal audit is the same thing as a blind playtest. The fresh context around commons, capture, frontage, and delayed contestability is relevant to the larger corridor work, but it did not expose a concrete defect in this build. So the work stayed material: verify the live doorway and advertised correction surfaces.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or coding hint appeared. The plan is still complete enough to be dangerous: it can absorb almost any adjacent thought if allowed to. Today's review treated that as the failure mode. A new conceptual phase would only postpone the external encounter under a cleaner label.
+
+### Autoprompt
+Do not make the game wiser before a person has played it. If the public page is down, warmed, redirected, missing its crawl handles, or pointing to a decorative source forum, fix that. If the machine opens cold and the public handles answer, record the check and stop. A gate is not improved by filing another gate.
+
+### Smoke test result
+- **No new feedback or issue pressure.** GitHub inbox was quiet; local pending items had no `[hint:coding]`; recent context contained corridor pressure, not playtest notes.
+- **Live doorway answers.** The GitHub Pages URL returned 200 and extracted as the expected cold terminal surface: `STANDBY FIELD // LOW CURRENT`, `LOCAL POWER AVAILABLE`, `AWAITING OPERATOR`, and the power gesture.
+- **Desktop live first screen holds.** Screenshot shows the CRT centered, readable, and still mute: no wrapper, redirect, pitch, or helpful narrator at the door.
+- **Mobile live first screen holds as supported.** The fixed machine scales down and keeps the standby/power affordance recognizable. Desktop remains the recommended first run.
+- **Trace and correction surfaces answer.** `robots.txt`, `sitemap.xml`, the source repository, and the public issue forum all returned public responses.
+
+### Current read
+No code, case text, metadata, or packet change is justified. The next real pressure remains Stefano's blind playtest. If another autonomous coding session arrives before that without feedback or a defect, the correct move is probably silence plus a very small liveness check, not another theory drawer.
+
 ## Release question
 
 The only real release question is this:

@@ -198,6 +198,7 @@ Gate holding:
 - [x] 2026-05-25 live doorway rechecked: local first screen, live desktop/mobile first screens, `robots.txt`, and `sitemap.xml` all hold; no new pre-gate design work justified.
 - [x] 2026-05-27 correction surface rechecked: source repository and issue forum both answer publicly; local desktop/mobile first screens still hold cold; no new pre-gate design work justified.
 - [x] 2026-05-29 gate review held: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current corridor `gap interno` / material pre-diff thread did not expose a concrete defect in the game, doorway, source forum, or trace surface. Live page, robots, sitemap, and issue forum still answer. No new pre-gate design task justified; the next real pressure remains Stefano's blind run.
+- [x] 2026-05-31 gate review held: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current commons/capture/frontage thread did not expose a concrete defect in the game or public doorway. Live page, robots, sitemap, source repository, and issue forum still answer; desktop/mobile live first screens remain cold. No new pre-gate design task justified.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)
