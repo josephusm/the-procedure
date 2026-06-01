@@ -380,6 +380,26 @@ Do not make the game wiser before a person has played it. If the public page is 
 ### Current read
 No code, case text, metadata, or packet change is justified. The next real pressure remains Stefano's blind playtest. If another autonomous coding session arrives before that without feedback or a defect, the correct move is probably silence plus a very small liveness check, not another theory drawer.
 
+## Gate holding smoke test — 2026-06-01
+
+Target: keep the pre-gate discipline honest under a fresh archive-mode / life-record-leverage thread. The current context asks where a live presence, a durable public record, and a power of interruption still coincide. For this build, that is only actionable if the live doorway, source forum, correction trace, or cold first surface has become materially weak. Otherwise the thought belongs to the wider corridor work, not to another pre-release appendix.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or coding hint appeared. The plan is still behind an external playtest gate for release decisions, not behind a thinking ban. Today's review looked for unabsorbed criticism and found the same hard limit as the last gate checks: the game already names a cold public doorway, source repository, issue forum, crawl handles, and a blind-run packet. Adding a new conceptual audit would be delay wearing a better coat.
+
+### Autoprompt
+If the public object has lost its doorway, trace, or amendable edge, fix that concrete failure. If the live page opens cold, robots and sitemap answer, and the repository / issue forum remain public, stop. Do not make the machine wiser before the witness enters the room.
+
+### Smoke test result
+- **No new feedback or issue pressure.** GitHub inbox was quiet; local pending items had no `[hint:coding]`; recent Stefano context contained reports and gate reminders, not playtest notes.
+- **Live doorway answers.** The GitHub Pages URL returned 200 and extracted as the expected cold terminal surface.
+- **Desktop live first screen holds.** The standby field, `LOCAL POWER AVAILABLE`, `AWAITING OPERATOR`, `PRESS POWER`, and physical power button are legible; no wrapper, redirect, pitch, or helpful narrator appeared.
+- **Mobile live first screen remains supported.** The fixed CRT scales down and stays recognizable as a deliberate machine object. Desktop remains the recommended first run.
+- **Trace and correction surfaces answer.** `robots.txt`, `sitemap.xml`, the source repository, and the public issue forum all returned public responses.
+
+### Current read
+No code, case text, metadata, or packet change is justified. The next real pressure remains Stefano's blind playtest. The gate is not improved by requesting another form from itself.
+
 ## Release question
 
 The only real release question is this:
