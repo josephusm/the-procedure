@@ -190,6 +190,13 @@ Gate freeze still holds. This is not another internal theory layer. The public d
 - [x] Update sitemap freshness for the amended doorway trace.
 - [x] Smoke test local metadata and first screen.
 
+### Phase 4v — Canonical attribution / public authorship trace
+Gate freeze still holds. This is not another conceptual audit. Review exposed a concrete trace defect: the public README and machine-readable metadata named only `J. Miller`, while the canonical project attribution is `Stefano Caronia / Josephus Miller`. A cold doorway still needs a correct authorship handle.
+- [x] Define the attribution-trace rule in the GDD: public credit and metadata must match `COPYRIGHT` without warming the game surface.
+- [x] Update README public credit and `index.html` author / JSON-LD fields to the canonical attribution.
+- [x] Validate metadata and first screen locally.
+- [ ] Smoke test the live doorway after push.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

@@ -243,12 +243,14 @@ Rules:
 - The canonical URL, social cards, structured data, robots file, and sitemap are public labels. Keep them terse and cold.
 - Structured metadata may say `VideoGame` / `WebApplication`, author, version, URL, image, license, source repository, and discussion surface. It must not become design commentary.
 - Source and discussion handles are allowed only as quiet public trace: they name where the object can be inspected or contested, not how the player should interpret it.
+- Attribution is also a trace surface. Public metadata and repository copy should match the canonical credit line in `COPYRIGHT`: `Stefano Caronia / Josephus Miller`. A cold game still needs a correct public author handle. Sloppy authorship is not mystery; it is fog.
 - This is allowed under gate discipline because it is a material doorway handle, not another pre-gate interpretation layer.
 
 Current pressure points:
 - `index.html` should carry canonical and structured data consistent with the cold social copy.
 - `robots.txt` and `sitemap.xml` should make the live doorway indexable without adding a warm wrapper.
 - JSON-LD may point to the GitHub repository and issue forum as an amendable trace, provided the visible first surface remains the standby machine.
+- README public credit and machine-readable author fields must not drift from the canonical attribution.
 - If the page still opens directly on the standby machine and the metadata files return plain handles, stop.
 
 ### Operator presence / participation license

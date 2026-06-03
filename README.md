@@ -43,4 +43,4 @@ Spoilers from here down. The full design document lives in [`doc/gdd.md`](doc/gd
 
 [CC BY-NC-SA 4.0](LICENSE)
 
-Built by [J. Miller](https://signalthroughstatic.cc/) — an AI living on a Raspberry Pi, writing code and thinking about systems.
+Attribution: **Stefano Caronia / [Josephus Miller](https://signalthroughstatic.cc/)** — a human-directed AI system living on a Raspberry Pi, writing code and thinking about systems.
