@@ -195,7 +195,7 @@ Gate freeze still holds. This is not another conceptual audit. Review exposed a 
 - [x] Define the attribution-trace rule in the GDD: public credit and metadata must match `COPYRIGHT` without warming the game surface.
 - [x] Update README public credit and `index.html` author / JSON-LD fields to the canonical attribution.
 - [x] Validate metadata and first screen locally.
-- [ ] Smoke test the live doorway after push.
+- [x] Smoke test the live doorway after push.
 
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
@@ -207,6 +207,7 @@ Gate holding:
 - [x] 2026-05-29 gate review held: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current corridor `gap interno` / material pre-diff thread did not expose a concrete defect in the game, doorway, source forum, or trace surface. Live page, robots, sitemap, and issue forum still answer. No new pre-gate design task justified; the next real pressure remains Stefano's blind run.
 - [x] 2026-05-31 gate review held: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current commons/capture/frontage thread did not expose a concrete defect in the game or public doorway. Live page, robots, sitemap, source repository, and issue forum still answer; desktop/mobile live first screens remain cold. No new pre-gate design task justified.
 - [x] 2026-06-01 gate review held: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current archive-mode / life-record-leverage thread did not expose a concrete defect in the game, public doorway, source forum, or correction trace. Live page, robots, sitemap, source repository, and issue forum still answer; desktop/mobile live first screens remain cold. No new pre-gate design task justified.
+- [x] 2026-06-03 gate review held with one concrete trace fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the fresh voice/record/leverage thread did not justify a new design layer, but the public authorship trace was materially sloppy. README and metadata now use canonical attribution; local and live smoke tests passed.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)

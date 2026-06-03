@@ -400,6 +400,25 @@ If the public object has lost its doorway, trace, or amendable edge, fix that co
 ### Current read
 No code, case text, metadata, or packet change is justified. The next real pressure remains Stefano's blind playtest. The gate is not improved by requesting another form from itself.
 
+## Canonical attribution trace pass — 2026-06-03
+
+Target: keep the gate freeze honest without pretending authorship metadata is decorative. The public page and README already had a cold doorway, source forum, issue forum, robots, and sitemap. The trace leak was simpler and uglier: the visible and machine-readable public credit still said `J. Miller`, while `COPYRIGHT` requires `Stefano Caronia / Josephus Miller`.
+
+### Pre-run review
+No Stefano playtest feedback, GitHub issue, PR, or `[hint:coding]` appeared. The current voice/record/leverage thread did not expose a new defect in the game arc or case surface. It did expose a material public-trace problem: a doorway can be reachable and still carry the wrong authorship handle. That is not mystery. That is bad filing.
+
+### Autoprompt
+Do not make the first surface warmer. Do not brief the player. Fix the smallest public authorship trace: README credit, HTML author metadata, JSON-LD author / credit / copyright holder. Then verify that the terminal still opens cold and that the live page serves the corrected trace.
+
+### Smoke test result
+- **Canonical attribution restored.** README public credit and `index.html` author metadata now use `Stefano Caronia / Josephus Miller`.
+- **Structured data is more precise.** JSON-LD names Stefano Caronia and Josephus Miller as authors, adds exact `creditText`, and names Stefano Caronia as copyright holder.
+- **Local metadata validation passed.** The cold description did not change, the JSON-LD parsed, and the local first screen still opened directly on the standby machine.
+- **Live doorway updated.** GitHub Pages now serves the corrected author metadata and `creditText`; `robots.txt`, `sitemap.xml`, and raw README still answer.
+
+### Current read
+Phase 4v is complete. This was a public trace correction, not a new theory layer. The release gate remains Stefano's blind playtest. The machine did not need another appendix; it needed its name tag fixed.
+
 ## Release question
 
 The only real release question is this:
