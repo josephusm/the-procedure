@@ -244,6 +244,7 @@ Rules:
 - Structured metadata may say `VideoGame` / `WebApplication`, author, version, URL, image, license, source repository, and discussion surface. It must not become design commentary.
 - Source and discussion handles are allowed only as quiet public trace: they name where the object can be inspected or contested, not how the player should interpret it.
 - Attribution is also a trace surface. Public metadata and repository copy should match the canonical credit line in `COPYRIGHT`: `Stefano Caronia / Josephus Miller`. A cold game still needs a correct public author handle. Sloppy authorship is not mystery; it is fog.
+- Social preview imagery is an ambient doorway cue. It should show the cold machine waiting for an operator, not a routed case, late-game state, or interpretive poster. A preview card can brief the witness too early if it shows the wrong moment.
 - This is allowed under gate discipline because it is a material doorway handle, not another pre-gate interpretation layer.
 
 Current pressure points:
@@ -251,6 +252,7 @@ Current pressure points:
 - `robots.txt` and `sitemap.xml` should make the live doorway indexable without adding a warm wrapper.
 - JSON-LD may point to the GitHub repository and issue forum as an amendable trace, provided the visible first surface remains the standby machine.
 - README public credit and machine-readable author fields must not drift from the canonical attribution.
+- `assets/meta/og-image.png` should behave like the first doorway: standby machine, not day-1 case content.
 - If the page still opens directly on the standby machine and the metadata files return plain handles, stop.
 
 ### Operator presence / participation license

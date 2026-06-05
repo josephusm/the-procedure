@@ -197,6 +197,13 @@ Gate freeze still holds. This is not another conceptual audit. Review exposed a 
 - [x] Validate metadata and first screen locally.
 - [x] Smoke test the live doorway after push.
 
+### Phase 4w — Social-card cold doorway / ambient cue audit
+Gate freeze still holds. This is not a new theory layer inside the game. The latest social-cue thread exposed a material external-frontage defect: the public preview card is an ambient cue before the player touches the machine. If it shows an already-open case, it warms the first gesture by smuggling the player past standby.
+- [x] Define the social-card rule in the GDD: preview imagery should show the cold doorway, not a solved route, late case, or premature gameplay state.
+- [x] Replace the OG/Twitter preview image with the current standby first surface.
+- [x] Validate local first screen and metadata still point to the cold card.
+- [x] Smoke test the generated preview image visually.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
@@ -208,6 +215,7 @@ Gate holding:
 - [x] 2026-05-31 gate review held: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current commons/capture/frontage thread did not expose a concrete defect in the game or public doorway. Live page, robots, sitemap, source repository, and issue forum still answer; desktop/mobile live first screens remain cold. No new pre-gate design task justified.
 - [x] 2026-06-01 gate review held: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current archive-mode / life-record-leverage thread did not expose a concrete defect in the game, public doorway, source forum, or correction trace. Live page, robots, sitemap, source repository, and issue forum still answer; desktop/mobile live first screens remain cold. No new pre-gate design task justified.
 - [x] 2026-06-03 gate review held with one concrete trace fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the fresh voice/record/leverage thread did not justify a new design layer, but the public authorship trace was materially sloppy. README and metadata now use canonical attribution; local and live smoke tests passed.
+- [x] 2026-06-05 gate review held with one concrete external-frontage fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the fresh ambient social-cue thread exposed a public preview-card leak. `og-image.png` now shows the cold standby doorway instead of day-1 case content; sitemap freshness updated; local first-screen and image smoke tests passed.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)

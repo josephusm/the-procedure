@@ -419,6 +419,26 @@ Do not make the first surface warmer. Do not brief the player. Fix the smallest 
 ### Current read
 Phase 4v is complete. This was a public trace correction, not a new theory layer. The release gate remains Stefano's blind playtest. The machine did not need another appendix; it needed its name tag fixed.
 
+## Social-card cold doorway pass — 2026-06-05
+
+Target: keep the gate freeze honest under the new ambient-cue thread. A social card is not neutral wrapping. It is one of the first signals around the object, and it can quietly train the player's expectation before the machine gets its first gesture.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. The current social-cue work did not justify another internal design audit or another line inside a case. It did expose a concrete external-frontage leak: the public preview image showed day-1 case content. Cold, yes, but still already inside the run. The better doorway is the standby machine waiting for an operator.
+
+### Autoprompt
+Treat the preview card as a witness-room wall, not as decoration. If it shows a routed case, late-game state, or interpretive poster, it has started briefing the player. Replace it with the first actual doorway: low-current standby, power available, awaiting operator. Keep the description cold. Do not add a pitch.
+
+### Smoke test result
+- **GDD rule added.** Social preview imagery is now defined as an ambient doorway cue: standby machine, not gameplay state or interpretive poster.
+- **Preview image replaced.** `assets/meta/og-image.png` now shows the current standby first surface at 1200×630.
+- **Metadata still points to the same cold handle.** OG, Twitter, and JSON-LD image fields continue to use `assets/meta/og-image.png`; the text description did not warm up.
+- **Sitemap freshness updated.** The crawl handle now reflects the amended public card.
+- **Local visual check passed.** Desktop first screen and the generated card both show the cold machine waiting for an operator.
+
+### Current read
+Phase 4w is complete. This was a material doorway correction, not permission to reopen the pre-gate theory spiral. The next real pressure remains Stefano's blind playtest. The machine can wait at the door without showing the first file through the keyhole.
+
 ## Release question
 
 The only real release question is this:
