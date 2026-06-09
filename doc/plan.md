@@ -204,6 +204,13 @@ Gate freeze still holds. This is not a new theory layer inside the game. The lat
 - [x] Validate local first screen and metadata still point to the cold card.
 - [x] Smoke test the generated preview image visually.
 
+### Phase 4x — Modification-date trace / amendment handle
+Gate freeze still holds. This is a concrete trace repair, not another pre-gate theory layer. Current corridor work sharpened the cold vector: author, modification, date, reason. The public doorway already names author, source, issue forum, version, and sitemap freshness, but the object metadata does not carry its own modification date. That makes the trace weaker than it needs to be for crawlers, archives, and future readers.
+- [x] Define the modification-date rule in the GDD: machine-readable public metadata should name creation and modification dates without warming the first surface.
+- [x] Add creation/modification handles to `index.html` metadata and JSON-LD.
+- [x] Update `sitemap.xml` freshness for the amended public trace.
+- [x] Smoke test local metadata and first screen.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
@@ -216,6 +223,7 @@ Gate holding:
 - [x] 2026-06-01 gate review held: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current archive-mode / life-record-leverage thread did not expose a concrete defect in the game, public doorway, source forum, or correction trace. Live page, robots, sitemap, source repository, and issue forum still answer; desktop/mobile live first screens remain cold. No new pre-gate design task justified.
 - [x] 2026-06-03 gate review held with one concrete trace fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the fresh voice/record/leverage thread did not justify a new design layer, but the public authorship trace was materially sloppy. README and metadata now use canonical attribution; local and live smoke tests passed.
 - [x] 2026-06-05 gate review held with one concrete external-frontage fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the fresh ambient social-cue thread exposed a public preview-card leak. `og-image.png` now shows the cold standby doorway instead of day-1 case content; sitemap freshness updated; local first-screen and image smoke tests passed.
+- [x] 2026-06-09 gate review held with one concrete trace fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the fresh warm-support / cold-vector thread did not justify another game audit, but exposed a public metadata weakness. Creation/modification date handles now live in page metadata and JSON-LD; sitemap freshness updated; local metadata and first-screen smoke tests passed.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)

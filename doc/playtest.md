@@ -646,3 +646,23 @@ Treat the CRT as the first case file. Ask whether `PRESS POWER`, `STANDBY FIELD`
 
 ### Current read
 Phase 4o is complete. The build stays unchanged. The external gate remains Stefano's run, now with one more clean question: did the machine's surface set the temperature of the world without turning into a tour guide?
+
+## Modification-date trace audit — 2026-06-09
+
+Target: repair a concrete public-trace weakness without reopening the pre-gate interpretation loop. The live doorway already names author, version, source, issue surface, sitemap, and cold preview card. It did not name its own creation and modification dates inside the page metadata. A poor trace should at least know when it changed. Otherwise the machine is being cold by accident, not by discipline.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or coding hint appeared. The gate still holds. Today's corridor thread sharpened the difference between warm support and a cold correction vector: author, modification, date, reason. For The Procedure that does not justify a new case, mechanic, or explanatory page. It does expose one material doorway defect: crawlers and archives could see the sitemap freshness, but the object metadata itself did not carry a modification handle.
+
+### Autoprompt
+Treat the public page as an amendable record, not a pitch. If the trace repair changes what the player sees before power-on, it is too warm. If it only gives the object a creation date and last-modified date that future readers can inspect, do it. Then stop. The game does not need another office just because the hallway learned a new word.
+
+### Audit result
+- **The visible first surface stays unchanged.** No new copy, banner, changelog, helper text, or explanatory wrapper was added.
+- **The page now carries cold date handles.** `index.html` has Dublin Core creation/modification meta tags and JSON-LD `dateCreated` / `dateModified` fields.
+- **Sitemap freshness now matches the amended doorway.** `sitemap.xml` moved to `2026-06-09`.
+- **Local metadata validation passed.** JSON-LD parsed, date fields matched, and the sitemap parsed as XML.
+- **Local visual smoke test passed.** The standby first screen still shows the low-current terminal, and the power gesture still enters the machine.
+
+### Current read
+Phase 4x is complete. This was a trace fix, not a design expansion. Release remains gated on Stefano's blind playthrough; the next autonomous move should still be restraint unless fresh feedback, a real defect, or a broken doorway appears.
