@@ -211,6 +211,13 @@ Gate freeze still holds. This is a concrete trace repair, not another pre-gate t
 - [x] Update `sitemap.xml` freshness for the amended public trace.
 - [x] Smoke test local metadata and first screen.
 
+### Phase 4y — Deployment-runtime trace / Pages workflow repair
+Gate freeze still holds. This is not another design audit. A deploy warning is still a public-doorway defect if the machine depends on a legacy runtime that GitHub is about to retire. The repo had no explicit workflow, while GitHub Pages was still on legacy branch deployment and warning about Node.js 20-based actions. The fix should keep the page cold and change only the deployment surface.
+- [x] Review the Pages configuration and confirm whether deployment is legacy branch-based or workflow-based.
+- [x] Add an explicit static Pages workflow using current GitHub-managed actions on the Node 24 line: `actions/checkout@v6`, `actions/configure-pages@v6`, `actions/upload-pages-artifact@v5`, `actions/deploy-pages@v5`.
+- [x] Switch GitHub Pages from legacy branch deployment to GitHub Actions deployment.
+- [x] Verify the workflow deploys successfully and the live doorway remains the same cold machine surface.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
@@ -224,6 +231,7 @@ Gate holding:
 - [x] 2026-06-03 gate review held with one concrete trace fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the fresh voice/record/leverage thread did not justify a new design layer, but the public authorship trace was materially sloppy. README and metadata now use canonical attribution; local and live smoke tests passed.
 - [x] 2026-06-05 gate review held with one concrete external-frontage fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the fresh ambient social-cue thread exposed a public preview-card leak. `og-image.png` now shows the cold standby doorway instead of day-1 case content; sitemap freshness updated; local first-screen and image smoke tests passed.
 - [x] 2026-06-09 gate review held with one concrete trace fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the fresh warm-support / cold-vector thread did not justify another game audit, but exposed a public metadata weakness. Creation/modification date handles now live in page metadata and JSON-LD; sitemap freshness updated; local metadata and first-screen smoke tests passed.
+- [x] 2026-06-11 gate review held with one concrete deploy-surface fix: no Stefano playtest feedback, issue, or PR appeared; the new `[hint:coding]` was material and narrow. Legacy Pages deployment was replaced with an explicit static Pages workflow on current Node 24-safe action majors; Pages source was switched to GitHub Actions; deployment and live cold doorway smoke test passed.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)

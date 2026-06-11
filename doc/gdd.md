@@ -231,6 +231,7 @@ Rules:
 
 Current pressure points:
 - The live GitHub Pages URL must remain a cold first surface: no marketing wrapper, no diagnostic explanation, no bot-wall theater.
+- The deployment surface is part of doorway liveness. A legacy Pages build or deprecated action runtime is not a design theme, but it can still become a broken public handle if left to rot.
 - Desktop should present the terminal as a machine in standby, with `LOCAL POWER AVAILABLE` and the power button legible.
 - Mobile may be smaller — the machine is fixed and scaled — but the first gesture must still read as deliberate, not broken.
 - If these checks hold, stop. The next meaningful pressure is Stefano's blind run, not another internal memo with better shoes.

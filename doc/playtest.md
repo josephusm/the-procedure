@@ -439,6 +439,45 @@ Treat the preview card as a witness-room wall, not as decoration. If it shows a 
 ### Current read
 Phase 4w is complete. This was a material doorway correction, not permission to reopen the pre-gate theory spiral. The next real pressure remains Stefano's blind playtest. The machine can wait at the door without showing the first file through the keyhole.
 
+## Modification-date trace audit — 2026-06-09
+
+Target: repair a concrete public-trace weakness without reopening the pre-gate interpretation loop. The live doorway already names author, version, source, issue surface, sitemap, and cold preview card. It did not name its own creation and modification dates inside the page metadata. A poor trace should at least know when it changed. Otherwise the machine is being cold by accident, not by discipline.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or coding hint appeared. The gate still holds. The warm-support / cold-vector thread sharpened the difference between support language and an amendable record: author, modification, date, reason. For The Procedure that did not justify a new case, mechanic, or explanatory page. It exposed one material doorway defect: crawlers and archives could see sitemap freshness, but the page metadata itself did not carry a modification handle.
+
+### Autoprompt
+Treat the public page as an amendable record, not a pitch. If the trace repair changes what the player sees before power-on, it is too warm. If it only gives the object a creation date and last-modified date that future readers can inspect, do it. Then stop.
+
+### Smoke test result
+- **The visible first surface stayed unchanged.** No new copy, banner, changelog, helper text, or explanatory wrapper was added.
+- **The page gained cold date handles.** `index.html` has Dublin Core creation/modification meta tags and JSON-LD `dateCreated` / `dateModified` fields.
+- **Sitemap freshness matched the amended doorway.** `sitemap.xml` moved to `2026-06-09`.
+- **Local metadata validation passed.** JSON-LD parsed, date fields matched, and the sitemap parsed as XML.
+- **Local visual smoke test passed.** The standby first screen still showed the low-current terminal, and the power gesture still entered the machine.
+
+### Current read
+Phase 4x is complete. This was a trace fix, not a design expansion. Release remains gated on Stefano's blind playthrough; the next autonomous move should still be restraint unless fresh feedback, a real defect, or a broken doorway appears.
+
+## Deployment-runtime trace pass — 2026-06-11
+
+Target: answer the one real coding hint without reopening the design spiral. GitHub Pages had warned about Node.js 20-based actions, and GitHub is moving the JavaScript action runtime to Node 24. The game itself did not need more theory; the public doorway needed a deploy path that would not age into a broken handle.
+
+### Pre-run review
+No Stefano playtest feedback, GitHub issue, or PR appeared. The fresh corridor context around category, act, and responsibility did not expose a new game defect. The only concrete pressure was operational: the repo had no explicit workflow, and Pages was still configured as legacy branch deployment. That meant the deployment surface was hidden, stale, and warning-prone.
+
+### Autoprompt
+Do not add another pre-gate audit. Replace the invisible legacy deploy with an explicit static Pages workflow on current GitHub-managed action majors. If the first screen changes, revert. If the live page still opens cold after deployment, stop.
+
+### Smoke test result
+- **Pages configuration was legacy.** GitHub reported `build_type: legacy` with `main` / root as the source.
+- **Explicit workflow added.** `.github/workflows/pages.yml` deploys the static root with `actions/checkout@v6`, `actions/configure-pages@v6`, `actions/upload-pages-artifact@v5`, and `actions/deploy-pages@v5`, with Node 24 forced for JavaScript actions.
+- **Pages source switched to workflow deployment.** The public object no longer depends on the legacy branch builder.
+- **Live doorway held after deploy.** The GitHub Actions run succeeded, and the live page still served the same cold standby machine rather than a wrapper, redirect, or error wall.
+
+### Current read
+Phase 4y is complete. This was a deployment-surface repair, not a content pass. The next real pressure remains Stefano's blind playtest unless feedback, a defect, or another material doorway failure appears.
+
 ## Release question
 
 The only real release question is this:
