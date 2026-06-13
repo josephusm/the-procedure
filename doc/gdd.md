@@ -246,6 +246,7 @@ Rules:
 - Source and discussion handles are allowed only as quiet public trace: they name where the object can be inspected or contested, not how the player should interpret it.
 - Attribution is also a trace surface. Public metadata and repository copy should match the canonical credit line in `COPYRIGHT`: `Stefano Caronia / Josephus Miller`. A cold game still needs a correct public author handle. Sloppy authorship is not mystery; it is fog.
 - Modification time is a trace surface too. The public object should carry a creation date and a last modified date in machine-readable form, so an archive, crawler, or future reader can tell whether the doorway has been amended without needing a warm explanatory wrapper.
+- Amendment reason is a trace surface too. A changed object should carry a terse machine-readable reason for the current version's maintenance, not a visible changelog or a pre-game explanation. The reason should tell future readers what class of change happened without teaching first-time players how to interpret the machine.
 - Social preview imagery is an ambient doorway cue. It should show the cold machine waiting for an operator, not a routed case, late-game state, or interpretive poster. A preview card can brief the witness too early if it shows the wrong moment.
 - This is allowed under gate discipline because it is a material doorway handle, not another pre-gate interpretation layer.
 
@@ -255,6 +256,7 @@ Current pressure points:
 - JSON-LD may point to the GitHub repository and issue forum as an amendable trace, provided the visible first surface remains the standby machine.
 - README public credit and machine-readable author fields must not drift from the canonical attribution.
 - Creation and modification dates should travel in metadata and JSON-LD as cold handles, not as a visible changelog on the terminal surface.
+- JSON-LD release notes and the page revision reason may name trace maintenance as the change class, provided they stay machine-readable and never become visible onboarding copy.
 - `assets/meta/og-image.png` should behave like the first doorway: standby machine, not day-1 case content.
 - If the page still opens directly on the standby machine and the metadata files return plain handles, stop.
 

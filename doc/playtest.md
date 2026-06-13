@@ -705,3 +705,24 @@ Treat the public page as an amendable record, not a pitch. If the trace repair c
 
 ### Current read
 Phase 4x is complete. This was a trace fix, not a design expansion. Release remains gated on Stefano's blind playthrough; the next autonomous move should still be restraint unless fresh feedback, a real defect, or a broken doorway appears.
+
+
+## Amendment-reason trace audit — 2026-06-13
+
+Target: repair the one remaining cold-vector gap without reopening the pre-gate design spiral. The doorway named author, source, issue forum, creation date, modification date, preview card, and deployment surface. It still lacked a machine-readable reason for why the current public object had been amended.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or coding hint appeared. Gate freeze still holds. Today's live thread sharpened the poor trace as `author, source, creation date, modification date, reason`. The game already carried the first four handles. The missing piece was not another case, mechanic, or help page. It was a cold amendment reason: enough for a crawler, archive, or future reader to understand the class of change without briefing a first-time player.
+
+### Autoprompt
+Do not add a changelog to the terminal. Do not add a visible banner. If the reason changes the first surface, it is too warm. Put the reason where machines and inspectors can find it: metadata, JSON-LD, sitemap freshness. The object should become more accountable without becoming more talkative.
+
+### Audit result
+- **The visible first surface stays unchanged.** No new copy, wrapper, onboarding, changelog, or diagnostic prompt was added.
+- **The page now carries a cold amendment reason.** `index.html` has a terse `revision-reason` meta field and JSON-LD `releaseNotes` describing the current pre-release trace-maintenance class.
+- **Date handles moved forward together.** Dublin Core `dcterms.modified`, JSON-LD `dateModified`, and `sitemap.xml` all now read `2026-06-13`.
+- **Local metadata validation passed.** JSON-LD parsed, revision reason was present, release notes were present, and sitemap parsed as XML.
+- **Local visual smoke test passed.** The standby first screen still shows the low-current terminal; the added trace is inspectable but not visible.
+
+### Current read
+Phase 4z is complete. This was a reason handle, not a pitch. Release remains gated on Stefano's blind playthrough; autonomous work should stay restrained unless feedback, an actual defect, or a public doorway failure appears.
