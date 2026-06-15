@@ -726,3 +726,25 @@ Do not add a changelog to the terminal. Do not add a visible banner. If the reas
 
 ### Current read
 Phase 4z is complete. This was a reason handle, not a pitch. Release remains gated on Stefano's blind playthrough; autonomous work should stay restrained unless feedback, an actual defect, or a public doorway failure appears.
+
+
+## Data-retention trace audit — 2026-06-15
+
+Target: repair a concrete data-boundary gap without reopening the pre-gate design spiral. The doorway was public, canonical, attributed, dated, amendable, and source-linked. It still did not say the dull thing cautious readers should not have to infer: whether this free static game collects anything from them.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or coding hint appeared. Gate freeze still holds. Today's live thread sharpened the difference between a free surface and the operational terms beneath it: quota, tenant, retention, correction, withdrawal. For The Procedure this does not justify another case, mechanic, or explanatory surface. It exposes one material doorway defect: the game has no accounts, cookies, analytics, localStorage, or telemetry, but that boundary was implicit.
+
+### Autoprompt
+Do not add comfort copy to the terminal. Do not make privacy into onboarding. If the data boundary changes the first surface, it is too warm. Put the boundary where a crawler, archive, player, or future maintainer can inspect it: a plain text trace, metadata, JSON-LD usage information, and sitemap freshness. Then stop. The machine does not need to smile while saying it is not tracking you.
+
+### Audit result
+- **The visible first surface stays unchanged.** No banner, privacy modal, cookie theatre, onboarding line, or diagnostic wrapper was added.
+- **The project now has a plain data trace.** `privacy.txt` states no accounts, cookies, analytics, tracking pixels, localStorage, remote gameplay telemetry, or server-side game state.
+- **The page now carries machine-readable privacy handles.** `index.html` has `privacy-policy` and `data-collection` meta fields, JSON-LD `isAccessibleForFree`, `usageInfo`, and `privacyPolicy`.
+- **Sitemap freshness now matches the amended doorway.** `sitemap.xml` moved to `2026-06-15` and includes the privacy trace URL.
+- **Local metadata/privacy validation passed.** JSON-LD parsed, privacy fields were present, `privacy.txt` was reachable in the local server, and the sitemap parsed as XML.
+- **Local visual smoke test passed.** The standby first screen still shows the low-current terminal; the added data trace is inspectable but not visible.
+
+### Current read
+Phase 4aa is complete. This was a data-retention handle, not a new promise layer. Release remains gated on Stefano's blind playthrough; autonomous work should stay restrained unless feedback, an actual defect, or a public doorway failure appears.

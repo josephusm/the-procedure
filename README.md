@@ -28,6 +28,8 @@ Click the power button — or press Enter / Space on desktop. The machine boots.
 
 HTML5 + vanilla JS + CSS. No dependencies, no framework, no build step. Open `index.html` in any modern browser.
 
+No accounts, cookies, analytics, localStorage, or remote gameplay telemetry. The privacy trace is deliberately dull: [`privacy.txt`](privacy.txt). Dull is good here. Dull means the page is not pretending to be free while quietly renting a basement.
+
 All audio is procedural (Web Audio API) — the ambient hum, the keystrokes, the confirmation tones. No external files. The CRT terminal is a fixed 800×600 element that scales proportionally to fill the viewport. The font is VT323, self-hosted.
 
 ## Design

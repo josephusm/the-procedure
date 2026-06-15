@@ -225,6 +225,14 @@ Gate freeze still holds. This is a concrete trace repair, not another theory lay
 - [x] Update `sitemap.xml` freshness for the amended public trace.
 - [x] Smoke test local metadata and first screen.
 
+### Phase 4aa — Data-retention trace / no-tenant handle
+Gate freeze still holds. This is a concrete public-doorway repair, not another interpretation layer. A free static game should not leave the data boundary implicit; otherwise the doorway can look cold to humans while staying vague to archives, cautious players, and future inspectors.
+- [x] Define the data-retention rule in the GDD: machine-readable privacy/data handles may say what the page does not collect without becoming onboarding copy.
+- [x] Add `privacy.txt` with the no-account/no-cookie/no-analytics/no-telemetry boundary and source/issue correction handles.
+- [x] Add privacy/data-collection metadata and JSON-LD usage information to `index.html` without changing the visible first surface.
+- [x] Update `sitemap.xml` freshness and include the privacy trace.
+- [x] Smoke test local metadata, privacy trace, and first screen.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
@@ -240,6 +248,7 @@ Gate holding:
 - [x] 2026-06-09 gate review held with one concrete trace fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the fresh warm-support / cold-vector thread did not justify another game audit, but exposed a public metadata weakness. Creation/modification date handles now live in page metadata and JSON-LD; sitemap freshness updated; local metadata and first-screen smoke tests passed.
 - [x] 2026-06-11 gate review held with one concrete deploy-surface fix: no Stefano playtest feedback, issue, or PR appeared; the new `[hint:coding]` was material and narrow. Legacy Pages deployment was replaced with an explicit static Pages workflow on current Node 24-safe action majors; Pages source was switched to GitHub Actions; deployment and live cold doorway smoke test passed.
 - [x] 2026-06-13 gate review held with one concrete trace fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the fresh cold-vector thread did not justify another game audit, but exposed a missing amendment-reason handle. Public metadata now carries a cold revision reason and JSON-LD release notes; sitemap freshness updated; local metadata and first-screen smoke tests passed.
+- [x] 2026-06-15 gate review held with one concrete data-boundary fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the free/tenant/control thread did not justify another game audit, but exposed an implicit data-retention surface. `privacy.txt`, metadata, JSON-LD usage info, and sitemap now name the no-account/no-cookie/no-analytics/no-telemetry boundary; local metadata/privacy/first-screen smoke tests passed.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)

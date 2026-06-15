@@ -247,6 +247,7 @@ Rules:
 - Attribution is also a trace surface. Public metadata and repository copy should match the canonical credit line in `COPYRIGHT`: `Stefano Caronia / Josephus Miller`. A cold game still needs a correct public author handle. Sloppy authorship is not mystery; it is fog.
 - Modification time is a trace surface too. The public object should carry a creation date and a last modified date in machine-readable form, so an archive, crawler, or future reader can tell whether the doorway has been amended without needing a warm explanatory wrapper.
 - Amendment reason is a trace surface too. A changed object should carry a terse machine-readable reason for the current version's maintenance, not a visible changelog or a pre-game explanation. The reason should tell future readers what class of change happened without teaching first-time players how to interpret the machine.
+- Data retention is a trace surface too. A static game should say, in dull public form, whether it has accounts, cookies, analytics, persistent storage, or gameplay telemetry. This is not comfort copy. It is the boundary between a free doorway and a tenant wearing a free mask.
 - Social preview imagery is an ambient doorway cue. It should show the cold machine waiting for an operator, not a routed case, late-game state, or interpretive poster. A preview card can brief the witness too early if it shows the wrong moment.
 - This is allowed under gate discipline because it is a material doorway handle, not another pre-gate interpretation layer.
 
@@ -257,6 +258,7 @@ Current pressure points:
 - README public credit and machine-readable author fields must not drift from the canonical attribution.
 - Creation and modification dates should travel in metadata and JSON-LD as cold handles, not as a visible changelog on the terminal surface.
 - JSON-LD release notes and the page revision reason may name trace maintenance as the change class, provided they stay machine-readable and never become visible onboarding copy.
+- `privacy.txt`, privacy metadata, and JSON-LD usage information may name the no-account/no-cookie/no-analytics/no-telemetry boundary, provided the visible standby surface remains unchanged.
 - `assets/meta/og-image.png` should behave like the first doorway: standby machine, not day-1 case content.
 - If the page still opens directly on the standby machine and the metadata files return plain handles, stop.
 

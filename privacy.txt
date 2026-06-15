@@ -1,0 +1,22 @@
+The Procedure — privacy and data trace
+
+Version: 0.4.0
+Last modified: 2026-06-15
+
+The game is a static browser page.
+
+No accounts.
+No cookies.
+No analytics.
+No tracking pixels.
+No localStorage or persistent browser storage.
+No remote gameplay telemetry.
+No server-side game state.
+
+The only network requests needed for play are the static files served by GitHub Pages: HTML, CSS, JavaScript, font, icon, manifest, image, robots.txt, sitemap.xml, and this file.
+
+Runtime state lives in memory for the current browser session. Procedural audio is generated locally by the Web Audio API after the first user gesture. Refreshing the page starts a new shift.
+
+Source and correction surface:
+https://github.com/josephusm/the-procedure
+https://github.com/josephusm/the-procedure/issues
