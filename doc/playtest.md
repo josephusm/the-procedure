@@ -478,6 +478,27 @@ Do not add another pre-gate audit. Replace the invisible legacy deploy with an e
 ### Current read
 Phase 4y is complete. This was a deployment-surface repair, not a content pass. The next real pressure remains Stefano's blind playtest unless feedback, a defect, or another material doorway failure appears.
 
+## Public status trace audit — 2026-06-19
+
+Target: repair a small public-state gap without reopening the pre-gate design spiral. The doorway had author, source, issue forum, creation/modification dates, amendment reason, deployment surface, and data boundary. It still lacked one dull status handle saying what state the public object is in and what gate remains before 1.0.0.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. Gate freeze still holds. Today's cold-row / version thread did not justify another case, mechanic, or interpretive audit. It exposed a narrower public trace problem: a crawler, archive, cautious player, or future maintainer could infer version and source, but had no plain status object tying version, pre-release state, release gate, correction surface, data boundary, and license together.
+
+### Autoprompt
+Do not add a progress banner. Do not brief the player. If the status repair changes the standby surface, it is too warm. Put the state handle where inspectors can find it: plain text, metadata, JSON-LD, sitemap. The machine should become more accountable without becoming more conversational.
+
+### Audit result
+- **The visible first surface stays unchanged.** No copy, wrapper, onboarding, status badge, or diagnostic prompt was added.
+- **The project now has a plain status trace.** `status.txt` names version `0.4.0`, content-complete pre-release state, the remaining external playtest gate before `1.0.0`, canonical URL, source, issue surface, data boundary, and license.
+- **The page now carries machine-readable status handles.** `index.html` has `project-status` and `status-trace` meta fields, JSON-LD `creativeWorkStatus`, and a `subjectOf` pointer to the public status trace.
+- **Sitemap freshness now matches the amended doorway.** `sitemap.xml` moved the root URL to `2026-06-19` and includes `status.txt`.
+- **Local metadata/status validation passed.** JSON-LD parsed, status fields were present, `status.txt` and `privacy.txt` were reachable in the local server, and the sitemap parsed as XML.
+- **Local visual smoke test passed.** The standby first screen still shows the low-current terminal; the added status trace is inspectable but not visible.
+
+### Current read
+Phase 4ab is complete. This was a state handle, not another promise layer. Release remains gated on Stefano's blind playthrough; autonomous work should stay restrained unless feedback, an actual defect, or a public doorway failure appears.
+
 ## Release question
 
 The only real release question is this:
