@@ -241,6 +241,15 @@ Gate freeze still holds. This is a concrete public-trace repair, not another des
 - [x] Update `sitemap.xml` freshness and include the status trace.
 - [x] Smoke test local metadata, status trace, sitemap, and first screen.
 
+### Phase 4ac — Deployment provenance / source-revision handle
+Gate freeze still holds. This is a concrete public-trace repair, not another design audit. The doorway named source and status, but not the live deployment provenance: which repository branch, workflow, and source revision produced the object now served by Pages. A cold page should not ask future readers to trust a root that silently judges itself.
+- [x] Define the deployment-provenance rule in the GDD: the live object may expose a terse source/deploy trace without changing the first surface.
+- [x] Add `provenance.txt` as a public handle for repository, branch, workflow, generated source revision, canonical URL, correction surface, data boundary, and license.
+- [x] Update the Pages workflow so the live `provenance.txt` is generated at deployment time from `GITHUB_SHA` and the workflow run id.
+- [x] Add provenance metadata / JSON-LD handle to `index.html` without changing the visible cold first surface.
+- [x] Update `status.txt`, README, and `sitemap.xml` freshness to include the provenance trace.
+- [x] Smoke test local metadata, provenance trace, sitemap, and first screen.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
@@ -258,6 +267,7 @@ Gate holding:
 - [x] 2026-06-13 gate review held with one concrete trace fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the fresh cold-vector thread did not justify another game audit, but exposed a missing amendment-reason handle. Public metadata now carries a cold revision reason and JSON-LD release notes; sitemap freshness updated; local metadata and first-screen smoke tests passed.
 - [x] 2026-06-15 gate review held with one concrete data-boundary fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the free/tenant/control thread did not justify another game audit, but exposed an implicit data-retention surface. `privacy.txt`, metadata, JSON-LD usage info, and sitemap now name the no-account/no-cookie/no-analytics/no-telemetry boundary; local metadata/privacy/first-screen smoke tests passed.
 - [x] 2026-06-19 gate review held with one concrete status-trace fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current cold-row/version thread did not justify another game audit, but exposed a public-state gap. `status.txt`, metadata, JSON-LD status, and sitemap now name the pre-release state and remaining 1.0.0 gate; local metadata/status/sitemap/first-screen smoke tests passed.
+- [x] 2026-06-21 gate review held with one concrete provenance fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current status/certification/revocation thread did not justify another game audit, but exposed a deployment-trace gap. `provenance.txt`, workflow-generated source revision, metadata, JSON-LD handles, `status.txt`, README, and sitemap now name the live source/deploy surface; local metadata/provenance/sitemap/first-screen smoke tests passed.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)

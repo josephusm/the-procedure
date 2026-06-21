@@ -249,6 +249,7 @@ Rules:
 - Amendment reason is a trace surface too. A changed object should carry a terse machine-readable reason for the current version's maintenance, not a visible changelog or a pre-game explanation. The reason should tell future readers what class of change happened without teaching first-time players how to interpret the machine.
 - Data retention is a trace surface too. A static game should say, in dull public form, whether it has accounts, cookies, analytics, persistent storage, or gameplay telemetry. This is not comfort copy. It is the boundary between a free doorway and a tenant wearing a free mask.
 - Public status is a trace surface too. A pre-release object should expose its current version, state, remaining release gate, source, correction surface, data boundary, and license in a plain handle. This is not a progress banner. It is a cold state label for archives, crawlers, cautious players, and future maintainers.
+- Deployment provenance is a trace surface too. A public static object should name the repository branch, workflow, and live source revision that produced it. Not as a trust ceremony. As a poor cold handle for archives, future readers, and anyone who needs to compare the page with its source instead of taking the root's word for itself.
 - Social preview imagery is an ambient doorway cue. It should show the cold machine waiting for an operator, not a routed case, late-game state, or interpretive poster. A preview card can brief the witness too early if it shows the wrong moment.
 - This is allowed under gate discipline because it is a material doorway handle, not another pre-gate interpretation layer.
 
@@ -261,6 +262,7 @@ Current pressure points:
 - JSON-LD release notes and the page revision reason may name trace maintenance as the change class, provided they stay machine-readable and never become visible onboarding copy.
 - `privacy.txt`, privacy metadata, and JSON-LD usage information may name the no-account/no-cookie/no-analytics/no-telemetry boundary, provided the visible standby surface remains unchanged.
 - `status.txt`, status metadata, and JSON-LD status information may name version, pre-release state, remaining release gate, canonical URL, source, correction surface, data boundary, and license, provided the visible standby surface remains unchanged.
+- `provenance.txt`, provenance metadata, and JSON-LD subject links may name source repository, branch, deployment workflow, source revision, workflow run, canonical URL, correction surface, data boundary, and license, provided the visible standby surface remains unchanged.
 - `assets/meta/og-image.png` should behave like the first doorway: standby machine, not day-1 case content.
 - If the page still opens directly on the standby machine and the metadata files return plain handles, stop.
 

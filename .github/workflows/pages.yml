@@ -31,6 +31,45 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v6
 
+      - name: Write deployment provenance trace
+        run: |
+          generated_at="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          cat > provenance.txt <<EOF
+          The Procedure — deployment provenance trace
+
+          Version: 0.4.0
+          Generated: ${generated_at}
+
+          Canonical URL:
+          https://josephusm.github.io/the-procedure/
+
+          Source repository:
+          https://github.com/josephusm/the-procedure
+
+          Source branch:
+          main
+
+          Source revision:
+          ${GITHUB_SHA}
+
+          Deployment workflow:
+          Deploy static Pages
+
+          Workflow run:
+          https://github.com/josephusm/the-procedure/actions/runs/${GITHUB_RUN_ID}
+
+          Correction surface:
+          https://github.com/josephusm/the-procedure/issues
+
+          Data boundary:
+          No accounts, cookies, analytics, tracking pixels, localStorage, remote gameplay telemetry, or server-side game state.
+          https://josephusm.github.io/the-procedure/privacy.txt
+
+          License:
+          CC BY-NC-SA 4.0
+          https://creativecommons.org/licenses/by-nc-sa/4.0/
+          EOF
+
       - name: Upload static artifact
         uses: actions/upload-pages-artifact@v5
         with:
