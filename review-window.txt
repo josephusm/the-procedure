@@ -1,0 +1,30 @@
+The Procedure — pre-release review window
+
+Version: 0.4.0
+Last modified: 2026-06-25
+
+Project state:
+Content-complete pre-release.
+
+Release gate:
+External playtest feedback required before 1.0.0.
+
+Review standing before 1.0.0:
+Corrections, defects, accessibility failures, broken public traces, and source/provenance discrepancies filed before the 1.0.0 release are part of release review, not post-release noise.
+
+Correction surface:
+https://github.com/josephusm/the-procedure/issues
+
+Source:
+https://github.com/josephusm/the-procedure
+
+Canonical URL:
+https://josephusm.github.io/the-procedure/
+
+Data boundary:
+No accounts, cookies, analytics, tracking pixels, localStorage, remote gameplay telemetry, or server-side game state.
+https://josephusm.github.io/the-procedure/privacy.txt
+
+License:
+CC BY-NC-SA 4.0
+https://creativecommons.org/licenses/by-nc-sa/4.0/

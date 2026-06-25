@@ -1,7 +1,7 @@
 The Procedure — deployment provenance trace
 
 Version: 0.4.0
-Last modified: 2026-06-21
+Last modified: 2026-06-25
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -20,6 +20,9 @@ Deploy static Pages
 
 Correction surface:
 https://github.com/josephusm/the-procedure/issues
+
+Pre-release review window:
+https://josephusm.github.io/the-procedure/review-window.txt
 
 Data boundary:
 No accounts, cookies, analytics, tracking pixels, localStorage, remote gameplay telemetry, or server-side game state.
