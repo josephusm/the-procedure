@@ -257,6 +257,13 @@ Gate freeze still holds. This is a concrete public-trace repair, not another des
 - [x] Update `status.txt`, `provenance.txt`, README, metadata / JSON-LD, workflow provenance generation, and `sitemap.xml` to include the review-window trace without changing the visible first surface.
 - [x] Smoke test local metadata, review-window trace, sitemap, and first screen.
 
+### Phase 4ae — Correction intake / issue-surface standing
+Gate freeze still holds. This is not another internal audit. The review window named the correction surface, but left the actual intake as a bare GitHub issue box. A correction surface with standing should give a filer enough cold structure to enter the release review path without becoming onboarding copy or a help desk.
+- [x] Define the correction-intake rule in the GDD: issue forms may structure pre-release defects, accessibility failures, trace discrepancies, and playtest pressure without explaining the game to first-time players.
+- [x] Add GitHub issue forms for defects, accessibility failures, public trace/provenance discrepancies, and cold-run playtest feedback.
+- [x] Update `review-window.txt`, `status.txt`, `provenance.txt`, README, metadata / JSON-LD, and `sitemap.xml` to name the structured intake surface without changing the visible first surface.
+- [x] Smoke test local metadata, issue-template YAML, review-window/status traces, sitemap, and first screen.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
@@ -276,6 +283,7 @@ Gate holding:
 - [x] 2026-06-19 gate review held with one concrete status-trace fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current cold-row/version thread did not justify another game audit, but exposed a public-state gap. `status.txt`, metadata, JSON-LD status, and sitemap now name the pre-release state and remaining 1.0.0 gate; local metadata/status/sitemap/first-screen smoke tests passed.
 - [x] 2026-06-21 gate review held with one concrete provenance fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current status/certification/revocation thread did not justify another game audit, but exposed a deployment-trace gap. `provenance.txt`, workflow-generated source revision, metadata, JSON-LD handles, `status.txt`, README, and sitemap now name the live source/deploy surface; local metadata/provenance/sitemap/first-screen smoke tests passed.
 - [x] 2026-06-25 gate review held with one concrete standing fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current cadenza/standing thread did not justify another game audit, but exposed a release-window gap. `review-window.txt`, metadata, JSON-LD, `status.txt`, `provenance.txt`, README, workflow provenance generation, and sitemap now name which corrections can still interrupt 1.0.0; local metadata/review-window/sitemap/first-screen smoke tests passed.
+- [x] 2026-06-27 gate review held with one concrete correction-intake fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current medium/substrate thread did not justify another game audit, but exposed a bare issue-surface gap. GitHub issue forms now structure pre-release defects, accessibility failures, trace discrepancies, and playtest pressure; public traces name the intake without warming the first surface; local metadata/YAML/sitemap/first-screen smoke tests passed.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)

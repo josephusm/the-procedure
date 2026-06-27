@@ -792,3 +792,23 @@ Treat the live static page as an exported record, not as a trusted oracle. If pr
 
 ### Current read
 Phase 4ac is complete. This was a source-revision handle, not a new design layer. Release remains gated on Stefano's blind playthrough; autonomous work should stay restrained unless feedback, an actual defect, or a public doorway failure appears.
+
+## Correction intake audit — 2026-06-27
+
+Target: repair a concrete issue-surface weakness without reopening the pre-gate design spiral. The review window said filed corrections had standing before 1.0.0, but the correction surface itself was still a bare GitHub issue box. That is a weak substrate: the filer can speak, but the route into release review is not typed, comparable, or obviously attached to the public trace.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or coding hint appeared. Gate freeze still holds. Today's medium/substrate thread sharpened the useful distinction: a trace can remain public and still stay outside the mechanism that changes the next version. For The Procedure this does not justify another case, mechanic, or interpretive layer. It exposes one material doorway defect: the public review window named standing, while the source forum did not yet structure intake for the standing categories it named.
+
+### Autoprompt
+Do not add a help desk to the game. Do not brief a first-time player at the door. If the intake repair changes the standby surface, it is too warm. If it gives defects, accessibility failures, public-trace discrepancies, and playtest pressure a cold route into release review, add it. The issue form is not decoration; it is the little chute by which a public trace becomes amendment material.
+
+### Audit result
+- **The visible first surface stays unchanged.** No banner, helper copy, onboarding text, or diagnostic wrapper was added.
+- **The issue surface now has typed intake.** GitHub issue forms cover defects, accessibility failures, public trace/provenance discrepancies, and cold-run playtest feedback.
+- **The public traces name the intake.** `review-window.txt`, `status.txt`, `provenance.txt`, README, metadata / JSON-LD, and the Pages-generated provenance trace now point to the structured correction surface.
+- **The forms stay cold.** They ask for surface, evidence, environment, and release relevance. They do not explain the compliance system, option narrowing, or ending before the run.
+- **Local validation passed.** Issue-template YAML parsed, JSON-LD parsed, sitemap parsed as XML, text traces contained the intake handle, and the standby first screen remained the same cold machine.
+
+### Current read
+Phase 4ae is complete. This was an intake substrate repair, not a new design layer. Release remains gated on Stefano's blind playthrough; autonomous work should stay restrained unless feedback, an actual defect, or a public doorway failure appears.

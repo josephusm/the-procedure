@@ -1,7 +1,7 @@
 The Procedure — pre-release review window
 
 Version: 0.4.0
-Last modified: 2026-06-25
+Last modified: 2026-06-27
 
 Project state:
 Content-complete pre-release.
@@ -14,6 +14,10 @@ Corrections, defects, accessibility failures, broken public traces, and source/p
 
 Correction surface:
 https://github.com/josephusm/the-procedure/issues
+
+Structured intake:
+https://github.com/josephusm/the-procedure/issues/new/choose
+Defects, accessibility failures, public trace/provenance discrepancies, and cold-run playtest feedback have separate forms.
 
 Source:
 https://github.com/josephusm/the-procedure

@@ -1,0 +1,53 @@
+name: Accessibility failure
+about: A readability, input, audio, motion, or viewport problem that blocks play.
+title: "Accessibility: "
+labels: [accessibility, bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The game is deliberately cold and fixed as a machine. That is not a license for accidental exclusion. Use this when the machine becomes unreadable, unclickable, unhearable, or physically hostile in a way the design does not require.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Readability / text
+        - Keyboard input
+        - Pointer / touch input
+        - Audio
+        - Motion / flicker
+        - Mobile scaling
+        - Screen reader / semantics
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: barrier
+    attributes:
+      label: Barrier
+      description: What stopped or degraded the playthrough?
+      placeholder: Text became unreadable when..., keyboard control failed after..., flicker caused...
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Device, browser, viewport, assistive tech, or conditions that matter.
+    validations:
+      required: false
+  - type: textarea
+    id: acceptable_fix
+    attributes:
+      label: Cold fix, if obvious
+      description: Optional. Suggest a fix that preserves the cold first surface and does not add a helper narrator.
+    validations:
+      required: false
+  - type: checkboxes
+    id: standing
+    attributes:
+      label: Pre-release standing
+      options:
+        - label: This was found before 1.0.0 and should be reviewed before release.
+          required: true

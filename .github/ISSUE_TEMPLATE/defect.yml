@@ -1,0 +1,60 @@
+name: Defect
+about: Something in the game or public doorway fails, breaks, or contradicts itself.
+title: "Defect: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for a concrete failure: broken gameplay flow, unreadable surface, dead link, metadata mismatch, or anything that can interrupt the pre-release build.
+
+        If this is about the live public trace, use the public trace / provenance form instead.
+  - type: input
+    id: surface
+    attributes:
+      label: Surface
+      description: Where did the defect appear?
+      placeholder: Game screen, README, status.txt, live page, mobile, audio, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: What happened
+      description: Describe the observed failure without guessing the fix.
+      placeholder: The terminal showed..., the link returned..., the option...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should have happened
+      description: What would keep the object coherent?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Minimal steps, if the failure can be reproduced.
+      placeholder: |
+        1. Open...
+        2. Click...
+        3. Observe...
+    validations:
+      required: false
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser, device, viewport, OS if relevant.
+      placeholder: Firefox desktop, Safari iPhone, Chromium mobile viewport...
+    validations:
+      required: false
+  - type: checkboxes
+    id: standing
+    attributes:
+      label: Pre-release standing
+      options:
+        - label: This was found before 1.0.0 and should be reviewed before release.
+          required: true

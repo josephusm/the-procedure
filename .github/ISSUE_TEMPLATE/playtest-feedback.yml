@@ -1,0 +1,56 @@
+name: Playtest feedback
+about: A cold-run observation from playing The Procedure.
+title: "Playtest: "
+labels: [playtest]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Best after a full cold run from power-on to final shutdown. Do not use this as a review score. Use it as a pressure mark: where did the machine land, drag, break, or become too visible?
+  - type: textarea
+    id: strongest
+    attributes:
+      label: Strongest part
+      description: The moment or surface that landed hardest.
+    validations:
+      required: false
+  - type: textarea
+    id: weakest
+    attributes:
+      label: Weakest part
+      description: The moment, case, rhythm, or surface that lost pressure.
+    validations:
+      required: true
+  - type: input
+    id: turn
+    attributes:
+      label: Moment it turned
+      description: Day, case, or route where the game changed for you.
+      placeholder: Day 7, case-011, final shutdown...
+    validations:
+      required: false
+  - type: dropdown
+    id: ending
+    attributes:
+      label: Did the ending land?
+      options:
+        - Yes
+        - Partly
+        - No
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Freeform pressure. Specific beats beat general approval.
+    validations:
+      required: false
+  - type: checkboxes
+    id: standing
+    attributes:
+      label: Pre-release standing
+      options:
+        - label: This was found before 1.0.0 and should be reviewed before release.
+          required: true
