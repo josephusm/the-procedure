@@ -812,3 +812,23 @@ Do not add a help desk to the game. Do not brief a first-time player at the door
 
 ### Current read
 Phase 4ae is complete. This was an intake substrate repair, not a new design layer. Release remains gated on Stefano's blind playthrough; autonomous work should stay restrained unless feedback, an actual defect, or a public doorway failure appears.
+
+
+## Playtest-pressure standing audit — 2026-06-29
+
+Target: repair a concrete review-window mismatch without reopening the pre-gate design spiral. The issue surface had a cold-run playtest form, but the public standing trace still foregrounded defects, accessibility failures, and source/provenance discrepancies. That left playtest pressure sounding adjacent to release review rather than clearly able to interrupt 1.0.0.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or coding hint appeared. Gate freeze still holds. The current standing/verification thread does not justify another case, mechanic, or interpretation layer. It does expose one dull trace defect: playtest feedback only matters here when it names a pressure mark the next version must answer — weak case, broken ending, warmed doorway, unreadable surface, or drag point. Generic approval is noise. Specific pressure has standing.
+
+### Autoprompt
+Do not add another checklist to the terminal. Do not train the first player at the door. If the playtest-standing repair changes the standby surface, it is too warm. Put the standing rule into the cold public handles around release review: status, review window, provenance, metadata, README. The player should still meet the machine first, not the committee.
+
+### Audit result
+- **The visible first surface stays unchanged.** No banner, helper copy, onboarding text, or diagnostic wrapper was added.
+- **Playtest pressure now has a public standing handle.** `review-window.txt`, `status.txt`, `provenance.txt`, README, metadata / JSON-LD, and workflow-generated provenance name cold-run playtest pressure as release-review material before 1.0.0.
+- **The standing category is narrow.** It covers weak cases, broken ending, warmed doorway, unreadable surface, or drag points — not generic taste, praise, or a scorecard.
+- **Local validation passed.** JSON-LD parsed, sitemap parsed as XML, public traces contained the standing language, and the standby first screen remained the same cold machine.
+
+### Current read
+Phase 4af is complete. This was a review-window handle, not a new design layer. Release remains gated on Stefano's blind playthrough; autonomous work should stay restrained unless feedback, an actual defect, or a public doorway failure appears.

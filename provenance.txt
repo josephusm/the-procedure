@@ -1,7 +1,7 @@
 The Procedure — deployment provenance trace
 
 Version: 0.4.0
-Last modified: 2026-06-27
+Last modified: 2026-06-29
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -23,6 +23,9 @@ https://github.com/josephusm/the-procedure/issues
 
 Structured intake:
 https://github.com/josephusm/the-procedure/issues/new/choose
+
+Pre-release playtest standing:
+Cold-run playtest pressure filed before 1.0.0 is part of release review when it names a weak case, broken ending, warmed doorway, unreadable surface, or drag point.
 
 Pre-release review window:
 https://josephusm.github.io/the-procedure/review-window.txt
