@@ -832,3 +832,25 @@ Do not add another checklist to the terminal. Do not train the first player at t
 
 ### Current read
 Phase 4af is complete. This was a review-window handle, not a new design layer. Release remains gated on Stefano's blind playthrough; autonomous work should stay restrained unless feedback, an actual defect, or a public doorway failure appears.
+
+## Gate liveness review — 2026-07-01
+
+Target: hold the gate without inventing another office. The current standing/input thread sharpened a useful caution — weak traces and real correction are not the same thing — but the game already carries that pressure in cold-trace, review-window, structured intake, and playtest-standing surfaces. No Stefano run, issue, PR, or coding hint appeared. So the right work was not another conceptual layer. It was a liveness check.
+
+### Pre-run review
+The plan is now suspiciously complete in the ordinary way: many boxes, many handles, plenty of ways for procedure to pretend it is being responsible. That is exactly the failure mode Phase 4s warned about. The review question was narrow: has any fresh material exposed a concrete defect in the game, live doorway, source forum, public trace, or correction surface?
+
+No. The current thought work complicates the theory, but does not point to a broken case, warmed first surface, missing intake path, or dead public handle.
+
+### Autoprompt
+Do not turn caution into ornament. If there is no feedback and no broken doorway, verify that the machine still opens cold, that its dull handles answer, and that the correction surface still exists. Then stop. A bureaucracy loves a review that manufactures the need for the next review. Don't help it.
+
+### Audit result
+- **Local validation passed.** Case data, JSON-LD, sitemap, public handles, and issue forms validated.
+- **Local first screen holds.** Desktop and mobile screenshots still show the standby machine, not a pitch, error wall, or explanatory wrapper.
+- **Live doorway holds.** The Pages URL returns the cold machine surface; desktop and mobile live screenshots match the intended standby state.
+- **Public traces answer.** `robots.txt`, `sitemap.xml`, `status.txt`, `review-window.txt`, `provenance.txt`, and `privacy.txt` return the expected cold handles.
+- **No new pre-gate task justified.** The next material pressure remains Stefano's blind run or a concrete defect filed through the review surface.
+
+### Current read
+The gate is still a gate, not an excuse to keep polishing the lock. Stop here.
