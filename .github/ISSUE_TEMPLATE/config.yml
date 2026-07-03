@@ -1,5 +1,8 @@
 blank_issues_enabled: true
 contact_links:
+  - name: Uncategorized pre-release issue
+    url: https://github.com/josephusm/the-procedure/issues/new
+    about: Use when the observation has standing before it fits a structured form.
   - name: Pre-release review window
     url: https://josephusm.github.io/the-procedure/review-window.txt
     about: What counts as release-relevant before 1.0.0.

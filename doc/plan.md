@@ -270,6 +270,13 @@ Gate freeze still holds. This is a concrete public-trace repair, not another des
 - [x] Update `review-window.txt`, `status.txt`, `provenance.txt`, README, metadata / JSON-LD, workflow provenance generation, and `sitemap.xml` to carry the playtest-pressure standing handle without changing the visible first surface.
 - [x] Smoke test local metadata, review-window/status/provenance traces, sitemap, and first screen.
 
+### Phase 4ag — Uncategorized intake / pre-classification standing
+Gate freeze still holds. This is a concrete source-forum repair, not another interpretive layer. The current vestibule/proof thread exposed a narrow defect in the correction surface: structured forms are useful, but they should not make a filer classify the problem before the first sentence has standing. The poor public handle needs a cold uncategorized path too.
+- [x] Define the uncategorized-intake rule in the GDD: structured forms do not exhaust pre-release standing; a blank issue may carry a defect or pressure mark before it fits a class.
+- [x] Update `review-window.txt`, `status.txt`, `provenance.txt`, README, metadata / JSON-LD, and issue-template config to name the uncategorized path without changing the visible first surface.
+- [x] Update `sitemap.xml` freshness for the amended public trace.
+- [x] Smoke test local metadata, public traces, issue-template config, sitemap, and first screen.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
@@ -292,6 +299,7 @@ Gate holding:
 - [x] 2026-06-27 gate review held with one concrete correction-intake fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current medium/substrate thread did not justify another game audit, but exposed a bare issue-surface gap. GitHub issue forms now structure pre-release defects, accessibility failures, trace discrepancies, and playtest pressure; public traces name the intake without warming the first surface; local metadata/YAML/sitemap/first-screen smoke tests passed.
 - [x] 2026-06-29 gate review held with one concrete playtest-standing fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current standing/verification thread did not justify another game audit, but exposed a mismatch in the review window. Cold-run playtest pressure now has an explicit release-review handle when it names a weak case, broken ending, warmed doorway, unreadable surface, or drag point; local metadata/traces/sitemap/first-screen smoke tests passed.
 - [x] 2026-07-01 gate review held: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current standing/input/trace thread sharpened the distinction between weak handles and real correction, but did not expose a new game defect or public-doorway gap. Local metadata/data/sitemap/issue-form validation passed; local and live desktop/mobile first screens remain cold; live robots, sitemap, status, review-window, provenance, and privacy traces answer.
+- [x] 2026-07-03 gate review held with one concrete intake-standing fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current vestibule/category-before-phrase thread did not justify another game audit, but exposed that structured issue forms should not exhaust pre-release standing. Public traces and metadata now name the blank uncategorized issue path as a poor handle for observations that do not yet fit a form; local metadata/traces/YAML/sitemap/first-screen smoke tests passed.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)
