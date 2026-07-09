@@ -254,6 +254,7 @@ Rules:
 - Uncategorized intake is a trace surface too. Structured forms should not exhaust standing, because classification can become its own gate. A blank issue is the poor vestibule: enough room for a defect, pressure mark, or trace discrepancy to speak before it knows which box it belongs in. Keep it cold. No concierge, no promise of rescue, no warm invitation copy.
 - Playtest-pressure standing is a trace surface too. A cold-run report is not useful because it praises or dislikes the game; it is useful when it names a weak case, broken ending, warmed doorway, unreadable surface, or drag point that can still interrupt 1.0.0. Standing here belongs to the pressure mark, not to a generic opinion token.
 - Deployment provenance is a trace surface too. A public static object should name the repository branch, workflow, and live source revision that produced it. Not as a trust ceremony. As a poor cold handle for archives, future readers, and anyone who needs to compare the page with its source instead of taking the root's word for itself.
+- Continuity custody is a trace surface too. A public object is not public by magic; it stays public while its source, hosting, deployment, correction surface, and maintainer chain keep the cold object from thawing into a dead link or private inbox. The handle should name the maintenance surface and fallback honestly, without promising immortality or warming the doorway into comfort copy.
 - Social preview imagery is an ambient doorway cue. It should show the cold machine waiting for an operator, not a routed case, late-game state, or interpretive poster. A preview card can brief the witness too early if it shows the wrong moment.
 - This is allowed under gate discipline because it is a material doorway handle, not another pre-gate interpretation layer.
 
@@ -271,6 +272,7 @@ Current pressure points:
 - Blank issues must remain enabled and named as an uncategorized pre-release path, so a report can acquire standing before it fits the structured forms.
 - `review-window.txt`, `status.txt`, and metadata should say that cold-run playtest pressure can enter release review before 1.0.0 when it identifies a weak case, broken ending, warmed doorway, unreadable surface, or drag point.
 - `provenance.txt`, provenance metadata, and JSON-LD subject links may name source repository, branch, deployment workflow, source revision, workflow run, canonical URL, correction surface, data boundary, and license, provided the visible standby surface remains unchanged.
+- `maintenance.txt`, maintenance metadata, and related public traces may name the custody chain — canonical URL, source, Pages deployment, issue surface, data boundary, and failure modes — provided the visible standby surface remains unchanged and the text does not pretend continuity is guaranteed.
 - `assets/meta/og-image.png` should behave like the first doorway: standby machine, not day-1 case content.
 - If the page still opens directly on the standby machine and the metadata files return plain handles, stop.
 

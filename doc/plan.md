@@ -277,6 +277,13 @@ Gate freeze still holds. This is a concrete source-forum repair, not another int
 - [x] Update `sitemap.xml` freshness for the amended public trace.
 - [x] Smoke test local metadata, public traces, issue-template config, sitemap, and first screen.
 
+### Phase 4ah — Continuity custody / maintenance handle
+Gate freeze still holds. This is a concrete public-trace repair, not another design audit. Current continuity work exposed a material weakness: the public doorway named source, status, provenance, review standing, and data boundary, but not the dull custody chain that keeps the object public over time.
+- [x] Define the continuity-custody rule in the GDD: a public object remains public only while source, hosting, deployment, correction surface, and maintainer chain keep the cold object from thawing into a dead link or private inbox.
+- [x] Add `maintenance.txt` as a plain public handle for canonical URL, source repository, Pages deployment, issue/correction surface, continuity boundary, fallback, related traces, and license.
+- [x] Update README, status/review/provenance traces, metadata / JSON-LD, issue template, workflow-generated provenance, and `sitemap.xml` to name the maintenance trace without changing the visible first surface.
+- [x] Smoke test local metadata, public traces, sitemap, and first screen.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
@@ -301,6 +308,7 @@ Gate holding:
 - [x] 2026-07-01 gate review held: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current standing/input/trace thread sharpened the distinction between weak handles and real correction, but did not expose a new game defect or public-doorway gap. Local metadata/data/sitemap/issue-form validation passed; local and live desktop/mobile first screens remain cold; live robots, sitemap, status, review-window, provenance, and privacy traces answer.
 - [x] 2026-07-03 gate review held with one concrete intake-standing fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current vestibule/category-before-phrase thread did not justify another game audit, but exposed that structured issue forms should not exhaust pre-release standing. Public traces and metadata now name the blank uncategorized issue path as a poor handle for observations that do not yet fit a form; local metadata/traces/YAML/sitemap/first-screen smoke tests passed.
 - [x] 2026-07-07 deployment recovery review held: the db4acda Pages failure was transient, not a design or workflow defect. A later manual `Deploy static Pages` run succeeded; live `review-window.txt`, `status.txt`, and `provenance.txt` all returned 200, with provenance confirming the previously stranded `db4acda3aa357634d8af9a915ccf930a9d2ba4cb` source revision. The follow-up documentation commits also deployed successfully, and live provenance now names the latest pushed source revision. The live first surface still opens on the cold standby machine. No new pre-gate design work justified.
+- [x] 2026-07-09 gate review held with one concrete continuity-custody fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current public-continuity thread did not justify another game audit, but exposed a missing maintenance handle. `maintenance.txt`, metadata, JSON-LD, status/review/provenance traces, issue template, workflow provenance generation, README, and sitemap now name the cold custody chain and fallback surfaces; local metadata/traces/sitemap/first-screen smoke tests passed.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)

@@ -854,3 +854,23 @@ Do not turn caution into ornament. If there is no feedback and no broken doorway
 
 ### Current read
 The gate is still a gate, not an excuse to keep polishing the lock. Stop here.
+
+## Continuity custody trace audit — 2026-07-09
+
+Target: keep the public doorway inspectable over time without turning the first surface into reassurance copy. The page already had status, provenance, privacy, review-window, source, issue forms, and an uncategorized intake path. What it did not name was the boring custody chain underneath all of that: source, hosting, deployment, correction surface, fallback, and maintainer continuity.
+
+### Pre-run review
+Gate freeze still holds. No Stefano playtest feedback, issue, PR, or coding hint appeared. The current public-continuity thread did not expose a new game-design problem; it exposed a trace problem. A live static object can be reachable and still be bad at saying how it stays reachable, who can repair it, and what counts as a continuity failure before 1.0.0.
+
+### Autoprompt
+Do not open another conceptual audit. Add the cold maintenance handle the object is missing. The handle should say where the canonical page lives, where source and correction live, what the deployment surface is, what the data boundary is, and what fails loudly enough to interrupt release. No comfort, no immortality promise, no warm front desk.
+
+### Audit result
+- **Added `maintenance.txt`.** It names canonical URL, source repository, Pages deployment, correction surface, continuity boundary, public fallback, related traces, and license.
+- **Updated public traces.** `status.txt`, `provenance.txt`, `review-window.txt`, README, metadata, JSON-LD, issue template, workflow-generated provenance, and sitemap now point to the maintenance trace.
+- **Visible first surface unchanged.** The standby terminal remains the cold doorway. The maintenance handle is machine/public trace, not onboarding copy.
+
+### Current read
+Phase 4ah is complete. This was a trace repair, not permission to keep inventing pre-gate rituals. The next meaningful pressure remains Stefano's blind run unless a live trace breaks or a real report arrives.
+
+---

@@ -1,12 +1,12 @@
 name: Public trace / provenance discrepancy
-about: A source, status, review-window, privacy, sitemap, metadata, or deployment trace is missing or inconsistent.
+about: A source, status, review-window, maintenance, privacy, sitemap, metadata, or deployment trace is missing or inconsistent.
 title: "Trace: "
 labels: [public-trace]
 body:
   - type: markdown
     attributes:
       value: |
-        Use this for the dull handles around the game: canonical URL, metadata, sitemap, status, provenance, privacy boundary, source repository, issue surface, or review window.
+        Use this for the dull handles around the game: canonical URL, metadata, sitemap, status, provenance, maintenance custody, privacy boundary, source repository, issue surface, or review window.
 
         The correction surface matters only if a filed trace can be compared with the source that produced the public object. Boring, yes. That is the point.
   - type: dropdown
@@ -20,6 +20,7 @@ body:
         - status.txt
         - provenance.txt
         - review-window.txt
+        - maintenance.txt
         - privacy.txt
         - README.md
         - GitHub Pages workflow

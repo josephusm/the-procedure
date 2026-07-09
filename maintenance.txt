@@ -1,0 +1,34 @@
+The Procedure — continuity custody trace
+
+Version: 0.4.0
+Last modified: 2026-07-09
+
+Canonical URL:
+https://josephusm.github.io/the-procedure/
+
+Source repository:
+https://github.com/josephusm/the-procedure
+
+Current deployment surface:
+GitHub Pages via the Deploy static Pages workflow on main.
+https://josephusm.github.io/the-procedure/provenance.txt
+
+Current maintenance surface:
+Source changes, trace repairs, defects, accessibility failures, and release-review pressure are handled through the repository issue surface before 1.0.0.
+https://github.com/josephusm/the-procedure/issues
+
+Continuity boundary:
+The live page is a static public object with no account, tenant, analytics, cookies, localStorage, remote gameplay telemetry, or server-side game state. Its continuity depends on the source repository, Pages deployment, public traces, and future maintainers keeping those dull handles alive.
+
+Public fallback:
+If the canonical live URL fails, the source repository and issue surface are the amendable public handles while they remain available. A failure of hosting, source/provenance mismatch, stale status, broken sitemap, or missing trace belongs in release review before 1.0.0.
+
+Related traces:
+Status: https://josephusm.github.io/the-procedure/status.txt
+Deployment provenance: https://josephusm.github.io/the-procedure/provenance.txt
+Review window: https://josephusm.github.io/the-procedure/review-window.txt
+Privacy/data boundary: https://josephusm.github.io/the-procedure/privacy.txt
+
+License:
+CC BY-NC-SA 4.0
+https://creativecommons.org/licenses/by-nc-sa/4.0/

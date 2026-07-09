@@ -58,6 +58,10 @@ jobs:
           Workflow run:
           https://github.com/josephusm/the-procedure/actions/runs/${GITHUB_RUN_ID}
 
+          Continuity custody:
+          The live page is maintained as a static public object through the source repository, Pages deployment, public traces, and future maintainers.
+          https://josephusm.github.io/the-procedure/maintenance.txt
+
           Correction surface:
           https://github.com/josephusm/the-procedure/issues
 

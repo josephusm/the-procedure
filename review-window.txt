@@ -1,7 +1,7 @@
 The Procedure — pre-release review window
 
 Version: 0.4.0
-Last modified: 2026-07-03
+Last modified: 2026-07-09
 
 Project state:
 Content-complete pre-release.
@@ -25,6 +25,10 @@ Blank issues remain enabled for observations that have standing before they fit 
 
 Source:
 https://github.com/josephusm/the-procedure
+
+Continuity custody:
+A broken live URL, stale status/provenance, missing maintenance trace, or source/deploy mismatch is release-relevant before 1.0.0.
+https://josephusm.github.io/the-procedure/maintenance.txt
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
