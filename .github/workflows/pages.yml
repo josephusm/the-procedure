@@ -62,6 +62,10 @@ jobs:
           The live page is maintained as a static public object through the source repository, Pages deployment, public traces, and future maintainers.
           https://josephusm.github.io/the-procedure/maintenance.txt
 
+          Recovery route:
+          Broken traces, source/provenance mismatches, warmed doorway regressions, and failed deployments are compared against this provenance record and corrected by roll-forward or rollback through source history and Pages deployment before 1.0.0.
+          https://josephusm.github.io/the-procedure/maintenance.txt
+
           Correction surface:
           https://github.com/josephusm/the-procedure/issues
 

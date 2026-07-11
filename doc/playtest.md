@@ -873,4 +873,24 @@ Do not open another conceptual audit. Add the cold maintenance handle the object
 ### Current read
 Phase 4ah is complete. This was a trace repair, not permission to keep inventing pre-gate rituals. The next meaningful pressure remains Stefano's blind run unless a live trace breaks or a real report arrives.
 
+## Recovery route trace audit — 2026-07-11
+
+Target: keep the new public thermometer honest. The page already named status, provenance, maintenance, review standing, data boundary, and issue intake. What it still did badly was the lever after diagnosis: if the live object breaks, drifts from source, warms the doorway, or deploys wrong, where does the correction become an actual repair path rather than another badge?
+
+### Pre-run review
+Gate freeze still holds. No Stefano playtest feedback, issue, PR, or coding hint appeared. Today's public-thermometer/custody thread did not justify another game audit; it sharpened a trace defect. A status handle is useful only if it can open correction, responsibility, handoff, or rollback. The project had correction and custody language, but rollback/recovery was only implicit in source history and Pages deployment. Implicit is how handles become decoration.
+
+### Autoprompt
+Do not make a liveness dashboard. Do not add visible comfort copy. Add the smallest cold route from broken trace to repair: file the discrepancy, compare served object against source/provenance, then roll forward with a correcting commit or roll back through repository history and Pages deployment. If the terminal first surface changes, the fix has warmed the game and should be cut.
+
+### Audit result
+- **Recovery route named.** `maintenance.txt`, `status.txt`, `review-window.txt`, and `provenance.txt` now say that broken traces, source/provenance mismatches, warmed doorway regressions, and failed deployments enter release review before 1.0.0.
+- **Public metadata carries the handle.** `index.html` now has a `recovery-route` meta handle, updated date/release notes, and JSON-LD status language without changing the visible first surface.
+- **Source forum can receive it.** The public-trace issue form now includes recovery route / rollback handle as a trace surface and asks what the discrepancy prevents a maintainer from checking, correcting, rolling forward, or rolling back.
+- **Workflow provenance says the same thing.** The generated Pages provenance trace will name the recovery route at deploy time, so the live object carries the repair path with the source revision.
+- **Local validation passed.** Metadata, JSON-LD, public traces, sitemap, workflow text, issue template, and local first screen all held. The screenshot still opens on the low-current standby machine, not a pitch.
+
+### Current read
+Phase 4ai is complete. This was a lever repair, not another pre-gate theory drawer. The next meaningful pressure remains Stefano's blind run unless a trace breaks, deployment lies, or real feedback arrives.
+
 ---

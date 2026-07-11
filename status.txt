@@ -3,7 +3,7 @@ The Procedure — public status trace
 Version: 0.4.0
 Project state: content-complete pre-release
 Release gate: external playtest feedback required before 1.0.0
-Last modified: 2026-07-09
+Last modified: 2026-07-11
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -16,6 +16,10 @@ https://josephusm.github.io/the-procedure/provenance.txt
 
 Continuity custody:
 The live page is a static public object. Its continuity depends on the source repository, Pages deployment, public traces, and future maintainers keeping those dull handles alive.
+https://josephusm.github.io/the-procedure/maintenance.txt
+
+Recovery route:
+A broken live URL, stale public trace, source/provenance mismatch, warmed doorway regression, or failed Pages deployment belongs in the correction surface before 1.0.0. Recovery means comparing the served object with source/provenance, then rolling forward or rolling back through repository history and Pages deployment.
 https://josephusm.github.io/the-procedure/maintenance.txt
 
 Correction surface:
