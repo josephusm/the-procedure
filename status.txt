@@ -3,7 +3,7 @@ The Procedure — public status trace
 Version: 0.4.0
 Project state: content-complete pre-release
 Release gate: external playtest feedback required before 1.0.0
-Last modified: 2026-07-11
+Last modified: 2026-07-13
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -13,6 +13,9 @@ https://github.com/josephusm/the-procedure
 
 Deployment provenance:
 https://josephusm.github.io/the-procedure/provenance.txt
+
+Errata / correction history:
+https://josephusm.github.io/the-procedure/errata.txt
 
 Continuity custody:
 The live page is a static public object. Its continuity depends on the source repository, Pages deployment, public traces, and future maintainers keeping those dull handles alive.
@@ -32,7 +35,7 @@ Uncategorized intake:
 https://github.com/josephusm/the-procedure/issues/new
 
 Pre-release review window:
-Corrections, defects, accessibility failures, cold-run playtest pressure, broken public traces, source/provenance discrepancies, and uncategorized observations filed before 1.0.0 are reviewed before release.
+Corrections, defects, accessibility failures, cold-run playtest pressure, known errata changes, broken public traces, source/provenance discrepancies, and uncategorized observations filed before 1.0.0 are reviewed before release.
 https://josephusm.github.io/the-procedure/review-window.txt
 
 Data boundary:

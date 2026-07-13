@@ -1,0 +1,40 @@
+The Procedure — errata and correction-history trace
+
+Version: 0.4.0
+Last modified: 2026-07-13
+
+Current known errata:
+No unresolved release-blocking defect is recorded in the public issue surface as of 2026-07-13.
+
+This is a current trace, not a promise. New defects, accessibility failures, public trace discrepancies, warmed doorway regressions, source/provenance mismatches, recovery failures, or cold-run playtest pressure filed before 1.0.0 can still interrupt release review.
+
+Recent correction history:
+- 2026-07-13: Added this errata and correction-history handle so the public object names known defects, correction history, source issue intake, recovery route, and the next release boundary without changing the visible first surface.
+- 2026-07-11: Added the recovery route / rollback handle for broken public traces, source/provenance mismatches, warmed doorway regressions, and failed deployments.
+- 2026-07-09: Added the continuity custody / maintenance handle for source, hosting, deployment, correction surface, fallback, and custody boundary.
+
+Canonical source history:
+https://github.com/josephusm/the-procedure/commits/main
+
+Correction surface:
+https://github.com/josephusm/the-procedure/issues
+
+Structured intake:
+https://github.com/josephusm/the-procedure/issues/new/choose
+
+Uncategorized intake:
+https://github.com/josephusm/the-procedure/issues/new
+
+Recovery route:
+If the live page, metadata, public traces, deployment provenance, or first surface diverge from source, the repair path is compare, correct, roll forward, or roll back through source history and GitHub Pages deployment.
+https://josephusm.github.io/the-procedure/maintenance.txt
+
+Pre-release review window:
+https://josephusm.github.io/the-procedure/review-window.txt
+
+Canonical URL:
+https://josephusm.github.io/the-procedure/
+
+License:
+CC BY-NC-SA 4.0
+https://creativecommons.org/licenses/by-nc-sa/4.0/

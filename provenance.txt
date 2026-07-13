@@ -1,7 +1,7 @@
 The Procedure — deployment provenance trace
 
 Version: 0.4.0
-Last modified: 2026-07-11
+Last modified: 2026-07-13
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -19,8 +19,11 @@ Deployment workflow:
 Deploy static Pages
 
 Continuity custody:
-The live page is maintained as a static public object through the source repository, Pages deployment, public traces, and future maintainers.
+The live page is maintained as a static public object through the source repository, Pages deployment, public traces, known errata history, and future maintainers.
 https://josephusm.github.io/the-procedure/maintenance.txt
+
+Errata / correction history:
+https://josephusm.github.io/the-procedure/errata.txt
 
 Recovery route:
 Broken traces, source/provenance mismatches, warmed doorway regressions, and failed deployments are compared against this provenance record and corrected by roll-forward or rollback through source history and Pages deployment before 1.0.0.

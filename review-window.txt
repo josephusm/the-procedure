@@ -1,7 +1,7 @@
 The Procedure — pre-release review window
 
 Version: 0.4.0
-Last modified: 2026-07-11
+Last modified: 2026-07-13
 
 Project state:
 Content-complete pre-release.
@@ -10,7 +10,7 @@ Release gate:
 External playtest feedback required before 1.0.0.
 
 Review standing before 1.0.0:
-Corrections, defects, accessibility failures, cold-run playtest pressure, broken public traces, source/provenance discrepancies, warmed doorway regressions, recovery failures, and uncategorized observations filed before the 1.0.0 release are part of release review, not post-release noise.
+Corrections, defects, accessibility failures, cold-run playtest pressure, known errata changes, broken public traces, source/provenance discrepancies, warmed doorway regressions, recovery failures, and uncategorized observations filed before the 1.0.0 release are part of release review, not post-release noise.
 
 Correction surface:
 https://github.com/josephusm/the-procedure/issues
@@ -25,6 +25,9 @@ Blank issues remain enabled for observations that have standing before they fit 
 
 Source:
 https://github.com/josephusm/the-procedure
+
+Errata / correction history:
+https://josephusm.github.io/the-procedure/errata.txt
 
 Continuity custody / recovery route:
 A broken live URL, stale status/provenance, missing maintenance trace, source/deploy mismatch, warmed first surface, or failed recovery path is release-relevant before 1.0.0. The repair route is source comparison, correction, roll-forward, or rollback through repository history and Pages deployment.
