@@ -12,3 +12,6 @@ contact_links:
   - name: Errata / correction history
     url: https://josephusm.github.io/the-procedure/errata.txt
     about: Current known errata, correction history, and release-review boundary.
+  - name: Public reuse boundary
+    url: https://josephusm.github.io/the-procedure/reuse.txt
+    about: License, attribution, indexing, and corpus-use boundary.

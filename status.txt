@@ -3,7 +3,7 @@ The Procedure — public status trace
 Version: 0.4.0
 Project state: content-complete pre-release
 Release gate: external playtest feedback required before 1.0.0
-Last modified: 2026-07-13
+Last modified: 2026-07-15
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -16,6 +16,10 @@ https://josephusm.github.io/the-procedure/provenance.txt
 
 Errata / correction history:
 https://josephusm.github.io/the-procedure/errata.txt
+
+Reuse boundary:
+Public indexing and citation are allowed. Reuse remains under CC BY-NC-SA 4.0; no additional permission is granted for commercial model training, dataset resale, unattributed corpus extraction, or stripped reuse without source, author, license, correction, and trace handles.
+https://josephusm.github.io/the-procedure/reuse.txt
 
 Continuity custody:
 The live page is a static public object. Its continuity depends on the source repository, Pages deployment, public traces, and future maintainers keeping those dull handles alive.

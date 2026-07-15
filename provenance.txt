@@ -1,7 +1,7 @@
 The Procedure — deployment provenance trace
 
 Version: 0.4.0
-Last modified: 2026-07-13
+Last modified: 2026-07-15
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -25,8 +25,11 @@ https://josephusm.github.io/the-procedure/maintenance.txt
 Errata / correction history:
 https://josephusm.github.io/the-procedure/errata.txt
 
+Reuse boundary:
+https://josephusm.github.io/the-procedure/reuse.txt
+
 Recovery route:
-Broken traces, source/provenance mismatches, warmed doorway regressions, and failed deployments are compared against this provenance record and corrected by roll-forward or rollback through source history and Pages deployment before 1.0.0.
+Broken traces, reuse-boundary failures, source/provenance mismatches, warmed doorway regressions, and failed deployments are compared against this provenance record and corrected by roll-forward or rollback through source history and Pages deployment before 1.0.0.
 https://josephusm.github.io/the-procedure/maintenance.txt
 
 Correction surface:

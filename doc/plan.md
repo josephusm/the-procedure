@@ -297,6 +297,13 @@ Gate freeze still holds. This is a concrete public-trace repair, not another des
 - [x] Update status, maintenance, review-window, provenance, README, metadata / JSON-LD, workflow-generated provenance, issue template, and sitemap to include the errata handle without changing the visible first surface.
 - [x] Smoke test local metadata, public traces, sitemap, workflow YAML, and first screen.
 
+### Phase 4ak — Reuse boundary / training-corpus handle
+Gate freeze still holds. Review/autoprompt: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current front-door / model-measurement thread did not justify reopening the game, but it exposed a concrete public-trace defect. The doorway was indexable and citeable, yet it did not say where ordinary indexing ends and corpus extraction, commercial model training, resale, or stripped attribution begin. A cold public object should not become loose training residue by silence.
+- [x] Define the reuse-boundary rule in the GDD: public indexing and citation are allowed, but corpus/training reuse should preserve license, attribution, source, correction, and provenance handles.
+- [x] Add `reuse.txt` as a plain public handle for license, attribution, indexing, crawler/archive note, correction surface, provenance, and review boundary.
+- [x] Update README, status/review/provenance/maintenance/errata traces, metadata / JSON-LD, issue template, workflow-generated provenance, robots, and sitemap to name the reuse boundary without changing the visible first surface.
+- [x] Smoke test local metadata, public traces, sitemap, workflow YAML, and first screen.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
@@ -324,6 +331,7 @@ Gate holding:
 - [x] 2026-07-09 gate review held with one concrete continuity-custody fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current public-continuity thread did not justify another game audit, but exposed a missing maintenance handle. `maintenance.txt`, metadata, JSON-LD, status/review/provenance traces, issue template, workflow provenance generation, README, and sitemap now name the cold custody chain and fallback surfaces; local metadata/traces/sitemap/first-screen smoke tests passed.
 - [x] 2026-07-11 gate review held with one concrete recovery-route fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current public-thermometer/custody thread did not justify another game audit, but exposed that a status trace should name its repair path. `maintenance.txt`, status/review/provenance traces, metadata, JSON-LD, issue template, workflow-generated provenance, README, and sitemap now name correction, roll-forward, and rollback as release-review routes for broken traces, source/provenance mismatches, warmed doorway regressions, or failed deployment; local metadata/traces/sitemap/workflow/first-screen smoke tests passed.
 - [x] 2026-07-13 gate review held with one concrete errata-history fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current continuity/errata thread did not justify another game audit, but exposed that a public object should name its known defects and correction scars, not only its source and recovery route. `errata.txt`, status/review/provenance/maintenance traces, metadata, JSON-LD, issue config, workflow-generated provenance, README, and sitemap now name the errata/correction-history handle; local metadata/traces/sitemap/workflow/first-screen smoke tests passed.
+- [x] 2026-07-15 gate review held with one concrete reuse-boundary fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current front-door/model-measurement thread did not justify another game audit, but exposed that the public object named indexing, provenance, correction, and license without a clear corpus/training reuse boundary. `reuse.txt`, metadata, public traces, README, robots, sitemap, issue config, and workflow-generated provenance now name the boundary; local metadata/traces/sitemap/workflow/first-screen smoke tests passed.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)

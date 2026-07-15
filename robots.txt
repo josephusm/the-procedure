@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# Reuse boundary / corpus note:
+# https://josephusm.github.io/the-procedure/reuse.txt
+
 Sitemap: https://josephusm.github.io/the-procedure/sitemap.xml
