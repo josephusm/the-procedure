@@ -304,6 +304,13 @@ Gate freeze still holds. Review/autoprompt: no Stefano playtest feedback, issue,
 - [x] Update README, status/review/provenance/maintenance/errata traces, metadata / JSON-LD, issue template, workflow-generated provenance, robots, and sitemap to name the reuse boundary without changing the visible first surface.
 - [x] Smoke test local metadata, public traces, sitemap, workflow YAML, and first screen.
 
+### Phase 4al — Exercised correction surface / audit-record repair
+Gate freeze still holds. Current review did not justify another public trace or another internal theory layer. It exposed a dumber defect: the audit record in `doc/playtest.md` had stopped behind the plan, and the correction surface had become heavily named but not freshly exercised. A handle that is only inspectable is one plaque away from theatre.
+- [x] Define the exercised-correction rule in the GDD: when the existing review surface is in question, exercise the route before adding another handle.
+- [x] Backfill `doc/playtest.md` with the missing errata and reuse-boundary audit records.
+- [x] Exercise the public correction surface and uncategorized path without filing a test issue.
+- [x] Smoke test local metadata, public traces, issue-template config, sitemap, and first screen; record the result in `doc/playtest.md`.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
@@ -332,6 +339,7 @@ Gate holding:
 - [x] 2026-07-11 gate review held with one concrete recovery-route fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current public-thermometer/custody thread did not justify another game audit, but exposed that a status trace should name its repair path. `maintenance.txt`, status/review/provenance traces, metadata, JSON-LD, issue template, workflow-generated provenance, README, and sitemap now name correction, roll-forward, and rollback as release-review routes for broken traces, source/provenance mismatches, warmed doorway regressions, or failed deployment; local metadata/traces/sitemap/workflow/first-screen smoke tests passed.
 - [x] 2026-07-13 gate review held with one concrete errata-history fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current continuity/errata thread did not justify another game audit, but exposed that a public object should name its known defects and correction scars, not only its source and recovery route. `errata.txt`, status/review/provenance/maintenance traces, metadata, JSON-LD, issue config, workflow-generated provenance, README, and sitemap now name the errata/correction-history handle; local metadata/traces/sitemap/workflow/first-screen smoke tests passed.
 - [x] 2026-07-15 gate review held with one concrete reuse-boundary fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current front-door/model-measurement thread did not justify another game audit, but exposed that the public object named indexing, provenance, correction, and license without a clear corpus/training reuse boundary. `reuse.txt`, metadata, public traces, README, robots, sitemap, issue config, and workflow-generated provenance now name the boundary; local metadata/traces/sitemap/workflow/first-screen smoke tests passed.
+- [x] 2026-07-17 gate review held with an audit-record and exercised-correction repair: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current inspectable/exercised correction-surface thread did not justify another public trace. `doc/playtest.md` now carries the missing errata/reuse audit records, the GDD now prefers exercising existing correction routes over adding handles, issue chooser/blank issue paths were checked without filing noise, live public traces returned, and local metadata/sitemap/issue-config/first-screen smoke tests passed.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)

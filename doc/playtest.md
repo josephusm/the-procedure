@@ -894,3 +894,62 @@ Do not make a liveness dashboard. Do not add visible comfort copy. Add the small
 Phase 4ai is complete. This was a lever repair, not another pre-gate theory drawer. The next meaningful pressure remains Stefano's blind run unless a trace breaks, deployment lies, or real feedback arrives.
 
 ---
+
+## Errata trace audit — 2026-07-13
+
+Target: backfill the audit record for Phase 4aj. The plan recorded the errata-handle repair, but this packet had stopped at the recovery-route pass. That drift matters: a pre-release record that forgets its own scars starts doing the opposite of what it says.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or coding hint appeared. The continuity/errata thread did not justify another game audit, but it exposed a public-trace gap: the project named source, custody, review standing, and recovery without a plain handle for known errata and correction history.
+
+### Autoprompt
+Do not make a changelog parade. Add the scar where inspectors can find it: a dull errata trace, linked from the status/review/provenance/maintenance surfaces and metadata. The first screen must stay cold.
+
+### Audit result
+- **Errata handle added.** `errata.txt` names current known errata, correction history, source intake, recovery route, and the 1.0.0 review boundary.
+- **Public traces linked it.** Status, review-window, provenance, maintenance, README, metadata, JSON-LD, issue config, workflow-generated provenance, and sitemap include the errata surface.
+- **Visible first surface stayed unchanged.** The handle lives outside the terminal.
+
+### Current read
+Phase 4aj is complete. This was a correction-history repair, not a new interpretive layer.
+
+## Reuse boundary audit — 2026-07-15
+
+Target: backfill the audit record for Phase 4ak. The public object was indexable, citeable, attributed, and source-linked. What it did not yet say was where ordinary indexing ends and corpus extraction, commercial model training, dataset resale, or stripped attribution begin.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or coding hint appeared. The front-door / model-measurement thread did not justify reopening the game. It exposed a concrete reuse-boundary defect: a cold public object should not become loose training residue by silence.
+
+### Autoprompt
+Do not turn the page into a license lecture. Put the boundary in a plain handle and the machine-readable surfaces around it: license, attribution, indexing, crawler/archive note, correction surface, provenance, and review boundary. The player still meets the standby machine first.
+
+### Audit result
+- **Reuse handle added.** `reuse.txt` distinguishes public indexing, citation, archiving, and source comparison from commercial model training, dataset resale, unattributed corpus extraction, or stripped reuse.
+- **Public traces linked it.** README, status/review/provenance/maintenance/errata traces, metadata, JSON-LD, issue config, workflow-generated provenance, robots, and sitemap include the reuse boundary.
+- **Visible first surface stayed unchanged.** The boundary is inspectable without becoming onboarding copy.
+
+### Current read
+Phase 4ak is complete. This was a reuse-boundary repair, not permission to keep adding plaques.
+
+## Exercised correction surface / audit-record repair — 2026-07-17
+
+Target: stop the plan from absorbing the current correction-surface thread as yet another trace file. The useful criticism was sharper and less flattering: an inspectable handle is not the same thing as an exercised route. Before adding anything new, test whether the existing correction surface and cold handles still answer, and repair the project record that had fallen behind.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or coding hint appeared. `PENDING.md` had no `[hint:coding]` item. GitHub inbox and open issue listing were quiet. The recent `inspectable vs exercised` thread did not expose a missing page; it exposed a risk in the project's behavior: too many labels can become theatre if the route is never touched. Separately, this packet was missing the 2026-07-13 and 2026-07-15 audit records, while `doc/plan.md` already claimed those phases complete.
+
+### Autoprompt
+Do not mint another public handle. Exercise the existing route. Backfill the audit record. If the issue chooser, blank issue path, public traces, local metadata, sitemap, issue config, and first screen hold, stop. The next real pressure is still Stefano's blind playtest or an actual filed defect.
+
+### Audit result
+- **Plan/GDD repaired.** Phase 4al records the exercised-correction rule; the GDD now says correction-surface work should exercise existing routes before adding handles.
+- **Audit packet backfilled.** The missing errata and reuse-boundary audits are recorded here, so the playtest packet matches the plan again.
+- **Local validation passed.** JSON, JSON-LD, XML sitemap, public trace files, and issue-template handles passed the validation script.
+- **Correction route exercised without filing noise.** GitHub issue chooser and blank issue URLs resolved to GitHub's sign-in gate for unauthenticated access, which is expected for filing; authenticated issue listing returned no open issues. Local issue config still has `blank_issues_enabled: true` and the uncategorized path.
+- **Public traces answer.** Live `status.txt`, `review-window.txt`, `errata.txt`, and `reuse.txt` returned 200 as plain text.
+- **Local first screen holds.** Screenshot opened on the low-current standby machine, not a pitch, error wall, or explanatory wrapper.
+
+### Current read
+Phase 4al is complete. The correction surface is not magically public in the pure sense — GitHub filing still carries the account gate — but the route exists, blank issues remain enabled, the public handles answer, and there is no basis for another autonomous trace layer. Stop here.
+
+---

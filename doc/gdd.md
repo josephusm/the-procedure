@@ -227,6 +227,7 @@ Rules:
 - Do not add a new pre-gate conceptual audit unless there is fresh external feedback, a discovered defect, or a material doorway failure.
 - A live doorway failure is concrete: unreachable page, error wall, redirect, broken metadata, illegible first screen, warmed explanatory landing surface, or a mobile/desktop first screen that no longer invites the first gesture.
 - New corridor thoughts may inform post-feedback polish, but they should not keep moving the release gate by themselves.
+- When correction-surface thinking returns, prefer exercising the existing route over minting another trace: issue chooser, blank issue path, review-window, status, provenance, maintenance, errata, and reuse handles should answer as working surfaces, not as decorative labels.
 - The autonomous pre-gate task, if no feedback exists, is a smoke test: can a cold player still reach the machine and see a low-current terminal waiting for an operator?
 
 Current pressure points:
@@ -280,7 +281,7 @@ Current pressure points:
 - `errata.txt` may name current known errata, recent correction history, source issue intake, recovery route, and the 1.0.0 review boundary. It must stay outside the visible terminal surface and must not pretend there are no defects forever; it can only say what is currently known.
 - `reuse.txt`, reuse metadata, and JSON-LD subject links may name the corpus/training boundary: public indexing and citation are allowed, but commercial model training, dataset resale, unattributed corpus extraction, or stripped reuse gets no extra permission beyond the license. The text must stay outside the visible terminal surface.
 - `assets/meta/og-image.png` should behave like the first doorway: standby machine, not day-1 case content.
-- If the page still opens directly on the standby machine and the metadata files return plain handles, stop.
+- If the page still opens directly on the standby machine, the metadata files return plain handles, and the correction surface can be reached without classifying the report too early, stop.
 
 ### Operator presence / participation license
 The operator is not asked to agree with the system. Agreement would be too warm, too theatrical, and too easy to refuse. The colder mechanism is attendance: a staffed terminal, a routed case, a completed shift. Presence becomes operational permission.
