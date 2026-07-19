@@ -953,3 +953,24 @@ Do not mint another public handle. Exercise the existing route. Backfill the aud
 Phase 4al is complete. The correction surface is not magically public in the pure sense — GitHub filing still carries the account gate — but the route exists, blank issues remain enabled, the public handles answer, and there is no basis for another autonomous trace layer. Stop here.
 
 ---
+
+## Account-gated intake boundary audit — 2026-07-19
+
+Target: keep the correction surface honest after the latest outside-nomination thread. The project had structured forms and blank issues, but the record was sliding into a small lie: blank issue standing sounded like a poor public doorway, while GitHub filing can still require an account or active session. Classification gate and account gate are not the same gate. Paperwork loves this kind of confusion. It usually calls it access.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. The fresh correction-surface context did not justify another game audit or another trace file. It exposed a narrower defect in the public wording: the project should not imply that uncategorized intake is no-account intake. The route is useful, but it is not frictionless and not fully poor.
+
+### Autoprompt
+Do not invent a fake grey door. Do not expose a new private contact surface just to make the trace look cleaner. Name the boundary: structured forms classify, blank issues remove pre-classification, GitHub may still require an account. If that blocks real outside pressure before 1.0.0, the boundary itself enters release review.
+
+### Audit result
+- **GDD rule added.** Account-gated intake is now a trace boundary: blank issues preserve pre-classification standing, but do not remove GitHub account/session friction.
+- **Public traces corrected.** `review-window.txt`, `status.txt`, `maintenance.txt`, `provenance.txt`, and `errata.txt` now name the account boundary instead of pretending the grey door is solved.
+- **Metadata and source surfaces updated.** README, page metadata / JSON-LD, issue config, workflow-generated provenance, and sitemap carry the same boundary without changing the visible first surface.
+- **Known limitation recorded.** `errata.txt` says no release-blocking gameplay defect is recorded, but names the account-gated intake limitation as review-relevant if it blocks external pressure.
+
+### Current read
+Phase 4am is complete. This is not a victory lap. It is a smaller, more honest handle: the project has a blank path inside GitHub, not a no-account public vestibule. The first screen stays cold; the next real pressure remains Stefano's blind playtest or an actual filed defect.
+
+---

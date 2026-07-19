@@ -85,7 +85,10 @@ jobs:
           Cold-run playtest pressure filed before 1.0.0 is part of release review when it names a weak case, broken ending, warmed doorway, unreadable surface, or drag point.
 
           Pre-classification standing:
-          Blank uncategorized issues filed before 1.0.0 remain part of release review when they identify a defect, pressure mark, broken trace, or source/provenance discrepancy before it fits a form.
+          Blank uncategorized issues filed before 1.0.0 remain part of release review when they identify a defect, pressure mark, broken trace, or source/provenance discrepancy before it fits a form. This removes the classification gate, not the GitHub account/session gate.
+
+          Account boundary:
+          GitHub issue filing may require a GitHub account or active session. If that boundary blocks release-relevant outside pressure before 1.0.0, the boundary itself belongs in review.
 
           Pre-release review window:
           https://josephusm.github.io/the-procedure/review-window.txt

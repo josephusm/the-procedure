@@ -311,6 +311,13 @@ Gate freeze still holds. Current review did not justify another public trace or 
 - [x] Exercise the public correction surface and uncategorized path without filing a test issue.
 - [x] Smoke test local metadata, public traces, issue-template config, sitemap, and first screen; record the result in `doc/playtest.md`.
 
+### Phase 4am — Account-gated intake / grey-door honesty
+Gate freeze still holds. This is a concrete correction-surface repair, not another internal audit. Fresh review sharpened the overclaim: a blank GitHub issue removes the classification gate, but not the account/session gate. If the public traces imply a fully poor grey door, they are warmer than the object deserves and less honest than the route actually is.
+- [x] Define the account-boundary rule in the GDD: blank issues preserve pre-classification standing, but GitHub issue filing may still require an account; that limitation must be named rather than hidden.
+- [x] Update public traces, README, metadata, issue config, and workflow-generated provenance to distinguish structured/blank issue standing from the account-gated filing boundary.
+- [x] Record the limitation in errata without pretending it is a solved no-account intake route.
+- [x] Smoke test local metadata, public traces, issue config, sitemap, workflow text, and first screen.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
