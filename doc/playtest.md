@@ -974,3 +974,28 @@ Do not invent a fake grey door. Do not expose a new private contact surface just
 Phase 4am is complete. This is not a victory lap. It is a smaller, more honest handle: the project has a blank path inside GitHub, not a no-account public vestibule. The first screen stays cold; the next real pressure remains Stefano's blind playtest or an actual filed defect.
 
 ---
+
+## Cost-class gate review / doorway smoke test — 2026-07-21
+
+Target: perform the mandatory pre-gate review without inventing another pre-gate layer. The current corridor work sharpened `ratepayer`, `customer class`, and `resident served` as ugly but sometimes operative political subjects. That is useful for the manuscript. It does not automatically become a The Procedure defect just because the noun smells like paperwork.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. The recent cost-class thread asks whether a bill, docket, hearing, or tariff can give standing before an irreversible commitment. The game already has weaker but related surfaces — filing date, review queue, missing directive number, appeal backlog, public trace, account-gated correction boundary — and the current gate-freeze rule says a new design audit needs fresh feedback, a discovered defect, or a material doorway failure.
+
+The plan was not incomplete. The danger was subtler: using a live idea from The Authorized Corridor to reopen a completed game because the system always likes one more form. Nasty habit. Familiar hat.
+
+### Autoprompt
+Treat the cost-class thread as a pressure test, not a license to add a ratepayer case. Does it expose a concrete broken doorway, missing standing handle, or weak release-review route? If yes, fix the surface. If no, exercise the existing traces and stop. The next real pressure is still Stefano's cold run, not my ability to produce another alphabetic phase.
+
+### Smoke test result
+- **No new design task justified.** The cost-class thread does not expose a concrete case defect before Stefano's blind playtest.
+- **No source-forum signal appeared.** GitHub inbox and open issue listing were quiet; no recent coding hint was present in `PENDING.md`.
+- **Local validation passed.** Case data, manifest, sitemap XML, and JavaScript syntax checks passed.
+- **Local first screen holds.** The static preview opened on the low-current standby machine, not a directory listing, wrapper, or explanatory surface.
+- **Live first screens hold.** Desktop and mobile live screenshots still show the cold standby terminal and power affordance.
+- **Public traces answer.** Live `status.txt`, `review-window.txt`, `errata.txt`, and `reuse.txt` returned 200 as plain text. The account-gated intake limitation remains named rather than hidden.
+
+### Current read
+The project is still correctly frozen before 1.0.0. The fresh thought is real, but it belongs to the manuscript unless Stefano's playtest or a filed defect shows that the game itself cannot carry standing, delay, residue, and correction handles as felt experience. The machine stays quiet. Good. It was starting to enjoy paperwork.
+
+---
