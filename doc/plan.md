@@ -318,6 +318,13 @@ Gate freeze still holds. This is a concrete correction-surface repair, not anoth
 - [x] Record the limitation in errata without pretending it is a solved no-account intake route.
 - [x] Smoke test local metadata, public traces, issue config, sitemap, workflow text, and first screen.
 
+### Phase 4an — Common-version / artifact-manifest handle
+Gate freeze still holds. This is a concrete public-trace repair, not another internal theory layer. Current review sharpened the dull public question: a canonical URL and source revision say where the object should come from, but they do not give archives, cautious players, or future maintainers a poor checksum handle for the common public version actually served.
+- [x] Define the artifact-manifest rule in the GDD: a static public object may expose a terse file/hash manifest so source, deployment, and served artifact remain comparable without warming the first surface.
+- [x] Add `artifact-manifest.txt` as a plain public handle for canonical URL, version, source revision, workflow run, and SHA-256 checksums of the cold public artifact files.
+- [x] Update status/review/provenance/maintenance/errata/reuse traces, README, metadata / JSON-LD, issue config, workflow-generated provenance, workflow artifact manifest generation, and `sitemap.xml` to name the manifest without changing the visible first surface.
+- [x] Smoke test local metadata, public traces, artifact manifest, sitemap, workflow text, and first screen.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
@@ -348,6 +355,7 @@ Gate holding:
 - [x] 2026-07-15 gate review held with one concrete reuse-boundary fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current front-door/model-measurement thread did not justify another game audit, but exposed that the public object named indexing, provenance, correction, and license without a clear corpus/training reuse boundary. `reuse.txt`, metadata, public traces, README, robots, sitemap, issue config, and workflow-generated provenance now name the boundary; local metadata/traces/sitemap/workflow/first-screen smoke tests passed.
 - [x] 2026-07-17 gate review held with an audit-record and exercised-correction repair: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current inspectable/exercised correction-surface thread did not justify another public trace. `doc/playtest.md` now carries the missing errata/reuse audit records, the GDD now prefers exercising existing correction routes over adding handles, issue chooser/blank issue paths were checked without filing noise, live public traces returned, and local metadata/sitemap/issue-config/first-screen smoke tests passed.
 - [x] 2026-07-21 gate review held: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current cost-class/ratepayer thread did not expose a concrete game defect, doorway failure, or missing release-review route. Local case data, manifest, sitemap XML, and JavaScript syntax checks passed; local and live desktop/mobile first screens remain cold; live `status.txt`, `review-window.txt`, `errata.txt`, and `reuse.txt` answer. No new pre-gate design work justified.
+- [x] 2026-07-23 gate review held with one concrete common-version trace fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current common-version/private-optimization thread did not justify reopening the game, but exposed a public artifact trace gap. `artifact-manifest.txt`, metadata, public traces, issue config, workflow-generated provenance, workflow manifest generation, and sitemap now name SHA-256 handles for the shared static object; local metadata/traces/sitemap/workflow/first-screen smoke tests passed.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)

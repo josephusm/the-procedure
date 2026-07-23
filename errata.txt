@@ -1,17 +1,18 @@
 The Procedure — errata and correction-history trace
 
 Version: 0.4.0
-Last modified: 2026-07-19
+Last modified: 2026-07-23
 
 Current known errata:
-No unresolved release-blocking gameplay defect is recorded in the public issue surface as of 2026-07-19.
+No unresolved release-blocking gameplay defect is recorded in the public issue surface as of 2026-07-23.
 
 Known correction-surface limitation:
 GitHub issue filing may require a GitHub account or active session. Blank issues remain enabled and keep observations from being forced into a category before the first sentence, but they do not create a no-account intake route. If that boundary blocks a release-relevant defect, accessibility failure, trace discrepancy, or cold-run pressure mark, the boundary itself belongs in pre-1.0.0 review.
 
-This is a current trace, not a promise. New defects, accessibility failures, public trace discrepancies, reuse-boundary failures, warmed doorway regressions, source/provenance mismatches, recovery failures, account-gated intake limitations, or cold-run playtest pressure filed before 1.0.0 can still interrupt release review.
+This is a current trace, not a promise. New defects, accessibility failures, public trace discrepancies, source/artifact mismatches, reuse-boundary failures, warmed doorway regressions, source/provenance mismatches, recovery failures, account-gated intake limitations, or cold-run playtest pressure filed before 1.0.0 can still interrupt release review.
 
 Recent correction history:
+- 2026-07-23: Added the artifact-manifest handle so the public static object has a dull checksum trace for comparing the common served version against source/provenance.
 - 2026-07-19: Named the account-gated correction-intake boundary so blank issue standing is not mistaken for a solved no-account grey door.
 - 2026-07-15: Added the reuse-boundary handle so public indexing and citation stay distinct from commercial model training, dataset resale, stripped attribution, or corpus extraction without changing the visible first surface.
 - 2026-07-13: Added this errata and correction-history handle so the public object names known defects, correction history, source issue intake, recovery route, and the next release boundary without changing the visible first surface.
@@ -30,11 +31,14 @@ https://github.com/josephusm/the-procedure/issues/new/choose
 Reuse boundary:
 https://josephusm.github.io/the-procedure/reuse.txt
 
+Artifact manifest:
+https://josephusm.github.io/the-procedure/artifact-manifest.txt
+
 Uncategorized intake:
 https://github.com/josephusm/the-procedure/issues/new
 
 Recovery route:
-If the live page, metadata, public traces, deployment provenance, or first surface diverge from source, the repair path is compare, correct, roll forward, or roll back through source history and GitHub Pages deployment.
+If the live page, metadata, public traces, artifact manifest, deployment provenance, or first surface diverge from source, the repair path is compare, correct, roll forward, or roll back through source history and GitHub Pages deployment.
 https://josephusm.github.io/the-procedure/maintenance.txt
 
 Pre-release review window:

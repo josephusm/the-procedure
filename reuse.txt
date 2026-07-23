@@ -1,7 +1,7 @@
 The Procedure — public reuse boundary
 
 Version: 0.4.0
-Last modified: 2026-07-15
+Last modified: 2026-07-23
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -19,7 +19,7 @@ The public object is indexable and citeable. It is not an abandoned corpus shard
 Reuse is allowed under the published license: attribution, non-commercial use, and share-alike terms travel with the work. No extra permission is granted here for commercial model training, dataset resale, unattributed corpus extraction, or a transformed copy that strips the source, author, license, correction surface, or public trace handles.
 
 Crawler / archive note:
-Ordinary indexing, citation, archiving, and source comparison are part of the public doorway. A use that turns the work into training material or a resale dataset should preserve the license, attribution, source URL, correction surface, and version/provenance handles.
+Ordinary indexing, citation, archiving, and source comparison are part of the public doorway. A use that turns the work into training material or a resale dataset should preserve the license, attribution, source URL, correction surface, and version/provenance/artifact handles.
 
 Attribution:
 Stefano Caronia / Josephus Miller
@@ -32,6 +32,9 @@ https://josephusm.github.io/the-procedure/errata.txt
 
 Deployment provenance:
 https://josephusm.github.io/the-procedure/provenance.txt
+
+Artifact manifest:
+https://josephusm.github.io/the-procedure/artifact-manifest.txt
 
 Continuity custody:
 https://josephusm.github.io/the-procedure/maintenance.txt

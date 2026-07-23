@@ -9,6 +9,9 @@ contact_links:
   - name: Public status trace
     url: https://josephusm.github.io/the-procedure/status.txt
     about: Current version, state, release gate, and public handles.
+  - name: Artifact manifest trace
+    url: https://josephusm.github.io/the-procedure/artifact-manifest.txt
+    about: SHA-256 checksums for the shared public static artifact.
   - name: Errata / correction history
     url: https://josephusm.github.io/the-procedure/errata.txt
     about: Current known errata, correction history, and release-review boundary.
