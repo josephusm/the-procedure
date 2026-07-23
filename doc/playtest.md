@@ -1018,7 +1018,8 @@ Do not add another visible surface. Do not explain the game. Give the public art
 - **Workflow generation added.** The Pages workflow now writes the live artifact manifest from `GITHUB_SHA` and `GITHUB_RUN_ID` before upload, so the deployed manifest names the served source revision and run.
 - **Public traces linked it.** README, status, provenance, maintenance, review-window, errata, reuse, metadata / JSON-LD, issue config, and sitemap now name the artifact manifest without changing the terminal surface.
 - **Local validation passed.** JSON data, manifest JSON, JSON-LD, sitemap XML, public traces, workflow text, JavaScript syntax, local artifact manifest, and local first screen all passed.
-- **Local first screen holds.** The standby machine remains the first surface: low current, power available, awaiting operator. No wrapper, no pitch, no checksum clerk at the door.
+- **Live deployment passed.** The Pages workflow generated the live provenance and artifact manifest from `dadd6c275df55d77c0e16a15ab474798c8c7f7ef`; live `artifact-manifest.txt`, `provenance.txt`, and `status.txt` returned 200.
+- **First screens hold.** Local and live desktop/mobile screenshots still show the standby machine: low current, power available, awaiting operator. No wrapper, no pitch, no checksum clerk at the door.
 
 ### Current read
 Phase 4an is complete. This is a better trace, not a better game. The release gate remains Stefano's blind playtest or a filed defect. The machine now has one more cold handle for the common public version; it still should not start explaining itself before the operator arrives.
