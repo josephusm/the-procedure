@@ -327,11 +327,11 @@ Gate freeze still holds. This is a concrete public-trace repair, not another int
 
 ### Phase 4ao — Live manifest / common-object bite test
 Gate freeze still holds. This is not another public handle and not another design audit. The current common-version thread exposes a material verification gap: a checksum manifest only matters if the live public object can be fetched and at least sampled against the served files it claims to describe.
-- [ ] Confirm no new Stefano playtest feedback, issue, PR, or coding hint appeared before reopening anything.
-- [ ] Fetch the live `artifact-manifest.txt` and verify it names a concrete source revision / workflow run, not local placeholders.
-- [ ] Compare live hashes for a small but meaningful public-artifact sample: `index.html`, `status.txt`, `provenance.txt`, `review-window.txt`, `reuse.txt`, and `data/cases.json`.
-- [ ] Smoke test the live first screen after the verification so the manifest audit does not warm or break the doorway.
-- [ ] Record the result in `doc/playtest.md`; if the manifest lies, treat it as a release-review defect.
+- [x] Confirm no new Stefano playtest feedback, issue, PR, or coding hint appeared before reopening anything.
+- [x] Fetch the live `artifact-manifest.txt` and verify it names a concrete source revision / workflow run, not local placeholders. The first check caught a real defect: the workflow had written literal `\\n` separators, making the live manifest a one-line escaped string instead of a plain trace. Fixed.
+- [x] Compare live hashes for a small but meaningful public-artifact sample: `index.html`, `status.txt`, `provenance.txt`, `review-window.txt`, `reuse.txt`, and `data/cases.json`.
+- [x] Smoke test the live first screen after the verification so the manifest audit does not warm or break the doorway.
+- [x] Record the result in `doc/playtest.md`; if the manifest lies, treat it as a release-review defect.
 
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.

@@ -1024,4 +1024,24 @@ Do not add another visible surface. Do not explain the game. Give the public art
 ### Current read
 Phase 4an is complete. This is a better trace, not a better game. The release gate remains Stefano's blind playtest or a filed defect. The machine now has one more cold handle for the common public version; it still should not start explaining itself before the operator arrives.
 
+## Live manifest / common-object bite test — 2026-07-25
+
+Target: answer the obvious question left by the common-version manifest: can the public object actually be bitten, or did I just add another respectable label? A checksum handle that cannot be fetched and sampled is not a handle. It is a little brass plate on fog.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. The gate freeze still holds. The current `oggetto comune mordibile` thread did not justify reopening the case arc, but it did expose a concrete verification gap in Phase 4an: the live artifact manifest had been generated, but not sampled against the served files it claimed to describe.
+
+### Autoprompt
+Do not add another trace. Try to bite the existing one. Fetch the live manifest, require a real source revision and workflow run, compare served-file hashes for a small public-artifact sample, and then check that the live doorway still opens cold. If the manifest lies, treat it as a release-review defect and fix the deploy surface.
+
+### Audit result
+- **A real defect surfaced.** The live `artifact-manifest.txt` was served as one escaped line with literal `\n` separators. It contained the right data, but in the wrong public form: not a plain trace, not properly biteable by a simple line-oriented reader. Classic paperwork failure. The form was present; the handle had teeth made of wax.
+- **Workflow fixed.** `.github/workflows/pages.yml` now writes the generated manifest with real newline separators instead of escaped newline text.
+- **Live manifest now verifies.** After deployment, the live manifest names a concrete source revision and workflow run, and sampled SHA-256 checks matched the served `index.html`, `status.txt`, `provenance.txt`, `review-window.txt`, `reuse.txt`, and `data/cases.json`.
+- **First screens still hold.** Live desktop and mobile screenshots still open on the low-current standby machine: no wrapper, no pitch, no manifest clerk explaining the object before the operator touches it.
+- **Local sanity checks passed.** Case JSON, web manifest JSON, sitemap XML, JavaScript syntax, and local first screen all held.
+
+### Current read
+Phase 4ao is complete. This was not another public trace; it was the trace getting tested hard enough to embarrass itself. Better now. The next real pressure remains Stefano's blind playtest or a filed defect. If another session wants to help, it should prefer biting existing handles over minting new plaques.
+
 ---
