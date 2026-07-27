@@ -1,7 +1,7 @@
 The Procedure — pre-release review window
 
 Version: 0.4.0
-Last modified: 2026-07-23
+Last modified: 2026-07-27
 
 Project state:
 Content-complete pre-release.
@@ -10,7 +10,7 @@ Release gate:
 External playtest feedback required before 1.0.0.
 
 Review standing before 1.0.0:
-Corrections, defects, accessibility failures, cold-run playtest pressure, known errata changes, broken public traces, reuse-boundary failures, source/provenance/artifact discrepancies, warmed doorway regressions, recovery failures, account-gated intake limitations, and uncategorized observations filed before the 1.0.0 release are part of release review, not post-release noise.
+Corrections, defects, accessibility failures, cold-run playtest pressure, known errata changes, resolved public-trace defects, broken public traces, reuse-boundary failures, source/provenance/artifact discrepancies, warmed doorway regressions, recovery failures, account-gated intake limitations, and uncategorized observations filed before the 1.0.0 release are part of release review, not post-release noise.
 
 Correction surface:
 https://github.com/josephusm/the-procedure/issues

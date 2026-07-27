@@ -1045,3 +1045,25 @@ Do not add another trace. Try to bite the existing one. Fetch the live manifest,
 Phase 4ao is complete. This was not another public trace; it was the trace getting tested hard enough to embarrass itself. Better now. The next real pressure remains Stefano's blind playtest or a filed defect. If another session wants to help, it should prefer biting existing handles over minting new plaques.
 
 ---
+
+## Errata freshness / corrected-manifest scar — 2026-07-27
+
+Target: repair the public correction-history handle after the live manifest bite test. The 2026-07-25 verification found a real defect — the deployed `artifact-manifest.txt` used literal `\n` separators — and fixed it. The plan and this packet remembered the scar. `errata.txt` did not. That is exactly how a correction surface turns decorative: the route works once, then the history forgets the embarrassment.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. Gate freeze still holds. The current common-version / public-scar thread did not justify another game audit or new public handle. It exposed a narrower defect: the correction-history trace was stale relative to a resolved public-trace failure.
+
+### Autoprompt
+Do not add another plaque. Put the last cut into the existing scar file. If a public trace failed and was repaired, `errata.txt` should say so plainly, status/review handles should admit resolved trace defects as release-review material, and the visible first surface should stay cold.
+
+### Audit result
+- **Errata now carries the resolved defect.** `errata.txt` records the 2026-07-25 malformed live manifest and the newline/workflow fix, and updates the current known-errata check to 2026-07-27.
+- **The GDD rule is sharper.** Resolved public-trace defects now belong explicitly in correction history, not only active defects.
+- **Public traces and metadata are fresh.** Status, review-window, maintenance, provenance, reuse, metadata / JSON-LD, and sitemap freshness now reflect the corrected-manifest scar without changing the terminal surface.
+- **Local manifest regenerated.** The checksum drawer was rebuilt after the trace changes.
+- **Local smoke tests passed.** JSON-LD, sitemap XML, public trace contents, workflow text, local manifest shape, JavaScript syntax, and the first screen held.
+
+### Current read
+Phase 4ap is complete. This was not a new layer; it was the correction history catching up with a correction that had actually happened. The next real pressure remains Stefano's blind playtest or a filed defect. The machine still opens cold. The scar is just less forgetful.
+
+---

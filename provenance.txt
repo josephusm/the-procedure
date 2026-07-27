@@ -1,7 +1,7 @@
 The Procedure — deployment provenance trace
 
 Version: 0.4.0
-Last modified: 2026-07-23
+Last modified: 2026-07-27
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -22,7 +22,7 @@ Artifact manifest:
 https://josephusm.github.io/the-procedure/artifact-manifest.txt
 
 Continuity custody:
-The live page is maintained as a static public object through the source repository, Pages deployment, public traces, known errata history, and future maintainers.
+The live page is maintained as a static public object through the source repository, Pages deployment, public traces, known errata history, resolved trace defects, and future maintainers.
 https://josephusm.github.io/the-procedure/maintenance.txt
 
 Errata / correction history:

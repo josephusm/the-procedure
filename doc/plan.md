@@ -333,6 +333,14 @@ Gate freeze still holds. This is not another public handle and not another desig
 - [x] Smoke test the live first screen after the verification so the manifest audit does not warm or break the doorway.
 - [x] Record the result in `doc/playtest.md`; if the manifest lies, treat it as a release-review defect.
 
+### Phase 4ap — Errata freshness / corrected-manifest scar
+Gate freeze still holds. This is not another public handle and not another game audit. The live-manifest bite test found and fixed a real public-trace defect on 2026-07-25, but the public errata/correction-history handle still stopped at 2026-07-23. A scar that forgets the last cut is not a scar; it is paperwork pretending to heal.
+- [x] Confirm no new Stefano playtest feedback, issue, PR, or coding hint appeared before changing the public trace.
+- [x] Update the GDD errata rule so resolved public-trace defects must be carried by the correction-history handle.
+- [x] Update `errata.txt`, status/review/maintenance/provenance/reuse traces, metadata, JSON-LD, and sitemap freshness so the malformed-manifest defect and fix are part of the public correction history.
+- [x] Regenerate the local artifact manifest after the trace repair.
+- [x] Smoke test local metadata, public traces, artifact manifest, sitemap, workflow text, and first screen.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

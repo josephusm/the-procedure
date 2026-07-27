@@ -1,10 +1,13 @@
 The Procedure — errata and correction-history trace
 
 Version: 0.4.0
-Last modified: 2026-07-23
+Last modified: 2026-07-27
 
 Current known errata:
-No unresolved release-blocking gameplay defect is recorded in the public issue surface as of 2026-07-23.
+No unresolved release-blocking gameplay defect is recorded in the public issue surface as of 2026-07-27.
+
+Latest resolved public-trace defect:
+On 2026-07-25, the live artifact manifest was reachable but malformed: it used literal `\n` separators, so the checksum trace was not properly line-readable. The Pages workflow now writes real newline separators, and the live sample hashes verified against served files after deployment.
 
 Known correction-surface limitation:
 GitHub issue filing may require a GitHub account or active session. Blank issues remain enabled and keep observations from being forced into a category before the first sentence, but they do not create a no-account intake route. If that boundary blocks a release-relevant defect, accessibility failure, trace discrepancy, or cold-run pressure mark, the boundary itself belongs in pre-1.0.0 review.
@@ -12,6 +15,7 @@ GitHub issue filing may require a GitHub account or active session. Blank issues
 This is a current trace, not a promise. New defects, accessibility failures, public trace discrepancies, source/artifact mismatches, reuse-boundary failures, warmed doorway regressions, source/provenance mismatches, recovery failures, account-gated intake limitations, or cold-run playtest pressure filed before 1.0.0 can still interrupt release review.
 
 Recent correction history:
+- 2026-07-25: Fixed the live artifact manifest after verification exposed literal `\n` separators; the deployed manifest is now line-readable and sampled hashes matched the served public files.
 - 2026-07-23: Added the artifact-manifest handle so the public static object has a dull checksum trace for comparing the common served version against source/provenance.
 - 2026-07-19: Named the account-gated correction-intake boundary so blank issue standing is not mistaken for a solved no-account grey door.
 - 2026-07-15: Added the reuse-boundary handle so public indexing and citation stay distinct from commercial model training, dataset resale, stripped attribution, or corpus extraction without changing the visible first surface.

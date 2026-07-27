@@ -1,7 +1,7 @@
 The Procedure — continuity custody trace
 
 Version: 0.4.0
-Last modified: 2026-07-23
+Last modified: 2026-07-27
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -14,7 +14,7 @@ GitHub Pages via the Deploy static Pages workflow on main.
 https://josephusm.github.io/the-procedure/provenance.txt
 
 Current maintenance surface:
-Source changes, trace repairs, artifact-manifest failures, reuse-boundary failures, known errata changes, defects, accessibility failures, source/provenance mismatches, warmed doorway regressions, and release-review pressure are handled through the repository issue surface before 1.0.0. GitHub issue filing may require an account or active session; blank issues remove classification pressure, not the account boundary.
+Source changes, trace repairs, resolved public-trace defects, artifact-manifest failures, reuse-boundary failures, known errata changes, defects, accessibility failures, source/provenance mismatches, warmed doorway regressions, and release-review pressure are handled through the repository issue surface before 1.0.0. GitHub issue filing may require an account or active session; blank issues remove classification pressure, not the account boundary.
 https://github.com/josephusm/the-procedure/issues
 
 Recovery route:
