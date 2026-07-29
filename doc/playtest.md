@@ -1085,10 +1085,10 @@ Do not add another handle. Do not explain the game. Fix the existing checksum dr
 - **GDD rule tightened.** The artifact-manifest rule now says served documentation belongs to the public object unless deployment stops serving it.
 - **Manifest scope repaired.** Local `artifact-manifest.txt` and the Pages workflow now include the served documentation files.
 - **Local validation passed.** Cases, JSON/JSON-LD, sitemap XML, issue config, workflow text, public traces, and JS syntax checks passed.
-- **Live custody bite passed.** The live manifest names concrete source revision `6591d38b51f77e59483495802a42abf3d8604f2c` and workflow run `30268796442`; sampled hashes for index, status, provenance, maintenance, review-window, errata, reuse, and case data matched the served files before the repair commit.
+- **Live custody bite passed after deployment.** The live manifest names concrete source revision `eb5c66f72e2f7c566699e3e9dec60c45722d3849` and workflow run `30454709906`; sampled hashes for index, status, provenance, maintenance, review-window, errata, reuse, case data, and served documentation (`doc/gdd.md`, `doc/plan.md`, `doc/playtest.md`) matched the served files.
 - **First surfaces hold.** Local, live desktop, and live mobile screenshots still open on the low-current standby machine. No wrapper, no pitch, no checksum clerk waving a lantern at the door.
 
 ### Current read
-Phase 4aq is complete. The defect was not a new theory layer; it was scope drift in an existing public trace. After push, the workflow should regenerate the live manifest from the new source revision and include the documentation hashes. The next real pressure remains Stefano's blind playtest or a filed defect.
+Phase 4aq is complete. The defect was not a new theory layer; it was scope drift in an existing public trace. The workflow regenerated the live manifest from the new source revision and now includes the served documentation hashes. The next real pressure remains Stefano's blind playtest or a filed defect.
 
 ---
