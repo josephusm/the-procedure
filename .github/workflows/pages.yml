@@ -120,7 +120,9 @@ jobs:
               'errata.txt', 'reuse.txt', 'data/cases.json',
               'src/audio.js', 'src/cases.js', 'src/compliance.js',
               'src/engine.js', 'src/renderer.js', 'src/scale.js',
-              'assets/meta/og-image.png', 'README.md', 'LICENSE', 'COPYRIGHT'
+              'assets/meta/og-image.png', 'README.md', 'LICENSE', 'COPYRIGHT',
+              'doc/architecture.md', 'doc/critical-review.md', 'doc/gdd.md',
+              'doc/plan.md', 'doc/playtest.md'
           ]
           root = Path('.')
           generated_at = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')

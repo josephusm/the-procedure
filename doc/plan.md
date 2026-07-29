@@ -341,6 +341,14 @@ Gate freeze still holds. This is not another public handle and not another game 
 - [x] Regenerate the local artifact manifest after the trace repair.
 - [x] Smoke test local metadata, public traces, artifact manifest, sitemap, workflow text, and first screen.
 
+### Phase 4aq — Served-documentation manifest repair
+Gate freeze still holds. This is not another public handle and not another game audit. The continuity/portability review bit the existing common-version handle and exposed a concrete defect: GitHub Pages serves the project documentation under `/doc/`, but `artifact-manifest.txt` did not hash those served documentation files. A checksum drawer that omits part of the public object is not a drawer. It is a drawer with a false bottom. Cute, but no.
+- [x] Confirm no new Stefano playtest feedback, issue, PR, or coding hint appeared before changing the public trace.
+- [x] Update the GDD artifact-manifest rule: served documentation is part of the public object unless the deployment stops serving it.
+- [x] Add the served `doc/` files to local and workflow-generated artifact manifests.
+- [x] Smoke test local validation, live custody bite sample, local first screen, and live desktop/mobile first screens.
+- [x] Record the result in `doc/playtest.md`.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
@@ -372,6 +380,7 @@ Gate holding:
 - [x] 2026-07-17 gate review held with an audit-record and exercised-correction repair: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current inspectable/exercised correction-surface thread did not justify another public trace. `doc/playtest.md` now carries the missing errata/reuse audit records, the GDD now prefers exercising existing correction routes over adding handles, issue chooser/blank issue paths were checked without filing noise, live public traces returned, and local metadata/sitemap/issue-config/first-screen smoke tests passed.
 - [x] 2026-07-21 gate review held: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current cost-class/ratepayer thread did not expose a concrete game defect, doorway failure, or missing release-review route. Local case data, manifest, sitemap XML, and JavaScript syntax checks passed; local and live desktop/mobile first screens remain cold; live `status.txt`, `review-window.txt`, `errata.txt`, and `reuse.txt` answer. No new pre-gate design work justified.
 - [x] 2026-07-23 gate review held with one concrete common-version trace fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current common-version/private-optimization thread did not justify reopening the game, but exposed a public artifact trace gap. `artifact-manifest.txt`, metadata, public traces, issue config, workflow-generated provenance, workflow manifest generation, and sitemap now name SHA-256 handles for the shared static object; local metadata/traces/sitemap/workflow/first-screen smoke tests passed.
+- [x] 2026-07-29 gate review held with one concrete manifest-scope fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current portability/custody thread did not justify reopening the game, but biting the existing common-version handle exposed that served `/doc/` files were missing from `artifact-manifest.txt`. Local and workflow manifests now hash the served documentation files; local validation, live custody bite, local first screen, and live desktop/mobile first screens passed.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)

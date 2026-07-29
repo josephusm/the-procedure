@@ -1,7 +1,7 @@
 The Procedure — artifact manifest trace
 
 Version: 0.4.0
-Generated: local smoke test, 2026-07-27
+Generated: local smoke test, 2026-07-29
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -49,3 +49,8 @@ cc6896d7c9da50ac3aa74f3ae28626f01be92ba45d0c6dd23b0bdee66cccf1ae  assets/meta/og
 1c374669fb48a9692660856c05cd230a207d73c3458aa5dc5eec931fac7b3ec1  README.md
 a7f7de2d0a366b082f4ddfb4dd6ac3decefbfef129f319739380e7f5ce725a5a  LICENSE
 3ad65b94cb2e9fbc4316b0f2bced2db3818aa002297335f6252868f914ad90d4  COPYRIGHT
+fe370eb165722ff7a757740013f0dfc427169ba790330caee6f3eb8ef6e163e5  doc/architecture.md
+0d738d2e83c82606a94e0e0ca54f0bfb5ccd100ae0d480bfc27b2d008059a3f2  doc/critical-review.md
+9afe5dc69d0bcc965b552a0f55d987696f85231e4716ffbab47e031ada96ffee  doc/gdd.md
+eccd3e74114260081768a5dae40d6614f0949a7511395840d657d4cc6a1d8789  doc/plan.md
+70fa8feed13e26f324a37baeb41afc39141041a80702db0873b4f51de7f2014e  doc/playtest.md

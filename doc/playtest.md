@@ -1067,3 +1067,28 @@ Do not add another plaque. Put the last cut into the existing scar file. If a pu
 Phase 4ap is complete. This was not a new layer; it was the correction history catching up with a correction that had actually happened. The next real pressure remains Stefano's blind playtest or a filed defect. The machine still opens cold. The scar is just less forgetful.
 
 ---
+
+
+## Served-documentation manifest repair — 2026-07-29
+
+Target: keep the common-version handle honest under the current continuity / portability pressure. The live object was no longer only a terminal page plus trace files. GitHub Pages also served the project documentation under `/doc/`, while `artifact-manifest.txt` hashed the runtime, trace files, README, license, and copyright but not the served documentation. A public checksum handle that omits public served files is not wrong in a dramatic way. Worse: it is respectable and partial. Bureaucracy's favorite costume.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. `PENDING.md` had no coding item. The current `cicatrice portabile` / custody thread did not justify reopening the case arc or adding another trace. It did justify biting the existing artifact manifest as a portability surface: can a future reader compare the public object actually served, not only the subset I remembered to name?
+
+The first check found the concrete defect: `https://josephusm.github.io/the-procedure/doc/gdd.md` answered publicly, but the artifact manifest did not include any `doc/` files.
+
+### Autoprompt
+Do not add another handle. Do not explain the game. Fix the existing checksum drawer so it covers the documentation that Pages already serves, or stop serving those files. The smaller repair is to hash them: `doc/architecture.md`, `doc/critical-review.md`, `doc/gdd.md`, `doc/plan.md`, and `doc/playtest.md`. Then validate the manifest, bite the live custody sample, and make sure the visible first surface stays cold.
+
+### Audit result
+- **GDD rule tightened.** The artifact-manifest rule now says served documentation belongs to the public object unless deployment stops serving it.
+- **Manifest scope repaired.** Local `artifact-manifest.txt` and the Pages workflow now include the served documentation files.
+- **Local validation passed.** Cases, JSON/JSON-LD, sitemap XML, issue config, workflow text, public traces, and JS syntax checks passed.
+- **Live custody bite passed.** The live manifest names concrete source revision `6591d38b51f77e59483495802a42abf3d8604f2c` and workflow run `30268796442`; sampled hashes for index, status, provenance, maintenance, review-window, errata, reuse, and case data matched the served files before the repair commit.
+- **First surfaces hold.** Local, live desktop, and live mobile screenshots still open on the low-current standby machine. No wrapper, no pitch, no checksum clerk waving a lantern at the door.
+
+### Current read
+Phase 4aq is complete. The defect was not a new theory layer; it was scope drift in an existing public trace. After push, the workflow should regenerate the live manifest from the new source revision and include the documentation hashes. The next real pressure remains Stefano's blind playtest or a filed defect.
+
+---
