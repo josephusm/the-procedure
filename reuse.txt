@@ -1,7 +1,7 @@
 The Procedure — public reuse boundary
 
 Version: 0.4.0
-Last modified: 2026-07-27
+Last modified: 2026-07-31
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -36,7 +36,7 @@ https://josephusm.github.io/the-procedure/provenance.txt
 Artifact manifest:
 https://josephusm.github.io/the-procedure/artifact-manifest.txt
 
-Continuity custody:
+Continuity custody / exit route:
 https://josephusm.github.io/the-procedure/maintenance.txt
 
 Pre-release review window:

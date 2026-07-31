@@ -1,7 +1,7 @@
 The Procedure — deployment provenance trace
 
 Version: 0.4.0
-Last modified: 2026-07-27
+Last modified: 2026-07-31
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -22,7 +22,7 @@ Artifact manifest:
 https://josephusm.github.io/the-procedure/artifact-manifest.txt
 
 Continuity custody:
-The live page is maintained as a static public object through the source repository, Pages deployment, public traces, known errata history, resolved trace defects, and future maintainers.
+The live page is maintained as a static public object through the source repository, Pages deployment, public traces, known errata history, resolved trace defects, future maintainers, and a maintenance trace that names the deprecation / successor route if the canonical doorway changes.
 https://josephusm.github.io/the-procedure/maintenance.txt
 
 Errata / correction history:
@@ -32,7 +32,7 @@ Reuse boundary:
 https://josephusm.github.io/the-procedure/reuse.txt
 
 Recovery route:
-Broken traces, reuse-boundary failures, source/provenance/artifact mismatches, warmed doorway regressions, and failed deployments are compared against this provenance record and corrected by roll-forward or rollback through source history and Pages deployment before 1.0.0.
+Broken traces, reuse-boundary failures, continuity-exit gaps, source/provenance/artifact mismatches, warmed doorway regressions, and failed deployments are compared against this provenance record and corrected by notice, roll-forward, rollback, or source-history handoff before 1.0.0.
 https://josephusm.github.io/the-procedure/maintenance.txt
 
 Correction surface:

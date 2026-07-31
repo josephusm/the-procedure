@@ -1,7 +1,7 @@
 The Procedure — continuity custody trace
 
 Version: 0.4.0
-Last modified: 2026-07-27
+Last modified: 2026-07-31
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -23,8 +23,11 @@ If the live page, metadata, public traces, artifact manifest, reuse boundary, or
 Continuity boundary:
 The live page is a static public object with no account, tenant, analytics, cookies, localStorage, remote gameplay telemetry, or server-side game state. Its continuity depends on the source repository, Pages deployment, public traces, and future maintainers keeping those dull handles alive.
 
+Continuity exit / deprecation route:
+If the canonical URL is moved, retired, handed to another custodian, or expected to fail permanently, the maintenance surface should be amended before the break when possible. The notice should name the reason, effective date, successor URL or archived fallback, source repository state, issue/correction surface, and whether the artifact manifest still describes the last common public version. If no advance notice was possible, the source repository and errata history become the place to record the break after the fact.
+
 Public fallback:
-If the canonical live URL fails, the source repository and issue surface are the amendable public handles while they remain available. A failure of hosting, source/provenance/artifact mismatch, stale status, broken sitemap, missing trace, missing artifact manifest, missing reuse boundary, warmed first surface, account-gated intake boundary, or unrecoverable Pages deployment belongs in release review before 1.0.0.
+If the canonical live URL fails, the source repository and issue surface are the amendable public handles while they remain available. A failure of hosting, source/provenance/artifact mismatch, stale status, broken sitemap, missing trace, missing artifact manifest, missing reuse boundary, missing deprecation notice, missing successor/fallback handle, warmed first surface, account-gated intake boundary, or unrecoverable Pages deployment belongs in release review before 1.0.0.
 
 Related traces:
 Status: https://josephusm.github.io/the-procedure/status.txt

@@ -1092,3 +1092,22 @@ Do not add another handle. Do not explain the game. Fix the existing checksum dr
 Phase 4aq is complete. The defect was not a new theory layer; it was scope drift in an existing public trace. The workflow regenerated the live manifest from the new source revision and now includes the served documentation hashes. The next real pressure remains Stefano's blind playtest or a filed defect.
 
 ---
+
+## Continuity exit / deprecation-notice audit — 2026-07-31
+
+Target: keep the custody chain from lying by omission. The current public object already had source, provenance, maintenance, recovery, errata, reuse, review, and artifact handles. That covered bones and scars. The missing piece was the exit route: what public notice exists if the canonical doorway moves, sunsets, or passes to another custodian?
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or coding hint appeared. The fresh thread was not a reason to reopen the game. It was narrower and duller: maintenance named continuity while alive, but did not say how a break, handoff, or deprecation should be announced before it happens. That is a concrete trace defect, not a new theory layer.
+
+### Autoprompt
+Do not add a new badge. Exercise the existing maintenance surface. If the public doorway ever moves or dies, a future reader should find a cold notice path: reason, effective date, successor or archive fallback, source state, correction surface, and whether the artifact manifest still names the last common object. Keep it outside the terminal. The player came for a machine, not a municipal continuity plan with a font problem.
+
+### Audit result
+- **Maintenance now names the exit route.** `maintenance.txt` says how a move, retirement, custodian handoff, or permanent failure should be recorded before the break when possible.
+- **Status/review/provenance carry standing.** Continuity-exit and deprecation gaps are release-review material before 1.0.0.
+- **Metadata and issue surface updated.** JSON-LD/meta and the public-trace issue form now include the exit/deprecation route without changing the visible first surface.
+- **Visible first surface unchanged.** The cold standby machine is still the door; the exit route is a public handle beside it, not a warm explanation in front of it.
+
+### Current read
+Phase 4ar is complete. This still does not release the game. It just makes the custody surface less vain. A page can have perfect hashes and still vanish like a landlord in a raincoat. Now at least the project says where the forwarding address belongs.

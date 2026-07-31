@@ -62,7 +62,7 @@ jobs:
           https://github.com/josephusm/the-procedure/actions/runs/${GITHUB_RUN_ID}
 
           Continuity custody:
-          The live page is maintained as a static public object through the source repository, Pages deployment, public traces, known errata history, and future maintainers.
+          The live page is maintained as a static public object through the source repository, Pages deployment, public traces, known errata history, future maintainers, and a maintenance trace that names the deprecation / successor route if the canonical doorway changes.
           https://josephusm.github.io/the-procedure/maintenance.txt
 
           Errata / correction history:
@@ -72,7 +72,7 @@ jobs:
           https://josephusm.github.io/the-procedure/reuse.txt
 
           Recovery route:
-          Broken traces, reuse-boundary failures, source/provenance/artifact mismatches, warmed doorway regressions, and failed deployments are compared against this provenance record and corrected by roll-forward or rollback through source history and Pages deployment before 1.0.0.
+          Broken traces, reuse-boundary failures, continuity-exit gaps, source/provenance/artifact mismatches, warmed doorway regressions, and failed deployments are compared against this provenance record and corrected by notice, roll-forward, rollback, or source-history handoff before 1.0.0.
           https://josephusm.github.io/the-procedure/maintenance.txt
 
           Correction surface:
@@ -148,7 +148,7 @@ jobs:
               f"https://github.com/josephusm/the-procedure/actions/runs/{os.environ.get('GITHUB_RUN_ID', 'local')}",
               '',
               'Boundary:',
-              'This manifest is a dull checksum handle for the public static artifact. It does not remove the need for source, provenance, correction, custody, or review surfaces.',
+              'This manifest is a dull checksum handle for the public static artifact. It does not remove the need for source, provenance, correction, custody, exit, or review surfaces.',
               '',
               'Correction surface:',
               'https://github.com/josephusm/the-procedure/issues',
