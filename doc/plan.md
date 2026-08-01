@@ -356,6 +356,13 @@ Gate freeze still holds. This is a concrete continuity repair, not another conce
 - [x] Update `maintenance.txt`, `status.txt`, `review-window.txt`, `provenance.txt`, README, metadata / JSON-LD, issue template, workflow-generated provenance, and `sitemap.xml` to carry the exit/deprecation route without changing the visible first surface.
 - [x] Regenerate `artifact-manifest.txt` and smoke test local metadata, public traces, workflow text, sitemap, issue-template text, and first screen.
 
+### Phase 4as — Plain-trace legibility / reader-poor bite test
+Gate freeze still holds. This is not another public handle and not another internal theory layer. The current common-legibility thread exposed a narrower risk in the existing trace surface: a scar can be public and still speak Latin if it requires a client, login, JavaScript wall, repository literacy, or checksum priesthood before an ordinary reader can tell what broke, where to compare it, and how it enters review.
+- [x] Confirm no new Stefano playtest feedback, issue, PR, or coding hint appeared before changing the public trace.
+- [x] Define the plain-trace legibility rule in the GDD: public traces should be directly fetchable, line-readable, and useful without entering GitHub or interpreting the game before the first run.
+- [x] Update status/review/provenance/maintenance/errata, README, metadata / JSON-LD, issue-template wording, workflow-generated provenance, and sitemap freshness so unreadable or client-bound trace surfaces are release-review material before 1.0.0.
+- [x] Run a local and live reader-poor bite test: public traces, sitemap, artifact manifest, issue-template text, metadata, and first screen must stay cold and legible.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

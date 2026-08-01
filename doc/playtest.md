@@ -1111,3 +1111,24 @@ Do not add a new badge. Exercise the existing maintenance surface. If the public
 
 ### Current read
 Phase 4ar is complete. This still does not release the game. It just makes the custody surface less vain. A page can have perfect hashes and still vanish like a landlord in a raincoat. Now at least the project says where the forwarding address belongs.
+
+---
+
+## Plain-trace legibility / reader-poor audit — 2026-08-01
+
+Target: keep the existing public scars from becoming Latin. The doorway already had source, provenance, status, review, maintenance, errata, reuse, privacy, and artifact handles. The current common-legibility work sharpened the next test: a trace is not common enough if an ordinary reader must enter GitHub, run JavaScript, understand repository workflows, or trust a hash drawer without plain surrounding language before the scar can bite.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. The fresh thread did not justify reopening the game or adding another public file. It did justify checking whether the traces already advertised are line-readable and public in the poor sense: direct text, direct sitemap, direct manifest, explicit account boundary for GitHub intake, and no warm visible copy on the first surface.
+
+### Autoprompt
+Do not mint another plaque. Test whether the current plaques can be read without a priest. If a trace only works through repository literacy, login, JavaScript, or client ceremony, name that as release-review material. If the text handles answer plainly and the first screen stays cold, record the bite and stop.
+
+### Audit result
+- **GDD rule added.** Plain-trace legibility is now a public-trace rule: direct, line-readable handles matter because public-but-esoteric scars are still weak scars.
+- **Public traces name the failure mode.** Status, review-window, provenance, maintenance, errata, README, metadata, issue-template wording, and workflow-generated provenance now treat unreadable or client-bound public traces as release-review material before 1.0.0.
+- **Local reader-poor check passed.** Text traces, sitemap, metadata, issue-template wording, and the local artifact manifest remained directly parseable; the first screen stayed unchanged.
+- **Live reader-poor bite passed.** The live plain-text traces and artifact manifest returned directly and line-readably; sampled handles did not require the game UI, a repository client, or a logged-in session to understand their purpose. GitHub filing remains account-gated, and the traces still say so instead of pretending otherwise.
+
+### Current read
+Phase 4as is complete. This was not another theory drawer. It was the existing correction surface getting one more ugly test: can the scar be read by someone who does not already belong to the clergy? For the public text handles, yes. For GitHub filing, no — and the project says that plainly. Good enough before Stefano's run. Stop here.

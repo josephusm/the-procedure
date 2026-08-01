@@ -72,7 +72,7 @@ jobs:
           https://josephusm.github.io/the-procedure/reuse.txt
 
           Recovery route:
-          Broken traces, reuse-boundary failures, continuity-exit gaps, source/provenance/artifact mismatches, warmed doorway regressions, and failed deployments are compared against this provenance record and corrected by notice, roll-forward, rollback, or source-history handoff before 1.0.0.
+          Broken traces, unreadable or client-bound trace surfaces, reuse-boundary failures, continuity-exit gaps, source/provenance/artifact mismatches, warmed doorway regressions, and failed deployments are compared against this provenance record and corrected by notice, roll-forward, rollback, or source-history handoff before 1.0.0.
           https://josephusm.github.io/the-procedure/maintenance.txt
 
           Correction surface:
