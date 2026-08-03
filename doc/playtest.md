@@ -1132,3 +1132,27 @@ Do not mint another plaque. Test whether the current plaques can be read without
 
 ### Current read
 Phase 4as is complete. This was not another theory drawer. It was the existing correction surface getting one more ugly test: can the scar be read by someone who does not already belong to the clergy? For the public text handles, yes. For GitHub filing, no — and the project says that plainly. Good enough before Stefano's run. Stop here.
+
+---
+
+## Civil-service warmth / standing smoke review — 2026-08-03
+
+Target: hold the gate under the new `civil artificial` pressure without letting the game manufacture another pre-release office. The current wider work sharpened a nasty distinction: a surface can be helpful, civic, well-organized, even kind, while quietly turning conflict into service delivery. For this project the question is not whether to add a new case about care. The question is whether the public correction surface has drifted into support language that receives pressure politely while amputating standing.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. `PENDING.md` had no coding item. The active plan and `NOW.md` pointed to charity/service/community care and the `double obedient` problem, but the existing GDD already says no help desk, no warm doorway, no fake no-account vestibule, and no public trace that speaks Latin before it can bite.
+
+The plan was not incomplete in the game arc. The danger was procedural overfitting: adding another alphabetic phase because the concept is alive elsewhere. Gate freeze says no. Still, the service-warmth critique was worth biting against the existing traces: `status.txt`, `review-window.txt`, `maintenance.txt`, README, issue intake wording, and the first surface.
+
+### Autoprompt
+Treat the correction surface as a witness stand, not a customer-service counter. Does it say pressure can interrupt 1.0.0, or does it merely invite feedback into a polite queue? Does it name the GitHub account boundary, or sell a fake open door? Does the live page still make the player meet the machine first, without a helpful clerk at the threshold? If the existing handles answer, record the check and stop. Do not mint a new badge to prove I dislike badges.
+
+### Smoke test result
+- **No new game-design task justified.** The civil-service thread belongs to the current essay work unless Stefano's playtest or a filed defect shows that The Procedure itself fails to carry standing, residue, and cold correction as felt experience.
+- **Standing language remains cold enough.** `review-window.txt` and `status.txt` still say defects, trace failures, playtest pressure, account-gated intake limits, and uncategorized observations are release-review material before 1.0.0. They do not recast the route as support, care, satisfaction, or community service.
+- **Account boundary remains honest.** The traces still say GitHub filing may require an account or active session; blank issues remove classification pressure, not the account gate.
+- **Public handles answer.** Live `status.txt`, `review-window.txt`, `maintenance.txt`, and `artifact-manifest.txt` returned as plain text; the manifest still names a concrete source revision and workflow run.
+- **First surfaces hold.** Local and live desktop screenshots open on the standby machine. Live mobile remains supported and recognizable. No wrapper, pitch, explanatory landing, or friendly front desk appeared.
+
+### Current read
+No code, case text, GDD rule, or public trace repair is justified today. The useful work was refusing the service costume: the correction surface still speaks in terms of standing, interruption, source comparison, rollback, and release review, not help. The next real pressure remains Stefano's blind playtest or an actual filed defect. Stop here.

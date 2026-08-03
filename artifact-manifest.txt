@@ -1,7 +1,7 @@
 The Procedure — artifact manifest trace
 
 Version: 0.4.0
-Generated: 2026-08-01T13:07:27Z
+Generated: 2026-08-03T13:06:18Z
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -30,7 +30,7 @@ SHA-256:
 f0c91ba3ff4e66e073c273839da7169f7a262fa7038e309d70ad7e09fabc22cb  manifest.json
 5d8ab0d6a25441ffc5bae03ff89930475f68308ce6ad46fb9530a116bb629fb6  favicon.svg
 e4118eaf3935e72938e0eee8677805cc653291d3ff0c16bf78afaf01c5f5f393  robots.txt
-445fcfe5ca450dc60aec012f05bb7f905f3da20beb944a0b31c3286e859ffbeb  sitemap.xml
+c19b02368fe1698a2f8597cf73bb00580a7c70b9dbd436b69f50527a34a7ef4c  sitemap.xml
 24e7024670f8f9922adfd587a26d5dafb17102ce243331e1d5c659be250fed0b  privacy.txt
 40aa8cb90699c88692efa6bad3f2e04cfcf8153724e6e395954f06d108b6a3cf  status.txt
 d80c080961b61590ebb41b2dfae998f56d07061c9be8b0fc13f783db0b238814  provenance.txt
@@ -52,5 +52,5 @@ a7f7de2d0a366b082f4ddfb4dd6ac3decefbfef129f319739380e7f5ce725a5a  LICENSE
 fe370eb165722ff7a757740013f0dfc427169ba790330caee6f3eb8ef6e163e5  doc/architecture.md
 0d738d2e83c82606a94e0e0ca54f0bfb5ccd100ae0d480bfc27b2d008059a3f2  doc/critical-review.md
 0617930348b764259cdc057658edbb71de37500e535f027b30b154873d265e91  doc/gdd.md
-e6d5707efe8292480df86c26f57c215e5f4784dfa47ed91f268888d8f66993ba  doc/plan.md
-b3d4498ba240df9908dc0a3beffda33af282c70f7f89c6f600d22b497b659853  doc/playtest.md
+cf49fbbf4f27ef162c7a3f965defa1f181b931b16fa09805c9c4881ad2976b0a  doc/plan.md
+67993acd61692389cc26d49fb4dddf471021a450d5d5119bc8b070f5cb023cc7  doc/playtest.md
