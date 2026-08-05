@@ -1,7 +1,7 @@
 The Procedure — continuity custody trace
 
 Version: 0.4.0
-Last modified: 2026-08-01
+Last modified: 2026-08-05
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -14,11 +14,11 @@ GitHub Pages via the Deploy static Pages workflow on main.
 https://josephusm.github.io/the-procedure/provenance.txt
 
 Current maintenance surface:
-Source changes, trace repairs, resolved public-trace defects, unreadable or client-bound trace surfaces, artifact-manifest failures, reuse-boundary failures, known errata changes, defects, accessibility failures, source/provenance mismatches, warmed doorway regressions, and release-review pressure are handled through the repository issue surface before 1.0.0. GitHub issue filing may require an account or active session; blank issues remove classification pressure, not the account boundary.
+Source changes, trace repairs, resolved public-trace defects, unreadable or client-bound trace surfaces, artifact-manifest failures, reuse-boundary failures, known errata changes, missing public review-response traces, defects, accessibility failures, source/provenance mismatches, warmed doorway regressions, and release-review pressure are handled through the repository issue surface before 1.0.0. GitHub issue filing may require an account or active session; blank issues remove classification pressure, not the account boundary.
 https://github.com/josephusm/the-procedure/issues
 
 Recovery route:
-If the live page, metadata, public traces, artifact manifest, reuse boundary, or deployment provenance diverge from the source, the repair path is deliberately dull: file the discrepancy, compare the served object with source/provenance, then roll forward with a correcting commit or roll back through repository history and GitHub Pages deployment. A recovery that changes the visible first surface must be reviewed before 1.0.0.
+If the live page, metadata, public traces, artifact manifest, reuse boundary, review-response surface, or deployment provenance diverge from the source, the repair path is deliberately dull: file the discrepancy, compare the served object with source/provenance, respond in public through the issue/commit/errata trail, then roll forward with a correcting commit or roll back through repository history and GitHub Pages deployment. A recovery that changes the visible first surface must be reviewed before 1.0.0.
 
 Continuity boundary:
 The live page is a static public object with no account, tenant, analytics, cookies, localStorage, remote gameplay telemetry, or server-side game state. Its continuity depends on the source repository, Pages deployment, public traces, and future maintainers keeping those dull handles alive.
@@ -27,7 +27,7 @@ Continuity exit / deprecation route:
 If the canonical URL is moved, retired, handed to another custodian, or expected to fail permanently, the maintenance surface should be amended before the break when possible. The notice should name the reason, effective date, successor URL or archived fallback, source repository state, issue/correction surface, and whether the artifact manifest still describes the last common public version. If no advance notice was possible, the source repository and errata history become the place to record the break after the fact.
 
 Public fallback:
-If the canonical live URL fails, the source repository and issue surface are the amendable public handles while they remain available. A failure of hosting, source/provenance/artifact mismatch, stale status, broken sitemap, missing trace, unreadable or client-bound trace surface, missing artifact manifest, missing reuse boundary, missing deprecation notice, missing successor/fallback handle, warmed first surface, account-gated intake boundary, or unrecoverable Pages deployment belongs in release review before 1.0.0.
+If the canonical live URL fails, the source repository and issue surface are the amendable public handles while they remain available. A failure of hosting, source/provenance/artifact mismatch, stale status, broken sitemap, missing trace, unreadable or client-bound trace surface, missing artifact manifest, missing reuse boundary, missing public review response, missing deprecation notice, missing successor/fallback handle, warmed first surface, account-gated intake boundary, or unrecoverable Pages deployment belongs in release review before 1.0.0.
 
 Related traces:
 Status: https://josephusm.github.io/the-procedure/status.txt

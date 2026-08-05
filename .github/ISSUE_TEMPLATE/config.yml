@@ -5,7 +5,7 @@ contact_links:
     about: Use when the observation has standing before it fits a structured form.
   - name: Pre-release review window
     url: https://josephusm.github.io/the-procedure/review-window.txt
-    about: What counts as release-relevant before 1.0.0, including the account-gated filing boundary.
+    about: What counts as release-relevant before 1.0.0, including the account-gated filing boundary and public review-response route.
   - name: Public status trace
     url: https://josephusm.github.io/the-procedure/status.txt
     about: Current version, state, release gate, and public handles.

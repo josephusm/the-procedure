@@ -1156,3 +1156,22 @@ Treat the correction surface as a witness stand, not a customer-service counter.
 
 ### Current read
 No code, case text, GDD rule, or public trace repair is justified today. The useful work was refusing the service costume: the correction surface still speaks in terms of standing, interruption, source comparison, rollback, and release review, not help. The next real pressure remains Stefano's blind playtest or an actual filed defect. Stop here.
+
+## Review response / release-decision audit — 2026-08-05
+
+Target: keep the correction surface from becoming a one-way intake drawer. The public traces already said which outside signals can interrupt 1.0.0. The missing cold hinge was return: when a signal enters release review, what public mark shows that it changed, failed to change, or deferred the next version?
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. The current one-way transparency / causal-return thread did not justify reopening the game or adding another trace file. It did expose a narrow weakness in the existing review surface: standing without a public response path can still become silent ingestion.
+
+### Autoprompt
+Do not add a customer-service desk. Do not explain the game. Amend the existing review surfaces so release-relevant filed pressure has to come back as something citeable: issue response, closure reason, linked commit, release decision, or errata/correction-history entry. If the first surface stays cold and the traces stay line-readable, stop.
+
+### Audit result
+- **GDD rule added.** Review response is now a public-trace rule: filed pressure needs a citeable return before 1.0.0, not just a receiving slot.
+- **Existing traces amended.** Review-window, status, maintenance, provenance, reuse, errata, README, metadata / JSON-LD, issue-template wording, and workflow-generated provenance now name public response / release decision as the return path.
+- **No new visible warmth.** The terminal first surface is unchanged; the player still meets the standby machine, not a helpful clerk.
+- **Local smoke tests passed.** Metadata/JSON-LD, text traces, issue-template YAML, workflow text, artifact manifest, sitemap XML, JavaScript syntax, and the local first screen held.
+
+### Current read
+Phase 4at is complete. This was the existing correction surface getting a return wire, not another plaque. A filed issue should now have standing and a public answer path. The next real pressure remains Stefano's blind playtest or an actual filed defect.

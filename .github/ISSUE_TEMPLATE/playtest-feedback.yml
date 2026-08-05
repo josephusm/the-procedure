@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Best after a full cold run from power-on to final shutdown. Do not use this as a review score. Use it as a pressure mark: where did the machine land, drag, break, or become too visible?
+        Best after a full cold run from power-on to final shutdown. Do not use this as a review score. Use it as a pressure mark: where did the machine land, drag, break, or become too visible? Release-relevant pressure should receive a public response, closure reason, linked commit, release decision, or errata trace before 1.0.0.
   - type: textarea
     id: strongest
     attributes:

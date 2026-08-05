@@ -72,7 +72,7 @@ jobs:
           https://josephusm.github.io/the-procedure/reuse.txt
 
           Recovery route:
-          Broken traces, unreadable or client-bound trace surfaces, reuse-boundary failures, continuity-exit gaps, source/provenance/artifact mismatches, warmed doorway regressions, and failed deployments are compared against this provenance record and corrected by notice, roll-forward, rollback, or source-history handoff before 1.0.0.
+          Broken traces, unreadable or client-bound trace surfaces, reuse-boundary failures, continuity-exit gaps, missing public review-response traces, source/provenance/artifact mismatches, warmed doorway regressions, and failed deployments are compared against this provenance record and corrected by public response, notice, roll-forward, rollback, or source-history handoff before 1.0.0.
           https://josephusm.github.io/the-procedure/maintenance.txt
 
           Correction surface:
@@ -92,6 +92,9 @@ jobs:
 
           Account boundary:
           GitHub issue filing may require a GitHub account or active session. If that boundary blocks release-relevant outside pressure before 1.0.0, the boundary itself belongs in review.
+
+          Review response / release decision:
+          Release-relevant filed issues should return as a citeable public response, closure reason, linked commit, release decision, or errata/correction-history entry before 1.0.0. Silent ingestion is a trace defect.
 
           Pre-release review window:
           https://josephusm.github.io/the-procedure/review-window.txt

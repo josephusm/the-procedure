@@ -1,7 +1,7 @@
 The Procedure — pre-release review window
 
 Version: 0.4.0
-Last modified: 2026-08-01
+Last modified: 2026-08-05
 
 Project state:
 Content-complete pre-release.
@@ -10,7 +10,7 @@ Release gate:
 External playtest feedback required before 1.0.0.
 
 Review standing before 1.0.0:
-Corrections, defects, accessibility failures, cold-run playtest pressure, known errata changes, resolved public-trace defects, broken public traces, unreadable or client-bound trace surfaces, reuse-boundary failures, source/provenance/artifact discrepancies, continuity-exit or deprecation-notice gaps, warmed doorway regressions, recovery failures, account-gated intake limitations, and uncategorized observations filed before the 1.0.0 release are part of release review, not post-release noise.
+Corrections, defects, accessibility failures, cold-run playtest pressure, known errata changes, resolved public-trace defects, broken public traces, unreadable or client-bound trace surfaces, reuse-boundary failures, source/provenance/artifact discrepancies, continuity-exit or deprecation-notice gaps, warmed doorway regressions, recovery failures, missing public review-response traces, account-gated intake limitations, and uncategorized observations filed before the 1.0.0 release are part of release review, not post-release noise.
 
 Correction surface:
 https://github.com/josephusm/the-procedure/issues
@@ -25,6 +25,9 @@ Blank issues remain enabled for observations that have standing before they fit 
 
 Account boundary:
 GitHub issue filing may require a GitHub account or active session. Blank issues remove the pre-classification gate; they do not remove the account gate. If that boundary prevents a release-relevant defect, accessibility failure, trace discrepancy, or cold-run pressure mark from entering review, the boundary itself is part of pre-1.0.0 review.
+
+Review response / release decision:
+A release-relevant filed issue should not disappear into silent review. Before 1.0.0, accepted, rejected, or deferred pressure should leave a citeable public response: issue comment, closure reason, linked commit, release decision, or errata/correction-history entry. Silent ingestion is a review-surface defect.
 
 Source:
 https://github.com/josephusm/the-procedure
