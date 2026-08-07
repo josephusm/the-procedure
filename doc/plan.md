@@ -370,6 +370,13 @@ Gate freeze still holds. This is not another public handle and not another game 
 - [x] Update review/status/maintenance/provenance/reuse/errata traces, README, metadata / JSON-LD, issue-template wording, workflow-generated provenance, and sitemap freshness without changing the visible first surface.
 - [x] Smoke test local metadata, public traces, issue-template text, workflow text, artifact manifest, and first screen.
 
+### Phase 4au — Contested response / reopen route
+Gate freeze still holds. This is a concrete review-surface repair, not another game audit. Current standing work exposed the overclaim in Phase 4at: a public response is better than silent ingestion, but it can still leave the filed party as fuel for a unilateral custodian if a misread closure cannot be answered before release.
+- [x] Confirm no new Stefano playtest feedback, issue, PR, or coding hint appeared before changing the public trace.
+- [x] Define the contested-response rule in the GDD: a filed party may contest a misread response before 1.0.0 through the same issue, a linked issue, linked commit, release decision, or errata entry.
+- [x] Update review/status/provenance/maintenance/reuse/errata traces, README, metadata / JSON-LD, issue-template wording, workflow-generated provenance, and sitemap freshness without changing the visible first surface.
+- [x] Smoke test local metadata, public traces, issue-template text, workflow text, artifact manifest, and first screen.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
@@ -405,6 +412,7 @@ Gate holding:
 - [x] 2026-07-31 gate review held with one concrete continuity-exit fix: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current bones/scars/exit thread did not justify reopening the game, but exposed that the maintenance surface named custody and recovery without an advance-notice / deprecation / successor route. Public traces now name how a canonical move, sunset, or custodian handoff should be recorded before 1.0.0 when possible; local metadata/traces/sitemap/workflow/first-screen smoke tests passed.
 - [x] 2026-08-03 gate review held: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current civil-service / double-obedient thread did not justify another game audit or new public handle. Existing traces were checked against the risk that correction becomes support/care language: status, review-window, maintenance, artifact manifest, local first screen, and live desktop/mobile first surfaces still hold; no code or trace repair justified.
 - [x] 2026-08-05 gate review held with one concrete response-loop repair: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current one-way transparency / causal-return thread did not justify reopening the game, but exposed that review standing should also name its public response path. Existing traces now say release-relevant filed pressure must return as an issue response, closure reason, linked commit, release decision, or errata entry before 1.0.0; local metadata/traces/workflow/manifest/first-screen smoke tests passed.
+- [x] 2026-08-07 gate review held with one concrete contested-response repair: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current standing/not-reciprocity thread did not justify reopening the game, but exposed that a citeable response can still become unilateral closure. Existing traces now say a filed party can contest a misread response before 1.0.0 through the same issue, linked issue, linked commit, release decision, or errata entry; local metadata/traces/workflow/manifest/first-screen smoke tests passed.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)

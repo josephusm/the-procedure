@@ -1,14 +1,14 @@
 name: Public trace / provenance discrepancy
-about: A source, status, review-window, maintenance, deprecation/exit route, recovery route, privacy, sitemap, metadata, or deployment trace is missing, inconsistent, or not plainly readable.
+about: A source, status, review-window, maintenance, deprecation/exit route, recovery route, review-response/reopen route, privacy, sitemap, metadata, or deployment trace is missing, inconsistent, or not plainly readable.
 title: "Trace: "
 labels: [public-trace]
 body:
   - type: markdown
     attributes:
       value: |
-        Use this for the dull handles around the game: canonical URL, metadata, sitemap, status, provenance, maintenance custody, deprecation/exit route, recovery route, privacy boundary, source repository, issue surface, or review window.
+        Use this for the dull handles around the game: canonical URL, metadata, sitemap, status, provenance, maintenance custody, deprecation/exit route, recovery route, review-response/reopen route, privacy boundary, source repository, issue surface, or review window.
 
-        The correction surface matters only if a filed trace can be compared with the source that produced the public object and opened to public response, correction, roll-forward, or rollback. If a public trace requires client ceremony, login, JavaScript, or repository literacy before it can be read, that is a discrepancy too. Boring, yes. That is the point.
+        The correction surface matters only if a filed trace can be compared with the source that produced the public object and opened to public response, contested response, correction, roll-forward, or rollback. If a public trace requires client ceremony, login, JavaScript, or repository literacy before it can be read, that is a discrepancy too. Boring, yes. That is the point.
   - type: dropdown
     id: trace_surface
     attributes:
@@ -24,6 +24,7 @@ body:
         - continuity exit / deprecation notice
         - successor URL / archived fallback
         - recovery route / rollback handle
+        - review response / contested closure
         - privacy.txt
         - README.md
         - GitHub Pages workflow

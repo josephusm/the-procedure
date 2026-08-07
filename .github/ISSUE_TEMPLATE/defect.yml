@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this for a concrete failure: broken gameplay flow, unreadable surface, dead link, metadata mismatch, missing public review response, or anything that can interrupt the pre-release build.
+        Use this for a concrete failure: broken gameplay flow, unreadable surface, dead link, metadata mismatch, missing public review response, uncontestable misread closure, or anything that can interrupt the pre-release build.
 
         If this is about the live public trace, use the public trace / provenance form instead.
   - type: input

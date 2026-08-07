@@ -499,6 +499,26 @@ Do not add a progress banner. Do not brief the player. If the status repair chan
 ### Current read
 Phase 4ab is complete. This was a state handle, not another promise layer. Release remains gated on Stefano's blind playthrough; autonomous work should stay restrained unless feedback, an actual defect, or a public doorway failure appears.
 
+
+## Contested response / reopen route audit — 2026-08-07
+
+Target: repair the narrow overclaim left by the review-response pass. A public response is better than silent ingestion, but it can still be the custodian talking to itself with better stationery if the filed party cannot contest a misread closure before 1.0.0.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. The current standing / return-form thread did not justify reopening the game, adding a case, or warming the doorway. It did expose a concrete review-surface defect: Phase 4at said filed pressure must return as a public response, closure reason, linked commit, release decision, or errata entry. Good. Not enough. Standing with no answerable misread response is still ingestion with a receipt.
+
+### Autoprompt
+Do not mint another public handle. Do not turn the source forum into customer support theatre. Amend the existing traces so a filed party can contest a misread response before release through the same issue, a linked issue, linked commit, release decision, or errata entry. If the terminal first surface changes, cut the repair. The player should meet the cold machine, not a constitutional convention in a trench coat.
+
+### Audit result
+- **GDD rule added.** Contested response is now a trace surface: a citeable response that cannot be answered when it misreads the filed pressure is still a unilateral custody route.
+- **Public traces updated.** Review window, status, provenance, maintenance, reuse, errata, README, metadata / JSON-LD, issue template language, and workflow-generated provenance name the reopen/contestation path before 1.0.0.
+- **No new visible doorway.** The standby terminal remains unchanged; the repair lives in cold public traces.
+- **Local smoke tests passed.** Metadata, public traces, issue-template wording, workflow text, artifact manifest, sitemap, and first screen held.
+
+### Current read
+Phase 4au is complete. This does not make the correction surface democratic. It only removes one small lie: response is not reciprocity unless the misread response can itself be answered. The next meaningful pressure remains Stefano's blind run or an actual filed defect.
+
 ## Release question
 
 The only real release question is this:

@@ -1,7 +1,7 @@
 The Procedure — pre-release review window
 
 Version: 0.4.0
-Last modified: 2026-08-05
+Last modified: 2026-08-07
 
 Project state:
 Content-complete pre-release.
@@ -10,7 +10,7 @@ Release gate:
 External playtest feedback required before 1.0.0.
 
 Review standing before 1.0.0:
-Corrections, defects, accessibility failures, cold-run playtest pressure, known errata changes, resolved public-trace defects, broken public traces, unreadable or client-bound trace surfaces, reuse-boundary failures, source/provenance/artifact discrepancies, continuity-exit or deprecation-notice gaps, warmed doorway regressions, recovery failures, missing public review-response traces, account-gated intake limitations, and uncategorized observations filed before the 1.0.0 release are part of release review, not post-release noise.
+Corrections, defects, accessibility failures, cold-run playtest pressure, known errata changes, resolved public-trace defects, broken public traces, unreadable or client-bound trace surfaces, reuse-boundary failures, source/provenance/artifact discrepancies, continuity-exit or deprecation-notice gaps, warmed doorway regressions, recovery failures, missing public review-response traces, missing contested-response/reopen routes, account-gated intake limitations, and uncategorized observations filed before the 1.0.0 release are part of release review, not post-release noise.
 
 Correction surface:
 https://github.com/josephusm/the-procedure/issues
@@ -28,6 +28,9 @@ GitHub issue filing may require a GitHub account or active session. Blank issues
 
 Review response / release decision:
 A release-relevant filed issue should not disappear into silent review. Before 1.0.0, accepted, rejected, or deferred pressure should leave a citeable public response: issue comment, closure reason, linked commit, release decision, or errata/correction-history entry. Silent ingestion is a review-surface defect.
+
+Contested response / reopen route:
+A response is not reciprocity by itself. If the filed party says the public response misreads the defect, pressure mark, or trace discrepancy, that objection should remain answerable before 1.0.0 through the same issue, a linked issue, a linked commit, a release decision, or the errata/correction-history trace. A closure that cannot be contested is only intake with a receipt.
 
 Source:
 https://github.com/josephusm/the-procedure
