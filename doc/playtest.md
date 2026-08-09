@@ -1195,3 +1195,23 @@ Do not add a customer-service desk. Do not explain the game. Amend the existing 
 
 ### Current read
 Phase 4at is complete. This was the existing correction surface getting a return wire, not another plaque. A filed issue should now have standing and a public answer path. The next real pressure remains Stefano's blind playtest or an actual filed defect.
+
+## Rule genealogy / parent-pressure audit — 2026-08-09
+
+Target: keep the review surface from swallowing pressure and returning only a cleaner rule. Phase 4at made filed pressure return as a public decision. Phase 4au kept a misread response contestable. The missing edge was parentage: if the rule changes, can the changed rule show which filed signal, trace failure, contestation, or errata scar produced it?
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. The current genealogy-of-the-rule thread did not justify reopening the game or adding another visible surface. It did expose a narrow defect in the existing review loop: a response and a reopen path still leave room for the custodian to publish an improved rule without naming its parent signal.
+
+### Autoprompt
+Do not add another window. Do not brief the player. Amend the existing review traces so a changed review rule, correction boundary, release decision, or public trace carries its parent: issue, linked issue, linked commit, release decision, errata entry, or source-history note. If the first surface stays cold and the text handles stay line-readable, stop. The machine does not need a family tree on the bezel. The public trace does.
+
+### Audit result
+- **GDD rule added.** Rule genealogy is now a public-trace rule: changed review rules should name the parent signal that made them change.
+- **Existing traces amended.** Review-window, status, provenance, maintenance, reuse, errata, README, metadata / JSON-LD, issue-template wording, workflow-generated provenance, and sitemap now carry the parent-pressure handle without changing the visible terminal surface.
+- **Audit record repaired.** The previous contested-response repair was present in `doc/plan.md` and public traces; this packet now records the next review surface explicitly instead of letting the plan run ahead of the audit record again. Cute habit. Bad one.
+- **Local smoke tests passed.** Metadata/JSON-LD, text traces, issue-template YAML, workflow text, artifact manifest, sitemap XML, JavaScript syntax, and the local first screen held.
+
+### Current read
+Phase 4av is complete. This is not a new concept layer inside the game. It is the existing correction surface getting one more cold obligation: if a rule changes because something outside hit it, the public object should not pretend the rule was born immaculate. The next real pressure remains Stefano's blind playtest or an actual filed defect.
+

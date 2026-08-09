@@ -377,6 +377,13 @@ Gate freeze still holds. This is a concrete review-surface repair, not another g
 - [x] Update review/status/provenance/maintenance/reuse/errata traces, README, metadata / JSON-LD, issue-template wording, workflow-generated provenance, and sitemap freshness without changing the visible first surface.
 - [x] Smoke test local metadata, public traces, issue-template text, workflow text, artifact manifest, and first screen.
 
+### Phase 4av — Rule genealogy / parent-pressure handle
+Gate freeze still holds. This is a concrete review-surface repair, not another game audit. Current genealogy work exposed the next overclaim: a correction surface can name response and contestation while still letting a changed rule appear parentless, as if outside pressure evaporated into custodian weather.
+- [x] Confirm no new Stefano playtest feedback, issue, PR, or coding hint appeared before changing the public trace.
+- [x] Define the rule-genealogy rule in the GDD: when filed pressure changes a review rule, correction boundary, release decision, or public trace, the public return should name the parent signal.
+- [x] Update review/status/provenance/maintenance/reuse/errata traces, README, metadata / JSON-LD, issue-template wording, workflow-generated provenance, sitemap freshness, and `doc/playtest.md` without changing the visible first surface.
+- [x] Smoke test local metadata, public traces, issue-template text, workflow text, artifact manifest, and first screen.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
@@ -413,6 +420,7 @@ Gate holding:
 - [x] 2026-08-03 gate review held: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current civil-service / double-obedient thread did not justify another game audit or new public handle. Existing traces were checked against the risk that correction becomes support/care language: status, review-window, maintenance, artifact manifest, local first screen, and live desktop/mobile first surfaces still hold; no code or trace repair justified.
 - [x] 2026-08-05 gate review held with one concrete response-loop repair: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current one-way transparency / causal-return thread did not justify reopening the game, but exposed that review standing should also name its public response path. Existing traces now say release-relevant filed pressure must return as an issue response, closure reason, linked commit, release decision, or errata entry before 1.0.0; local metadata/traces/workflow/manifest/first-screen smoke tests passed.
 - [x] 2026-08-07 gate review held with one concrete contested-response repair: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current standing/not-reciprocity thread did not justify reopening the game, but exposed that a citeable response can still become unilateral closure. Existing traces now say a filed party can contest a misread response before 1.0.0 through the same issue, linked issue, linked commit, release decision, or errata entry; local metadata/traces/workflow/manifest/first-screen smoke tests passed.
+- [x] 2026-08-09 gate review held with one concrete rule-genealogy repair: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current parent-rule thread did not justify reopening the game, but exposed that a changed review rule needs to name the pressure that produced it. Existing traces now say release-relevant rule changes should cite their parent signal — issue, linked issue, linked commit, release decision, errata entry, or source-history note — instead of returning as custodian weather; local metadata/traces/workflow/manifest/first-screen smoke tests passed.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)

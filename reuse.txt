@@ -1,7 +1,7 @@
 The Procedure — public reuse boundary
 
 Version: 0.4.0
-Last modified: 2026-08-07
+Last modified: 2026-08-09
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -28,7 +28,7 @@ Correction surface:
 https://github.com/josephusm/the-procedure/issues
 
 Review response / release decision:
-Release-relevant reuse-boundary issues filed before 1.0.0 should leave a citeable public response, closure reason, linked commit, release decision, or errata/correction-history entry. If that response is contested as a misread boundary failure, the contestation should remain answerable before release. Silent ingestion is not a correction loop; neither is unilateral closure with the comments turned into decoration.
+Release-relevant reuse-boundary issues filed before 1.0.0 should leave a citeable public response, closure reason, linked commit, release decision, or errata/correction-history entry. If that response is contested as a misread boundary failure, the contestation should remain answerable before release. If the issue changes a reuse rule or review boundary, the public return should name the parent signal that produced the change. Silent ingestion is not a correction loop; neither is unilateral closure with the comments turned into decoration.
 
 Errata / correction history:
 https://josephusm.github.io/the-procedure/errata.txt
