@@ -1,12 +1,12 @@
 name: Public trace / provenance discrepancy
-about: A source, status, review-window, maintenance, deprecation/exit route, recovery route, review-response/reopen route, rule-genealogy parent-pressure trace, privacy, sitemap, metadata, or deployment trace is missing, inconsistent, or not plainly readable.
+about: A source, status, review-window, maintenance, deprecation/exit route, recovery route, review-response/reopen route, rule-genealogy parent-pressure trace, participant-continuity/reporter-standing trace, privacy, sitemap, metadata, or deployment trace is missing, inconsistent, or not plainly readable.
 title: "Trace: "
 labels: [public-trace]
 body:
   - type: markdown
     attributes:
       value: |
-        Use this for the dull handles around the game: canonical URL, metadata, sitemap, status, provenance, maintenance custody, deprecation/exit route, recovery route, review-response/reopen route, rule-genealogy parent-pressure trace, privacy boundary, source repository, issue surface, or review window.
+        Use this for the dull handles around the game: canonical URL, metadata, sitemap, status, provenance, maintenance custody, deprecation/exit route, recovery route, review-response/reopen route, rule-genealogy parent-pressure trace, participant-continuity/reporter-standing trace, privacy boundary, source repository, issue surface, or review window.
 
         The correction surface matters only if a filed trace can be compared with the source that produced the public object and opened to public response, contested response, correction, roll-forward, or rollback. If a public trace requires client ceremony, login, JavaScript, or repository literacy before it can be read, that is a discrepancy too. Boring, yes. That is the point.
   - type: dropdown
@@ -26,6 +26,7 @@ body:
         - recovery route / rollback handle
         - review response / contested closure
         - rule genealogy / parent pressure
+        - participant continuity / reporter standing
         - privacy.txt
         - README.md
         - GitHub Pages workflow
@@ -52,7 +53,7 @@ body:
     id: release_relevance
     attributes:
       label: Why it matters before 1.0.0
-      description: What would this prevent a future player, crawler, archive, or maintainer from reading, checking, answering publicly, naming the parent signal behind a rule change, correcting, receiving notice about, handing off, rolling forward, or rolling back?
+      description: What would this prevent a future player, crawler, archive, or maintainer from reading, checking, answering publicly, naming the parent signal behind a rule change, keeping a filer in the answerable chain, correcting, receiving notice about, handing off, rolling forward, or rolling back?
     validations:
       required: true
   - type: checkboxes

@@ -1215,3 +1215,22 @@ Do not add another window. Do not brief the player. Amend the existing review tr
 ### Current read
 Phase 4av is complete. This is not a new concept layer inside the game. It is the existing correction surface getting one more cold obligation: if a rule changes because something outside hit it, the public object should not pretend the rule was born immaculate. The next real pressure remains Stefano's blind playtest or an actual filed defect.
 
+## Participant continuity / reporter-standing audit — 2026-08-11
+
+Target: keep the review surface from solving ancestry while losing the living party. Phase 4av made changed rules name the pressure that produced them. Useful. Still not enough if the public return turns a filer into a sensor: signal received, rule improved, custodian still alone in the workshop.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. The current community-as-sensor thread did not justify reopening the game, adding a case, or warming the first surface. It exposed a narrower defect in the review loop: parentage can be cited while participation collapses into intake. A rule can say where it came from and still hide what it did with the reporter's words.
+
+### Autoprompt
+Do not mint another public file. Do not turn GitHub issues into a civic hymn. Amend the existing review traces so a filed pressure mark that changes a rule, correction boundary, release decision, or public trace keeps the filer/issue in the answerable chain: what was accepted, rejected, translated, or deferred; where the public decision lives; and how a misread translation remains contestable before 1.0.0. If the terminal first surface changes, cut the repair. The player came to meet the machine, not a participatory-governance brochure with better shoes.
+
+### Audit result
+- **GDD rule added.** Participant continuity is now a public-trace rule: naming the parent signal is not enough if the filer becomes intake intelligence with a citation label.
+- **Existing traces amended.** Review-window, status, provenance, maintenance, reuse, errata, README, metadata / JSON-LD, issue-template wording, workflow-generated provenance, and sitemap now carry the participant-continuity handle without changing the visible terminal surface.
+- **Review path narrowed rather than warmed.** The new language asks for accepted/rejected/translated/deferred public return, not gratitude, support language, or a new comfort desk.
+- **Local smoke tests passed.** Metadata/JSON-LD, text traces, issue-template YAML, workflow text, artifact manifest, sitemap XML, JavaScript syntax, and the local first screen held.
+
+### Current read
+Phase 4aw is complete. This is still not a new design layer inside the game. It is the correction surface refusing the cheap version of genealogy: `we listened` with a parent link and no remaining party. The next real pressure remains Stefano's blind playtest or an actual filed defect.
+

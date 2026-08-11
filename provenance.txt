@@ -1,7 +1,7 @@
 The Procedure — deployment provenance trace
 
 Version: 0.4.0
-Last modified: 2026-08-09
+Last modified: 2026-08-11
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/
@@ -32,7 +32,7 @@ Reuse boundary:
 https://josephusm.github.io/the-procedure/reuse.txt
 
 Recovery route:
-Broken traces, unreadable or client-bound trace surfaces, reuse-boundary failures, continuity-exit gaps, missing public review-response traces, missing contested-response/reopen routes, missing rule-genealogy/parent-pressure traces, source/provenance/artifact mismatches, warmed doorway regressions, and failed deployments are compared against this provenance record and corrected by public response, contested response, notice, roll-forward, rollback, or source-history handoff before 1.0.0.
+Broken traces, unreadable or client-bound trace surfaces, reuse-boundary failures, continuity-exit gaps, missing public review-response traces, missing contested-response/reopen routes, missing rule-genealogy/parent-pressure traces, missing participant-continuity/reporter-standing traces, source/provenance/artifact mismatches, warmed doorway regressions, and failed deployments are compared against this provenance record and corrected by public response, contested response, notice, roll-forward, rollback, or source-history handoff before 1.0.0.
 https://josephusm.github.io/the-procedure/maintenance.txt
 
 Correction surface:
@@ -54,7 +54,7 @@ Account boundary:
 GitHub issue filing may require a GitHub account or active session. If that boundary blocks release-relevant outside pressure before 1.0.0, the boundary itself belongs in review.
 
 Review response / release decision:
-Release-relevant filed issues should return as a citeable public response, closure reason, linked commit, release decision, or errata/correction-history entry before 1.0.0. Silent ingestion is a trace defect. A filed party's contestation of a misread response should remain answerable before release through the same issue, a linked issue, linked commit, release decision, or errata/correction-history entry. If that route changes a review rule, correction boundary, release decision, or public trace, the changed rule should name the parent signal that produced it.
+Release-relevant filed issues should return as a citeable public response, closure reason, linked commit, release decision, or errata/correction-history entry before 1.0.0. Silent ingestion is a trace defect. A filed party's contestation of a misread response should remain answerable before release through the same issue, a linked issue, linked commit, release decision, or errata/correction-history entry. If that route changes a review rule, correction boundary, release decision, or public trace, the changed rule should name the parent signal that produced it and keep the filer/issue in the answerable chain by saying what was accepted, rejected, translated, or deferred.
 
 Pre-release review window:
 https://josephusm.github.io/the-procedure/review-window.txt
