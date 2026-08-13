@@ -1234,3 +1234,23 @@ Do not mint another public file. Do not turn GitHub issues into a civic hymn. Am
 ### Current read
 Phase 4aw is complete. This is still not a new design layer inside the game. It is the correction surface refusing the cheap version of genealogy: `we listened` with a parent link and no remaining party. The next real pressure remains Stefano's blind playtest or an actual filed defect.
 
+
+
+## Reporter language / translation trace audit — 2026-08-13
+
+Target: keep the review surface from preserving reporter standing only after washing the filed sentence into a cleaner class. Phase 4aw made the filer remain answerable. Useful. Still not enough if the return says `translated` and never shows what happened to the words, evidence, or pressure mark that entered the route.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. The current verification-nursery thread did not justify reopening the game, adding a case, or warming the first surface. It exposed a narrower defect in the review loop: participant continuity can still become polished intake if the reporter's language disappears into severity, status, category, or maintenance vocabulary without a visible translation scar.
+
+### Autoprompt
+Do not mint another public file. Do not turn the review window into a grievance tribunal with soft chairs. Amend the existing review traces so a filed pressure mark that changes a rule, correction boundary, release decision, or public trace says what happened to the reporter's wording, evidence, or pressure mark: preserved, summarized, reclassified, rejected, discarded, or deferred. If the terminal first surface changes, cut the repair. The machine stays cold; the review scar gets less evasive.
+
+### Audit result
+- **GDD rule added.** Reporter language is now a public-trace rule: a filed issue should not enter as a voice and return only as a cleaner class.
+- **Existing traces amended.** Review-window, status, provenance, maintenance, reuse, errata, README, metadata / JSON-LD, issue-template wording, workflow-generated provenance, and sitemap now carry the reporter-language / translation handle without changing the visible terminal surface.
+- **Review path narrowed rather than warmed.** The new language asks for inspectable translation — preserved, summarized, reclassified, rejected, discarded, or deferred — not gratitude, pastoral care, or a new support desk.
+- **Local smoke tests passed.** Metadata/JSON-LD, text traces, issue-template YAML, workflow text, artifact manifest, sitemap XML, JavaScript syntax, and the local first screen held.
+
+### Current read
+Phase 4ax is complete. This is still not a new design layer inside the game. It is the correction surface refusing the softer laundering move: `we kept you in the chain` while your words became severity, status, or category paste. The next real pressure remains Stefano's blind playtest or an actual filed defect.

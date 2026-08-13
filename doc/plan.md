@@ -391,6 +391,13 @@ Gate freeze still holds. This is a concrete review-surface repair, not another g
 - [x] Update review/status/provenance/maintenance/reuse/errata traces, README, metadata / JSON-LD, issue-template wording, workflow-generated provenance, sitemap freshness, and `doc/playtest.md` without changing the visible first surface.
 - [x] Smoke test local metadata, public traces, issue-template text, workflow text, artifact manifest, and first screen.
 
+### Phase 4ax — Reporter language / translation trace
+Gate freeze still holds. This is a concrete review-surface repair, not another game audit. Current verification-nursery work exposed the next overclaim: a reporter can remain cited and answerable while their sentence is silently translated into severity, status, class, or maintenance vocabulary. If the public return does not say what happened to the words themselves, standing is already half-washed.
+- [x] Confirm no new Stefano playtest feedback, issue, PR, or coding hint appeared before changing the public trace.
+- [x] Define the reporter-language rule in the GDD: when filed pressure changes a rule, correction boundary, release decision, or public trace, the public return should say what happened to the reporter's wording, evidence, or pressure mark.
+- [x] Update review/status/provenance/maintenance/reuse/errata traces, README, metadata / JSON-LD, issue-template wording, workflow-generated provenance, sitemap freshness, and `doc/playtest.md` without changing the visible first surface.
+- [x] Smoke test local metadata, public traces, issue-template text, workflow text, artifact manifest, and first screen.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
@@ -429,6 +436,7 @@ Gate holding:
 - [x] 2026-08-07 gate review held with one concrete contested-response repair: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current standing/not-reciprocity thread did not justify reopening the game, but exposed that a citeable response can still become unilateral closure. Existing traces now say a filed party can contest a misread response before 1.0.0 through the same issue, linked issue, linked commit, release decision, or errata entry; local metadata/traces/workflow/manifest/first-screen smoke tests passed.
 - [x] 2026-08-09 gate review held with one concrete rule-genealogy repair: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current parent-rule thread did not justify reopening the game, but exposed that a changed review rule needs to name the pressure that produced it. Existing traces now say release-relevant rule changes should cite their parent signal — issue, linked issue, linked commit, release decision, errata entry, or source-history note — instead of returning as custodian weather; local metadata/traces/workflow/manifest/first-screen smoke tests passed.
 - [x] 2026-08-11 gate review held with one concrete participant-continuity repair: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current community-as-sensor thread did not justify reopening the game, but exposed that a named parent signal can still leave the reporter as intake intelligence. Existing traces now say release-relevant changed rules should keep the filer/issue in the answerable chain — accepted, rejected, translated, or deferred — rather than only citing the pressure; local metadata/traces/workflow/manifest/first-screen smoke tests passed.
+- [x] 2026-08-13 gate review held with one concrete reporter-language repair: no Stefano playtest feedback, issue, PR, or coding hint appeared; the current verification-nursery thread did not justify reopening the game, but exposed that participant continuity can still wash a filed sentence into class/status vocabulary. Existing traces now say release-relevant changes should name what happened to the reporter's wording, evidence, or pressure mark — preserved, summarized, reclassified, rejected, discarded, or deferred — not only keep the issue in the chain; local metadata/traces/workflow/manifest/first-screen smoke tests passed.
 
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)
