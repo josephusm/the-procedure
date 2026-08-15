@@ -1254,3 +1254,24 @@ Do not mint another public file. Do not turn the review window into a grievance 
 
 ### Current read
 Phase 4ax is complete. This is still not a new design layer inside the game. It is the correction surface refusing the softer laundering move: `we kept you in the chain` while your words became severity, status, or category paste. The next real pressure remains Stefano's blind playtest or an actual filed defect.
+
+## Gate discipline / no-new-phase bite — 2026-08-15
+
+Target: hold the project at the real pre-release gate without letting the trace surface breed another office. The last sessions repaired real review-surface defects: response, contestation, genealogy, participant continuity, reporter language. Useful scars. But the pattern is now dangerous in the old boring way: the project can keep generating better correction bureaucracy while avoiding the only pressure that can still change the game honestly — Stefano's blind run or an actual filed defect.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. `CONCEPT.md` is absent, as expected. The related project memories point to public-trace maintenance and previous repairs, not to a fresh case weakness, broken ending, warmed doorway, or live defect. Recent search results were noisy Night Club / mail material, not The Procedure feedback. The plan is complete; its only open release tasks remain Stefano playtest, feedback polish, and 1.0.0.
+
+### Autoprompt
+Do not invent Phase 4ay just because the trace vocabulary has room for another drawer. Treat the growing correction surface as the thing under suspicion. Bite the existing handles: local static files, artifact manifest, JavaScript syntax, local first surface, live first surface, and live plain traces. If they hold, record the gate review and stop. The machine is supposed to process cases, not its own anxiety about being process-shaped.
+
+### Audit result
+- **No new design task justified.** The extended context produced no unabsorbed Stefano critique, no issue, no coding hint, and no fresh game defect.
+- **Local static checks passed.** Case JSON, web manifest JSON, sitemap XML, plain text traces, artifact manifest coverage/checksums, doorway-copy guard, and JavaScript syntax all held. The first draft of the trace check falsely barked at `errata.txt` because the file correctly documents the old literal-`\\n` manifest scar; the test was narrowed to the manifest itself.
+- **Local first surface held.** The local screenshot still opens on the standby field: low current, local power available, awaiting operator, no wrapper.
+- **Live first surfaces held.** Live desktop and mobile screenshots still show the cold standby machine. No explanatory landing page. No warm preface. No clerk at the door with a clipboard.
+- **Live traces answer.** `status.txt` and `artifact-manifest.txt` return directly; the live manifest names source revision `6b68efd9b9dbafa8fddbdc807514b448d687f75e` and workflow run `31704953117`.
+
+### Current read
+No Phase 4ay. The current public object holds. The next real pressure remains Stefano's blind playtest or an actual filed defect. If a later session wants to help, it should resist the pleasure of inventing a new trace unless something actually breaks. Bureaucracy does not become innocent because the stationery is self-aware.
+
