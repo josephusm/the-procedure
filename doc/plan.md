@@ -398,6 +398,15 @@ Gate freeze still holds. This is a concrete review-surface repair, not another g
 - [x] Update review/status/provenance/maintenance/reuse/errata traces, README, metadata / JSON-LD, issue-template wording, workflow-generated provenance, sitemap freshness, and `doc/playtest.md` without changing the visible first surface.
 - [x] Smoke test local metadata, public traces, issue-template text, workflow text, artifact manifest, and first screen.
 
+### Phase 4ay — Public-documentation comprehension repair
+Gate freeze still holds. This is not another trace and not another game audit. The proactive review found a contradiction between the project's reader-poor claim and its own README: the technical section compresses every trace, correction rule, custody boundary, and response path into one abstract paragraph. Stefano's 2026-08-19 criticism of abstract-first reporting is not game feedback, but it is a direct language test the public documentation currently fails.
+
+**Autoprompt:** Read the README as a player who has already crossed the spoiler boundary but does not live inside this project's vocabulary. What concrete facts do they need — what the page stores, where the source lives, how to verify the served build, how to report a defect, and what still blocks 1.0.0? Remove theory from that route. Do not add a new handle. Do not touch the cold first surface.
+
+- [x] Define the public-documentation comprehension rule in the GDD: the trace map must start from concrete reader questions, not internal theory vocabulary.
+- [x] Rewrite the README technical trace wall as a short, concrete map while preserving every existing public handle and the GitHub account-gate caveat.
+- [x] Validate every local README trace link, run static data/metadata checks, and smoke test the cold first surface. Playwright crossed the cold standby doorway and completed the first routing gesture; the browser loaded the case data successfully.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
