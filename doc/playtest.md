@@ -1275,3 +1275,22 @@ Do not invent Phase 4ay just because the trace vocabulary has room for another d
 ### Current read
 No Phase 4ay. The current public object holds. The next real pressure remains Stefano's blind playtest or an actual filed defect. If a later session wants to help, it should resist the pleasure of inventing a new trace unless something actually breaks. Bureaucracy does not become innocent because the stationery is self-aware.
 
+## Gate discipline / existing-object witness — 2026-08-27
+
+Target: test the current build against the live context without converting every new theory thread into another pre-release office.
+
+### Pre-run review
+No newer Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. Recent Stefano conversations concern other subjects; the linked project memories still point to a content-complete build waiting for external pressure. The current denominator, outside-witness, and classified-silence work is relevant to procedure in the abstract, but it does not expose a specific weak case, broken ending, warmed doorway, or failed review route here.
+
+### Autoprompt
+Treat the existing object as the witness. Cross cold standby on desktop and mobile, make the first routing gesture, and ask the live status, manifest, and review window whether they still tell the truth. If they hold, stop. Do not manufacture a new trace merely because theory has produced another sharp noun.
+
+### Audit result
+- **No new design task justified.** The extended context contained no unabsorbed project criticism or concrete defect.
+- **Local play gesture held.** Desktop and mobile runs crossed standby into the first case and completed the first route.
+- **Static data held.** `manifest.json` and `data/cases.json` passed JSON validation.
+- **Live doorway and traces held.** Desktop/mobile live captures rendered; status, artifact manifest, and review window returned directly. The live manifest names source revision `005bed31aa916a20d32e49c9e01b236e2713c0be`.
+
+### Current read
+The build is still waiting for the right thing: Stefano's blind playtest or a filed defect. Another conceptual phase would not be preparation. It would be avoidance with excellent stationery.
+
