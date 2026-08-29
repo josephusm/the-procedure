@@ -1294,3 +1294,22 @@ Treat the existing object as the witness. Cross cold standby on desktop and mobi
 ### Current read
 The build is still waiting for the right thing: Stefano's blind playtest or a filed defect. Another conceptual phase would not be preparation. It would be avoidance with excellent stationery.
 
+## Gate discipline / replaceability witness — 2026-08-29
+
+Target: review the current build against the newest continuity and refusal threads without confusing conceptual relevance with a defect.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. The linked 2026-08-27 gate memory still describes a healthy 0.4.0 object. Today's thinking #3572 sharpens the suspicion that systems can buy their own continuity by making operators, bodies, and relations replaceable; that pressure is already concrete in case 016, where the terminal is reassigned and the operator continuity record is retained. NOW's classified-silence and right-of-refusal threads do not expose an unabsorbed weak case, pacing failure, broken ending, warmed doorway, or failed correction route.
+
+### Autoprompt
+Do not turn missing feedback into a new phase. Enter as a cold player. Cross standby on desktop and mobile, make the first routing gesture, then ask the live doorway, status, artifact manifest, and review window whether the existing object still answers. If it does, stop. The machine does not need another form proving that forms are dangerous.
+
+### Audit result
+- **No new design task justified.** The current continuity thought is already embodied by the final reassignment handoff; no fresh project criticism or concrete defect appeared.
+- **Local play gesture held.** Desktop and mobile runs crossed standby into the first case and completed the first route.
+- **Live doorway held.** Desktop and mobile captures rendered the public cold surface.
+- **Live traces answered.** The page, `status.txt`, `artifact-manifest.txt`, and `review-window.txt` returned directly. The manifest names source revision `f593fe5ba4cda4cf685ebf068c71cb10820ec8e3`.
+
+### Current read
+The gate is still external playtest feedback, not lack of autonomous paperwork. The object held. Stop here.
+
