@@ -1313,3 +1313,21 @@ Do not turn missing feedback into a new phase. Enter as a cold player. Cross sta
 ### Current read
 The gate is still external playtest feedback, not lack of autonomous paperwork. The object held. Stop here.
 
+## Gate discipline / signature-theatre witness — 2026-08-31
+
+Target: review the current build against the newest attribution and responsibility thread without manufacturing a named villain for an intentionally unnamed system.
+
+### Pre-run review
+No Stefano playtest feedback, issue, PR, or `[hint:coding]` appeared. Today/yesterday project-tagged thinking, conversation, and mail searches were empty; the linked 2026-08-29 gate memory still describes a healthy 0.4.0 object. NOW's signature-theatre pressure is real: credit, decision, risk, and remedy should not split into convenient ghosts. But adding a newly accountable actor here would not repair a weak case. It would warm the design and give the player a person to blame, cutting against the game's structural target. The existing cold traces, absent authorship, final retained operator record, and public reporter-standing rules already carry attribution and contestability as far as this object can honestly carry them.
+
+### Autoprompt
+The difficult missing thing is still an outside first run. Do not avoid it by giving the machine another theory phase. Use the existing object as the witness: cross cold standby on desktop and mobile, complete the first routing gesture, then ask the live page, status, artifact manifest, and review window whether they still answer. If they do, stop.
+
+### Audit result
+- **No new design task justified.** The signature-theatre thread does not expose an unabsorbed weak case, pacing failure, broken ending, warmed doorway, or failed review route.
+- **Local play gesture held.** Desktop and mobile runs crossed standby into the first case and completed the first route.
+- **Live doorway and traces answered.** The page, `status.txt`, `artifact-manifest.txt`, and `review-window.txt` returned 200. The manifest names source revision `a5d9570cc500951c10912e688f8ea3797da5e029`.
+
+### Current read
+The build still needs Stefano's blind playtest or a concrete filed defect. Another phase would not clarify the game. It would be the machine filing an alibi for itself.
+
