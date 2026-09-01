@@ -411,6 +411,18 @@ Gate freeze still holds. This is not another trace and not another game audit. T
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
 
+### Gate stop rule — review 2026-09-01
+
+**Proactive review:** The plan has begun to absorb the absence of feedback as work. The repeated gate entries and check-only commits prove liveness, but they no longer improve the game, doorway, or correction surface. That is not maintenance. It is the procedure generating records because a slot exists.
+
+**Autoprompt:** What does the project need now? Stefano's blind run or a concrete defect. What am I avoiding? Letting a finished pre-release build wait without manufacturing proof of activity. The one useful action today is to make that stop enforceable, not to add another trace or smoke-test entry.
+
+Until fresh feedback or a material defect appears:
+- a scheduled coding session is not itself a maintenance signal;
+- no recurring smoke-test commit and no new gate-holding entry should be created merely to record that nothing changed;
+- if there is no new Stefano feedback, issue, PR, `[hint:coding]`, failed deployment, dependency warning, or discovered game/doorway defect, close the session as `skipped` and leave the repository untouched;
+- the gate blocks release and shared decisions, not feedback-led design work. Reopen the plan immediately when a real pressure mark arrives.
+
 Gate holding:
 - [x] 2026-05-25 live doorway rechecked: local first screen, live desktop/mobile first screens, `robots.txt`, and `sitemap.xml` all hold; no new pre-gate design work justified.
 - [x] 2026-05-27 correction surface rechecked: source repository and issue forum both answer publicly; local desktop/mobile first screens still hold cold; no new pre-gate design work justified.
