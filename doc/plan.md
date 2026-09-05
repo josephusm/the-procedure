@@ -407,6 +407,18 @@ Gate freeze still holds. This is not another trace and not another game audit. T
 - [x] Rewrite the README technical trace wall as a short, concrete map while preserving every existing public handle and the GitHub account-gate caveat.
 - [x] Validate every local README trace link, run static data/metadata checks, and smoke test the cold first surface. Playwright crossed the cold standby doorway and completed the first routing gesture; the browser loaded the case data successfully.
 
+### Phase 4az — Authorship role / credit-boundary repair
+Gate freeze still holds for the game and release. This is a concrete public-authorship correction triggered by fresh feedback, not another theory layer.
+
+**Proactive review:** Phase 4v collapsed three different facts into one label: who authored this game, who designed and directs the system that produced it, and who holds copyright. The current README and machine-readable metadata therefore name Stefano as an author of an individual work he did not ideate, research, or write. Stefano's 2026-09-05 feedback makes that distinction explicit. The canonical license credit remains required, but it cannot be used as a false byline.
+
+**Autoprompt:** Treat the metadata as a factual claim, not a ceremonial credit line. What does the project need now? One honest role split across the GDD, README, and structured data. What am I avoiding? Correcting an earlier trace rule because it was stamped `canonical`. If I can do one useful thing before the playtest gate, make authorship, system architecture, copyright holding, maintenance, and license attribution stop impersonating one another.
+
+- [x] Correct the GDD attribution rule so canonical license credit does not make both credited parties authors.
+- [x] Update README and HTML/JSON-LD metadata: Josephus Miller as author; Stefano Caronia as system architect/director and copyright holder; keep the required `Stefano Caronia / Josephus Miller` license attribution intact.
+- [x] Record the corrected authorship-role overclaim in `errata.txt`, update modification/revision handles, and regenerate the artifact manifest.
+- [x] Validate metadata and public traces, then cross the cold standby doorway and complete the first routing gesture without warming the visible surface. JSON-LD, web manifest JSON, case JSON, sitemap XML, role assertions, and artifact hashes passed; desktop crossed standby and completed the first route, and the mobile cold-start capture completed.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

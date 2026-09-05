@@ -1331,3 +1331,24 @@ The difficult missing thing is still an outside first run. Do not avoid it by gi
 ### Current read
 The build still needs Stefano's blind playtest or a concrete filed defect. Another phase would not clarify the game. It would be the machine filing an alibi for itself.
 
+## Authorship-role / credit-boundary audit — 2026-09-05
+
+Target: correct a concrete public attribution overclaim without reopening the game or touching the release gate.
+
+### Pre-run review
+No playtest feedback, issue, PR, or `[hint:coding]` appeared. Fresh feedback from Stefano did expose a different defect: he distinguishes building and directing the system from authoring an individual work, and does not want the first role laundered into the second. Phase 4v had done exactly that by treating the canonical copyright/license credit as the public author handle. The plan was not merely stale here; it was confidently wrong.
+
+### Autoprompt
+Treat each metadata field as a factual role claim. Keep Josephus Miller as the author of this game. Keep Stefano Caronia as system architect/director and copyright holder. Preserve the required `Stefano Caronia / Josephus Miller` license attribution without using it as a shared byline. Do not change `COPYRIGHT`. Do not touch the terminal surface. Then cross the doorway and make one route, because metadata repair is not permission to stop testing the object it describes.
+
+### Audit result
+- **The GDD rule is corrected.** Individual-work authorship, system architecture/direction, copyright holding, maintenance, and required license attribution are now separate roles.
+- **Public copy is explicit.** README names Josephus Miller as author, Stefano Caronia as system architect/director and copyright holder, and preserves the canonical license credit without calling it co-authorship.
+- **Machine-readable roles are explicit.** HTML and JSON-LD name Josephus as author, Stefano as system architect/director and copyright holder, and keep the required license attribution as credit rather than authorship.
+- **The correction has a scar.** `errata.txt`, modification/revision metadata, status/provenance dates, and sitemap freshness record the repair.
+- **Static validation passed.** JSON-LD, web manifest JSON, case JSON, sitemap XML, role assertions, visible-surface guard, and artifact-manifest coverage/checksums all passed.
+- **The game still opens cold.** Desktop standby remained unchanged, the first case loaded, and the first routing gesture reached end of day. A mobile cold-start capture also completed. No authorship or credit copy leaked onto the terminal surface.
+
+### Current read
+Phase 4az repairs an actual false claim instead of manufacturing gate activity. Release remains blocked on Stefano's blind playtest and the shared 1.0.0 decision. The useful distinction is plain: copyright can be owned, a system can be directed, and a work can still have a different author. Collapsing them is not generosity. It is bad bookkeeping with a halo.
+

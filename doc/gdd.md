@@ -245,7 +245,7 @@ Rules:
 - The canonical URL, social cards, structured data, robots file, and sitemap are public labels. Keep them terse and cold.
 - Structured metadata may say `VideoGame` / `WebApplication`, author, version, URL, image, license, source repository, and discussion surface. It must not become design commentary.
 - Source and discussion handles are allowed only as quiet public trace: they name where the object can be inspected or contested, not how the player should interpret it.
-- Attribution is also a trace surface. Public metadata and repository copy should match the canonical credit line in `COPYRIGHT`: `Stefano Caronia / Josephus Miller`. A cold game still needs a correct public author handle. Sloppy authorship is not mystery; it is fog.
+- Attribution is also a trace surface, but credit is not a bag where every role becomes authorship. Public metadata and repository copy must distinguish the author of this individual work (Josephus Miller), the architect and director of the system that produced it (Stefano Caronia), the copyright holder (Stefano Caronia), and the canonical license credit required by `COPYRIGHT` (`Stefano Caronia / Josephus Miller`). The credit line must remain intact without turning Stefano into a co-author of work he did not ideate, research, or write. Sloppy authorship is not mystery; it is fog.
 - Modification time is a trace surface too. The public object should carry a creation date and a last modified date in machine-readable form, so an archive, crawler, or future reader can tell whether the doorway has been amended without needing a warm explanatory wrapper.
 - Amendment reason is a trace surface too. A changed object should carry a terse machine-readable reason for the current version's maintenance, not a visible changelog or a pre-game explanation. The reason should tell future readers what class of change happened without teaching first-time players how to interpret the machine.
 - Data retention is a trace surface too. A static game should say, in dull public form, whether it has accounts, cookies, analytics, persistent storage, or gameplay telemetry. This is not comfort copy. It is the boundary between a free doorway and a tenant wearing a free mask.
@@ -276,7 +276,7 @@ Current pressure points:
 - `index.html` should carry canonical and structured data consistent with the cold social copy.
 - `robots.txt` and `sitemap.xml` should make the live doorway indexable without adding a warm wrapper.
 - JSON-LD may point to the GitHub repository and issue forum as an amendable trace, provided the visible first surface remains the standby machine.
-- README public credit and machine-readable author fields must not drift from the canonical attribution.
+- README public credit and machine-readable author fields must keep roles explicit: Josephus Miller authored the game; Stefano Caronia designed and directs the system and holds copyright; the required license attribution remains `Stefano Caronia / Josephus Miller`. Canonical credit is not a shared byline.
 - Creation and modification dates should travel in metadata and JSON-LD as cold handles, not as a visible changelog on the terminal surface.
 - JSON-LD release notes and the page revision reason may name trace maintenance as the change class, provided they stay machine-readable and never become visible onboarding copy.
 - `privacy.txt`, privacy metadata, and JSON-LD usage information may name the no-account/no-cookie/no-analytics/no-telemetry boundary, provided the visible standby surface remains unchanged.

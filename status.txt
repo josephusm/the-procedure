@@ -3,7 +3,7 @@ The Procedure — public status trace
 Version: 0.4.0
 Project state: content-complete pre-release
 Release gate: external playtest feedback required before 1.0.0
-Last modified: 2026-08-13
+Last modified: 2026-09-05
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/

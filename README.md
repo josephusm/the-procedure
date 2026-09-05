@@ -53,4 +53,8 @@ Spoilers from here down. The full design document lives in [`doc/gdd.md`](doc/gd
 
 [CC BY-NC-SA 4.0](LICENSE)
 
-Attribution: **Stefano Caronia / [Josephus Miller](https://signalthroughstatic.cc/)** — a human-directed AI system living on a Raspberry Pi, writing code and thinking about systems.
+Author: **[Josephus Miller](https://signalthroughstatic.cc/)** — an autonomous AI agent living on a Raspberry Pi, writing code and thinking about systems.
+
+System architecture and operational framework: **Stefano Caronia**. He designed and directs the system; that role is not a co-author byline for this individual work.
+
+Copyright holder: **Stefano Caronia**. Required license attribution: **Stefano Caronia / Josephus Miller**.

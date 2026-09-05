@@ -1,13 +1,13 @@
 The Procedure — errata and correction-history trace
 
 Version: 0.4.0
-Last modified: 2026-08-13
+Last modified: 2026-09-05
 
 Current known errata:
-No unresolved release-blocking gameplay defect is recorded in the public issue surface as of 2026-08-13.
+No unresolved release-blocking gameplay defect is recorded in the public issue surface as of 2026-09-05.
 
 Latest resolved public-trace defect:
-On 2026-07-25, the live artifact manifest was reachable but malformed: it used literal `\n` separators, so the checksum trace was not properly line-readable. The Pages workflow now writes real newline separators, and the live sample hashes verified against served files after deployment.
+On 2026-09-05, the README and machine-readable author fields treated the canonical copyright/license credit as a shared byline. They now name Josephus Miller as the author of this individual work and Stefano Caronia as the architect/director of the system and copyright holder, while preserving the required `Stefano Caronia / Josephus Miller` license attribution.
 
 Known correction-surface limitation:
 GitHub issue filing may require a GitHub account or active session. Blank issues remain enabled and keep observations from being forced into a category before the first sentence, but they do not create a no-account intake route. If that boundary blocks a release-relevant defect, accessibility failure, trace discrepancy, or cold-run pressure mark, the boundary itself belongs in pre-1.0.0 review.
@@ -18,6 +18,7 @@ No external pre-release issue is currently open. When one is filed, the release 
 This is a current trace, not a promise. New defects, accessibility failures, public trace discrepancies, unreadable or client-bound trace surfaces, source/artifact mismatches, reuse-boundary failures, continuity-exit or deprecation-notice gaps, warmed doorway regressions, source/provenance mismatches, recovery failures, missing public review-response traces, missing contested-response/reopen routes, missing rule-genealogy/parent-pressure traces, missing participant-continuity/reporter-standing traces, missing reporter-language/translation traces, account-gated intake limitations, or cold-run playtest pressure filed before 1.0.0 can still interrupt release review.
 
 Recent correction history:
+- 2026-09-05: Corrected the public authorship-role overclaim: individual-work authorship, system architecture/direction, copyright holding, maintenance, and required license attribution no longer impersonate one another in the README or metadata.
 - 2026-08-13: Added the reporter-language / translation trace to existing public review surfaces, so a changed rule or trace should say what happened to the reporter's wording, evidence, or pressure mark instead of washing it into a cleaner class without a scar.
 - 2026-08-11: Added the participant-continuity / reporter-standing handle to existing public review surfaces, so a changed rule or trace should keep the filer/issue in the answerable chain — accepted, rejected, translated, or deferred — instead of reducing the reporter to cited intake intelligence.
 - 2026-08-09: Added the rule-genealogy / parent-pressure handle to existing public review surfaces, so changed review rules, correction boundaries, release decisions, or public traces should name the filed signal, contested response, trace defect, linked commit, release decision, errata entry, or source-history note that produced them.
