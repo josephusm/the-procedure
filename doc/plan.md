@@ -431,7 +431,7 @@ Fresh external playtest invalidates the old standby premise. The machine current
 - [x] Reorder boot feedback: mechanical power click, short hardware delay, POST/drive activity, monitor bloom, then boot text.
 - [x] Playtest desktop and mobile cold entry, including keyboard power-on, and record the result.
 - [x] Refresh the social preview image if it still shows the superseded low-current text surface.
-- [ ] Close issues #25 and #26 with the implemented correction and its verification.
+- [x] Close issues #25 and #26 with the implemented correction and its verification.
 
 ### Phase 4bb — Shift rhythm / readable consequence (#27)
 The first external run also exposed that `one case = one day` reads as absurd staffing rather than oppressive rhythm, and that the automatic clear steals the consequence before it can be read.
