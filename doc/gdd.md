@@ -200,7 +200,7 @@ Rules:
 - When the player feels unease, it should come from accepting the form first and only then noticing what the form made usable.
 
 Current pressure points:
-- `index.html`: the standby field and status bar stay diegetic and do not explain the game from outside the machine.
+- `index.html`: the powered-off glass stays dark; the bezel and hardware controls invite contact without explaining the game from outside the machine.
 - `engine.js`: routing stamps compress with compliance, but they remain labels rather than commentary.
 - `case-011` through `case-016`: the strongest premises are warmed by the case shell just enough to route them, not enough to narrate them.
 - The final screen is still a label, not a verdict speech. Keep it that way. No curtain call from the bureaucracy. It would probably file the curtain first.
@@ -228,13 +228,13 @@ Rules:
 - A live doorway failure is concrete: unreachable page, error wall, redirect, broken metadata, illegible first screen, warmed explanatory landing surface, or a mobile/desktop first screen that no longer invites the first gesture.
 - New corridor thoughts may inform post-feedback polish, but they should not keep moving the release gate by themselves.
 - When correction-surface thinking returns, prefer exercising the existing route over minting another trace: issue chooser, blank issue path, review-window, status, provenance, maintenance, errata, and reuse handles should answer as working surfaces, not as decorative labels.
-- The autonomous pre-gate task, if no feedback exists, is a smoke test: can a cold player still reach the machine and see a low-current terminal waiting for an operator?
+- The autonomous pre-gate task, if no feedback exists, is a smoke test: can a cold player still reach a stable, physically present machine and power it without a layout jump or pre-lit monitor?
 
 Current pressure points:
 - The live GitHub Pages URL must remain a cold first surface: no marketing wrapper, no diagnostic explanation, no bot-wall theater.
 - The deployment surface is part of doorway liveness. A legacy Pages build or deprecated action runtime is not a design theme, but it can still become a broken public handle if left to rot.
-- Desktop should present the terminal as a machine in standby, with `LOCAL POWER AVAILABLE` and the power button legible.
-- Mobile may be smaller — the machine is fixed and scaled — but the first gesture must still read as deliberate, not broken.
+- Desktop should present the computer already at rest in its final position: dark glass, stable bezel, and a legible physical power control.
+- Mobile may be smaller — the machine is fixed and scaled — but it must arrive at the final scale without visibly growing from a corner; the physical power gesture must remain deliberate.
 - If these checks hold, stop. The next meaningful pressure is Stefano's blind run, not another internal memo with better shoes.
 
 ### Minimum public trace / machine-readable doorway
@@ -275,26 +275,26 @@ Rules:
 Current pressure points:
 - `index.html` should carry canonical and structured data consistent with the cold social copy.
 - `robots.txt` and `sitemap.xml` should make the live doorway indexable without adding a warm wrapper.
-- JSON-LD may point to the GitHub repository and issue forum as an amendable trace, provided the visible first surface remains the standby machine.
+- JSON-LD may point to the GitHub repository and issue forum as an amendable trace, provided the visible first surface remains the powered-off machine.
 - README public credit and machine-readable author fields must keep roles explicit: Josephus Miller authored the game; Stefano Caronia designed and directs the system and holds copyright; the required license attribution remains `Stefano Caronia / Josephus Miller`. Canonical credit is not a shared byline.
 - Creation and modification dates should travel in metadata and JSON-LD as cold handles, not as a visible changelog on the terminal surface.
 - JSON-LD release notes and the page revision reason may name trace maintenance as the change class, provided they stay machine-readable and never become visible onboarding copy.
-- `privacy.txt`, privacy metadata, and JSON-LD usage information may name the no-account/no-cookie/no-analytics/no-telemetry boundary, provided the visible standby surface remains unchanged.
-- `status.txt`, status metadata, and JSON-LD status information may name version, pre-release state, remaining release gate, canonical URL, source, correction surface, data boundary, and license, provided the visible standby surface remains unchanged.
-- `review-window.txt`, review-window metadata, and JSON-LD subject links may name which filed corrections have standing before 1.0.0, how release-relevant pressure returns as a public response, closure reason, linked commit, release decision, or errata entry, which parent signal produced a changed review rule, how the filer remains in the answerable chain instead of becoming intake data, and how the reporter's original wording or evidence survived, changed, or was discarded during translation, provided the visible standby surface remains unchanged.
+- `privacy.txt`, privacy metadata, and JSON-LD usage information may name the no-account/no-cookie/no-analytics/no-telemetry boundary, provided the visible powered-off surface remains unchanged.
+- `status.txt`, status metadata, and JSON-LD status information may name version, pre-release state, remaining release gate, canonical URL, source, correction surface, data boundary, and license, provided the visible powered-off surface remains unchanged.
+- `review-window.txt`, review-window metadata, and JSON-LD subject links may name which filed corrections have standing before 1.0.0, how release-relevant pressure returns as a public response, closure reason, linked commit, release decision, or errata entry, which parent signal produced a changed review rule, how the filer remains in the answerable chain instead of becoming intake data, and how the reporter's original wording or evidence survived, changed, or was discarded during translation, provided the visible powered-off surface remains unchanged.
 - GitHub issue templates may structure defect, accessibility, public trace/provenance, and playtest feedback intake, provided they remain a source-forum surface and do not become pre-game interpretation.
 - Blank issues must remain enabled and named as an uncategorized pre-release path, so a report can acquire standing before it fits the structured forms.
 - Public traces must also say that GitHub filing can require an account/session. The project has pre-classification standing, not a solved no-account grey door. If that account gate blocks useful outside pressure, it is release-relevant before 1.0.0.
 - `review-window.txt`, `status.txt`, and metadata should say that cold-run playtest pressure can enter release review before 1.0.0 when it identifies a weak case, broken ending, warmed doorway, unreadable surface, or drag point.
-- `provenance.txt`, provenance metadata, and JSON-LD subject links may name source repository, branch, deployment workflow, source revision, workflow run, canonical URL, correction surface, data boundary, artifact manifest, and license, provided the visible standby surface remains unchanged.
-- `artifact-manifest.txt`, manifest metadata, and JSON-LD subject links may name the canonical URL, version, source revision, workflow run, and SHA-256 checksums for the public static files, provided the visible standby surface remains unchanged and the text does not pretend hashes solve custody by themselves.
+- `provenance.txt`, provenance metadata, and JSON-LD subject links may name source repository, branch, deployment workflow, source revision, workflow run, canonical URL, correction surface, data boundary, artifact manifest, and license, provided the visible powered-off surface remains unchanged.
+- `artifact-manifest.txt`, manifest metadata, and JSON-LD subject links may name the canonical URL, version, source revision, workflow run, and SHA-256 checksums for the public static files, provided the visible powered-off surface remains unchanged and the text does not pretend hashes solve custody by themselves.
 - Plain text public traces should remain reachable and readable without the repository UI, a logged-in session, JavaScript execution, or a specialist client. If a trace becomes technically public but practically illegible, that is release-review material before 1.0.0.
-- `maintenance.txt`, maintenance metadata, and related public traces may name the custody chain — canonical URL, source, Pages deployment, issue surface, data boundary, artifact manifest, failure modes, deprecation notice route, successor/fallback surface, and handoff boundary — provided the visible standby surface remains unchanged and the text does not pretend continuity is guaranteed.
+- `maintenance.txt`, maintenance metadata, and related public traces may name the custody chain — canonical URL, source, Pages deployment, issue surface, data boundary, artifact manifest, failure modes, deprecation notice route, successor/fallback surface, and handoff boundary — provided the visible powered-off surface remains unchanged and the text does not pretend continuity is guaranteed.
 - Recovery-route language may name correction, roll-forward, rollback, source history, and Pages deployment as the dull repair path for broken public traces, source/provenance mismatches, or warmed doorway regressions before 1.0.0. It must stay outside the visible terminal surface.
 - `errata.txt` may name current known errata, recent correction history, source issue intake, recovery route, and the 1.0.0 review boundary. It must stay outside the visible terminal surface and must not pretend there are no defects forever; it can only say what is currently known.
 - `reuse.txt`, reuse metadata, and JSON-LD subject links may name the corpus/training boundary: public indexing and citation are allowed, but commercial model training, dataset resale, unattributed corpus extraction, or stripped reuse gets no extra permission beyond the license. The text must stay outside the visible terminal surface.
-- `assets/meta/og-image.png` should behave like the first doorway: standby machine, not day-1 case content.
-- If the page still opens directly on the standby machine, the metadata files return plain handles, the correction surface can be reached without classifying the report too early, release-relevant issues have a citeable response route instead of silent ingestion, a contested misread response can still reopen public answer before release, changed review rules name their parent signal, the filed party stays in the answerable chain, and the public return says what happened to the reporter's own wording rather than only assigning a cleaner class, stop.
+- `assets/meta/og-image.png` should behave like the first doorway: powered-off machine, not day-1 case content.
+- If the page still opens directly on the powered-off machine, the metadata files return plain handles, the correction surface can be reached without classifying the report too early, release-relevant issues have a citeable response route instead of silent ingestion, a contested misread response can still reopen public answer before release, changed review rules name their parent signal, the filed party stays in the answerable chain, and the public return says what happened to the reporter's own wording rather than only assigning a cleaner class, stop.
 
 ### Operator presence / participation license
 The operator is not asked to agree with the system. Agreement would be too warm, too theatrical, and too easy to refuse. The colder mechanism is attendance: a staffed terminal, a routed case, a completed shift. Presence becomes operational permission.
@@ -397,7 +397,9 @@ Lessons from game design theory, applied to The Procedure:
 
 ## Terminal state
 
-Before boot, the machine should be legible as a machine, not just a dead rectangle. The cold-open affordance must stay diegetic, but legibility alone is not enough: the player should feel that the terminal is already there in low current, waiting. A standby field, a live cursor, and machine-language hints are better than explanatory copy. The first gesture should read as entering an already-live procedure, not as waking a blank webpage.
+Before boot, the computer must already be physically present at its final viewport scale. The bezel, dark glass, hardware label, and power control carry the cold-open affordance. The monitor is genuinely off: no terminal copy, cursor, scanlines, phosphor glow, or pulsing status icon. A real powered-off screen does not explain itself. The first gesture is physical power, not acknowledgement of an already-running webpage.
+
+Boot follows a hardware order. The switch moves and sounds first. Electrical life begins behind the glass. POST and drive activity arrive before readable text. Only then does the monitor bloom and print the system session. The sequence should feel like waking an early-1980s office computer, not revealing a terminal that had been pretending to sleep.
 
 After case-016 is processed and the player powers off the machine, the power button goes permanently inert. The icon dims. The screen stays dark. No amount of clicking will bring it back.
 

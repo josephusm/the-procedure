@@ -5,6 +5,8 @@
 Single-page web application. No server, no backend, no build step.
 Load `index.html` in a browser and the game runs.
 
+The bezel is positioned and scaled before it becomes visible, so the first painted machine is already at its final viewport scale. The monitor starts genuinely off; only the hardware shell and power control are visible. Power-on unlocks audio, starts hardware sound behind dark glass, wakes the CRT, and only then renders text.
+
 ## Game loop
 
 ```
@@ -88,4 +90,4 @@ All sound is procedural via Web Audio API. No external files.
 - `routingTone()` — two ascending notes on option selection
 - `endTone()` — low, slow-decay tone on final screen
 
-Audio context is deferred to first interaction (browser autoplay policy). The hum starts on the player's first routing choice. The click sounds fire during typewriter output — throttled to avoid density. Everything is subtle. The system does not draw attention to itself.
+Audio context is deferred to the physical power gesture (browser autoplay policy). The power thunk comes first; transformer hum, POST beep, and drive activity begin while the glass is still dark. The click sounds fire during typewriter output — throttled to avoid density. Everything is subtle. The system does not draw attention to itself.

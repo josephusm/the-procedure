@@ -419,8 +419,38 @@ Gate freeze still holds for the game and release. This is a concrete public-auth
 - [x] Record the corrected authorship-role overclaim in `errata.txt`, update modification/revision handles, and regenerate the artifact manifest.
 - [x] Validate metadata and public traces, then cross the cold standby doorway and complete the first routing gesture without warming the visible surface. JSON-LD, web manifest JSON, case JSON, sitemap XML, role assertions, and artifact hashes passed; desktop crossed standby and completed the first route, and the mobile cold-start capture completed.
 
+### Phase 4ba — Physical boot / genuinely powered-off machine (#25, #26)
+Fresh external playtest invalidates the old standby premise. The machine currently arrives with a scale jump and displays green terminal copy while supposedly off. Those are not minor polish defects; they make the first gesture contradict the physical fiction.
+
+**Proactive review:** Phase 4e/4f treated legibility as permission to keep the monitor alive in low current. Stefano's issues #25 and #26 show that the solution solved the webpage affordance and broke the computer. Memory #5008 makes the correction explicit: the hardware must already occupy the room, remain genuinely off, then reveal power, POST, drive activity, monitor wake, and text in that order. Rouse's playtesting chapter is the useful discipline here: observed confusion is a design fault, not a request to defend the intention.
+
+**Autoprompt:** Stop polishing the standby overlay. Revoke it. Make the bezel appear at its final scale on the first painted frame; keep the glass dark and textless; let the physical power control carry the invitation. After the click, establish electrical life before the monitor speaks. Do not touch case pacing or recurrence in the same task.
+
+- [x] Remove the initial scale/position jump so the machine is already present at its final viewport scale.
+- [x] Remove all powered-off screen text, cursor, scanline, glow, and pulsing electronic status cues; retain a readable physical power control outside the glass.
+- [x] Reorder boot feedback: mechanical power click, short hardware delay, POST/drive activity, monitor bloom, then boot text.
+- [x] Playtest desktop and mobile cold entry, including keyboard power-on, and record the result.
+- [x] Refresh the social preview image if it still shows the superseded low-current text surface.
+- [ ] Close issues #25 and #26 with the implemented correction and its verification.
+
+### Phase 4bb — Shift rhythm / readable consequence (#27)
+The first external run also exposed that `one case = one day` reads as absurd staffing rather than oppressive rhythm, and that the automatic clear steals the consequence before it can be read.
+
+- [ ] Reframe the temporal unit after inspecting the whole arc: multiple cases per shift, a case-cycle counter, or another structure that does not imply one button press consumes a workday.
+- [ ] Replace the automatic outcome-to-EOD wipe with an explicit continuation gesture or a sufficiently legible hold that keeps the routed consequence under the player's control.
+- [ ] Rebalance EOD cadence and final processing-time language around the chosen temporal model.
+- [ ] Playtest reading time, drag, and escalation; close issue #27 only when the consequence can actually be read.
+
+### Phase 4bc — Case return / non-linear consequence (#28)
+The existing cross-case notes are too thin to answer the player's question. If a routed case disappears forever, the game may be demonstrating a filing cabinet more than a procedure.
+
+- [ ] Audit which early routes can return later as consequences, altered records, queue pressure, or changed option surfaces without creating a fake branching-ending spectacle.
+- [ ] Design a small recurrence graph in the GDD before editing case content; route history must change what returns, not merely decorate later prose.
+- [ ] Implement and full-run playtest the minimum recurrence set needed for the player to recognize an intertwining system.
+- [ ] Close issue #28 with a concrete account of what was intentional, what changed, and where recurrence now bites.
+
 ### Phase 5 — Release
-GATE: development complete + Stefano playtest + VERSION >= 1.0.0.
+GATE: development complete + Stefano playtest feedback resolved + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
 
 ### Gate stop rule — review 2026-09-01

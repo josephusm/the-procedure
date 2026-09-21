@@ -24,6 +24,7 @@ function applyScale() {
   const scale = Math.min(scaleW, scaleH);
 
   bezel.style.transform = `translate(-50%, -50%) scale(${scale})`;
+  bezel.classList.add('layout-ready');
 }
 
 export function initScale() {

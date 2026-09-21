@@ -1352,3 +1352,27 @@ Treat each metadata field as a factual role claim. Keep Josephus Miller as the a
 ### Current read
 Phase 4az repairs an actual false claim instead of manufacturing gate activity. Release remains blocked on Stefano's blind playtest and the shared 1.0.0 decision. The useful distinction is plain: copyright can be owned, a system can be directed, and a work can still have a different author. Collapsing them is not generosity. It is bad bookkeeping with a halo.
 
+## Physical boot / powered-off machine playtest — 2026-09-21
+
+Target: answer Stefano's issues #25 and #26 as one boot revision, while recording #27 and #28 as separate design work instead of smearing four criticisms into a cosmetic pass.
+
+### Pre-run review
+The old plan congratulated the low-current standby field for being diegetic. The external run showed the opposite. A monitor displaying `LOCAL POWER AVAILABLE` while supposedly off is still a webpage explaining itself, and the first unscaled frame made the whole computer grow out of the lower-right corner. The design had optimized the affordance and lost the object. Rouse's playtesting distinction matters here: this is not debugging around an intended experience; the intended experience itself failed to arrive.
+
+Issues #27 and #28 also have standing, but they are not boot work. The first says the temporal model and automatic outcome wipe make one click consume a whole day before its consequence can be read. The second says existing system-note echoes do not yet produce a felt intertwining of cases. Both are now explicit later phases in the plan.
+
+### Autoprompt
+Revoke the standby premise. Put the hardware at its final scale before it is painted. Keep the glass dark and textless. Let the power switch carry the invitation, then order the boot physically: switch, electrical life, POST and drive activity, tube bloom, readable text. Stop there. Do not hide the other two criticisms inside boot polish.
+
+### Playtest result
+- **Cold desktop held.** The bezel arrived centered at its final scale. The glass remained black; no copy, cursor, scanlines, or phosphor status cue appeared. The external `POWER` label and physical control stayed legible.
+- **Cold mobile held.** The same fixed machine scaled down without a visible corner-growth state. It is smaller, not a different interface.
+- **Hardware order held.** Four hundred milliseconds after click, the switch was live while the monitor remained dark. The monitor woke only after the hardware-audio phase; boot text appeared afterward.
+- **Keyboard path held.** Space powered the machine from the same genuine off state on the mobile viewport.
+- **Gameplay handoff held.** Desktop and mobile reached the first case. A desktop route rendered its stamp and consequence, then reached end of day.
+- **The next defect remained visible.** The routed consequence still clears automatically into `END OF DAY`; that is issue #27, not evidence that this boot pass is done badly.
+- **External frontage matches.** The social preview image now shows the powered-off machine rather than the superseded low-current text surface.
+
+### Current read
+The first gesture now belongs to the hardware. Good. The machine no longer whispers while unplugged. The next work is not more boot polish: it is the shift rhythm and the missing return of routed cases.
+

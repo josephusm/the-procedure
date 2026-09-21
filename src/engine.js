@@ -161,20 +161,23 @@ function initPowerButton() {
       resetAbort();
       screen.classList.remove('done');
 
-      // Audio unlock + power click
+      // The switch moves before the monitor wakes.
       unlock();
       powerClick();
-
-      // Button lights up
       btn.classList.add('on');
 
-      // Screen wakes up
-      screen.classList.remove('off');
+      // Electrical life begins behind dark glass: transformer hum,
+      // POST confirmation, then drive activity. Text comes later.
+      await delay(180);
+      hum = startHum();
+      beep(800, 0.12);
 
-      // Boot sounds (staggered)
-      setTimeout(() => beep(800, 0.12), 150);
-      setTimeout(() => driveNoise(1.5), 450);
-      setTimeout(() => { hum = startHum(); }, 1900);
+      await delay(260);
+      driveNoise(1.4);
+
+      await delay(520);
+      screen.classList.remove('off');
+      screen.classList.add('warming');
 
       await crtBoot();
       await runDay();
@@ -200,12 +203,14 @@ function initPowerButton() {
 // ── CRT Boot sequence ──
 async function crtBoot() {
   const app = document.getElementById('app');
+  const screen = document.getElementById('crt-screen');
 
-  // Phase 0: black screen, CRT warming up
+  // Phase 0: the tube blooms, but still has nothing readable to say.
   app.style.opacity = '0';
   await delay(600);
+  screen.classList.remove('warming');
 
-  // Phase 1: screen flicker
+  // Phase 1: unstable video lock
   for (let i = 0; i < 3; i++) {
     app.style.opacity = '0.6';
     await delay(50);
@@ -419,9 +424,9 @@ async function endGame() {
   state.phase = 'end';
 }
 
-// Entry point
+// Entry point: place the inert hardware before waiting on game data.
 (async () => {
-  await loadCases();
   initScale();
+  await loadCases();
   initPowerButton();
 })();

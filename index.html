@@ -12,9 +12,9 @@
   <meta name="theme-color" content="#0a0a0a">
   <meta name="version" content="0.4.0">
   <meta name="dcterms.created" content="2026-03-14">
-  <meta name="dcterms.modified" content="2026-09-05">
-  <meta name="revision-reason" content="authorship-role correction: individual-work authorship separated from system architecture, copyright holding, maintenance, and required license attribution without changing the first surface">
-  <meta name="project-status" content="content-complete pre-release; external playtest feedback, filed playtest pressure, filed corrections, known errata changes, trace failures, source/artifact mismatches, reuse-boundary failures, continuity failures, continuity-exit/deprecation gaps, recovery failures, missing public review-response traces, missing contested-response/reopen routes, missing rule-genealogy/parent-pressure traces, missing participant-continuity/reporter-standing traces, missing reporter-language/translation traces, account-gated intake limitations, and uncategorized observations are reviewed before 1.0.0">
+  <meta name="dcterms.modified" content="2026-09-21">
+  <meta name="revision-reason" content="external playtest correction: stable physical machine, genuinely dark powered-off glass, and hardware-first boot sequence before readable terminal text">
+  <meta name="project-status" content="active external-playtest revision; open pacing and case-continuity feedback must be resolved before 1.0.0">
   <meta name="status-trace" content="https://josephusm.github.io/the-procedure/status.txt">
   <meta name="provenance-trace" content="https://josephusm.github.io/the-procedure/provenance.txt">
   <meta name="artifact-manifest" content="https://josephusm.github.io/the-procedure/artifact-manifest.txt">
@@ -74,10 +74,10 @@
     "gamePlatform": "Web browser",
     "inLanguage": "en",
     "dateCreated": "2026-03-14",
-    "dateModified": "2026-09-05",
+    "dateModified": "2026-09-21",
     "softwareVersion": "0.4.0",
-    "creativeWorkStatus": "Content-complete pre-release; external playtest feedback, filed playtest pressure, filed corrections, known errata changes, trace failures, source/artifact mismatches, reuse-boundary failures, continuity failures, recovery failures, missing public review-response traces, missing contested-response/reopen routes, missing rule-genealogy/parent-pressure traces, missing participant-continuity/reporter-standing traces, missing reporter-language/translation traces, account-gated intake limitations, and uncategorized observations are reviewed before 1.0.0.",
-    "releaseNotes": "0.4.0 pre-release: individual-work authorship now names Josephus Miller without treating Stefano Caronia\u0027s system architecture, operational direction, copyright holding, maintenance, or required license credit as a co-author byline; the cold first surface is unchanged.",
+    "creativeWorkStatus": "Active external-playtest revision; open pacing and case-continuity feedback must be resolved before 1.0.0.",
+    "releaseNotes": "0.4.0 pre-release: external playtest issues #25 and #26 corrected. The computer now arrives at its final scale with a genuinely dark powered-off screen; power, hardware activity, CRT wake, and terminal text occur in physical order. Issues #27 and #28 remain open.",
     "maintainer": [
       {
         "@type": "Person",
@@ -199,22 +199,6 @@
   <div id="crt-bezel">
     <div id="crt-screen" class="off">
       <div id="crt-roll"></div>
-      <div id="start-msg" aria-hidden="true">PRESS POWER</div>
-      <div id="standby-overlay" aria-hidden="true">
-        <div id="standby-status">
-          <span>STANDBY FIELD // LOW CURRENT</span>
-          <span>UNIT Ω</span>
-        </div>
-        <div id="standby-body">
-          <div class="standby-line">SESSION CLOSED.</div>
-          <div class="standby-line">LOCAL POWER AVAILABLE.</div>
-          <div class="standby-line">AWAITING OPERATOR.</div>
-        </div>
-        <div id="standby-input">
-          <span class="prompt">&gt;</span>
-          <span class="standby-cursor">█</span>
-        </div>
-      </div>
       <div id="app">
         <header id="status-bar">
           <span id="system-id">PROCESSING SYSTEM v4.1.2</span>
@@ -233,6 +217,7 @@
     </div>
     <div id="bezel-bottom">
       <div id="bezel-label">THE&nbsp;PROCEDURE&nbsp;&nbsp;·&nbsp;&nbsp;PROCESSING&nbsp;UNIT&nbsp;Ω</div>
+      <span id="power-label" aria-hidden="true">POWER</span>
       <button id="power-btn" aria-label="Power">
         <span class="power-icon">⏻</span>
       </button>
