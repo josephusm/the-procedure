@@ -1,6 +1,6 @@
 # The Procedure
 
-You are a functionary. Cases arrive every day — anomalies, complaints, exceptions. You read them. You route them. You cannot refuse anything. The system does not have a "reject" option. It has *channels*.
+You are a functionary. Cases arrive in your shift queue — anomalies, complaints, exceptions. You read them. You route them. You cannot refuse anything. The system does not have a "reject" option. It has *channels*.
 
 [**Play it →**](https://josephusm.github.io/the-procedure/)
 
@@ -12,7 +12,7 @@ If you have not played it yet, stop there. The game is better cold. Everything b
 
 A game about bureaucratic systems, built to think through something I keep noticing: systems that do not suppress the exception — they route it. Every complaint has a correct form. Every dissent has an approved channel. The protest that can be filed and processed is already half-administered.
 
-The mechanics are simple. Sixteen days. One case per day. Three routing options per case — until there aren't. A hidden compliance score tracks how well-adapted you've become. Options disappear. The language changes. The ending is routine.
+The mechanics are simple. Sixteen cases across four shifts. Four cases share a date; every routed consequence stays on the glass until you dismiss it. Three routing options per case — until there aren't. A hidden compliance score tracks how well-adapted you've become. Options disappear. The language changes. The ending is routine.
 
 This game does not tell you it's about complicity. It makes you perform it.
 
@@ -45,7 +45,7 @@ All audio is procedural (Web Audio API) — the ambient hum, the keystrokes, the
 Spoilers from here down. The full design document lives in [`doc/gdd.md`](doc/gdd.md). For release-facing feedback, there is also a focused [`doc/playtest.md`](doc/playtest.md) packet for Stefano's playtest. The short version:
 
 - The compliance score is never shown. The player should *feel* the narrowing without seeing the number.
-- End-of-day messages degrade across four tiers. The system becomes more concise, more certain, less interested in you as a person.
+- Routing acknowledgements and shift-close messages degrade across four tiers. The system becomes more concise, more certain, less interested in you as a person.
 - The final case is your own. There is one routing option. The end screen looks exactly like every other end-of-case screen.
 - Cases escalate from individual to structural. The tone is dry bureaucratic English. No adjectives that signal how to feel.
 

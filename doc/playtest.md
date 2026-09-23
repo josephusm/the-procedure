@@ -110,12 +110,13 @@ Questions:
 - Did you ever want a score, progress indicator, or helper layer — and would adding one damage the experience?
 
 ### 10. Pacing and terminal feel
-The typewriter pacing, pauses, and end-of-day rhythm are part of the experience.
+The typewriter pacing, player-controlled consequence hold, and four-case shift rhythm are part of the experience.
 
 Questions:
 - Is the typing speed right, too slow, or too fast?
-- Do the pauses build tension, or create drag?
-- Does the end-of-day screen reset the rhythm in a good way?
+- Does `CONTINUE QUEUE` leave enough time to read without turning every route into a menu?
+- Does closing a shift after four cases reset the rhythm in a good way?
+- Do the `CLOSE SHIFT` and `BEGIN SHIFT` gestures create useful pressure, or redundant drag?
 - Did you ever want to skip ahead out of impatience?
 
 ### 11. Final case and terminal shutdown
@@ -167,7 +168,7 @@ Questions:
 ## What kind of feedback is most useful
 
 Most useful:
-- "I noticed X on day 7 and it changed how I read the whole system."
+- "I noticed X in shift 2, case 3 and it changed how I read the whole system."
 - "This specific case felt weaker than the others."
 - "The ending landed / didn't land because..."
 - "I understood the design intention, but the felt experience was..."
@@ -1375,4 +1376,26 @@ Revoke the standby premise. Put the hardware at its final scale before it is pai
 
 ### Current read
 The first gesture now belongs to the hardware. Good. The machine no longer whispers while unplugged. The next work is not more boot polish: it is the shift rhythm and the missing return of routed cases.
+
+## Shift rhythm / readable consequence playtest — 2026-09-23
+
+Target: answer Stefano's issue #27 without using timing polish to defend a broken temporal model.
+
+### Pre-run review
+The old loop treated every case as a dated day and then cleared the routed result on a timer. The afterimage pass had made the consequence sharper, but the player still did not own enough time to read it. Internal tests proved that the line rendered. Stefano's run proved that rendering is not the same as being readable. The same run also made the calendar fiction visible: one button press looked like the entire job.
+
+### Autoprompt
+Keep the sixteen-case escalation and hidden compliance curve. Replace the calendar fiction, not the criticism: four cases share a shift and date, outcomes remain until an explicit continuation gesture, and shift closure happens only after the fourth case. The machine may force the available route. It does not need to snatch the receipt out of the operator's hand.
+
+### Playtest result
+- **The temporal model reads as work rather than a sparse appointment book.** The header now names `SHIFT N · CASE N/4`; four cases share one date; four shifts carry the full arc.
+- **The routed consequence is player-held.** Outcome and afterimage remain visible behind `CONTINUE QUEUE` or `CLOSE SHIFT`. A timed six-second hold after rendering produced no automatic clear.
+- **Keyboard continuation held.** Enter advances the same continuation control as the button after the consequence has finished rendering.
+- **Shift closure has its own beat.** After case 4, `CLOSE SHIFT` reveals a summary that remains until `BEGIN SHIFT 2`; the summary reports four processed cases and the current queue position.
+- **Natural first-shift pacing held.** The consequence no longer vanishes, and four cases create a meaningful release point. The extra gesture is repetitive by design but did not create the old dead-time problem because it replaces an involuntary wait.
+- **Accelerated full-run integration held.** All sixteen cases advanced through four shift boundaries; the final record reported `PROCESSING TIME: 4 SHIFTS` and `CASES PROCESSED: 16`; power-off after completion still produced the inert terminal.
+- **The next defect stays separate.** This pass does not pretend that four cases per shift create narrative recurrence. Issue #28 remains the case-return task.
+
+### Current read
+Issue #27 was accurate in both halves. The useful correction was not “wait longer.” A longer timer would still make the machine own the reader's attention. The explicit continuation gesture changes who controls the wipe, while the four-case shift makes closure accumulate before it arrives.
 

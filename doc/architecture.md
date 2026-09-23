@@ -10,7 +10,7 @@ The bezel is positioned and scaled before it becomes visible, so the first paint
 ## Game loop
 
 ```
-boot → day N begins → case loads → player reads → player routes → outcome logged → optional afterimage lands → day N ends → day N+1
+boot → shift N begins → case 1/4 loads → player reads → player routes → outcome + optional afterimage remain visible → player continues → case 2/4 … → player closes shift → shift N+1
 ```
 
 State lives in a plain JS object (`engine.js`). No localStorage — the game is not meant to be saved. It is meant to be completed in one sitting, like a shift.
@@ -19,20 +19,20 @@ State lives in a plain JS object (`engine.js`). No localStorage — the game is 
 
 ```js
 {
-  day: 1,                    // current day (1-indexed)
+  caseNumber: 1,             // current case in the 16-case sequence
   compliance: 0,             // hidden score, 0–100
-  log: [],                   // array of processed case summaries
-  currentCase: null,         // active case object
-  phase: "boot"|"reading"|"routing"|"eod"|"end"
+  machineDone: false,        // final route has been submitted
+  phase: "off"|"boot"|"reading"|"routing"|"consequence"|"shift-end"|"end"|"done"
 }
 ```
 
 ## Compliance
 
 The compliance score is never displayed. It influences:
-- Which cases appear (high compliance → cases become more systemic, less personal)
 - Which routing options are available (high compliance → fewer, more automatic)
-- EOD (end of day) summary tone — imperceptibly shifts over time
+- Routing acknowledgements and shift-close summary tone — imperceptibly shift over time
+
+The case sequence is fixed. Escalation comes from the authored order; compliance changes how much room the operator still has when each case arrives.
 
 Compliance increases on "correct" routing choices. Every choice is technically correct. Some choices increase compliance faster.
 
@@ -43,7 +43,7 @@ Cases are defined in `data/cases.json` as an array of objects:
 ```json
 {
   "id": "case-001",
-  "day": 1,
+  "sequence": 1,
   "subject": "Noise Complaint — Sector 4",
   "body": "...",
   "options": [
@@ -62,7 +62,7 @@ Cases are defined in `data/cases.json` as an array of objects:
 }
 ```
 
-`afterimage` is optional. When present, it prints after the selected outcome with a short delay, before the end-of-day screen. It is not commentary. It is the routed channel completing its thought one beat too late for the operator to stay innocent.
+`afterimage` is optional. When present, it prints after the selected outcome with a short delay, before the continuation control. It is not commentary. It is the routed channel completing its thought one beat too late for the operator to stay innocent. The result remains visible until the operator explicitly continues or closes the shift.
 
 ## Renderer
 
@@ -76,6 +76,7 @@ The cursor blinks. Nothing else moves.
 - `setTimingProfile(profile)` — adjust character / line pacing for the current procedural tone
 - `clear()` — clear the terminal
 - `showOptions(options, callback)` — render routing buttons, call callback on selection
+- `showContinue(label, callback)` — render one explicit continuation control; Enter/Space mirrors the button
 
 The renderer timing is not globally fixed. The engine can tighten or relax the terminal cadence based on the current procedural tone, so the machine gradually becomes terser as compliance rises.
 

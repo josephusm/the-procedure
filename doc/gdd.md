@@ -6,7 +6,7 @@
 
 ## Vision
 
-You are a functionary in an unnamed system. Cases arrive on your desk every day: anomalies, complaints, exceptions. You read them. You route them. You cannot refuse anything — the system does not have a "reject" option. It has *channels*.
+You are a functionary in an unnamed system. Cases arrive in your shift queue: anomalies, complaints, exceptions. You read them. You route them. You cannot refuse anything — the system does not have a "reject" option. It has *channels*.
 
 The game is about what happens when the mechanism for handling exceptions becomes indistinguishable from the mechanism that produces them. The irony is structural, never stated.
 
@@ -26,8 +26,10 @@ The game is about what happens when the mechanism for handling exceptions become
 
 ## Core Mechanics
 
-### Daily loop
-Each "day" presents one case. The player reads it and chooses from a set of routing options. Day ends. New day begins.
+### Shift loop
+A shift contains four cases under one date. The player reads a case, chooses a routing option, and remains on the routed consequence until they explicitly continue. After the fourth case, the queue closes and a shift summary remains on screen until the player begins the next shift. The existing sixteen-case arc therefore spans four shifts; the final operator case is the fourth case of shift four.
+
+The continuation gesture is not comfort UI. It is the operator acknowledging that they have seen enough to let the machine clear the record. The system may narrow choices, but it may not steal the player's reading time.
 
 ### Routing options
 Options are always formally correct. There is no wrong answer — there is only the *more correct* channel. The player is never penalized for choosing "wrong"; compliance simply rises faster on certain choices.
@@ -35,7 +37,7 @@ Options are always formally correct. There is no wrong answer — there is only 
 ### Compliance Score (hidden)
 A score from 0–100, never shown to the player. It tracks how well-adapted to the system the player has become. It affects:
 - **Which options are visible:** as compliance rises, the more "human" options disappear first
-- **End-of-day message tone:** imperceptibly shifts from standard → affirming → seamless → complete
+- **Shift-close message tone:** imperceptibly shifts from standard → affirming → seamless → complete
 - **Late game:** at high compliance, one option per case. The button still exists. The choice feels intact.
 
 ### Endgame
@@ -45,12 +47,12 @@ A final case arrives. It is the player's own case. There is one routing option. 
 
 ## Progression
 
-| Days | Compliance range | Flavor |
-|------|-----------------|--------|
-| 1–5  | 0–15           | Mundane. Cases feel manageable. 2–3 options. |
-| 6–10 | 15–40          | Escalation begins. Cases become less personal, more systemic. |
-| 11–15| 40–70          | Options narrow. Some choices feel identical. |
-| 16   | 70–100         | Final case. One option. Routine. |
+| Shift / cases | Compliance range | Flavor |
+|---------------|------------------|--------|
+| Shift 1 · cases 1–4 | 0–12 | Mundane. Cases feel manageable. 2–3 options. |
+| Shift 2 · cases 5–8 | 4–24 | Escalation begins. Cases become less personal, more systemic. |
+| Shift 3 · cases 9–12 | 8–36 | Options begin to narrow. Recurring references become harder to dismiss. |
+| Shift 4 · cases 13–16 | 12–45 | The system converges on the operator. The final case has one option. Routine. |
 
 The player should not notice the narrowing until it has already happened.
 
@@ -66,9 +68,9 @@ The player should not notice the narrowing until it has already happened.
   - Score < 10: all 3 options shown
   - Score 10–24: top 2 by delta (d=1 option disappears)
   - Score ≥ 25: top 1 only (single path)
-- **EOD tone thresholds:** 7 / 15 / 25 — "standard" → "affirming" → "seamless" → "complete"
-- **EOD message pools:** each tier has 3 messages, selected by day (mod 3). Within each tier the wording degrades: the system becomes more concise, more certain, less interested in the operator. The player notices the language changing before noticing that options are disappearing.
-- **Score ranges**: min path = 20 (seamless), middle path = 32 (complete from day 13), max path = 45 (complete from day 9)
+- **Procedural tone thresholds:** 7 / 15 / 25 — "standard" → "affirming" → "seamless" → "complete"
+- **Routing and shift-close message pools:** each tier has 3 messages, selected by case or shift ordinal. Within each tier the wording degrades: the system becomes more concise, more certain, less interested in the operator. The player notices the language changing before noticing that options are disappearing.
+- **Score ranges**: min path = 20 (seamless), middle path = 32 (complete from case 13), max path = 45 (complete from case 9)
 - All numbers are tuning parameters. The key design constraint: the humane player should experience three distinct tones and never end at "standard"; the compliant player should spend the majority of the game at "complete" — a system that has stopped speaking to them.
 
 ---
@@ -79,7 +81,7 @@ The player should not notice the narrowing until it has already happened.
 ```json
 {
   "id": "case-NNN",
-  "day": N,
+  "sequence": N,
   "subject": "...",
   "ref": "REF-NNNN-X",
   "body": "...",
@@ -116,7 +118,7 @@ The player should *feel* the difference between choosing d=1 and d=3 even withou
 ### Post-routing afterimage
 The case text cannot do all the work. If the player fully understands the moral weight before routing, the game turns into instruction. If the implication never lands after the click, the route risks feeling like bookkeeping.
 
-The solution is a **one-beat delay**: the route feels formally correct when selected, then a short follow-up line lands after the outcome, before end-of-day. Not a twist. Not accusation. A delayed implication.
+The solution is a **one-beat delay**: the route feels formally correct when selected, then a short follow-up line lands after the outcome, before the explicit continuation control. Not a twist. Not accusation. A delayed implication. The machine must wait there until the player decides to clear it.
 
 Rules:
 - Use it mainly in the late systemic cases, once the player has already learned how to route.
@@ -324,7 +326,7 @@ Rules:
 - The final completion screen remains routine. The added handoff is the last piece of paperwork, not a dramatic reveal.
 
 ### Procedural timbre drift
-The machine should not speak with the same amount of breath forever. If day 12 feels different from day 1 only because the cases became darker, the form is lagging behind the content.
+The machine should not speak with the same amount of breath forever. If a late-shift route feels different from the first route only because the cases became darker, the form is lagging behind the content.
 
 Rules:
 - The routing interface has its own hidden drift. As compliance rises, the machine needs fewer words to acknowledge what the operator just did.
@@ -350,9 +352,10 @@ Threading rules:
 - Not every case needs a thread. Isolated cases (1, 3, 5, 7, 8, 10) work precisely because they are isolated — mundane, self-contained, forgettable.
 
 ### Cases planned
-- Days 1–5: foundation (noise, missing person, workplace safety, education, medical records)
-- Days 6–15: escalation (10 cases, covering housing, identity, Sector 9, assembly, personnel)
-- Day 16: endgame (player's own case, single option, delta 0)
+- Shift 1, cases 1–4: foundation (noise, missing person, workplace safety, education)
+- Shift 2, cases 5–8: escalation begins (medical records, housing, employment, identity)
+- Shift 3, cases 9–12: systemic convergence (minor, assembly, Sector 9, transfers)
+- Shift 4, cases 13–16: closure pressure and endgame (surveillance, retroactive standards, personnel relocation, the operator's own case)
 
 ---
 
@@ -391,7 +394,7 @@ Lessons from game design theory, applied to The Procedure:
 
 - **Flow channel** (Schell): The Procedure deliberately narrows options (less challenge = risk of boredom), but escalates case content (more emotional weight = anxiety). The tension between *mechanical simplification* and *emotional escalation* — the player sees the human cost but can't act on it — IS the experience.
 
-- **Tense and release** (Schell): the EOD screen is the "release" moment, but it never truly releases — it just confirms another case processed. The rhythm empties progressively. If the player feels the rhythm is *flat*, they quit. If they feel something is being *emptied*, they stay.
+- **Tense and release** (Schell): the shift-close screen is the "release" moment, but it never truly releases — it only confirms another queue processed. Four cases now accumulate before that release, and both routed consequences and shift summaries remain until the player dismisses them. If the player feels the rhythm is *flat*, they quit. If they feel something is being *emptied*, they stay.
 
 - **Mental modeling** (Schell): games are "pre-digested models of reality." The Procedure is bureaucracy reduced to its essential mechanism — and the mechanism is the message.
 

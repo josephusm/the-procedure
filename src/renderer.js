@@ -17,10 +17,19 @@ let timing = { ...DEFAULT_TIMING };
 
 let activeCallback = null;
 let activeOptions = [];
+let continueCallback = null;
 let aborted = false;
 
 // ── Keyboard input ──
 document.addEventListener('keydown', (e) => {
+  if (continueCallback) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      submitContinue();
+    }
+    return;
+  }
+
   if (!activeCallback) return;
 
   if (e.key >= '1' && e.key <= '9') {
@@ -55,6 +64,15 @@ function submit(idx) {
   inputText.textContent = '';
   disableOptions();
   cb(opt, idx);
+}
+
+function submitContinue() {
+  if (!continueCallback) return;
+
+  const cb = continueCallback;
+  continueCallback = null;
+  disableOptions();
+  cb();
 }
 
 // ── Output ──
@@ -118,6 +136,7 @@ export function clearOptions() {
   optionsPanel.innerHTML = '';
   activeCallback = null;
   activeOptions = [];
+  continueCallback = null;
   inputText.textContent = '';
 }
 
@@ -135,6 +154,17 @@ export function showOptions(options, callback) {
     });
     optionsPanel.appendChild(btn);
   });
+}
+
+export function showContinue(label, callback) {
+  clearOptions();
+  continueCallback = callback;
+
+  const btn = document.createElement('button');
+  btn.className = 'option-btn continue-btn';
+  btn.textContent = `[ENTER]  ${label}`;
+  btn.addEventListener('click', submitContinue);
+  optionsPanel.appendChild(btn);
 }
 
 function disableOptions() {

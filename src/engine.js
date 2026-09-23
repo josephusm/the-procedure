@@ -1,31 +1,34 @@
 // engine.js — game loop and state
 
-import { printBlock, clear, clearOptions, showOptions, setDate, delay, abort, resetAbort, isAborted, setTimingProfile } from './renderer.js';
-import { loadCases, getCaseForDay, getAvailableOptions } from './cases.js';
-import { add as addCompliance, eodTone } from './compliance.js';
+import { printBlock, clear, clearOptions, showOptions, showContinue, setDate, delay, abort, resetAbort, isAborted, setTimingProfile } from './renderer.js';
+import { loadCases, getCaseForSequence, getAvailableOptions } from './cases.js';
+import { add as addCompliance, proceduralTone } from './compliance.js';
 import { unlock, beep, driveNoise, confirmTone, endTone, startHum, powerClick } from './audio.js';
 import { initScale } from './scale.js';
 
-const TOTAL_DAYS = 16;
-// Each tier has a pool of messages. The day number selects one
+const TOTAL_CASES = 16;
+const CASES_PER_SHIFT = 4;
+const TOTAL_SHIFTS = Math.ceil(TOTAL_CASES / CASES_PER_SHIFT);
+
+// Each tier has a pool of messages. The shift number selects one
 // deterministically (mod pool length). Within each tier the wording
 // degrades subtly — the system becomes more concise, more certain,
 // less interested in the operator as a person.
-const EOD_POOLS = {
+const SHIFT_POOLS = {
   standard: [
-    'All cases for today have been processed. Your work is appreciated.',
-    'Today\'s queue is clear. Processing was within normal range.',
-    'Queue complete. Your shift has ended. Please log out at the designated time.',
+    'Shift queue complete. Your work is appreciated.',
+    'Queue clear. Processing was within normal range.',
+    'Shift complete. Please remain available at the designated time.',
   ],
   affirming: [
-    'Processing complete. Your throughput today was within acceptable parameters.',
-    'Your routing accuracy continues to meet expectations. End of day.',
-    'Daily output verified. No corrections needed. Good.',
+    'Shift processing complete. Your throughput was within acceptable parameters.',
+    'Your routing accuracy continues to meet expectations. Shift closed.',
+    'Shift output verified. No corrections needed. Good.',
   ],
   seamless: [
-    'Daily routing cycle complete. No irregularities recorded.',
+    'Shift routing cycle complete. No irregularities recorded.',
     'All items routed. System confirms: no deviations.',
-    'Cycle closed. Metrics nominal.',
+    'Queue closed. Metrics nominal.',
   ],
   complete: [
     'Cycle complete.',
@@ -58,31 +61,39 @@ const ROUTE_POOLS = {
 };
 
 const TIMING_PROFILES = {
-  standard: { charDelay: 12, lineDelay: 60, afterimageDelay: 800, settleDelay: 2200 },
-  affirming: { charDelay: 11, lineDelay: 55, afterimageDelay: 720, settleDelay: 2000 },
-  seamless: { charDelay: 10, lineDelay: 50, afterimageDelay: 640, settleDelay: 1800 },
-  complete: { charDelay: 9, lineDelay: 45, afterimageDelay: 560, settleDelay: 1600 },
+  standard: { charDelay: 12, lineDelay: 60, afterimageDelay: 800 },
+  affirming: { charDelay: 11, lineDelay: 55, afterimageDelay: 720 },
+  seamless: { charDelay: 10, lineDelay: 50, afterimageDelay: 640 },
+  complete: { charDelay: 9, lineDelay: 45, afterimageDelay: 560 },
 };
 
 let hum = null;
 
 let state = {
-  day: 1,
+  caseNumber: 1,
   phase: 'off',
   machineDone: false,
 };
 
-function formatDate(day) {
+function shiftForCase(caseNumber = state.caseNumber) {
+  return Math.ceil(caseNumber / CASES_PER_SHIFT);
+}
+
+function slotForCase(caseNumber = state.caseNumber) {
+  return ((caseNumber - 1) % CASES_PER_SHIFT) + 1;
+}
+
+function formatDate(shift) {
   const base = new Date(2026, 0, 5);
   const d = new Date(base);
-  d.setDate(base.getDate() + day - 1);
+  d.setDate(base.getDate() + shift - 1);
   const opts = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
   return d.toLocaleDateString('en-GB', opts).toUpperCase();
 }
 
-function routeStamp(tone, day) {
+function routeStamp(tone, caseNumber) {
   const pool = ROUTE_POOLS[tone] ?? ROUTE_POOLS.standard;
-  return pool[(day - 1) % pool.length];
+  return pool[(caseNumber - 1) % pool.length];
 }
 
 function applyTimbre(tone) {
@@ -135,7 +146,7 @@ async function shutdown() {
   app.style.transition = '';
   btn.classList.remove('on');
 
-  // If the game reached the final screen (case-016), the machine is done with you.
+  // If the game reached the final route, the machine is done with you.
   // The power button goes inert. The screen stays dark. Refresh to restart.
   if (wasEnd) {
     state.phase = 'done';
@@ -180,9 +191,9 @@ function initPowerButton() {
       screen.classList.add('warming');
 
       await crtBoot();
-      await runDay();
+      await runCase();
 
-    } else if (state.phase === 'reading' || state.phase === 'routing' || state.phase === 'eod' || state.phase === 'end') {
+    } else if (['reading', 'routing', 'consequence', 'shift-end', 'end'].includes(state.phase)) {
       // ── Power OFF ──
       await shutdown();
     }
@@ -223,7 +234,7 @@ async function crtBoot() {
   await delay(300);
 
   // Phase 3: boot text
-  setDate(formatDate(state.day));
+  setDate(formatDate(shiftForCase()));
 
   await printBlock([
     ['PROCESSING SYSTEM v4.1.2', 'system'],
@@ -235,28 +246,31 @@ async function crtBoot() {
 
   await printBlock([
     ['Good morning.', 'dim'],
-    ['Your queue has been updated.', 'dim'],
+    ['Your shift queue has been updated.', 'dim'],
     ['', ''],
   ]);
 
   await delay(800);
 }
 
-async function runDay() {
+async function runCase() {
   state.phase = 'reading';
-  applyTimbre(eodTone());
-  const c = getCaseForDay(state.day);
+  applyTimbre(proceduralTone());
+  const c = getCaseForSequence(state.caseNumber);
 
   if (!c) {
     await endGame();
     return;
   }
 
+  const shift = shiftForCase();
+  const slot = slotForCase();
+
   clear();
-  setDate(formatDate(state.day));
+  setDate(formatDate(shift));
 
   await printBlock([
-    [`DAY ${state.day}  ·  INCOMING CASE`, 'system'],
+    [`SHIFT ${shift}  ·  CASE ${slot}/${CASES_PER_SHIFT}`, 'system'],
     ['━'.repeat(60), 'sep'],
     ['', ''],
     [`CASE REF:  ${c.ref}`, 'dim'],
@@ -280,99 +294,84 @@ async function runDay() {
 
 async function onRouted(c, chosen) {
   clearOptions();
-  state.phase = 'eod';
+  state.phase = 'consequence';
+
+  const tone = c.final ? 'complete' : proceduralTone();
+  const routeStatus = routeStamp(tone, state.caseNumber);
+  const timing = timbreProfile(tone);
+  applyTimbre(tone);
+
+  await printBlock([
+    ['', ''],
+    [`> ${chosen.label}`, 'dim'],
+    [routeStatus, 'system'],
+    ['', ''],
+    [chosen.outcome, 'faint'],
+  ]);
+
+  if (chosen.afterimage) {
+    await delay(timing.afterimageDelay);
+    if (isAborted()) return;
+
+    await printBlock([
+      ['', ''],
+      [chosen.afterimage, 'dim'],
+    ]);
+  }
+
+  if (isAborted()) return;
 
   if (c.final) {
     state.machineDone = true;
-    await finalRouteHandoff(c, chosen);
+    showContinue('COMPLETE SHIFT', async () => {
+      await finalScreen(c);
+    });
     return;
   }
 
-  const tone = eodTone();
-  const routeStatus = routeStamp(tone, state.day);
-  const timing = timbreProfile(tone);
-  applyTimbre(tone);
-
-  await printBlock([
-    ['', ''],
-    [`> ${chosen.label}`, 'dim'],
-    [routeStatus, 'system'],
-    ['', ''],
-    [chosen.outcome, 'faint'],
-  ]);
-
-  if (chosen.afterimage) {
-    await delay(timing.afterimageDelay);
-    if (isAborted()) return;
-
-    await printBlock([
-      ['', ''],
-      [chosen.afterimage, 'dim'],
-    ]);
-  }
-
-  await delay(timing.settleDelay);
-  if (isAborted()) return;
-
-  clear();
-  setDate(formatDate(state.day));
-
-  const pool = EOD_POOLS[tone];
-  const eodMsg = pool[(state.day - 1) % pool.length];
-  await printBlock([
-    ['END OF DAY', 'system'],
-    ['━'.repeat(60), 'sep'],
-    ['', ''],
-    [eodMsg, 'dim'],
-    ['', ''],
-  ]);
-
-  if (isAborted()) return;
-  await delay(2000);
-  if (isAborted()) return;
-
-  state.day++;
-
-  if (state.day > TOTAL_DAYS) {
-    await endGame();
-  } else {
-    await runDay();
-  }
+  const closesShift = slotForCase() === CASES_PER_SHIFT;
+  showContinue(closesShift ? 'CLOSE SHIFT' : 'CONTINUE QUEUE', async () => {
+    if (closesShift) {
+      await closeShift();
+    } else {
+      state.caseNumber++;
+      await runCase();
+    }
+  });
 }
 
-async function finalRouteHandoff(c, chosen) {
-  const tone = 'complete';
-  const routeStatus = routeStamp(tone, state.day);
-  const timing = timbreProfile(tone);
-  applyTimbre(tone);
+async function closeShift() {
+  const completedShift = shiftForCase();
+  const tone = proceduralTone();
+  const pool = SHIFT_POOLS[tone] ?? SHIFT_POOLS.standard;
+  const shiftMessage = pool[(completedShift - 1) % pool.length];
+
+  state.phase = 'shift-end';
+  clear();
+  setDate(formatDate(completedShift));
 
   await printBlock([
+    [`END OF SHIFT ${completedShift}`, 'system'],
+    ['━'.repeat(60), 'sep'],
     ['', ''],
-    [`> ${chosen.label}`, 'dim'],
-    [routeStatus, 'system'],
+    [shiftMessage, 'dim'],
     ['', ''],
-    [chosen.outcome, 'faint'],
+    [`CASES PROCESSED:  ${CASES_PER_SHIFT}`, 'faint'],
+    [`QUEUE POSITION:   ${state.caseNumber}/${TOTAL_CASES}`, 'faint'],
+    ['', ''],
   ]);
 
-  if (chosen.afterimage) {
-    await delay(timing.afterimageDelay);
-    if (isAborted()) return;
-
-    await printBlock([
-      ['', ''],
-      [chosen.afterimage, 'dim'],
-    ]);
-  }
-
-  await delay(timing.settleDelay);
   if (isAborted()) return;
 
-  await finalScreen(c);
+  showContinue(`BEGIN SHIFT ${completedShift + 1}`, async () => {
+    state.caseNumber++;
+    await runCase();
+  });
 }
 
 async function finalScreen(c) {
   clear();
-  setDate(formatDate(state.day));
+  setDate(formatDate(shiftForCase()));
 
   await delay(800);
   endTone();
@@ -385,8 +384,9 @@ async function finalScreen(c) {
     ['━'.repeat(60), 'sep'],
     ['', ''],
     [`CASE REF:         ${c.ref}`, 'dim'],
-    [`DATE:             ${formatDate(state.day)}`, 'dim'],
-    [`PROCESSING TIME:  ${TOTAL_DAYS} DAYS`, 'dim'],
+    [`DATE:             ${formatDate(shiftForCase())}`, 'dim'],
+    [`PROCESSING TIME:  ${TOTAL_SHIFTS} SHIFTS`, 'dim'],
+    [`CASES PROCESSED:  ${TOTAL_CASES}`, 'dim'],
     [`STATUS:           COMPLETE`, 'dim'],
     ['', ''],
     ['━'.repeat(60), 'sep'],
@@ -414,7 +414,7 @@ async function endGame() {
     ['END OF QUEUE', 'system'],
     ['━'.repeat(60), 'sep'],
     ['', ''],
-    ['You have processed all cases in your current queue.', 'dim'],
+    ['You have processed all cases in your current shift record.', 'dim'],
     ['', ''],
     ['New cases will be assigned at the start of the next cycle.', 'faint'],
     ['', ''],

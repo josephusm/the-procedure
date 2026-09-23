@@ -436,10 +436,16 @@ Fresh external playtest invalidates the old standby premise. The machine current
 ### Phase 4bb — Shift rhythm / readable consequence (#27)
 The first external run also exposed that `one case = one day` reads as absurd staffing rather than oppressive rhythm, and that the automatic clear steals the consequence before it can be read.
 
-- [ ] Reframe the temporal unit after inspecting the whole arc: multiple cases per shift, a case-cycle counter, or another structure that does not imply one button press consumes a workday.
-- [ ] Replace the automatic outcome-to-EOD wipe with an explicit continuation gesture or a sufficiently legible hold that keeps the routed consequence under the player's control.
-- [ ] Rebalance EOD cadence and final processing-time language around the chosen temporal model.
-- [ ] Playtest reading time, drag, and escalation; close issue #27 only when the consequence can actually be read.
+**Proactive review:** The existing afterimage and timbre passes solved what appears after a route but never challenged who controls its disappearance. Internal playtests certified that the consequence existed; Stefano's run showed that the player could not reliably read it before the machine wiped the screen. The plan had therefore mistaken content presence for readable consequence. The temporal fiction has the same fault: sixteen dated days make a sparse staffing schedule more visible than the intended procedural pressure. This is a structural criticism, not a request for another line of polish.
+
+**Autoprompt:** Treat issue #27 as the player using the machine correctly and still losing the result. What does the game need now? A shift rhythm in which several cases share one date, every routed consequence waits for the operator, and shift closure happens rarely enough to mean something. What am I avoiding? Replacing the original day-based loop because many later systems were tuned around its name. If I can do one useful thing today, make four cases constitute a shift, preserve the current sixteen-case arc across four shifts, and put the clearing gesture in the player's hand without turning the terminal into a friendly menu.
+
+**Chosen temporal model:** four cases per shift, four shifts total. The date advances by shift, while compliance and option narrowing continue to advance per routed case. Every non-final route ends on an explicit `CONTINUE QUEUE` or `CLOSE SHIFT` control; shift summaries remain until the player begins the next shift. The final operator case is shift 4, case 4, and reports four shifts rather than sixteen days.
+
+- [x] Reframe the temporal unit as four cases per shift across the existing sixteen-case arc.
+- [x] Replace the automatic outcome-to-EOD wipe with an explicit continuation gesture that keeps the routed consequence under the player's control.
+- [x] Rebalance shift-close cadence and final processing-time language around the four-shift model.
+- [x] Playtest reading time, drag, and escalation; close issue #27 only when the consequence can actually be read.
 
 ### Phase 4bc — Case return / non-linear consequence (#28)
 The existing cross-case notes are too thin to answer the player's question. If a routed case disappears forever, the game may be demonstrating a filing cabinet more than a procedure.

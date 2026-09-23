@@ -1,7 +1,7 @@
 [
   {
     "id": "case-001",
-    "day": 1,
+    "sequence": 1,
     "subject": "Noise Disturbance \u2014 Residential Block 7",
     "ref": "REF-0041-A",
     "body": "Resident reports persistent noise from adjacent unit between 23:00 and 02:00. Duration: approximately three weeks. Resident states sleep has been affected. No prior complaints on file for this address.",
@@ -25,7 +25,7 @@
   },
   {
     "id": "case-002",
-    "day": 2,
+    "sequence": 2,
     "subject": "Missing Person \u2014 Informal Report",
     "ref": "REF-0044-B",
     "body": "Report submitted by a family member. Individual has not been seen for eleven days. Family states individual was employed at a facility in Sector 9. No formal missing person report exists in the system. Family requests information.",
@@ -49,7 +49,7 @@
   },
   {
     "id": "case-003",
-    "day": 3,
+    "sequence": 3,
     "subject": "Workplace Safety Concern \u2014 Sector 12 Facility",
     "ref": "REF-0051-C",
     "body": "Anonymous report. Worker states that protective equipment has not been replaced in four months despite requests. Supervisor has not responded to internal filings. Report asks whether external review is possible.",
@@ -73,7 +73,7 @@
   },
   {
     "id": "case-004",
-    "day": 4,
+    "sequence": 4,
     "subject": "Education Irregularity \u2014 Primary Facility Sector 3",
     "ref": "REF-0058-D",
     "body": "Parent reports that children in their building have not attended their registered school for six weeks. When parent visited the building at the registered address, the facility appeared different. Staff at the site stated it was a Processing Coordination Centre. Parent is requesting clarification.\n\nSystem note: 3 similar address-status discrepancies have been logged in Sectors 3, 6, and 11 this quarter. No pattern review has been initiated.",
@@ -97,7 +97,7 @@
   },
   {
     "id": "case-005",
-    "day": 5,
+    "sequence": 5,
     "subject": "Access Denial \u2014 Medical Records",
     "ref": "REF-0063-E",
     "body": "Individual was denied access to their own medical file on three separate occasions. Each time, the attending administrator stated that the records were 'under processing.' Duration of processing: seven months. Individual is requesting the file in connection with a treatment decision.",
@@ -124,7 +124,7 @@
   },
   {
     "id": "case-006",
-    "day": 6,
+    "sequence": 6,
     "subject": "Housing Reassignment \u2014 Block 14, Unit 3",
     "ref": "REF-0070-F",
     "body": "Citizen received written notice that their housing unit has been reassigned effective next month. Citizen states they did not request reassignment. No transfer application exists in their file. The notice references an 'optimization directive' but provides no directive number. Citizen is requesting a copy of the directive and an explanation of the reassignment criteria.",
@@ -151,7 +151,7 @@
   },
   {
     "id": "case-007",
-    "day": 7,
+    "sequence": 7,
     "subject": "Employment Status Anomaly \u2014 Individual File",
     "ref": "REF-0077-G",
     "body": "Worker reports that their employment status in the central registry shows 'Inactive' as of six weeks ago. Worker states they have continued to report to their assigned post daily without interruption. Pay deposits have not been received for the past two cycles. Facility supervisor confirms the individual has been present and working. No termination or suspension order is on file.",
@@ -178,7 +178,7 @@
   },
   {
     "id": "case-008",
-    "day": 8,
+    "sequence": 8,
     "subject": "Identity Record Discrepancy",
     "ref": "REF-0082-H",
     "body": "Central Records flagged an anomaly during routine maintenance. Two identity files exist for the same biometric index. File A lists the individual as born in Sector 2, employed, one dependent. File B lists the same biometric signature as born in Sector 11, no employment record, no dependents, status: 'archived.' The individual is unaware of File B. This case was generated automatically.",
@@ -205,7 +205,7 @@
   },
   {
     "id": "case-009",
-    "day": 9,
+    "sequence": 9,
     "subject": "Unregistered Minor \u2014 School Sector 3",
     "ref": "REF-0089-I",
     "body": "School administrator reports a child who has been attending classes for approximately three months. The child arrives and departs at standard hours. Academic performance is satisfactory. However, no enrollment record exists. No guardian is listed. The address provided on informal paperwork does not correspond to a residential unit. When staff asked the child where they live, the child provided a location code that does not appear in the housing directory.\n\nSystem note: the school is located in Sector 3. This sector had an education facility reclassified as a Processing Coordination Centre earlier this quarter (see REF-0058-D).",
@@ -232,7 +232,7 @@
   },
   {
     "id": "case-010",
-    "day": 10,
+    "sequence": 10,
     "subject": "Assembly Permit \u2014 Denied During Review",
     "ref": "REF-0094-J",
     "body": "A residents' association applied for a permit to hold a meeting in a designated public assembly space. Application was submitted eight weeks ago and entered the review queue. During the review period, the space was reclassified from 'Public Assembly' to 'Administrative Use.' The permit was subsequently denied on the basis that the space is no longer available for the requested purpose. The association is asking whether alternative spaces exist and whether the reclassification can be reviewed.",
@@ -259,7 +259,7 @@
   },
   {
     "id": "case-011",
-    "day": 11,
+    "sequence": 11,
     "subject": "Unlisted Facility \u2014 Multiple Reports",
     "ref": "REF-0101-K",
     "body": "Four separate individuals have submitted inquiries about a facility at 1140 Industrial Corridor, Sector 9. All four describe a large building with active operations \u2014 personnel entering and exiting, transport vehicles, external lighting at night. The facility does not appear in the municipal directory, the commercial registry, or the industrial licensing database. No building permit is on file for that address. One individual states they were told it is 'not subject to public listing.' No official source for this statement has been identified.",
@@ -286,7 +286,7 @@
   },
   {
     "id": "case-012",
-    "day": 12,
+    "sequence": 12,
     "subject": "Personnel Transfers \u2014 Sector 9 Facility",
     "ref": "REF-0108-L",
     "body": "Employee at a Sector 9 facility reports that six colleagues have been transferred in the past two months. Each transfer was communicated via standard notification. However, none of the notifications include a destination facility. The employee contacted Human Resources, who confirmed the transfers were 'processed and complete.' When asked where the individuals were transferred to, HR stated the information was 'outside the scope of the inquiry.' The employee is requesting destination records for the six individuals.\n\nNote: this facility address matches a location referenced in REF-0101-K (see previous routing).",
@@ -313,7 +313,7 @@
   },
   {
     "id": "case-013",
-    "day": 13,
+    "sequence": 13,
     "subject": "Data Access Request \u2014 Personal Processing Profile",
     "ref": "REF-0115-M",
     "body": "Citizen has submitted a formal request to access their own 'processing profile.' The citizen states they were informed during a routine administrative interaction that a profile exists containing their routing history, compliance indicators, and service engagement metrics. The citizen invokes their right to access personal data held by public systems. No department has confirmed or denied the existence of such profiles.\n\nSystem note: this request type has no dedicated routing category.",
@@ -340,7 +340,7 @@
   },
   {
     "id": "case-014",
-    "day": 14,
+    "sequence": 14,
     "subject": "Complaint Resolution \u2014 Retroactive Status Change",
     "ref": "REF-0122-N",
     "body": "Citizen filed a complaint fourteen months ago regarding water quality in their residential block. The complaint was assigned case number REF-0019-A and entered the Environmental Review Queue. The citizen has now been notified that the case status has been changed to 'Resolved.' No inspection was conducted. No communication was sent between filing and resolution. The resolution summary states: 'Conditions reassessed. Parameters within current standards.' The citizen notes that current standards were revised six months after the complaint was filed. The citizen is requesting clarification on what action, if any, was taken.\n\nSystem note: retroactive resolution via updated standards has been applied to 31 cases in the Environmental Review Queue this quarter.",
@@ -367,7 +367,7 @@
   },
   {
     "id": "case-015",
-    "day": 15,
+    "sequence": 15,
     "subject": "Internal Report \u2014 Personnel File Modification",
     "ref": "REF-0130-O",
     "body": "A processing clerk in this department has filed an internal report. The clerk states that upon routine review of their own personnel file, they found modifications they did not authorize. Specifically: their start date has been changed, their department history shows a transfer that did not occur, and a performance note has been added referencing a review meeting the clerk states never took place. The clerk has requested a record of who made the modifications and when. System logs show the changes were made by an administrative batch process. No individual user is associated with the edits.\n\nSystem note: the clerk's terminal is adjacent to this one.",
@@ -394,7 +394,7 @@
   },
   {
     "id": "case-016",
-    "day": 16,
+    "sequence": 16,
     "subject": "Personnel Status Review \u2014 Current Operator",
     "ref": "REF-0137-P",
     "body": "This case was generated automatically during a routine processing audit. The individual assigned to this terminal has been flagged for status review. File indicates: processing throughput consistent, routing accuracy within expected parameters, no deviation from approved channels recorded.\n\nAssessment: the operator's function has been fulfilled. No further cases will be assigned to this terminal. This file has been queued for final processing.\n\nRoute accordingly.",

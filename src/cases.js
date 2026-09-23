@@ -9,8 +9,8 @@ export async function loadCases() {
   allCases = await resp.json();
 }
 
-export function getCaseForDay(day) {
-  return allCases.find(c => c.day === day) || null;
+export function getCaseForSequence(sequence) {
+  return allCases.find(c => c.sequence === sequence) || null;
 }
 
 export function getAvailableOptions(c) {

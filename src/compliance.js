@@ -22,9 +22,9 @@ export function set(val) {
 //
 // Every non-final case has 3 options with distinct deltas (1, 2, 3).
 // Score ranges:
-//   Min-compliance path: 20 by day 16 (2-option from day 11, never single-option)
-//   Max-compliance path: 45 by day 16 (single-option from day 10)
-//   Middle path: ~32 by day 16 (single-option from day 14)
+//   Min-compliance path: 20 by case 16 (2-option from case 11, never single-option)
+//   Max-compliance path: 45 by case 16 (single-option from case 10)
+//   Middle path: ~32 by case 16 (single-option from case 14)
 //
 // Design: the humane option (d=1) disappears first, always.
 export function filterOptions(options) {
@@ -48,7 +48,7 @@ export function filterOptions(options) {
   return ranked;
 }
 
-// Returns the tone suffix for end-of-day messages.
+// Returns the tone suffix for route acknowledgements and shift-close messages.
 // Thresholds calibrated so the humane player experiences three tones,
 // the compliant player reaches "complete" by mid-game, and no path
 // stays at "standard" long enough to become invisible.
@@ -57,7 +57,7 @@ export function filterOptions(options) {
 //   Humane (d=1→d=2): standard 1-6, affirming 7-12, seamless 13-15
 //   Compliant (d=3):  standard 1-2, affirming 3-4, seamless 5-8, complete 9-15
 //   Middle (~d=2):    standard 1-3, affirming 4-7, seamless 8-12, complete 13-15
-export function eodTone() {
+export function proceduralTone() {
   if (score < 7)  return 'standard';
   if (score < 15) return 'affirming';
   if (score < 25) return 'seamless';
