@@ -56,13 +56,14 @@ Questions:
 - Could you feel the moral temperature of a choice even without seeing any score?
 - Are any outcomes too interchangeable or too obviously "correct"?
 
-### 4. Cross-case threading
-Some cases echo each other through system notes and recurring references.
+### 4. Cross-case threading and return
+Some stamped cases return later. The prior route should change both the update carried into the later file and at least one routing surface that remains available under narrowing.
 
 Questions:
-- Did the recurring references register?
-- Did they create unease, or just read as lore?
-- Are there too few connections, too many, or the right amount?
+- Did you recognize REF-0058-D, REF-0044-B, or REF-0082-H when it returned?
+- Did the return feel caused by your earlier route, or like a lore note pasted onto a fixed case?
+- When the system reused an open contact, pending inquiry, or closed record, did the changed later channel bite?
+- Are three returns enough to create an intertwined institution without making every case feel scripted to recur?
 
 ### 5. Administrative time
 Some cases should make delay feel like the procedure acting, not like the game idling. A file can be held, a date can pass, a record can wait until the live problem has already decayed.
@@ -1398,4 +1399,26 @@ Keep the sixteen-case escalation and hidden compliance curve. Replace the calend
 
 ### Current read
 Issue #27 was accurate in both halves. The useful correction was not “wait longer.” A longer timer would still make the machine own the reader's attention. The explicit continuation gesture changes who controls the wipe, while the four-case shift makes closure accumulate before it arrives.
+
+## Case return / route-memory playtest — 2026-09-25
+
+Target: answer Stefano's issue #28 by making stamped cases return as consequences of the operator's route, not as fixed lore references.
+
+### Pre-run review
+The old threading layer named REF numbers and shared sectors, but the engine remembered only compliance. That let the designer's story echo while the player's story vanished at every clear screen. The plan had diagnosed recurrence, then left enough ambiguity to solve it cosmetically with another system note. The stricter test is simple: if the route changes, the later file and one of its surviving channels must change with it.
+
+### Autoprompt
+Keep the fixed sixteen-case convergence and the single ending. Add only enough memory for three earlier stamps to return: education/address status into the unregistered-minor file, missing-person intake into the Sector 9 transfer batch, and duplicate identity handling into the processing-profile request. Put the branch data in the cases, not the renderer. Make the d=3 surface carry every variant so compliance narrowing cannot erase the recurrence entirely.
+
+### Playtest result
+- **Three edges carry route memory.** REF-0058-D returns in REF-0089-I, REF-0044-B returns in REF-0108-L, and REF-0082-H returns in REF-0115-M.
+- **All nine variants are materially different.** Each source route produces a different cold prior-route update and changes at least one later option; every variant also changes the closing route that survives maximum compliance narrowing.
+- **The natural run exposed a weak first implementation.** Route-specific notes appeared correctly, but two altered lower-delta channels had already been filtered out. The data was technically branching while the felt surface stayed fixed. The recurrence definitions were tightened so d=3 always carries the earlier stamp too.
+- **Readability held.** The longer case bodies remained legible in the fixed terminal. The prior update sits between the case facts and the options, where it reads as file state rather than narrator commentary.
+- **Compliance still narrows 3 → 2 → 1.** Static validation covered all nine route variants and all three visibility tiers.
+- **Full-run integration held.** A low-compliance source path exercised all three returns, selected their changed closing routes, crossed all four shift boundaries, and reached the unchanged four-shift / sixteen-case completion screen.
+- **No browser dossier was added.** Route memory exists only for the current run and disappears on refresh.
+
+### Current read
+The game is still linear in destination. It is no longer linear in residue. The same later case can inherit an open contact, a pending inquiry, or a completed record, and the machine's next channel changes accordingly. That is enough interconnection to answer the criticism without pretending sixteen cases are a branching epic.
 

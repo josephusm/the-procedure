@@ -1,12 +1,14 @@
 The Procedure — errata and correction-history trace
 
 Version: 0.4.0
-Last modified: 2026-09-23
+Last modified: 2026-09-25
 
 Current known errata:
-- Issue #28: existing cross-case notes do not yet create a felt return of routed cases; recurrence and route-history consequences require a design pass before 1.0.0.
+- None recorded. The renewed external cold run may still reopen any of the corrected pressure marks before 1.0.0.
 
 Latest resolved gameplay defects:
+On 2026-09-25, issue #28 exposed a continuity defect: stamped cases disappeared while fixed system notes impersonated interconnection. The game now keeps session-only route history for three recurrence edges — education/address status into the unregistered-minor file, missing-person intake into Sector 9 transfers, and duplicate identity handling into the processing-profile request. All nine source-route variants change the later file update and at least one routing surface; the closing route carries every variant so maximum compliance narrowing cannot erase the return.
+
 On 2026-09-23, issue #27 exposed two connected rhythm defects: one routed case consumed a whole dated day, and the automatic transition cleared the consequence before the player controlled their reading time. The sixteen-case arc now spans four shifts of four cases. Every routed outcome and afterimage remains visible behind an explicit `CONTINUE QUEUE` or `CLOSE SHIFT` control; shift summaries remain until `BEGIN SHIFT`; the final record reports four shifts and sixteen processed cases.
 
 On 2026-09-21, issues #25 and #26 exposed a false boot fiction: the computer visibly scaled into place after page load and displayed live terminal text while supposedly powered off. The bezel now appears only at its final viewport scale; the glass stays dark and textless until a physical power gesture begins hardware audio, POST/drive activity, CRT wake, and readable text in that order.
@@ -18,11 +20,12 @@ Known correction-surface limitation:
 GitHub issue filing may require a GitHub account or active session. Blank issues remain enabled and keep observations from being forced into a category before the first sentence, but they do not create a no-account intake route. If that boundary blocks a release-relevant defect, accessibility failure, trace discrepancy, or cold-run pressure mark, the boundary itself belongs in pre-1.0.0 review.
 
 Known review-response state:
-The first external pre-release playtest opened issues #25–#28. Issues #25 and #26 were closed by the 2026-09-21 physical-boot revision; issue #27 was closed by the 2026-09-23 shift-rhythm and readable-consequence revision; issue #28 remains open release-review work. Each closure or design decision must return through the issue surface and this correction history before 1.0.0. If the filer contests a response as a misread defect or pressure mark, the objection remains answerable through the same issue, a linked issue, linked commit, release decision, or this trace. Any changed rule must name its parent signal, keep the filer/issue in the answerable chain, and say what happened to the reporter's wording or evidence during translation.
+The first external pre-release playtest opened issues #25–#28. Issues #25 and #26 were closed by the 2026-09-21 physical-boot revision; issue #27 was closed by the 2026-09-23 shift-rhythm and readable-consequence revision; issue #28 was closed by the 2026-09-25 route-memory recurrence revision. Each closure or design decision returns through the issue surface and this correction history before 1.0.0. If the filer contests a response as a misread defect or pressure mark, the objection remains answerable through the same issue, a linked issue, linked commit, release decision, or this trace. Any changed rule must name its parent signal, keep the filer/issue in the answerable chain, and say what happened to the reporter's wording or evidence during translation.
 
 This is a current trace, not a promise. New defects, accessibility failures, public trace discrepancies, unreadable or client-bound trace surfaces, source/artifact mismatches, reuse-boundary failures, continuity-exit or deprecation-notice gaps, warmed doorway regressions, source/provenance mismatches, recovery failures, missing public review-response traces, missing contested-response/reopen routes, missing rule-genealogy/parent-pressure traces, missing participant-continuity/reporter-standing traces, missing reporter-language/translation traces, account-gated intake limitations, or cold-run playtest pressure filed before 1.0.0 can still interrupt release review.
 
 Recent correction history:
+- 2026-09-25: Closed issue #28 after replacing fixed cross-reference lore with three data-driven recurrence edges, nine route-dependent variants, and changed later routing surfaces that remain visible under compliance narrowing; a natural run exposed and corrected filtered-out recurrence, and an accelerated full run reached the unchanged ending.
 - 2026-09-23: Closed issue #27 after replacing the one-case-per-day loop with four cases per shift and replacing the automatic consequence wipe with explicit player-controlled continuation; a natural first-shift pass and an accelerated full run verified route holds, shift boundaries, four-shift final accounting, and inert shutdown.
 - 2026-09-21: Closed issues #25 and #26 after replacing the false low-current standby with stable inert hardware, a dark powered-off tube, and a hardware-first boot sequence verified on desktop, mobile, keyboard, and the deployed Pages build.
 - 2026-09-05: Corrected the public authorship-role overclaim: individual-work authorship, system architecture/direction, copyright holding, maintenance, and required license attribution no longer impersonate one another in the README or metadata.

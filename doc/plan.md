@@ -450,9 +450,16 @@ The first external run also exposed that `one case = one day` reads as absurd st
 ### Phase 4bc — Case return / non-linear consequence (#28)
 The existing cross-case notes are too thin to answer the player's question. If a routed case disappears forever, the game may be demonstrating a filing cabinet more than a procedure.
 
-- [ ] Audit which early routes can return later as consequences, altered records, queue pressure, or changed option surfaces without creating a fake branching-ending spectacle.
-- [ ] Design a small recurrence graph in the GDD before editing case content; route history must change what returns, not merely decorate later prose.
-- [ ] Implement and full-run playtest the minimum recurrence set needed for the player to recognize an intertwining system.
+**Proactive review:** The diagnosis was right, but the task was still loose enough to produce more lore notes and call them interconnection. The GDD currently says the player cannot follow a thread, calls case 8 deliberately isolated, and the engine retains compliance but no route history. That combination absorbs Stefano's criticism only cosmetically: later files mention earlier files, yet no stamp changes what the machine sees next. Rouse's distinction between the designer's fixed story and the player's story is the useful test here. The recurrence must be authored, but its returned form must belong to the player's earlier route.
+
+**Autoprompt:** Treat issue #28 as a report that the stamps have no memory. The freshly repaired four-case shift gives consequences enough time to be read; now make three of those consequences survive the clear screen. What does the project need now? A small route-memory substrate and a recurrence graph that changes later case facts and route surfaces without manufacturing alternate endings. What am I avoiding? Touching the case model because static cross-references were cheaper. If I can do one useful thing today, make cases 4, 2, and 8 return through cases 9, 12, and 13 in the specific form produced by the operator's route.
+
+**Minimum recurrence graph:** `case-004 → case-009` (school/address status), `case-002 → case-012` (missing worker/Sector 9 transfers), `case-008 → case-013` (duplicate identity/processing profile). Each return must add a cold prior-route update and alter at least one later routing surface. Compliance still narrows the available set; recurrence changes what the surviving channels mean, not whether the game has a secret good ending.
+
+- [x] Audit the current threads and define the three-edge recurrence graph in the GDD before editing case content.
+- [x] Add data-driven route history and recurrence materialization; do not hardcode story branches in the renderer.
+- [x] Write all nine route-dependent return variants and make each edge alter at least one later option surface, not merely append prose.
+- [x] Full-run playtest one natural path, then probe alternate source routes for all three returns and verify compliance filtering still narrows correctly.
 - [ ] Close issue #28 with a concrete account of what was intentional, what changed, and where recurrence now bites.
 
 ### Phase 5 — Release

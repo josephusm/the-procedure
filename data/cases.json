@@ -209,6 +209,51 @@
     "subject": "Unregistered Minor \u2014 School Sector 3",
     "ref": "REF-0089-I",
     "body": "School administrator reports a child who has been attending classes for approximately three months. The child arrives and departs at standard hours. Academic performance is satisfactory. However, no enrollment record exists. No guardian is listed. The address provided on informal paperwork does not correspond to a residential unit. When staff asked the child where they live, the child provided a location code that does not appear in the housing directory.\n\nSystem note: the school is located in Sector 3. This sector had an education facility reclassified as a Processing Coordination Centre earlier this quarter (see REF-0058-D).",
+    "recurrence": {
+      "from_case": "case-004",
+      "variants": {
+        "1": {
+          "note": "Registration Services recorded an unverified location code during the REF-0058-D home visit. The child named in this file was present at the same address.",
+          "option_overrides": {
+            "1": {
+              "label": "Route to Minor Welfare — continue REF-0058-D contact",
+              "outcome": "REF-0058-D contact reopened. A caseworker will return to the address and speak with the child at the school.",
+              "afterimage": "The child remains in class while the same address is visited again under a new case number."
+            },
+            "3": {
+              "label": "Route to Housing Directory — close repeated address contact",
+              "outcome": "The location code has been marked invalid. The REF-0058-D contact is closed as superseded by this address discrepancy.",
+              "afterimage": "The same address was visited once. The later file now replaces the visit."
+            }
+          }
+        },
+        "2": {
+          "note": "The district status inquiry opened under REF-0058-D remains pending. The same unverified location code now appears in this child's informal paperwork.",
+          "option_overrides": {
+            "2": {
+              "label": "Route to Education District Office — append to REF-0058-D inquiry",
+              "outcome": "The child's attendance record has been attached to the existing district status inquiry. Guardian verification remains pending.",
+              "afterimage": "One inquiry now carries the school address and the child; neither record supplies a home."
+            },
+            "3": {
+              "label": "Route to Housing Directory — resolve pending district inquiry",
+              "outcome": "The location code has been marked invalid. The REF-0058-D district inquiry is closed as a matched address discrepancy.",
+              "afterimage": "The open school inquiry ends as an address result. The child remains unregistered."
+            }
+          }
+        },
+        "3": {
+          "note": "REF-0058-D was closed after the facility address was reclassified. No enrollment follow-up was attached. The child's paperwork cites the reclassified site.",
+          "option_overrides": {
+            "3": {
+              "label": "Route to Facilities Coordination — verify reclassified location code",
+              "outcome": "The location code has been matched to the reclassified facility. The child's file is now recorded as an address discrepancy.",
+              "afterimage": "The facility record is consistent. The child still has no residential address."
+            }
+          }
+        }
+      }
+    },
     "options": [
       {
         "label": "Route to Minor Welfare and Registration Unit",
@@ -290,6 +335,51 @@
     "subject": "Personnel Transfers \u2014 Sector 9 Facility",
     "ref": "REF-0108-L",
     "body": "Employee at a Sector 9 facility reports that six colleagues have been transferred in the past two months. Each transfer was communicated via standard notification. However, none of the notifications include a destination facility. The employee contacted Human Resources, who confirmed the transfers were 'processed and complete.' When asked where the individuals were transferred to, HR stated the information was 'outside the scope of the inquiry.' The employee is requesting destination records for the six individuals.\n\nNote: this facility address matches a location referenced in REF-0101-K (see previous routing).",
+    "recurrence": {
+      "from_case": "case-002",
+      "variants": {
+        "1": {
+          "note": "The individual named in REF-0044-B appears among the six transfer records. MP-12 contact attempts found no current address.",
+          "option_overrides": {
+            "1": {
+              "label": "Route to Workforce Mobility — extend REF-0044-B welfare inquiry",
+              "outcome": "The existing missing-person file has been extended to the transfer cohort. A mobility officer will attempt contact at all last known assignments.",
+              "afterimage": "One open file now carries seven failed destinations."
+            },
+            "3": {
+              "label": "Route to Sector 9 Human Resources — reconcile transfers against MP-12",
+              "outcome": "All six transfers have been verified as complete. The confirmation has been attached to the open REF-0044-B file; destination fields remain sealed.",
+              "afterimage": "An open missing-person file now certifies a completed transfer."
+            }
+          }
+        },
+        "2": {
+          "note": "The employment verification requested under REF-0044-B returned 'processed and complete' without a destination. The same name appears in this transfer batch.",
+          "option_overrides": {
+            "2": {
+              "label": "Route to Personnel Transfer Records — append REF-0044-B lookup",
+              "outcome": "The earlier employment request has been attached to the six destination lookups. Results remain subject to the requesting employee's authorization level.",
+              "afterimage": "The missing destination now has two request numbers and the same authorization barrier."
+            },
+            "3": {
+              "label": "Route to Sector 9 Human Resources — close REF-0044-B lookup",
+              "outcome": "The prior employment verification has been satisfied by the completed transfer record. No destination information is required for closure.",
+              "afterimage": "The same missing destination now closes the earlier inquiry."
+            }
+          }
+        },
+        "3": {
+          "note": "REF-0044-B remains a preliminary intake record because no formal report was filed. One of the six transferred names matches the recorded family inquiry.",
+          "option_overrides": {
+            "3": {
+              "label": "Route to Sector 9 Human Resources — associate preliminary inquiry",
+              "outcome": "The family inquiry has been associated with the completed transfer record. No destination information is required for closure.",
+              "afterimage": "The family can now be told that the transfer and the inquiry are both on file."
+            }
+          }
+        }
+      }
+    },
     "options": [
       {
         "label": "Route to Personnel Transfer Records \u2014 destination lookup",
@@ -317,6 +407,51 @@
     "subject": "Data Access Request \u2014 Personal Processing Profile",
     "ref": "REF-0115-M",
     "body": "Citizen has submitted a formal request to access their own 'processing profile.' The citizen states they were informed during a routine administrative interaction that a profile exists containing their routing history, compliance indicators, and service engagement metrics. The citizen invokes their right to access personal data held by public systems. No department has confirmed or denied the existence of such profiles.\n\nSystem note: this request type has no dedicated routing category.",
+    "recurrence": {
+      "from_case": "case-008",
+      "variants": {
+        "1": {
+          "note": "The citizen cites the notification issued under REF-0082-H. The two identity files listed different routing histories before any merge.",
+          "option_overrides": {
+            "1": {
+              "label": "Route to Data Governance — disclose both REF-0082-H histories",
+              "outcome": "Access review opened for the routing histories attached to both identity files. The citizen will be contacted before any history is discarded.",
+              "afterimage": "The duplicate remains visible because the citizen received it before the merge."
+            },
+            "3": {
+              "label": "Route to General Information — profile summary after REF-0082-H notice",
+              "outcome": "The citizen will receive documented profile categories with the duplicate-file notice attached as source correspondence. Undocumented routing histories remain outside scope.",
+              "afterimage": "The citizen can cite the notice. The two histories remain undisclosed."
+            }
+          }
+        },
+        "2": {
+          "note": "The officer review under REF-0082-H reconciled personal details but left the two routing histories pending comparison.",
+          "option_overrides": {
+            "2": {
+              "label": "Route to Identity Reconciliation — routing-history review",
+              "outcome": "The pending comparison has been extended to processing-profile records. An officer will determine which routing history remains authoritative.",
+              "afterimage": "The profile question is now a reconciliation task between two administrative versions."
+            },
+            "3": {
+              "label": "Route to General Information — profile summary pending reconciliation",
+              "outcome": "The citizen will receive documented profile categories. The unresolved routing-history comparison does not alter the scope of the response.",
+              "afterimage": "Two administrative histories remain pending behind one public summary."
+            }
+          }
+        },
+        "3": {
+          "note": "The automated protocol under REF-0082-H consolidated the archived identity branch into the active file. The citizen was later told that the processing profile includes merged routing history.",
+          "option_overrides": {
+            "3": {
+              "label": "Route to Records Integrity — merged-profile summary",
+              "outcome": "A summary of the automated merge and all publicly documented profile categories will be issued. Superseded routing records remain internal.",
+              "afterimage": "The duplicate file is gone. Its routing history remains usable inside the surviving profile."
+            }
+          }
+        }
+      }
+    },
     "options": [
       {
         "label": "Route to Data Governance Office \u2014 access request",

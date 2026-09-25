@@ -2,8 +2,8 @@ The Procedure — public status trace
 
 Version: 0.4.0
 Project state: active external-playtest revision
-Release gate: resolve open case-continuity feedback in issue #28 before 1.0.0
-Last modified: 2026-09-23
+Release gate: renewed cold run after issues #25–#28, then the shared 1.0.0 decision
+Last modified: 2026-09-25
 
 Canonical URL:
 https://josephusm.github.io/the-procedure/

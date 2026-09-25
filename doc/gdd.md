@@ -336,20 +336,28 @@ Rules:
 
 This is a formal version of the same rule as the afterimage: the form recruits first, then the content catches up.
 
-### Cross-case threading
-Cases are not isolated incidents. The system notes that appear in some case bodies create connections the player cannot act on — only notice.
+### Cross-case threading and recurrence
+Cases are not isolated incidents. Static system notes still establish the institution's shared geography, but three threads now carry route memory: the later file returns in the form produced by the operator's earlier stamp.
 
-Current threads:
-- **Sector 9**: case 2 (missing person, employed at Sector 9) → case 11 (unlisted facility at Sector 9) → case 12 (personnel transfers at the same facility, explicit back-reference to REF-0101-K)
-- **Education / minors**: case 4 (school reclassified as Processing Coordination Centre, system note about similar discrepancies in Sectors 3, 6, 11) → case 9 (unregistered minor at a Sector 3 school, system note referencing REF-0058-D)
-- **Retroactive standards**: case 6 (optimization directive with no number) ↔ case 14 (complaint resolved via retroactively revised standards, system note about 31 similar resolutions)
-- **The clerk**: case 15 (clerk's file modified by batch process, system note: "the clerk's terminal is adjacent to this one") → case 16 (player's own case, system-generated)
+Static threads:
+- **Sector 9**: case 2 (missing person, employed at Sector 9) → case 11 (unlisted facility at Sector 9) → case 12 (personnel transfers at the same facility)
+- **Education / minors**: case 4 (school reclassified as Processing Coordination Centre) → case 9 (unregistered minor at a Sector 3 school)
+- **Retroactive standards**: case 6 (optimization directive with no number) ↔ case 14 (complaint resolved via retroactively revised standards)
+- **The clerk**: case 15 (adjacent clerk's file modified by batch process) → case 16 (operator's own system-generated case)
 
-Threading rules:
-- Cross-references use `System note:` at the end of the case body — same typeface, same tone
-- System notes never editorialize. They state a fact the system already knows.
-- The player cannot follow the thread — there is no "investigate" option. The connection exists for the player's unease, not their agency.
-- Not every case needs a thread. Isolated cases (1, 3, 5, 7, 8, 10) work precisely because they are isolated — mundane, self-contained, forgettable.
+Minimum recurrence graph:
+- **REF-0058-D → REF-0089-I** (`case-004 → case-009`): the school/address route returns as a prior-route update. Facilities closure, district inquiry, or enrollment contact changes how the later minor file enters the queue and changes one available channel's wording.
+- **REF-0044-B → REF-0108-L** (`case-002 → case-012`): the missing-person route returns inside the six destinationless transfers. An opened MP-12 file, an employment-record request, or a reference-only intake changes the status inherited by the later lookup/welfare/closure surface.
+- **REF-0082-H → REF-0115-M** (`case-008 → case-013`): notification, officer reconciliation, or automatic merge changes what the citizen can cite when asking for the processing profile and changes the corresponding access surface.
+
+Recurrence rules:
+- The engine records only the chosen route needed for the current run. No browser persistence and no hidden dossier across restarts.
+- Recurrence lives in case data and is materialized before display. The renderer does not contain narrative branch logic.
+- Every recurrence variant adds one cold `Prior route update:` and overrides at least one later option field: label, outcome, or afterimage.
+- A return is consequence, not reward. The humane route may preserve contact or standing; the middle route may widen procedure; the closing route may convert the earlier file into authoritative residue.
+- Recurrence never changes the final ending and never opens a resistance branch. It changes the player's story inside the same institutional convergence.
+- Compliance filtering still applies after materialization. Every variant also changes the d=3 route, so maximum narrowing cannot reduce recurrence to a hidden note while leaving the only surviving channel untouched.
+- Not every case should return. Cases 1, 3, 5, 7, 10, and 14 remain locally self-contained so recurrence stays recognizable rather than becoming wallpaper.
 
 ### Cases planned
 - Shift 1, cases 1–4: foundation (noise, missing person, workplace safety, education)

@@ -64,6 +64,36 @@ Cases are defined in `data/cases.json` as an array of objects:
 
 `afterimage` is optional. When present, it prints after the selected outcome with a short delay, before the continuation control. It is not commentary. It is the routed channel completing its thought one beat too late for the operator to stay innocent. The result remains visible until the operator explicitly continues or closes the shift.
 
+## Route history and recurrence
+
+`cases.js` keeps an in-memory map from case id to the chosen compliance delta. It is session state, not a dossier: refresh the page and it is gone.
+
+A later case may declare a data-driven recurrence:
+
+```json
+{
+  "recurrence": {
+    "from_case": "case-004",
+    "variants": {
+      "1": {
+        "note": "The earlier contact remains open.",
+        "option_overrides": {
+          "3": {
+            "label": "Route to ...",
+            "outcome": "...",
+            "afterimage": "..."
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+Before a case is displayed, `cases.js` looks up the recorded source route, appends one cold `Prior route update:`, and merges the matching option overrides. Compliance filtering runs afterward. Every variant overrides the d=3 route so recurrence still changes the visible routing surface under maximum narrowing; lower-delta overrides may preserve a more specific live handle while those channels remain available.
+
+The authored case order and ending remain fixed. Route history changes how three later files return, not whether the player escapes the procedure.
+
 ## Renderer
 
 All output is printed line-by-line to a terminal `<div>`. 

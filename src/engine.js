@@ -1,7 +1,7 @@
 // engine.js — game loop and state
 
 import { printBlock, clear, clearOptions, showOptions, showContinue, setDate, delay, abort, resetAbort, isAborted, setTimingProfile } from './renderer.js';
-import { loadCases, getCaseForSequence, getAvailableOptions } from './cases.js';
+import { loadCases, getCaseForSequence, getAvailableOptions, recordRoute } from './cases.js';
 import { add as addCompliance, proceduralTone } from './compliance.js';
 import { unlock, beep, driveNoise, confirmTone, endTone, startHum, powerClick } from './audio.js';
 import { initScale } from './scale.js';
@@ -287,6 +287,7 @@ async function runCase() {
 
   showOptions(options, async (chosen) => {
     confirmTone();
+    recordRoute(c, chosen);
     addCompliance(chosen.compliance_delta);
     await onRouted(c, chosen);
   });
