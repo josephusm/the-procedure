@@ -460,7 +460,7 @@ The existing cross-case notes are too thin to answer the player's question. If a
 - [x] Add data-driven route history and recurrence materialization; do not hardcode story branches in the renderer.
 - [x] Write all nine route-dependent return variants and make each edge alter at least one later option surface, not merely append prose.
 - [x] Full-run playtest one natural path, then probe alternate source routes for all three returns and verify compliance filtering still narrows correctly.
-- [ ] Close issue #28 with a concrete account of what was intentional, what changed, and where recurrence now bites.
+- [x] Close issue #28 with a concrete account of what was intentional, what changed, and where recurrence now bites.
 
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest feedback resolved + VERSION >= 1.0.0.
