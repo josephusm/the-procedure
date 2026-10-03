@@ -31,6 +31,8 @@ A shift contains four cases under one date. The player reads a case, chooses a r
 
 The continuation gesture is not comfort UI. It is the operator acknowledging that they have seen enough to let the machine clear the record. The system may narrow choices, but it may not steal the player's reading time.
 
+One physical key press permits one acknowledgement. Keyboard auto-repeat is not a fresh gesture and must not dismiss a control that appears later, whether it clears a consequence, begins a shift, or completes the final record. Repeated Enter/Space must also suppress native button activation; a focused power switch is not a back door around the reading hold. The next screen waits for a released and freshly pressed key, or its own deliberate click.
+
 ### Routing options
 Options are always formally correct. There is no wrong answer — there is only the *more correct* channel. The player is never penalized for choosing "wrong"; compliance simply rises faster on certain choices.
 

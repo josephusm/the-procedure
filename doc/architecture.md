@@ -106,7 +106,7 @@ The cursor blinks. Nothing else moves.
 - `setTimingProfile(profile)` — adjust character / line pacing for the current procedural tone
 - `clear()` — clear the terminal
 - `showOptions(options, callback)` — render routing buttons, call callback on selection
-- `showContinue(label, callback)` — render one explicit continuation control; Enter/Space mirrors the button
+- `showContinue(label, callback)` — render one explicit continuation control; a fresh Enter/Space press mirrors the button. Repeated keydowns are ignored and their native button activation is prevented, so one held press cannot consume a later control.
 
 The renderer timing is not globally fixed. The engine can tighten or relax the terminal cadence based on the current procedural tone, so the machine gradually becomes terser as compliance rises.
 

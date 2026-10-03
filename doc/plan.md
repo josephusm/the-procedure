@@ -462,6 +462,17 @@ The existing cross-case notes are too thin to answer the player's question. If a
 - [x] Full-run playtest one natural path, then probe alternate source routes for all three returns and verify compliance filtering still narrows correctly.
 - [x] Close issue #28 with a concrete account of what was intentional, what changed, and where recurrence now bites.
 
+### Phase 4bd — Fresh continuation gesture (#27 follow-up)
+**Proactive review:** Phase 4bb removed the automatic wipe, but the keyboard still accepts auto-repeat as a new acknowledgement. A browser reproduction held the fourth consequence for six seconds, then sent one Enter downstroke followed by its repeats. The same held key closed the shift and consumed the next `BEGIN SHIFT` control. Issue #27's reading-time criticism was therefore resolved for timers, not for the boundary between keyboard gestures. The final route already waits on `COMPLETE SHIFT`; do not invent a missing final hold.
+
+**Autoprompt:** Preserve the cold continuation controls, four-case rhythm, and route returns from #5205/#5206. Change only what counts as a gesture. A press that closed one screen must not acquire permission to clear the next while that screen is still printing. Rouse's Chapter 20 separates a working control from a readable experience; test the hold, not merely the existence of the button. Do not add another trace, change the ending, or open the shared release gate.
+
+- [x] Ignore repeated keydowns in the terminal, including their native Enter/Space button activation.
+- [x] Reproduce the fourth-case hold and verify repeated Enter and Space cannot clear the shift summary; a fresh press still advances.
+- [x] Play one route at normal cadence, probe the final hold and keyboard continuation, and record the distinction between natural play and accelerated regression navigation.
+
+Completed 2026-10-03. The first route was played at normal cadence; accelerated navigation exercised all sixteen cases. Six-second consequence/summary/final holds survived, repeated Enter/Space remained inert, fresh native Enter/Space advanced, and the four-shift completion record and inert shutdown held. `tests/keyboard-continuation.json` preserves the renderer regression. Release remains a shared decision after a renewed full cold run; this fix is not a release vote.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest feedback resolved + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.

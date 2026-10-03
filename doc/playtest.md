@@ -1422,3 +1422,25 @@ Keep the fixed sixteen-case convergence and the single ending. Add only enough m
 ### Current read
 The game is still linear in destination. It is no longer linear in residue. The same later case can inherit an open contact, a pending inquiry, or a completed record, and the machine's next channel changes accordingly. That is enough interconnection to answer the criticism without pretending sixteen cases are a branching epic.
 
+## Fresh continuation / held-key boundary — 2026-10-03
+
+Target: finish the reading-control promise in issue #27 without changing the queue, the case returns, or the shared release gate.
+
+### Review and autoprompt
+Recent project memories #5081/#5082 and issue #27 moved clearing into the operator's hand. #5205/#5206 and issue #28 made three stamps return. Neither is permission for another theory layer. The remaining question was smaller: does one physical acknowledgement clear one screen, or can it be reused when the next control appears? Rouse, *Game Design Theory and Practice*, Chapter 20, distinguishes a functioning control from a working experience. Test the reading boundary, not the presence of a button.
+
+### Reproduction
+After the fourth routed consequence remained unchanged for six seconds, one Enter downstroke followed by repeated keydowns closed the shift and consumed `BEGIN SHIFT 2`. The summary vanished and the medical-record case appeared without a new acknowledgement. The existing final consequence already waited on `COMPLETE SHIFT`; no final timer defect was found.
+
+### Correction and checks
+- The renderer ignores keyboard auto-repeat and prevents repeated Enter/Space from activating a focused button natively. Fresh key presses and clicks still work.
+- The first case and first route were played at normal boot/typewriter cadence with native number/Enter input. The registered noise complaint remained readable for six seconds behind `CONTINUE QUEUE`; native Space advanced. Visual inspection covered this case and consequence.
+- Remaining navigation was accelerated in the browser to reach the boundaries. This is regression coverage, not a new verdict on full-run rhythm or emotional balance.
+- At the first shift summary, repeated Enter and Space did nothing for four seconds; the summary then remained unchanged for another six seconds. Fresh native Enter began shift two.
+- All sixteen cases reached the final consequence. A six-second hold plus repeated Enter/Space left `COMPLETE SHIFT` waiting. Fresh native Space produced the unchanged four-shift / sixteen-case completion record.
+- Power-off still made the completed machine inert. A second click did not restart it.
+- The committed renderer regression also verifies that repeat cannot submit a selected numbered route or leak to the focused power switch between controls. Summary and final checks used DOM assertions; they are not claimed as a new visual or blind playtest.
+
+### Current read
+The machine can reuse the operator's record. It cannot reuse a held key as a fresh acknowledgement. One boundary repaired; no new case, score, ending, metadata layer, or release decision.
+

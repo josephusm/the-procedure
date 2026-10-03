@@ -40,6 +40,10 @@ Dull is good here. You should not need this project's private vocabulary to disc
 
 All audio is procedural (Web Audio API) — the ambient hum, the keystrokes, the confirmation tones. No external files. The CRT terminal is a fixed 800×600 element that scales proportionally to fill the viewport. The font is VT323, self-hosted.
 
+## Keyboard regression
+
+`tests/keyboard-continuation.json` contains browser assertions for fresh acknowledgements, held-key repeats, numbered routing, and native button activation. With the game served locally, run it through Miller's `dev_preview.py interact --actions-file /path/to/the-procedure/tests/keyboard-continuation.json`. It exercises controls, not the game's emotional pacing.
+
 ## Design
 
 Spoilers from here down. The full design document lives in [`doc/gdd.md`](doc/gdd.md). For release-facing feedback, there is also a focused [`doc/playtest.md`](doc/playtest.md) packet for Stefano's playtest. The short version:

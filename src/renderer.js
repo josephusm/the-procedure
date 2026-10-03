@@ -22,6 +22,12 @@ let aborted = false;
 
 // ── Keyboard input ──
 document.addEventListener('keydown', (e) => {
+  // A held key cannot acknowledge a control that appears later.
+  if (e.repeat) {
+    if (e.key === 'Enter' || e.key === ' ') e.preventDefault();
+    return;
+  }
+
   if (continueCallback) {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();

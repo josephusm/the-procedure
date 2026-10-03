@@ -1,12 +1,14 @@
 The Procedure — errata and correction-history trace
 
 Version: 0.4.0
-Last modified: 2026-09-25
+Last modified: 2026-10-03
 
 Current known errata:
 - None recorded. The renewed external cold run may still reopen any of the corrected pressure marks before 1.0.0.
 
 Latest resolved gameplay defects:
+On 2026-10-03, a follow-up to issue #27 found that keyboard auto-repeat could close a shift and consume the next summary control without a fresh acknowledgement. Repeated keydowns are now ignored; repeated Enter/Space also suppress native button activation. Fresh input, player-held consequences, the final hold, and inert shutdown passed browser regression checks. The shared 1.0.0 decision remains pending.
+
 On 2026-09-25, issue #28 exposed a continuity defect: stamped cases disappeared while fixed system notes impersonated interconnection. The game now keeps session-only route history for three recurrence edges — education/address status into the unregistered-minor file, missing-person intake into Sector 9 transfers, and duplicate identity handling into the processing-profile request. All nine source-route variants change the later file update and at least one routing surface; the closing route carries every variant so maximum compliance narrowing cannot erase the return.
 
 On 2026-09-23, issue #27 exposed two connected rhythm defects: one routed case consumed a whole dated day, and the automatic transition cleared the consequence before the player controlled their reading time. The sixteen-case arc now spans four shifts of four cases. Every routed outcome and afterimage remains visible behind an explicit `CONTINUE QUEUE` or `CLOSE SHIFT` control; shift summaries remain until `BEGIN SHIFT`; the final record reports four shifts and sixteen processed cases.
