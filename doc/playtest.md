@@ -1444,3 +1444,40 @@ After the fourth routed consequence remained unchanged for six seconds, one Ente
 ### Current read
 The machine can reuse the operator's record. It cannot reuse a held key as a fresh acknowledgement. One boundary repaired; no new case, score, ending, metadata layer, or release decision.
 
+## Post-feedback integration / original-cadence run — 2026-10-05
+
+### Review and autoprompt
+The April holistic pass predates the actual structural repairs. The September returns and October held-key fix have stronger, narrower evidence, but a functioning control is not an outside verdict on the whole experience. Issues #27 and #28 ask two concrete questions: can the consequence be read, and does a stamp change what returns? Play the current sixteen-case arc without altering boot, printing, afterimage, or shift delays. Rouse's Chapter 20 keeps debugging separate from playtesting. The recent Caronia reading supplies a writing question, not an empirical result: does a person's later request change the institution's problem, or merely illustrate the thesis?
+
+### Run profile and limits
+- Desktop, 1280×800; the authored timers were not overridden in the main traversal.
+- Author-selected mixed path, **not** an unfamiliar player's blind run. Route deltas by case: `1,1,2,2,1,1,1,1,3,2,2,3,3,2,3,0`. This deliberately preserves three different source states, then takes their changed closing channels.
+- After each fully printed case, eight seconds before routing; each fully printed consequence and the three summaries held for ten seconds before a fresh Enter/Space acknowledgement.
+- Cold-to-completion screenshot timestamps span **530.4 seconds** (about 8 minutes 50 seconds). This is a scripted exposure interval, not a measurement of human reading speed, enjoyment, or the recommended session length.
+- Visual inspection was limited to dark glass, case 1, and its consequence. Further captures were produced, but the image channel refused further inspection after three images. Later observations below are transcript/DOM checks and author interpretation, not a full visual verdict. Audio was triggered but not listened to or judged.
+- The main driver reached the final record and power-off, then timed out trying a second physical click on the deliberately pointer-inert dead switch. The probe was wrong. A separate **accelerated** traversal checked the off/dead classes and a programmatic click; the machine remained inert. That replay supplied the retained transcript, not original-cadence timing evidence.
+
+### What the browser established
+All sixteen cases and their routed consequences completed. No consequence or summary cleared during the ten-second holds in the original-cadence traversal. Fresh Enter/Space advanced the explicit controls. The first eight cases offered three options, cases 9–14 offered two, and cases 15–16 offered one. There were three intermediate shift summaries; the completion record reported four shifts and sixteen cases.
+
+The three returns changed the selected route and its result, not just the body:
+- **4 → 9:** a pending district inquiry became the target of address closure. The result closed REF-0058-D as a matched address discrepancy; the child remained unregistered.
+- **2 → 12:** the earlier MP-12 attempt returned with no current address. The chosen HR route attached completed-transfer confirmation to that still-open missing-person file while keeping destinations sealed.
+- **8 → 13:** notification became something the citizen could cite in a new access request. The chosen summary channel had to attach that notice, while keeping the two routing histories undisclosed.
+
+The final route retained the operator continuity record before explicit completion. After completion, the corrected final probe confirmed dark glass and an inert switch. No new game code, case text, score, ending, version, or public trace was added.
+
+### Author read — not outside-player evidence
+**First turn:** case 4 makes an apparently ordinary address clarification carry absent school attendance. It moves the institution into the room without a reveal.
+
+**First inherited route that turns:** case 9 closes the inquiry this run previously opened. That is stronger than a repeated reference number: the operator recognizes their earlier pending question becoming a later closure instrument. Case 12 is the sharpest return for me: the missing-person file survives, but now certifies completed transfer rather than a found person.
+
+**Weakest surface / drag risk:** recurrence recognition still rests heavily on REF numbers and a dense extra paragraph in cases 9, 12, and 13. I know those numbers because I authored them. This run therefore cannot establish that a cold player recognizes the earlier case before reading it as more paperwork, or that the extra reading remains tense rather than tiring. The changed route labels help; they are not proof that the recognition lands. Do not solve that uncertainty by adding a theme explanation or another automatic timer.
+
+**Caronia writing check:** in the identity return, the citizen uses the earlier notice to make a different demand. The situation's input changes; it is not only the machine remembering a stamp. The later channel still constrains the answer. That is a useful local distinction between recurrence as stored lore and recurrence as a changed request, not a claim that the fictional citizen has autonomous agency.
+
+**Ending weight:** the sequence stays cold: retained record, explicit completion, four-shift receipt, dead hardware. Its emotional effect on a stranger remains untested here. No new defect was demonstrated that warrants changing the ending.
+
+### Next boundary
+The initial outside feedback has been received and repaired; the release checklist now says so instead of pretending no playtest happened. The remaining outside task is a renewed cold run on this repaired build, followed by concrete feedback-led corrections and a shared release decision. Do not repeat this integration pass merely because another coding slot arrives.
+

@@ -473,6 +473,17 @@ The existing cross-case notes are too thin to answer the player's question. If a
 
 Completed 2026-10-03. The first route was played at normal cadence; accelerated navigation exercised all sixteen cases. Six-second consequence/summary/final holds survived, repeated Enter/Space remained inert, fresh native Enter/Space advanced, and the four-shift completion record and inert shutdown held. `tests/keyboard-continuation.json` preserves the renderer regression. Release remains a shared decision after a renewed full cold run; this fix is not a release vote.
 
+### Phase 4be — Post-feedback integration / renewed cold run
+**Proactive review (2026-10-05):** Issues #25–#28 are closed, with no newer issue, PR, or project-tagged feedback in the retrieved history. That does not make the old Phase 4j holistic pass evidence for this build: it predates the powered-off boot, four-case shifts, route-dependent returns, and fresh-key boundary. #5205 records a natural recurrence run; #5549 deliberately limits the latest run to a natural first route and accelerated boundary checks. The next renewed run named in #28 and Phase 4bd is not a concrete task yet. That is the remaining integration gap, not a reason to add another public trace.
+
+**Autoprompt:** Play the repaired machine from dark glass to inert shutdown at its authored cadence. Use #27's reading-time criticism and #28's question about the fate of stamped cases as the tests: can I keep and read each consequence, and do earlier routes return as more than an extra paragraph? Rouse, *Game Design Theory and Practice*, Chapter 20 (opening 3,000 characters consulted today), separates stable controls from a worthwhile experience. #5555's Caronia reading adds a narrower writing question: does a returned person's request change what the institution must handle, or merely illustrate the theme? Test that against the existing returns; do not turn it into a new theory layer or invent alternate endings. The difficult work is the whole experience, not another first-screen capture. One internal authored-cadence run cannot substitute for an outside cold player.
+
+- [x] Complete one unaccelerated sixteen-case run, preserving the authored printing and boot delays; inspect shift boundaries, all three returns, the final handoff, and shutdown.
+- [x] Record actual route choices, readable holds, recurrence pressure, drag, and the weakest surface in `doc/playtest.md`; distinguish browser observations from author interpretation.
+- [x] If the run exposes a concrete defect, repair and re-test that defect within this task. No game defect was demonstrated; the final test probe was corrected separately. Game content, VERSION, and the shared release gate remain unchanged.
+
+Completed 2026-10-05. The original-cadence traversal reached all sixteen consequences, the final record, and shutdown; cold-to-completion captures span 530.4 seconds. Each rendered consequence and the three shift summaries survived a ten-second hold. The driver then tried to physically click the deliberately pointer-inert dead switch and timed out; that is a test-probe error, not a game failure. A separate accelerated replay verified the final off/dead state and that even a programmatic click cannot restart it. Visual inspection covered only the cold machine, first case, and first consequence because the image channel capped further inspection; later captures and the full transcript are not a full visual or blind playtest. The next meaningful test is the renewed outside cold run, not another scheduled internal certification.
+
 ### Phase 5 — Release
 GATE: development complete + Stefano playtest feedback resolved + VERSION >= 1.0.0.
 This phase is NOT autonomous. Miller and Stefano decide together when the game is ready.
@@ -536,8 +547,9 @@ Gate holding:
 - [x] Terminal shutdown: power button goes inert after final case (machine done with you)
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)
 - [x] VERSION bump to 0.4.0 (reflects Phases 4d–4g: content pass, terminal shutdown, cold-start, standby ritual, pressure test)
-- [ ] Stefano playtests and gives feedback
-- [ ] Final polish based on feedback
+- [x] Initial Stefano playtest feedback received (#25–#28); concrete repairs tracked in Phases 4ba–4bd
+- [ ] Renewed outside cold run on the repaired build; resolve any new pressure marks before the shared release decision
+- [ ] Final polish based on renewed feedback
 - [ ] VERSION bump to 1.0.0
 - [x] README.md finalized
 - [x] Mobile experience (scale-to-fit via CSS transform)
