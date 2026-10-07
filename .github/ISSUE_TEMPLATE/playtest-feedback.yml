@@ -1,12 +1,33 @@
 name: Playtest feedback
-about: A cold-run observation from playing The Procedure.
+description: A post-run observation from playing The Procedure.
 title: "Playtest: "
 labels: [playtest]
 body:
   - type: markdown
     attributes:
       value: |
-        Best after a full cold run from power-on to final shutdown. Do not use this as a review score. Use it as a pressure mark: where did the machine land, drag, break, or become too visible? Release-relevant pressure should receive a public response, closure reason, linked commit, release decision, or errata trace before 1.0.0. If that response misreads the pressure, contest it in the same issue or a linked issue before release; otherwise the route has only filed you neatly. If the response turns your words into a cleaner class without saying what was preserved, rejected, or translated, that is pressure too.
+        Best after a full run from power-on to final shutdown, without a new briefing. Before reading the topic fields below, write a short free account elsewhere and paste it unchanged here; this form can cue what you report. Keep first-time play, returning play, topic-cued recall, and recognition after named references separate. Missing notes are not a failed test. Do not use this as a review score. Use it as a pressure mark: where did the machine land, drag, break, or become too visible? Release-relevant pressure should receive a public response, closure reason, linked commit, release decision, or errata trace before 1.0.0. If that response misreads the pressure, contest it in the same issue or a linked issue before release; otherwise the route has only filed you neatly. If the response turns your words into a cleaner class without saying what was preserved, rejected, or translated, that is pressure too.
+  - type: textarea
+    id: first_account
+    attributes:
+      label: First post-run account
+      description: Optional. Paste notes written before reading the packet's diagnostic questions or these topic fields. Keep later interpretations separate.
+    validations:
+      required: false
+  - type: input
+    id: exposure
+    attributes:
+      label: Run context
+      description: Optional. Version if known, device, how far you got, and previous play or diagnostic/design exposure. A renewed run is not first-ever play.
+    validations:
+      required: false
+  - type: textarea
+    id: connections
+    attributes:
+      label: Connections recalled after a topic prompt
+      description: Optional. Without rereading cases, did a later file connect to an earlier choice? Describe the choice and difference in your own words, including uncertainty. If names or references prompted the answer, say so.
+    validations:
+      required: false
   - type: textarea
     id: strongest
     attributes:
@@ -25,8 +46,8 @@ body:
     id: turn
     attributes:
       label: Moment it turned
-      description: Day, case, or route where the game changed for you.
-      placeholder: Day 7, case-011, final shutdown...
+      description: Shift, case, or route where the game changed for you.
+      placeholder: Your own description is enough; exact case codes are optional.
     validations:
       required: false
   - type: dropdown

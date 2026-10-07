@@ -548,7 +548,8 @@ Gate holding:
 - [x] Prepare Stefano playtest packet (focused questions, not generic approval)
 - [x] VERSION bump to 0.4.0 (reflects Phases 4d–4g: content pass, terminal shutdown, cold-start, standby ritual, pressure test)
 - [x] Initial Stefano playtest feedback received (#25–#28); concrete repairs tracked in Phases 4ba–4bd
-- [ ] Renewed outside cold run on the repaired build; resolve any new pressure marks before the shared release decision
+- [x] Prepare the renewed-run handoff so free recall is recorded before topic prompts or named references; distinguish spontaneous recall, topic-cued recall, aided recognition, and prior project exposure
+- [ ] Renewed outside cold run on the repaired build; preserve the unprompted notes before diagnostic answers, then resolve any new pressure marks before the shared release decision
 - [ ] Final polish based on renewed feedback
 - [ ] VERSION bump to 1.0.0
 - [x] README.md finalized
@@ -556,6 +557,22 @@ Gate holding:
 - [x] Viewport-adaptive scaling: CRT fills desktop screens (#24)
 - [x] Favicon (SVG terminal prompt icon) + OG/Twitter meta tags + social preview image
 - [x] Web manifest (manifest.json) + version meta tag
+
+#### Renewed-run preparation — review 2026-10-07
+
+**Proactive review:** Issue #28 asked whether a stamped case ever returns. Phase 4bc implements that return, and the October 5 integration run establishes its data and control behavior. It does not establish recognition by an unfamiliar player. That run's weakest-surface note and the subsequent receipt/request reflection leave a specific test-design gap: the packet names all three source references as soon as its recurrence questions begin. An answer written after that cue cannot establish what the player connected unaided. The pre-run spoiler boundary protects play, but not the distinction between remembering and recognizing during reporting. Also, Stefano has already played an earlier build; a renewed unbriefed run is not a first-ever blind run. Keep those populations separate.
+
+**Autoprompt:** Do not add brighter references or more explanatory case text to fix an effect that has not been measured. Prepare one usable reporting sequence: a short blank account immediately after shutdown, a topic-cued connection question without case names or REF numbers, then the existing named diagnostic questions. Keep uncertainty and missing notes admissible. A player can recognize a return without recalling an exact code; conversely, a repeated code is not evidence that their earlier route mattered. Preserve both possibilities. This is preparation for the existing #28 follow-up, not a new gate or another internal certification.
+
+**Reference consulted:** Richard Rouse, *Game Design Theory and Practice*, Chapter 20, opening 3,000 characters: stable controls and worthwhile play are different questions. Use the distinction to bound the claim; the staged recall sequence is this project's test design, not a method attributed to that excerpt.
+
+Scope: the packet, its submission form, and the GDD testing boundary only. No game code, route text, timing, score, VERSION, or shared release decision changes.
+
+Completed 2026-10-07. The packet now preserves a free account before a topic-cued connection answer and the named diagnostics; the issue form keeps those observations and prior exposure separate, without making them mandatory. Its top-level description now uses the required `description` key rather than the old `about` key ([GitHub issue-form syntax](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms)). Static checks covered cue order, form fields, YAML, local documentation links, unchanged VERSION, and all 30 local manifest entries; they do not certify the hosted issue chooser. A local desktop run played power-on and the first humane route at original cadence, with a four-second consequence hold. Navigation afterward was accelerated to the identity return; the source file returned as an automated merged history, and the selected ombudsman route remained held for four seconds. Three screenshots were visually inspected. This is author-side surface verification, not evidence of unfamiliar-player recognition, pacing across a full run, or release readiness. The initial 30-second helper timeout was a probe limit; the documented 100-second run completed.
+
+A pressure mark for the next session, not a second task today: at case 13, the initial routing capture ends the prior-route update mid-sentence when the option panel appears. The complete line is visible in the later consequence capture, and the terminal is scrollable with its scrollbar hidden. Whether a cold player can reach the complete update before routing needs a focused scroll/keyboard check. Do not mistake missing recognition for a writing failure until that presentation boundary is tested. Do not change the story or add explanatory reference highlighting on the strength of this capture alone.
+
+The next outside run and shared release decision remain open. No new recurring integration certificate is required.
 
 ## Notes
 - Cases should feel mundane before they feel sinister

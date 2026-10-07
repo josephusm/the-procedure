@@ -19,13 +19,25 @@ This is not a generic QA checklist. The game already runs. The question now is w
 
 Stop here for the first playthrough. The rest of this packet contains post-run pressure questions and will train your attention if you read it too early. Helpful later. Poison now. Bureaucracy knows the value of a pre-filled form.
 
-If useful after the first run, do a second run later with a different routing attitude:
-- one humane run (pick the most human option whenever available)
-- one compliant run (pick the most final / system-friendly option whenever available)
+## First post-run account — before the checklist
+
+Do not scroll to the named questions yet. Do not reopen the game, compare routes, or reread its cases first.
+
+**1. Free notes.** In a few sentences, tell what stayed with you and roughly how the run unfolded. Where, if anywhere, did you become unsure, impatient, or interested? Your words, not this packet's vocabulary. A blank or uncertain answer is allowed. Keep this first account unchanged when you answer later questions; add a separate note rather than repairing your memory afterward.
+
+After those notes, record the version if known, device, whether you reached shutdown, and prior exposure: first-ever play, an earlier build, a replay of this build, or design/diagnostic material already read. A renewed run without a new briefing is useful, but a returning player is not a new blind witness.
+
+**2. Topic-cued recall.** Now, without looking back at cases or reading the named questions below: did a later file connect to something you had handled earlier? If so, describe the earlier choice and what seemed different when it returned. No exact reference number needed. Say what you remember and what you are guessing. If you noticed only a repeated file, say that too. If nothing comes to mind, leave it there.
+
+This second answer is cued by a topic. It is not spontaneous recall. A missing connection in the first notes does not establish that you failed to recognize one while playing.
+
+**3. Named diagnostics.** Only now continue below. Recognition after a supplied name or REF is useful aided evidence, not proof that the connection landed unaided. Preserve the earlier accounts alongside it.
+
+A comparison run can happen afterward, with a different routing attitude. Keep its observations separate from this run; do not backfill the first account with what the second one teaches you.
 
 ---
 
-## Post-run pressure questions
+## Post-run pressure questions — named diagnostics
 
 ### 1. The mundane → sinister transition
 The early cases are supposed to feel routine, not theatrical.
@@ -59,8 +71,11 @@ Questions:
 ### 4. Cross-case threading and return
 Some stamped cases return later. The prior route should change both the update carried into the later file and at least one routing surface that remains available under narrowing.
 
+These are aided questions. Keep the free and topic-cued notes above intact before using these names.
+
 Questions:
-- Did you recognize REF-0058-D, REF-0044-B, or REF-0082-H when it returned?
+- Do REF-0058-D, REF-0044-B, or REF-0082-H now help you identify a connection? Did you mention it before seeing these names, remember it only after the topic prompt, or recognize it only now?
+- Did you notice just an earlier file returning, or a difference caused by the route you chose? Describe the choice and later difference in your own words; an exact REF is not a memory test.
 - Did the return feel caused by your earlier route, or like a lore note pasted onto a fixed case?
 - When the system reused an open contact, pending inquiry, or closed record, did the changed later channel bite?
 - Are three returns enough to create an intertwined institution without making every case feel scripted to recur?

@@ -217,6 +217,7 @@ Rules:
 - Metadata and social copy should stay cold and short: functionary, cases, routing, no refusal. Enough to open the door, not enough to draw the floor plan.
 - README and design documentation may discuss the mechanism, but only behind a clear spoiler boundary: play first, dissect after.
 - Playtest handoff should separate pre-run instruction from post-run pressure questions. If the checklist trains the player before the run, the test is no longer blind; it is bureaucracy rehearsing itself.
+- Keep the player's first post-run account before diagnostic cues too. Blank notes, topic-cued recall, and recognition after named references are different evidence. Record prior exposure after those notes: an unbriefed returning tester is not an unfamiliar first-time player.
 - The external surface succeeds when a player can enter cold and only later realize that the surrounding text had refused to become a narrator.
 
 Current pressure points:
@@ -360,6 +361,7 @@ Recurrence rules:
 - Recurrence never changes the final ending and never opens a resistance branch. It changes the player's story inside the same institutional convergence.
 - Compliance filtering still applies after materialization. Every variant also changes the d=3 route, so maximum narrowing cannot reduce recurrence to a hidden note while leaving the only surviving channel untouched.
 - Not every case should return. Cases 1, 3, 5, 7, 10, and 14 remain locally self-contained so recurrence stays recognizable rather than becoming wallpaper.
+- Test recognition without teaching it first: preserve free post-run notes, then ask about connections without supplying subjects or REF numbers, and only afterward use the named recurrence questions. Accept descriptions in the player's own words. Distinguish noticing a repeated file from understanding that an earlier route changed its returned form. No mention in free notes is inconclusive, not proof of failure; aided recognition alone is not proof of unaided causal recognition. Author-selected paths demonstrate materialization, not a stranger's memory or emotional response.
 
 ### Cases planned
 - Shift 1, cases 1–4: foundation (noise, missing person, workplace safety, education)
