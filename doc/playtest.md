@@ -1496,3 +1496,11 @@ The final route retained the operator continuity record before explicit completi
 ### Next boundary
 The initial outside feedback has been received and repaired; the release checklist now says so instead of pretending no playtest happened. The remaining outside task is a renewed cold run on this repaired build, followed by concrete feedback-led corrections and a shared release decision. Do not repeat this integration pass merely because another coding slot arrives.
 
+## Returned-file reading probe — 2026-10-09 (incomplete)
+
+The October 7 case-13 capture and memories #5766/#5767 justify a narrow presentation check, not another complete internal run or a rewrite of the recurrence. Phase 4bf now tracks the missing authored-cadence check and native wheel/keyboard rereading before routing.
+
+Two local browser probes attempted accelerated navigation through cases 1–12, with normal timers to be restored before the identity return. Both stopped at the driver's 30-second case/control wait. A broader heading predicate on the second attempt did not resolve the timeout. No completed target capture, native-scroll observation, or held consequence was returned. The helper returns error stderr but not the progress stdout on a failed run, so this record does not identify the failing case or cause. Two failed probes trigger the session stop rule; no third attempt was made.
+
+These are failed test-driver waits, not evidence establishing a game hang or an inaccessible prior-route update. The original clipping pressure remains unresolved. Before repeating the probe, preserve progress and failure captures and check initial data readiness separately from timer acceleration. Game code, case prose, VERSION 0.4.0, outside-run status, and the shared release gate remain unchanged.
+
