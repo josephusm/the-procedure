@@ -110,6 +110,10 @@ The cursor blinks. Nothing else moves.
 
 The renderer timing is not globally fixed. The engine can tighten or relax the terminal cadence based on the current procedural tone, so the machine gradually becomes terser as compliance rises.
 
+`showOptions` and `showContinue` scroll to the final printed line **after** inserting their controls. The control panel changes the terminal's flex height; a scroll position computed before that change can clip the record at precisely the point where it becomes actionable. This is a one-time layout synchronization, not a bottom lock: wheel and native keyboard rereading remain free while the controls wait.
+
+Renderer browser regressions are kept in `tests/reading-boundary.json` (real merged-history case data, one to three routing controls, continuation layout, stable rereading) and `tests/keyboard-continuation.json` (fresh acknowledgements and suppressed auto-repeat). With a local preview server running, each action file can be passed to `dev_preview.py interact --actions-file <path>`. These fixtures test presentation and controls; they are not cold-player recognition tests.
+
 ## Audio
 
 All sound is procedural via Web Audio API. No external files.

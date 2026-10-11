@@ -1,12 +1,14 @@
 The Procedure — errata and correction-history trace
 
 Version: 0.4.0
-Last modified: 2026-10-03
+Last modified: 2026-10-11
 
 Current known errata:
 - None recorded. The renewed external cold run may still reopen any of the corrected pressure marks before 1.0.0.
 
 Latest resolved gameplay defects:
+On 2026-10-11, a follow-up to issues #27 and #28 confirmed that routing controls could shrink the terminal reading area and clip the final prior-route update before a choice. Routing and continuation controls now preserve the final printed line after their layout change. The case-008 automatic-merge return in case 13 passed original-cadence target checks; native wheel and keyboard rereading remained available, and the fresh-key regression still passed. Phone-sized Chromium viewport checks are not a touch-device playtest. The renewed external cold run and shared 1.0.0 decision remain pending.
+
 On 2026-10-03, a follow-up to issue #27 found that keyboard auto-repeat could close a shift and consume the next summary control without a fresh acknowledgement. Repeated keydowns are now ignored; repeated Enter/Space also suppress native button activation. Fresh input, player-held consequences, the final hold, and inert shutdown passed browser regression checks. The shared 1.0.0 decision remains pending.
 
 On 2026-09-25, issue #28 exposed a continuity defect: stamped cases disappeared while fixed system notes impersonated interconnection. The game now keeps session-only route history for three recurrence edges — education/address status into the unregistered-minor file, missing-person intake into Sector 9 transfers, and duplicate identity handling into the processing-profile request. All nine source-route variants change the later file update and at least one routing surface; the closing route carries every variant so maximum compliance narrowing cannot erase the return.
@@ -27,6 +29,7 @@ The first external pre-release playtest opened issues #25–#28. Issues #25 and 
 This is a current trace, not a promise. New defects, accessibility failures, public trace discrepancies, unreadable or client-bound trace surfaces, source/artifact mismatches, reuse-boundary failures, continuity-exit or deprecation-notice gaps, warmed doorway regressions, source/provenance mismatches, recovery failures, missing public review-response traces, missing contested-response/reopen routes, missing rule-genealogy/parent-pressure traces, missing participant-continuity/reporter-standing traces, missing reporter-language/translation traces, account-gated intake limitations, or cold-run playtest pressure filed before 1.0.0 can still interrupt release review.
 
 Recent correction history:
+- 2026-10-11: Corrected the returned-file reading boundary from the October 7 case-13 capture, following issues #27/#28: routing and continuation panel layout no longer clips the final printed line. Narrow renderer regressions and original-cadence target checks passed; no release verdict implied.
 - 2026-09-25: Closed issue #28 after replacing fixed cross-reference lore with three data-driven recurrence edges, nine route-dependent variants, and changed later routing surfaces that remain visible under compliance narrowing; a natural run exposed and corrected filtered-out recurrence, and an accelerated full run reached the unchanged ending.
 - 2026-09-23: Closed issue #27 after replacing the one-case-per-day loop with four cases per shift and replacing the automatic consequence wipe with explicit player-controlled continuation; a natural first-shift pass and an accelerated full run verified route holds, shift boundaries, four-shift final accounting, and inert shutdown.
 - 2026-09-21: Closed issues #25 and #26 after replacing the false low-current standby with stable inert hardware, a dark powered-off tube, and a hardware-first boot sequence verified on desktop, mobile, keyboard, and the deployed Pages build.

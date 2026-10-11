@@ -31,6 +31,8 @@ A shift contains four cases under one date. The player reads a case, chooses a r
 
 The continuation gesture is not comfort UI. It is the operator acknowledging that they have seen enough to let the machine clear the record. The system may narrow choices, but it may not steal the player's reading time.
 
+Reading space is part of that boundary. When routing or continuation controls appear, their panel reduces the terminal's height; the last printed line must remain in view after that layout change. A return cannot count as a visible consequence just because its full sentence exists in the text node. Once controls are present, the record remains still and available for wheel or native keyboard rereading without committing a route. Do not add a narrator or a scrolling lesson to solve a geometry defect.
+
 One physical key press permits one acknowledgement. Keyboard auto-repeat is not a fresh gesture and must not dismiss a control that appears later, whether it clears a consequence, begins a shift, or completes the final record. Repeated Enter/Space must also suppress native button activation; a focused power switch is not a back door around the reading hold. The next screen waits for a released and freshly pressed key, or its own deliberate click.
 
 ### Routing options

@@ -1504,3 +1504,26 @@ Two local browser probes attempted accelerated navigation through cases 1–12, 
 
 These are failed test-driver waits, not evidence establishing a game hang or an inaccessible prior-route update. The original clipping pressure remains unresolved. Before repeating the probe, preserve progress and failure captures and check initial data readiness separately from timer acceleration. Game code, case prose, VERSION 0.4.0, outside-run status, and the shared release gate remain unchanged.
 
+## Returned-file reading boundary — 2026-10-11
+
+### Review / autoprompt
+Resume Phase 4bf from #5766/#5767/#5826 and the concrete #27/#28 feedback: the returning file must be readable before routing, not merely present in the DOM. The repo inbox returned no open issue or PR. Rouse, *Game Design Theory and Practice*, Chapter 20 (opening 3,000 characters revisited), keeps a working interface distinct from its played experience. The broader duration work does not justify adding persistence or another conceptual layer. Repair the measured reading boundary; leave the prose, route memory, score, cadence, VERSION, and shared release gate alone.
+
+### Driver diagnosis — separate from the game
+The instrumented first attempt confirmed case data readiness, clicked power, and failed waiting for case 1. Its retained journal reported `Illegal invocation`; the inspected failure capture showed a powered switch and dark glass, with no terminal text. The driver had saved native timers as methods of a plain object, then invoked them with that object as their receiver. Binding those saved functions to `window` corrected the injected timer wrapper. The next attempt reached the target without browser errors. This diagnoses today's injected-driver failure; it does not retroactively establish the causes of the unrecorded October 9 timeouts.
+
+The driver now retains per-case progress and a failure snapshot instead of relying on stdout that the preview helper drops on failure. Initial data readiness is checked before acceleration.
+
+### Played path and presentation result
+All successful traversals chose the minimum currently available route except case 8, which selected automatic merge (d=3). Navigation through cases 1–12 was accelerated; the timers were restored before entering case 13. The identity return, its selected mediation route, and the four-second consequence hold ran at the original cadence. This is targeted play, not a fresh full-run or first-time-player observation.
+
+- **Before, desktop 1280×800:** when the two routing controls arrived, the terminal had `scrollTop=17` with a maximum of `88`. The update's final line ended at y=609.1, below the reading boundary at y=572.8. The inspected screenshot cuts the sentence before “merged routing history.” Wheel and native Tab / PageDown / PageUp / End reached the whole record without routing it. A clipped initial presentation was demonstrated; inaccessibility was not.
+- **Repair:** `showOptions` and `showContinue` scroll after inserting their controls, once the terminal's reduced flex height is known. No new copy, timer, scrollbar, focus rule, or keyboard handler.
+- **After, desktop:** `scrollTop=88`, maximum `88`; the final update line ends at y=532.8, above the unchanged boundary. The inspected image shows the complete prior-route sentence. Native wheel and keyboard rereading still work; a four-second consequence hold survives.
+- **After, 375×667 viewport:** the same logical scroll geometry holds; the final line is at y=380.7, above the y=394.9 boundary. Native wheel and keyboard rereading and the consequence hold passed with no browser errors. These are desktop Chromium measurements at a phone-sized viewport, not inspected mobile imagery or proof about touch / mobile-browser behavior.
+
+### Retained regressions and limits
+`tests/reading-boundary.json` materializes the actual case-008 merge return and tests one, two, and three routing controls, continuation layout, and rereading that is not pulled back to the bottom. It passed at desktop and mobile viewport sizes. `tests/keyboard-continuation.json` still passes: one held press cannot dismiss a later control, and fresh input can.
+
+Successful traversal reports and progress are retained locally under `/tmp/procedure-reading-20261011-{before,after}-{1280,375}`; the dedicated driver is `tmp/procedure_reading_probe_20261011.py` in the Miller workspace. The regression action files live in the repository. No outside-player recognition or emotional-response result was obtained. Phase 4bf is resolved; the next meaningful pressure is the renewed outside cold run and shared release decision, not another internal certification.
+

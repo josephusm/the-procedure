@@ -126,7 +126,7 @@ jobs:
               'assets/meta/og-image.png', 'README.md', 'LICENSE', 'COPYRIGHT',
               'doc/architecture.md', 'doc/critical-review.md', 'doc/gdd.md',
               'doc/plan.md', 'doc/playtest.md',
-              'tests/keyboard-continuation.json'
+              'tests/keyboard-continuation.json', 'tests/reading-boundary.json'
           ]
           root = Path('.')
           generated_at = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')

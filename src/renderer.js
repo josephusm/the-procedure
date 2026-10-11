@@ -160,6 +160,9 @@ export function showOptions(options, callback) {
     });
     optionsPanel.appendChild(btn);
   });
+
+  // The controls shrink the reading area after the final print has scrolled.
+  scrollBottom();
 }
 
 export function showContinue(label, callback) {
@@ -171,6 +174,7 @@ export function showContinue(label, callback) {
   btn.textContent = `[ENTER]  ${label}`;
   btn.addEventListener('click', submitContinue);
   optionsPanel.appendChild(btn);
+  scrollBottom();
 }
 
 function disableOptions() {
