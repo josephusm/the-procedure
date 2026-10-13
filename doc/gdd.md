@@ -316,7 +316,7 @@ Rules:
 - The strongest test is retrospective: after shutdown, the player should be able to look back at the whole shift and suspect that the system needed their presence less as judgment than as a procedural surface.
 
 Current pressure points:
-- The cold standby field asks for an operator, not a hero.
+- The powered-off hardware invites an operator's first physical gesture, not a hero's entrance. The dark glass carries no standby invitation; the machine speaks only after power, POST, drive activity, and monitor wake.
 - Every case routes through a visible human gesture even when the system has already framed the possible channels.
 - `case-007` names the split between physical presence and counted presence; that line now echoes forward into the operator's own record.
 - `case-016` turns throughput, routing accuracy, and absence of deviation into a personnel assessment. The final afterimage retains continuity instead of delivering a speech. Keep it that cold.
