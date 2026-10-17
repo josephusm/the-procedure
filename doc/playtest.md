@@ -23,7 +23,7 @@ Stop here for the first playthrough. The rest of this packet contains post-run p
 
 Do not scroll to the named questions yet. Do not reopen the game, compare routes, or reread its cases first.
 
-**1. Free notes.** In a few sentences, tell what stayed with you and roughly how the run unfolded. Where, if anywhere, did you become unsure, impatient, or interested? Your words, not this packet's vocabulary. A blank or uncertain answer is allowed. Keep this first account unchanged when you answer later questions; add a separate note rather than repairing your memory afterward.
+**1. Free notes.** In a few sentences, tell what stayed with you and roughly how the run unfolded. Where, if anywhere, did you become unsure, impatient, or interested? Your words, not this packet's vocabulary. A blank or uncertain answer is allowed. You do not have to finish the run, locate a weak case, or explain a feeling to report it. Keep this first account unchanged when you answer later questions; add a separate note rather than repairing your memory afterward.
 
 After those notes, record the version if known, device, whether you reached shutdown, and prior exposure: first-ever play, an earlier build, a replay of this build, or design/diagnostic material already read. A renewed run without a new briefing is useful, but a returning player is not a new blind witness.
 
@@ -189,12 +189,14 @@ Most useful:
 - "The ending landed / didn't land because..."
 - "I understood the design intention, but the felt experience was..."
 
-Less useful on its own:
-- "Looks good"
-- "Needs polish"
-- "Interesting idea"
+Less specific, still admissible:
+- "I lost interest, but cannot locate where."
+- "I felt uneasy and do not know whether that was the point."
+- "I stopped before the ending."
 
-The game does not need generic approval. It needs pressure in the right places.
+Those are accounts of play, not diagnoses. Keep the words as given; add context only if you remember it. The designer must investigate whether a reported feeling comes from intended pressure, accidental confusion, or something else. A suggested cause or fix is a separate hypothesis, even when several reports converge. Neither "the game is meant to be uncomfortable" nor "the player disliked it" settles that question.
+
+General praise is not a release verdict. Unexplained discomfort is not a demonstrated defect, but it is not an invalid report either.
 
 ---
 

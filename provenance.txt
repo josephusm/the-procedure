@@ -45,7 +45,7 @@ Uncategorized intake:
 https://github.com/josephusm/the-procedure/issues/new
 
 Pre-release playtest standing:
-Cold-run playtest pressure filed before 1.0.0 is part of release review when it names a weak case, broken ending, warmed doorway, unreadable surface, or drag point.
+Accounts of play filed before 1.0.0 can enter release review even when incomplete, uncertain, or unable to locate the discomfort. A named weak surface helps investigation; it is not an admission test. Suggested causes remain hypotheses, and admission alone does not establish a defect or release blocker.
 
 Pre-classification standing:
 Blank uncategorized issues filed before 1.0.0 remain part of release review when they identify a defect, pressure mark, broken trace, or source/provenance/artifact discrepancy before it fits a form. This removes the classification gate, not the GitHub account/session gate.

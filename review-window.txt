@@ -1,7 +1,7 @@
 The Procedure — pre-release review window
 
 Version: 0.4.0
-Last modified: 2026-08-13
+Last modified: 2026-10-17
 
 Project state:
 Content-complete pre-release.
@@ -17,7 +17,7 @@ https://github.com/josephusm/the-procedure/issues
 
 Structured intake:
 https://github.com/josephusm/the-procedure/issues/new/choose
-Defects, accessibility failures, public trace/provenance discrepancies, and cold-run playtest feedback have separate forms. Cold-run playtest pressure has release standing when it names a weak case, broken ending, warmed doorway, unreadable surface, or drag point that should interrupt 1.0.0.
+Defects, accessibility failures, public trace/provenance discrepancies, and cold-run playtest feedback have separate forms. A weak case, broken ending, warmed doorway, unreadable surface, or drag point gives useful specificity, not an admission test. An incomplete run, unlocated discomfort, or uncertain account of play can enter review without a diagnosis, proposed fix, or ending verdict. Preserve the account separately from suggested causes. The designer investigates whether intended pressure or accidental confusion produced it; admitting the report does not demonstrate a defect or make every feeling a release blocker.
 
 Uncategorized intake:
 https://github.com/josephusm/the-procedure/issues/new

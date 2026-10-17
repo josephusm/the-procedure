@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Best after a full run from power-on to final shutdown, without a new briefing. Before reading the topic fields below, write a short free account elsewhere and paste it unchanged here; this form can cue what you report. Keep first-time play, returning play, topic-cued recall, and recognition after named references separate. Missing notes are not a failed test. Do not use this as a review score. Use it as a pressure mark: where did the machine land, drag, break, or become too visible? Release-relevant pressure should receive a public response, closure reason, linked commit, release decision, or errata trace before 1.0.0. If that response misreads the pressure, contest it in the same issue or a linked issue before release; otherwise the route has only filed you neatly. If the response turns your words into a cleaner class without saying what was preserved, rejected, or translated, that is pressure too.
+        Best after a full run from power-on to final shutdown, without a new briefing. Before reading the topic fields below, write a short free account elsewhere and paste it unchanged here; this form can cue what you report. Keep first-time play, returning play, topic-cued recall, and recognition after named references separate. Missing notes are not a failed test. An incomplete run, unlocated discomfort, or uncertainty is reportable without a diagnosis or proposed fix. Do not invent a weakest case or an ending verdict. Do not use this as a review score. Describe what happened for you; any suggested cause is a separate hypothesis. Release-relevant pressure should receive a public response, closure reason, linked commit, release decision, or errata trace before 1.0.0. If that response misreads the pressure, contest it in the same issue or a linked issue before release; otherwise the route has only filed you neatly. If the response turns your words into a cleaner class without saying what was preserved, rejected, or translated, that is pressure too.
   - type: textarea
     id: first_account
     attributes:
@@ -39,9 +39,9 @@ body:
     id: weakest
     attributes:
       label: Weakest part
-      description: The moment, case, rhythm, or surface that lost pressure.
+      description: Optional. Describe any lost interest, confusion, or discomfort you remember, even if you cannot locate it or explain why.
     validations:
-      required: true
+      required: false
   - type: input
     id: turn
     attributes:
@@ -59,8 +59,9 @@ body:
         - Partly
         - No
         - Not sure
+        - Did not reach the ending
     validations:
-      required: true
+      required: false
   - type: textarea
     id: notes
     attributes:
@@ -74,4 +75,4 @@ body:
       label: Pre-release standing
       options:
         - label: This was found before 1.0.0 and should be reviewed before release.
-          required: true
+          required: false
