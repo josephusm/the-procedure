@@ -235,7 +235,7 @@ Rules:
 - A live doorway failure is concrete: unreachable page, error wall, redirect, broken metadata, illegible first screen, warmed explanatory landing surface, or a mobile/desktop first screen that no longer invites the first gesture.
 - New corridor thoughts may inform post-feedback polish, but they should not keep moving the release gate by themselves.
 - When correction-surface thinking returns, prefer exercising the existing route over minting another trace: issue chooser, blank issue path, review-window, status, provenance, maintenance, errata, and reuse handles should answer as working surfaces, not as decorative labels.
-- The autonomous pre-gate task, if no feedback exists, is a smoke test: can a cold player still reach a stable, physically present machine and power it without a layout jump or pre-lit monitor?
+- No feedback is not a smoke-test mandate. A scheduled slot alone justifies no new check, certificate, or gate-holding record. With no fresh feedback or concrete defect/doorway/deployment signal, stop without changing the repository. Fresh criticism may still open design work; a concrete failure signal may justify a targeted check of the existing machine. Neither reopens the shared release decision by itself.
 
 Current pressure points:
 - The live GitHub Pages URL must remain a cold first surface: no marketing wrapper, no diagnostic explanation, no bot-wall theater.
